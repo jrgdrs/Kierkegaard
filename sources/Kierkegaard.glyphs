@@ -251074,7 +251074,7 @@ instanceInterpolations = {
 m002 = 0.5;
 m01 = 0.5;
 };
-name = "Semi-Bold";
+name = SemiBold;
 weightClass = 600;
 },
 {
@@ -251098,7 +251098,7 @@ axesValues = (
 instanceInterpolations = {
 m002 = 1;
 };
-name = "Extra-Bold";
+name = ExtraBold;
 weightClass = 800;
 },
 {
@@ -251124,8 +251124,7 @@ instanceInterpolations = {
 m004 = 0.25;
 };
 isItalic = 1;
-linkStyle = Medium;
-name = "Medium-Italic";
+name = "Medium Italic";
 weightClass = 500;
 },
 {
@@ -251139,8 +251138,7 @@ instanceInterpolations = {
 m004 = 0.5;
 };
 isItalic = 1;
-linkStyle = "Semi-Bold";
-name = "Semi-Bold-Italic";
+name = "SemiBold Italic";
 weightClass = 600;
 },
 {
@@ -251153,9 +251151,9 @@ instanceInterpolations = {
 "7AC17688-D084-48EF-8AFF-05483A60B77C" = 0.25;
 m004 = 0.75;
 };
+isBold = 1;
 isItalic = 1;
-linkStyle = Bold;
-name = "Bold-Italic";
+name = "Bold Italic";
 weightClass = 700;
 },
 {
@@ -251168,8 +251166,7 @@ instanceInterpolations = {
 m004 = 1;
 };
 isItalic = 1;
-linkStyle = "Extra-Bold";
-name = "Extra-Bold-Italic";
+name = "ExtraBold Italic";
 weightClass = 800;
 }
 );
@@ -254650,5 +254647,5 @@ userData = {
 "Letterink-StrokeType" = Brush;
 };
 versionMajor = 1;
-versionMinor = 0;
+versionMinor = 1;
 }

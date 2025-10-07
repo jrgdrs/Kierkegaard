@@ -1,6 +1,6 @@
 # Kierkegaard Font Project
 
-Kierkegaard is a modern Renaissance serif font with slightly carved stems. The family contains 20 members in 5 weights companied with an italic, old style figures and small characters.
+Kierkegaard is a modern Renaissance serif font with slightly curved stems. The family contains 20 members in 5 weights companied with an italic, old style figures and small characters.
 
 ### The members of the Kierkegaard family
 
@@ -15,29 +15,29 @@ Kierkegaard is a modern Renaissance serif font with slightly carved stems. The f
 
 ![Sample Image](documentation/image-Kierkegaard-Medium.png)
 ![Sample Image](documentation/image-KierkegaardSC-Medium.png)
-![Sample Image](documentation/image-Kierkegaard-Medium-Italic.png)
-![Sample Image](documentation/image-KierkegaardSC-Medium-Italic.png)
+![Sample Image](documentation/image-Kierkegaard-MediumItalic.png)
+![Sample Image](documentation/image-KierkegaardSC-MediumItalic.png)
 
 600
 
-![Sample Image](documentation/image-Kierkegaard-Semi-Bold.png)
-![Sample Image](documentation/image-KierkegaardSC-Semi-Bold.png)
-![Sample Image](documentation/image-Kierkegaard-Semi-Bold-Italic.png)
-![Sample Image](documentation/image-KierkegaardSC-Semi-Bold-Italic.png)
+![Sample Image](documentation/image-Kierkegaard-SemiBold.png)
+![Sample Image](documentation/image-KierkegaardSC-SemiBold.png)
+![Sample Image](documentation/image-Kierkegaard-SemiBoldItalic.png)
+![Sample Image](documentation/image-KierkegaardSC-SemiBoldItalic.png)
 
 700
 
 ![Sample Image](documentation/image-Kierkegaard-Bold.png)
 ![Sample Image](documentation/image-KierkegaardSC-Bold.png)
-![Sample Image](documentation/image-Kierkegaard-Bold-Italic.png)
-![Sample Image](documentation/image-KierkegaardSC-Bold-Italic.png)
+![Sample Image](documentation/image-Kierkegaard-BoldItalic.png)
+![Sample Image](documentation/image-KierkegaardSC-BoldItalic.png)
 
 800
 
-![Sample Image](documentation/image-Kierkegaard-Extra-Bold.png)
-![Sample Image](documentation/image-KierkegaardSC-Extra-Bold.png)
-![Sample Image](documentation/image-Kierkegaard-Extra-Bold-Italic.png)
-![Sample Image](documentation/image-KierkegaardSC-Extra-Bold-Italic.png)
+![Sample Image](documentation/image-Kierkegaard-ExtraBold.png)
+![Sample Image](documentation/image-KierkegaardSC-ExtraBold.png)
+![Sample Image](documentation/image-Kierkegaard-ExtraBoldItalic.png)
+![Sample Image](documentation/image-KierkegaardSC-ExtraBoldItalic.png)
 
 
 ### Specimen sheets

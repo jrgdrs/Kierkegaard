@@ -11,6 +11,9 @@ master_ufo
 instance_ufos
 .ninja_log
 build.ninja
+custom
+out
+
 
 # OS generated files #
 ######################
