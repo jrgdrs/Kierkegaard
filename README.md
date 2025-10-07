@@ -42,7 +42,7 @@ Kierkegaard is a modern Renaissance serif font with slightly curved stems. The f
 
 ### Specimen sheets
 
-[Download the Specimen file (PDF)](documentation/Specimen.html.pdf)
+[Download the Specimen file (PDF)](documentation/SpecimenNL.html.pdf)
 
 
 ## About
