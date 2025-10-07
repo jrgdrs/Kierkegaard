@@ -254559,7 +254559,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2025 The Kierkegaard Project Authors (https://github.com/jrgdrs/Kierkegaard)";
+value = "Copyright 2025 The Kierkegaard Font Project Authors (https://github.com/jrgdrs/Kierkegaard)";
 }
 );
 },
@@ -254647,5 +254647,5 @@ userData = {
 "Letterink-StrokeType" = Brush;
 };
 versionMajor = 1;
-versionMinor = 1;
+versionMinor = 2;
 }
