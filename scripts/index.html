@@ -5,7 +5,140 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Kierkegaard Preview</title>
-    <script src="./fontTester.js"></script>
+    <script>
+
+        function createFontTester(options) {
+    const {
+        container,
+        fonts,
+        initialFont,
+        initialSize,
+        initialLineHeight,
+        features,
+        initialFeatures,
+        sampleText
+    } = options;
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'font-tester';
+    container.appendChild(wrapper);
+
+    // ----- Header mit Toggle -----
+    const header = document.createElement('div');
+    header.className = 'header';
+    const toggleBtn = document.createElement('button');
+    toggleBtn.textContent = '▾';
+    toggleBtn.style.cursor = 'pointer';
+    toggleBtn.style.fontSize = '18px';
+    toggleBtn.style.color = 'white';
+    toggleBtn.style.padding = '0px 6px';
+    toggleBtn.style.border = 'none';
+    toggleBtn.style.background = 'limegreen';
+    toggleBtn.style.fontWeight = 'bold';
+    header.appendChild(toggleBtn);
+
+    const titleSpan = document.createElement('span');
+    titleSpan.className = 'title';
+    header.appendChild(titleSpan);
+
+    const subtitleSpan = document.createElement('span');
+    subtitleSpan.className = 'subtitle';
+    header.appendChild(subtitleSpan);
+
+    wrapper.appendChild(header);
+
+    // ----- Controls -----
+    const controls = document.createElement('div');
+    controls.className = 'controls';
+    wrapper.appendChild(controls);
+
+    // Font Family
+    const fontDiv = document.createElement('div');
+    const fontLabel = document.createElement('label'); fontLabel.textContent='Font Family';
+    fontDiv.appendChild(fontLabel);
+    const fontSelect = document.createElement('select');
+    fonts.forEach(f=>{const opt=document.createElement('option');opt.value=f;opt.textContent=f;fontSelect.appendChild(opt)});
+    fontSelect.value = initialFont;
+    fontDiv.appendChild(fontSelect);
+    controls.appendChild(fontDiv);
+
+    // Font Size
+    const sizeDiv = document.createElement('div');
+    const sizeLabel = document.createElement('label'); sizeLabel.innerHTML=`Font Size (<span>${initialSize}</span>px)`; const sizeSpan=sizeLabel.querySelector('span');
+    sizeDiv.appendChild(sizeLabel);
+    const sizeSlider = document.createElement('input'); sizeSlider.type='range'; sizeSlider.min=12; sizeSlider.max=144; sizeSlider.value=initialSize;
+    sizeDiv.appendChild(sizeSlider);
+    controls.appendChild(sizeDiv);
+
+    // Line Height
+    const lhDiv = document.createElement('div');
+    const lhLabel = document.createElement('label'); lhLabel.innerHTML=`Line Height (<span>${initialLineHeight}</span>)`; const lhSpan=lhLabel.querySelector('span');
+    lhDiv.appendChild(lhLabel);
+    const lhSlider = document.createElement('input'); lhSlider.type='range'; lhSlider.min=.5; lhSlider.max=1.5; lhSlider.step=0.1; lhSlider.value=initialLineHeight;
+    lhDiv.appendChild(lhSlider);
+    controls.appendChild(lhDiv);
+
+    // Features Checkboxes
+    const featDiv = document.createElement('div');
+    const featLabel = document.createElement('label'); featLabel.textContent='OpenType Features';
+    featDiv.appendChild(featLabel);
+    const featContainer = document.createElement('div'); featContainer.className='features';
+    features.forEach(f=>{
+        const lab=document.createElement('label');
+        const cb=document.createElement('input'); cb.type='checkbox'; cb.value=f; if(initialFeatures.includes(f)) cb.checked=true;
+        lab.appendChild(cb); lab.appendChild(document.createTextNode(f));
+        featContainer.appendChild(lab);
+        cb.addEventListener('change', updateFeatures);
+    });
+    featDiv.appendChild(featContainer);
+    controls.appendChild(featDiv);
+
+    // Editable Text
+    const textDiv = document.createElement('div'); textDiv.className='font-edit-container'; textDiv.contentEditable=true; textDiv.spellcheck=false;  textDiv.textContent=sampleText;
+    wrapper.appendChild(textDiv);
+
+    // ----- Update Funktionen -----
+    function updateFeatures(){
+        const selected = Array.from(featContainer.querySelectorAll('input:checked')).map(cb=>`"${cb.value}" 1`);
+        textDiv.style.fontFeatureSettings = selected.join(',') || 'normal';
+        updateHeaderText();
+    }
+    function updateHeaderText(){
+        const selectedFeatures = Array.from(featContainer.querySelectorAll('input:checked')).map(cb=>cb.value);
+        titleSpan.textContent = fontSelect.value;
+        subtitleSpan.textContent = `Size ${sizeSlider.value}px, Line ${lhSlider.value}` + (selectedFeatures.length>0 ? ` (${selectedFeatures.join(', ')})` : '');
+    }
+
+    fontSelect.addEventListener('change', ()=>{ textDiv.style.fontFamily=fontSelect.value; updateHeaderText(); });
+    sizeSlider.addEventListener('input', ()=>{ textDiv.style.fontSize=sizeSlider.value+'px'; sizeSpan.textContent=sizeSlider.value; updateHeaderText(); });
+    lhSlider.addEventListener('input', ()=>{ textDiv.style.lineHeight=lhSlider.value; lhSpan.textContent=lhSlider.value; updateHeaderText(); });
+
+    // ----- Toggle Controls -----
+    // let visible=true;  
+    // toggleBtn.addEventListener('click', ()=>{
+    //     visible=!visible;
+    //     controls.classList.toggle('hidden',!visible);
+    //     toggleBtn.textContent = visible ? '▾' : '▸';
+    // });
+
+    let visible = false; // Controls starten ausgeblendet
+    controls.classList.add('hidden'); // verstecken
+    toggleBtn.textContent = '▸'; // Pfeil für versteckt
+
+    header.addEventListener('click', ()=>{
+        visible = !visible;
+        controls.classList.toggle('hidden', !visible);
+        toggleBtn.textContent = visible ? '▾' : '▸';
+    });
+
+    // Initial
+    textDiv.style.fontFamily=fontSelect.value;
+    textDiv.style.fontSize=sizeSlider.value+'px';
+    textDiv.style.lineHeight=lhSlider.value;
+    updateFeatures();
+}
+
+    </script>
     <style>
         @font-face { font-family: Kierkegaard-Regular; src: url("./Kierkegaard-Regular.ttf"); }
         @font-face { font-family: Kierkegaard-Italic; src: url("./Kierkegaard-Italic.ttf"); }
@@ -316,7 +449,184 @@
     });
     </script>   
 
-    <script src="./fontAnimator.js"></script>
+    <script>
+
+
+        const words = [
+            'dream', 'light', 'time', 'space', 'future', 'mind', 'truth', 'fire', 'stone', 'river', 'wind', 'shadow', 'echo', 'path', 'voice', 'heart', 'storm', 'memory', 'wave', 'field', 'Kierkegaard', 'typobold',
+            'sky', 'seed', 'thought', 'ocean', 'spark', 'dreamer', 'moment', 'vision', 'silence', 'forest', 'sound', 'cloud', 'mountain', 'dust', 'feather', 'flame', 'story', 'dreams', 'hope', 'tactile', 'Kierkegaard', 
+            'soul', 'energy', 'mirror', 'night', 'day', 'world', 'circle', 'magic', 'shape', 'flow', 'Kierkegaard'
+        ];
+
+        function gaussian(mean = 0, sd = 1) {
+            let u = 0, v = 0, s = 0;
+            if (typeof gaussian.spare !== 'undefined') { const val = gaussian.spare; delete gaussian.spare; return mean + sd * val; }
+            do { u = Math.random() * 2 - 1; v = Math.random() * 2 - 1; s = u * u + v * v; } while (s === 0 || s >= 1);
+            const mul = Math.sqrt(-2 * Math.log(s) / s); gaussian.spare = v * mul; return mean + sd * (u * mul);
+        }
+
+        const stage = document.getElementById('animationContainer');
+        const fontVariants = ['Kierkegaard-Regular', 'Kierkegaard-Italic', 'Kierkegaard-SemiBold', 'Kierkegaard-SemiBoldItalic', 'Kierkegaard-ExtraBold', 'Kierkegaard-ExtraBoldItalic'];
+        function pickRandom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+        function randomTertiaryColor() {
+            const hue = Math.floor(Math.random() * 360);
+            const saturation = 30 + Math.random() * 60;
+            const lightness = 45 + Math.random() * 40;
+            return `hsl(${hue} ${saturation}% ${lightness}%)`;
+        }
+
+        // ===== Steuerung =====
+        let animationRunning = true;
+        let animationSpeed = 1.0;
+        let fontSizeFactor = 1.0;
+        let contourProbability = 0.33;
+
+        document.getElementById('speedSlider').addEventListener('input', e => animationSpeed = parseFloat(e.target.value));
+        document.getElementById('sizeSlider').addEventListener('input', e => fontSizeFactor = parseFloat(e.target.value));
+        document.getElementById('contourSlider').addEventListener('input', e => contourProbability = parseFloat(e.target.value));
+
+        // --- robuster Leertasten-Handler (ersetze vorherige Implementierung) ---
+        /*
+        const pauseOverlay = createPauseOverlay();
+
+        window.addEventListener('keydown', (e) => {
+            const isSpace = e.code === 'Space' || e.key === ' ';
+            if (!isSpace) return;
+
+            // Verhindere Scroll/Default-Aktionen; wir fangen das Event wirklich ab.
+            // Mit capture:true & passive:false (siehe Listener-Option unten) ist preventDefault wirksam.
+            e.preventDefault();
+
+            // Ignoriere Wiederholungen beim gehaltenen Drücken
+            if (e.repeat) return;
+
+            animationRunning = !animationRunning;
+
+            if (!animationRunning) {
+                // beim Pausieren Overlay zeigen
+                pauseOverlay.show();
+            } else {
+                // beim Fortsetzen Overlay kurz ausblenden und Zeitbasis neu setzen
+                pauseOverlay.hide();
+                lastTime = performance.now();
+            }
+        }, { capture: true, passive: false }); 
+        */
+
+
+        const maxVisible = 6;
+        let visibleWords = []; let zIndex = 1;
+        let addInterval = 900;
+        let lastTime = 0;
+
+        function createWordElement(text) {
+            const el = document.createElement('div');
+            el.className = 'word';
+            el.textContent = text;
+            el.style.fontFamily = pickRandom(fontVariants);
+
+            // Schriftgröße skaliert
+            el.style.fontSize = ((20 + Math.floor(Math.random() * (stage.clientWidth / 3.5))) * fontSizeFactor) + 'pt';
+
+            // Konturwahrscheinlichkeit global steuerbar
+            const transparentFill = Math.random() < contourProbability;
+            if (transparentFill) {
+                el.style.color = 'transparent';
+                const strokeColor = randomTertiaryColor();
+                const strokeWidth = (parseInt(el.style.fontSize) / 200).toFixed(1);
+                el.style.webkitTextStroke = `${strokeWidth}px ${strokeColor}`;
+                el.style.textStroke = `${strokeWidth}px ${strokeColor}`;
+            } else {
+                el.style.color = randomTertiaryColor();
+                el.style.webkitTextStroke = '0px transparent';
+            }
+
+            const vw = stage.clientWidth, vh = stage.clientHeight;
+            const centerX = vw / 2, centerY = vh / 2 + vh * 0.2;
+            const sigmaX = vw * 0.45, sigmaY = vh * 0.3;
+            let x = gaussian(centerX, sigmaX), y = gaussian(centerY, sigmaY);
+            if (x < 0) x = -Math.random() * 50;
+            if (y < 0) y = -Math.random() * 50;
+
+            el.style.left = x + 'px';
+            el.style.top = y + 'px';
+            el.style.zIndex = (++zIndex).toString();
+            el.dataset.targetOpacity = 0.3 + Math.random() * 0.5;
+            el.dataset.startBlur = 8 + Math.floor(Math.random() * 24);
+            el.style.opacity = '0';
+            el.style.filter = `blur(${el.dataset.startBlur}px)`;
+            stage.appendChild(el);
+
+            const rect = el.getBoundingClientRect();
+            const marginX = vw * 0.1, marginY = vh * 0.1;
+            if (x - rect.width / 2 < -marginX) x = -marginX + rect.width / 2;
+            if (x + rect.width / 2 > vw + marginX) x = vw + marginX - rect.width / 2;
+            if (y - rect.height / 2 < -marginY) y = -marginY + rect.height / 2;
+            if (y + rect.height / 2 > vh + marginY) y = vh + marginY - rect.height / 2;
+            el.style.left = x + 'px';
+            el.style.top = y + 'px';
+
+            return el;
+        }
+
+        function showWord() {
+            const el = createWordElement(pickRandom(words));
+            visibleWords.push(el);
+            requestAnimationFrame(() => {
+                el.style.opacity = el.dataset.targetOpacity;
+                el.style.filter = 'blur(0px)';
+                el.style.transform = `translate(-50%,-50%) scale(${0.92 + Math.random() * 0.36})`;
+            });
+            if (visibleWords.length > maxVisible) { fadeOutAndRemove(visibleWords.shift()); }
+        }
+
+        function fadeOutAndRemove(el) {
+            el.style.opacity = '0';
+            el.style.filter = `blur(${el.dataset.startBlur}px)`;
+            el.addEventListener('transitionend', () => { if (el.parentElement) el.parentElement.removeChild(el); });
+        }
+
+        // --- kleines Pause-Overlay (visuelles Feedback) ---
+        function createPauseOverlay() {
+            const o = document.createElement('div');
+            o.style.position = 'absolute';
+            o.style.left = '50%';
+            o.style.top = '80%';
+            o.style.transform = 'translate(-50%,-50%)';
+            o.style.padding = '16px 24px';
+            o.style.borderRadius = '9px';
+            o.style.background = 'rgba(0,0,0,0.6)';
+            o.style.color = '#ddd';
+            o.style.fontSize = '16px';
+            o.style.letterSpacing = '2px';
+            o.style.zIndex = '9999';
+            o.style.pointerEvents = 'none';
+            o.style.opacity = '0';
+            o.style.transition = 'opacity 220ms ease';
+            o.textContent = '⏸ PAUSE';
+            // nicht sofort anhängen — hängt an stage, damit position relativ funktioniert
+            stage.appendChild(o);
+
+            return {
+                show: () => { o.style.opacity = '1'; },
+                hide: () => { o.style.opacity = '0'; }
+            };
+        }
+
+        // ===== Hauptloop mit Pausefunktion =====
+        function loop(timestamp) {
+            if (animationRunning && timestamp - lastTime > addInterval / animationSpeed) {
+                showWord();
+                lastTime = timestamp;
+            }
+            requestAnimationFrame(loop);
+        }
+
+        // Start
+        showWord();
+        requestAnimationFrame(loop);
+        
+    </script>
 
 </body>
 </html>
