@@ -54,7 +54,7 @@ jobs:
     - name: Generate proofs
       run: make proof
     - name: Set up test result site
-      run: cp scripts/index.html out/index.html
+      run: cp scripts/* out
     - name: Collect deployment assets
       if: ${{ github.ref == 'refs/heads/main' }}
       uses: actions/upload-pages-artifact@v3
