@@ -143,7 +143,7 @@
 
         #animationContainer {
             width: 100%;
-            height: 480px;
+            height: 640px;
             margin: 0 auto;
             position: relative;
             top:0;
@@ -214,7 +214,7 @@
             -webkit-appearance: none; /* Override default look */
             appearance: none;
             margin-top: -6px; /* Centers thumb on the track */
-            background-color: limegreen;
+            background-color: #f00;
             height: 12px;
             width: 12px;    
         }
@@ -222,20 +222,19 @@
         /* Download Button */
         .downloadBtn {
             font-family: Kierkegaard-Bold;
-            background-color: rgb(65, 105, 225);
-            border: 2pt solid white;
+            background-color: #f00;
             color: white;
             padding: 12px 30px;
             cursor: pointer;
             font-size: 20px;
             width: 15em;
             border-radius: 16px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
             margin:12px;
         }
 
         .downloadBtn:hover {
-            background-color: rgb(46, 76, 164);
+            background-color:rgb(136, 0, 0);
         }
 
         a {
@@ -245,16 +244,33 @@
         .footer {
             align-items: center;
             text-align:center;
-            margin-bottom: 50px;
+            margin: 0 0 50px  0;
             display: flex; 
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
         }
 
+        .footer div {
+
+        }
+
+        .pageheader {
+            position: fixed;
+            top:30px;
+            left:30px;
+            z-index:1000;
+            width:90px; height: 90px;
+        }
 
     </style>
 </head>
 
 <body>
+
+    <div class="pageheader">
+        <img src="png/typobold_logo_200.png" width="100%"/>
+    </div>
 
     <div class="animationControls">
         <label>faster
@@ -277,7 +293,7 @@
     </div>
 
     <div class="footer">
-        <div><a href="specimen/SpecimenNL.html.pdf">
+        <div><a href="specimen/SpecimenNL.html.pdf" target="_blank">
             <div class="downloadBtn">Download Font Specimen</div>
         </a></div>
         <div><a href="download.zip">
@@ -285,6 +301,9 @@
         </a></div>
     </div>
 
+    <div class="footer">
+        <div class="caption">typobold is my nickname at joerg-drees.de</div>
+    </div>
 
     <script>
 

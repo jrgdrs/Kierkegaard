@@ -24,7 +24,7 @@ function createFontTester(options) {
     toggleBtn.style.color = 'white';
     toggleBtn.style.padding = '0px 6px';
     toggleBtn.style.border = 'none';
-    toggleBtn.style.background = 'limegreen';
+    toggleBtn.style.background = '#f00';
     toggleBtn.style.fontWeight = 'bold';
     header.appendChild(toggleBtn);
 
