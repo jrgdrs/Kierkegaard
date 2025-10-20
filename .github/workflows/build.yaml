@@ -55,8 +55,6 @@ jobs:
       run: make proof
     - name: Set up test result site
       run: cp -a pages out
-    - name: Copy download-zip
-      run: cp ${{ env.ZIP_NAME }} out/download.zip
     - name: Collect deployment assets
       if: ${{ github.ref == 'refs/heads/main' }}
       uses: actions/upload-pages-artifact@v3
