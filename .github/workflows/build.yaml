@@ -54,7 +54,7 @@ jobs:
     - name: Generate proofs
       run: make proof
     - name: Set up test result site
-      run: cp pages/* out
+      run: cp -a pages out
     - name: Copy download-zip
       run: cp ${{ env.ZIP_NAME }} out/download.zip
     - name: Collect deployment assets
