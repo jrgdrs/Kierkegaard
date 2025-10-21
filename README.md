@@ -86,8 +86,9 @@ Kierkegaard is available under the <a href="https://scripts.sil.org/OFL" target=
 
 ## Specimen sheets
 
-[Download the Specimen file (PDF)](documentation/SpecimenNL.html.pdf)
+[Download the Specimen file (PDF)](https://jrgdrs.github.io/Kierkegaard/specimen/SpecimenNL.html.pdf)
 
+[Test the typeface online](https://jrgdrs.github.io/Kierkegaard/)
 
 ## Building
 
