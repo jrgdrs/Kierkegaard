@@ -29,8 +29,8 @@ familyName: "Kierkegaard"
 buildVariable: false
 buildStatic: true
 buildTTF: true
-buildOTF: false
-# buildSmallCap: false
+#buildOTF: false
+#buildSmallCap: false
 
 # The next flags control autohinting.
 # autohintTTF: true

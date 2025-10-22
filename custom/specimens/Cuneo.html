@@ -1,68 +1,159 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <!--style> @font-face { font-family: Regular; src: url("../fonts/ttf/Tensor-Regular.ttf"); } @font-face { font-family: Italic; src: url("../fonts/ttf/Tensor-Regular.ttf"); } @font-face { font-family: Bold; src: url("../fonts/ttf/Tensor-Regular.ttf"); } @media print {} @page { size: 125mm 198mm; margin: 14mm; margin-bottom: 28mm; background-color: linen; } @page:first { size: 125mm 198mm; margin: 14mm; margin-bottom: 0mm; background-color: rgb(50, 61, 0); } @page :right { @bottom-left { content: counter(page); font-family: Regular; font-size: 10pt; text-align: right; border: 6pt solid transparent; margin-bottom: 18pt; } } @page :left { @bottom-right { content: counter(page); font-family: Regular; font-size: 10pt; text-align: left; border: 6pt solid transparent; padding-bottom: 18pt; } } .title { color: rgb(255, 253, 125); font-family: Bold; font-size: 48pt; line-height: 40pt; margin-top: 0; } body { } h1 { padding-top: calc(1.25em * 3); font-family: Bold; font-weight: normal; font-size: 18pt; line-height: 1.15em; color: rgb(89, 143, 8) } h2, h3 { font-family: Regular; font-weight: normal; line-height: 1.25em; } p { font-family: Regular; font-size: 13pt; line-height: 1.1em; margin: 0; text-indent: 1em; text-align: justify; hyphens: auto; font-variant-numeric: oldstyle-nums; /* <numeric-figure-values> */ } .it { font-family: Italic; font-style: normal; } .ini { text-indent: 0; padding-top: calc(1.25em * 10); } .ini::first-letter { -webkit-initial-letter: 3; initial-letter: 3; } table.poem { font-family: Italic; font-size: 11pt; line-height: 1.35em; margin: 0; text-align: left; margin: 1em; } .head { page-break-after: always; } .right { text-align: right; } .left { text-align: left; text-indent: 0; } .center { text-align: center; text-indent: 0; } .brand { position: absolute; top: 125mm; width: 97mm; text-align: center; text-indent: 0; } .lgc { margin-top: 1em; margin-bottom: 1em; } .line { font-family: Italic; font-size: 13pt; color: darkblue; text-indent: 2mm; } </style-->
     <style>
-
         @media print {
             @page {
-            size: 125mm 235mm;
-            margin: 14mm;
-            margin-bottom: 28mm;
-            background-color: linen;
+                size: 125mm 235mm;
+                margin: 14mm;
+                margin-bottom: 28mm;
+                background-color: rgb(255, 255, 255);
             }
+
             @page :right {
-            margin: 14mm 16mm 21mm 12mm;
+                margin: 14mm 16mm 21mm 12mm;
             }
+
             @page :left {
-            margin: 14mm 12mm 21mm 16mm;
+                margin: 14mm 12mm 21mm 16mm;
             }
         }
 
-        
-        h2 {
-            font-family: Bold;
+        p {
+            font-family: Kierkegaard-Regular;
+            font-size: 13pt;
+            line-height:14.5 pt;
+        }
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            margin-inline-start: 0;
         }
 
         .pstart {
             text-indent: 0;
         }
 
-        .blind { display: none; }
+        .blind {
+            font-family: Kierkegaard-Bold;
+            color: darkred;
+            font-size: 13pt;
+            line-height:14.5 pt;
+        }
 
-</style>
+        .ini,
+        .first {
+            text-indent: 0;
+            padding-top: 0;
+            page-break-before: avoid;
+        }
+
+        .ini::first-letter,
+        .first::first-letter {
+            initial-letter: 3;
+            padding-right: 3pt;
+        }
+
+        .mhed {
+            font-family: Kierkegaard-MediumItalic;
+            color: darkred;
+            font-size: 32pt;
+            line-height: 32pt;
+            margin-bottom: 32pt;
+        }
+
+        .pre {
+            font-family: Kierkegaard-Italic;
+            margin-bottom: 12pt;
+        }
+
+    </style>
 </head>
 
 <body>
     <section>
-        <div>
-            <h3>Anne Cuneo<br />Garamont’s Master</h3>
-        </div>
-
-        <p class='pindent'>A novel by Anne Cuneo, with expanded focus on printing, type design, and humanist values</p>
-        <p class='pindent'>In the early 1500s, Paris is a city caught between medieval control and Renaissance awakening. The printing press has begun to reshape Europe, but religious institutions still wield enormous influence over knowledge. As Protestant thought spreads, the Catholic Church cracks down hard on any whisper of dissent. Books become both symbols of hope and targets of censorship—dangerous vessels of uncontrolled ideas. In this tense climate, a poor but curious boy named Claude Garamont is drawn not to theology or politics, but to letters themselves. From an early age, he marvels not just at what books say, but at how they look—how each letter has a voice, a form, a personality.</p>
+        <h3 class="mhed">Garamont’s Master</h3>
+        <p class='pre'>A novel by Anne Cuneo, with expanded focus on printing, type design and humanist values</p>
+        <p class='ini'>In the early 1500s, Paris is a city caught between medieval control and Renaissance awakening.
+            The printing press has begun to reshape Europe, but religious institutions still wield enormous influence
+            over knowledge. As Protestant thought spreads, the Catholic Church cracks down hard on any whisper of
+            dissent. Books become both symbols of hope and targets of censorship—dangerous vessels of uncontrolled
+            ideas. In this tense climate, a poor but curious boy named Claude Garamont is drawn not to theology or
+            politics, but to letters themselves. From an early age, he marvels not just at what books say, but at how
+            they look—how each letter has a voice, a form, a personality.</p>
         <p class='blind'>Letters as Living Forms</p>
-        <p class='pindent'>Claude’s journey begins in obscurity, but fate brings him to the attention of Antoine Augereau, a master printer and type designer. Augereau is not just a craftsman; he is a philosopher of letters, someone who believes that typography is a tool of reason and liberation. Moved by the boy’s enthusiasm, Augereau takes Claude under his wing, offering him a place in his Paris workshop. What begins as a trade apprenticeship soon becomes a profound intellectual mentorship. There, Claude learns to read, write, and think—but more importantly, to see: to see how typefaces guide the reader’s eye and shape their understanding. Augereau teaches him that every element—stroke width, curve, space—carries intention and communicates meaning. The workshop is filled with racks of lead letters, wooden composing sticks, and the faint scent of ink and molten metal. For Claude, it becomes a sacred space where mechanics and aesthetics intertwine, where hands give birth to thought.</p>
-        <p class='blind'>Science, Craft, and Geometry</p>
-        <p class='pindent'>Augereau doesn’t just show Claude how to compose pages—he teaches him how to cast type from punches and matrices. Each metal letter is an act of sculpture, balancing durability with beauty, clarity with expression. They study Roman inscriptions, marveling at the geometry of Trajan’s capitals and their architectural precision. From these ancient models, they derive principles of proportion: how width relates to height, how curves counterbalance stems. They critique the dense Gothic typefaces still common in France—blackletter fonts that obscure meaning with ornamental excess. Augereau argues that typography must evolve to match the clarity of modern thinking—legibility as a moral imperative. Claude begins to sketch his own alphabets, experimenting with contrast, alignment, and serif form. His notebook becomes a meditation on structure: the inner rhythm of a line, the harmony of letter spacing. He learns the value of the **x-height**—the height of lowercase letters like ‘x’ or ‘e’—and how it affects perceived readability. A larger x-height improves clarity in small text, while too much contrast between thick and thin strokes fatigues the eye.</p>
-        <p class='blind'>Form, Function, and Freedom</p>
-        <p class='pindent'>Typography, Augereau insists, is not neutral—it is ideological. The choice of typeface can either invite the reader in or build barriers around the text. Claude internalizes this lesson deeply, coming to see letters as bridges between mind and page. He realizes that every aspect of type design—from baseline alignment to aperture size—shapes human comprehension. They discuss the Renaissance ideals of the humanitas—clarity, rationality, and harmony—as reflected in typographic form. Their favorite models come from Venetian type designers, whose balanced, open fonts breathe visual air into the page. Augereau pushes Claude to think of letters not as symbols, but as tools of thought—refined instruments for truth-telling. Claude learns that typography is the architecture of language: invisible when done right, oppressive when done poorly. Their conversations extend late into the night—debating the future of books, the dangers of orthodoxy, the role of beauty in cognition. Typography, they agree, is the skin of ideas—and must be crafted with care, respect, and responsibility.</p>
+        <p class='pindent'>Claude’s journey begins in obscurity, but fate brings him to the attention of Antoine
+            Augereau, a master printer and type designer. Augereau is not just a craftsman; he is a philosopher of
+            letters, someone who believes that typography is a tool of reason and liberation. Moved by the boy’s
+            enthusiasm, Augereau takes Claude under his wing, offering him a place in his Paris workshop. What begins as
+            a trade apprenticeship soon becomes a profound intellectual mentorship. There, Claude learns to read, write,
+            and think—but more importantly, to see: to see how typefaces guide the reader’s eye and shape their
+            understanding. Augereau teaches him that every element—stroke width, curve, space—carries intention and
+            communicates meaning. The workshop is filled with racks of lead letters, wooden composing sticks and the
+            faint scent of ink and molten metal. For Claude, it becomes a sacred space where mechanics and aesthetics
+            intertwine, where hands give birth to thought.</p>
+        <p class='blind'>Science, Craft and Geometry</p>
+        <p class='pindent'>Augereau doesn’t just show Claude how to compose pages—he teaches him how to cast type from
+            punches and matrices. Each metal letter is an act of sculpture, balancing durability with beauty, clarity
+            with expression. They study Roman inscriptions, marveling at the geometry of Trajan’s capitals and their
+            architectural precision. From these ancient models, they derive principles of proportion: how width relates
+            to height, how curves counterbalance stems. They critique the dense Gothic typefaces still common in
+            France—blackletter fonts that obscure meaning with ornamental excess. Augereau argues that typography must
+            evolve to match the clarity of modern thinking—legibility as a moral imperative. Claude begins to sketch his
+            own alphabets, experimenting with contrast, alignment and serif form. His notebook becomes a meditation on
+            structure: the inner rhythm of a line, the harmony of letter spacing. He learns the value of the
+            **x-height**—the height of lowercase letters like ‘x’ or ‘e’—and how it affects perceived readability. A
+            larger x-height improves clarity in small text, while too much contrast between thick and thin strokes
+            fatigues the eye.</p>
+        <p class='blind'>Form, Function and Freedom</p>
+        <p class='pindent'>Typography, Augereau insists, is not neutral—it is ideological. The choice of typeface can
+            either invite the reader in or build barriers around the text. Claude internalizes this lesson deeply,
+            coming to see letters as bridges between mind and page. He realizes that every aspect of type design—from
+            baseline alignment to aperture size—shapes human comprehension. They discuss the Renaissance ideals of the
+            humanitas—clarity, rationality and harmony—as reflected in typographic form. Their favorite models come
+            from Venetian type designers, whose balanced, open fonts breathe visual air into the page. Augereau pushes
+            Claude to think of letters not as symbols, but as tools of thought—refined instruments for truth-telling.
+            Claude learns that typography is the architecture of language: invisible when done right, oppressive when
+            done poorly. Their conversations extend late into the night—debating the future of books, the dangers of
+            orthodoxy, the role of beauty in cognition. Typography, they agree, is the skin of ideas—and must be crafted
+            with care, respect and responsibility.</p>
         <p class='blind'>Crisis and Loss</p>
-        <p class='pindent'>Their world is shattered when the Affair of the Placards erupts in 1534—anonymous posters denouncing the Catholic Mass appear across Paris. Though not involved in the writings, Augereau is targeted for printing suspicious material aligned with Reformation ideals. He is arrested, accused of spreading heresy, and his entire workshop is seized. Matrices are melted down, books are burned, and type molds—the fruits of years of work—are destroyed without trial. Claude is devastated as he witnesses the destruction of not only physical tools, but of humanist thought itself. For him, it is not just his mentor who is punished—it is the death of intellectual freedom. On December 24, Augereau is publicly hanged on the Place Maubert, and his body burned alongside his books. The master of letters is turned into ash—silenced by the very forces his fonts sought to challenge.</p>
+        <p class='pindent'>Their world is shattered when the Affair of the Placards erupts in 1534—anonymous posters
+            denouncing the Catholic Mass appear across Paris. Though not involved in the writings, Augereau is targeted
+            for printing suspicious material aligned with Reformation ideals. He is arrested, accused of spreading
+            heresy and his entire workshop is seized. Matrices are melted down, books are burned and type molds—the
+            fruits of years of work—are destroyed without trial. Claude is devastated as he witnesses the destruction of
+            not only physical tools, but of humanist thought itself. For him, it is not just his mentor who is
+            punished—it is the death of intellectual freedom. On December 24, Augereau is publicly hanged on the Place
+            Maubert and his body burned alongside his books. The master of letters is turned into ash—silenced by the
+            very forces his fonts sought to challenge.</p>
         <p class='blind'>Venice and the Evolution</p>
-        <p class='pindent'>Fleeing persecution, Claude travels to Venice, where he encounters former students of Aldus Manutius, the great innovator of the printed page. Here, typography thrives—not in secrecy, but in celebration. In Venice, he studies the work of Francesco Griffo, whose humanist typefaces fuse classical proportions with modern readability. Claude learns to marry grace and function—to create fonts that serve both the eye and the mind. He refines his design approach: reducing visual noise, optimizing line spacing, and increasing typographic color balance. His aim is to create a typeface that feels neutral yet elegant—a quiet carrier of meaning. After years of experimentation, he completes a new Antiqua type—based on Roman principles but with French softness. This typeface, which would bear his name, becomes the Garamond—a revolution in legibility and typographic refinement. It is adopted across Europe for books, legal documents, and scholarly works—proving that good design outlives politics. Even today, Garamond fonts remain among the most widely used in publishing, education, and digital communication.</p>
+        <p class='pindent'>Fleeing persecution, Claude travels to Venice, where he encounters former students of Aldus
+            Manutius, the great innovator of the printed page. Here, typography thrives—not in secrecy, but in
+            celebration. In Venice, he studies the work of Francesco Griffo, whose humanist typefaces fuse classical
+            proportions with modern readability. Claude learns to marry grace and function—to create fonts that serve
+            both the eye and the mind. He refines his design approach: reducing visual noise, optimizing line spacing,
+            and increasing typographic color balance. His aim is to create a typeface that feels neutral yet elegant—a
+            quiet carrier of meaning. After years of experimentation, he completes a new Antiqua type—based on Roman
+            principles but with French softness. This typeface, which would bear his name, becomes the Garamond—a
+            revolution in legibility and typographic refinement. It is adopted across Europe for books, legal documents,
+            and scholarly works—proving that good design outlives politics. Even today, Garamond fonts remain among the
+            most widely used in publishing, education and digital communication.</p>
         <p class='blind'>A Tribute Written in Letters</p>
-        <p class='pindent'>Years later, an older Claude sits at his desk, writing the story of his master and mentor. His pen glides across the page, but every sentence is shaped by the forms Augereau taught him to love. The memoir becomes more than a biography—it becomes an act of preservation, a typographic resurrection. Each word he writes is a quiet rebellion against forgetting, a testament to craftsmanship and moral courage. Through his writing, Claude keeps Augereau alive—not in flesh, but in form: in every serif, every ascender, every page margin. What the executioner destroyed, the apprentice reanimates with ink and memory. Garamont’s fonts would outlive regimes, cross languages, and appear centuries later in schoolbooks, novels, and presidential proclamations. Their elegance carries not just aesthetic value, but the spirit of humanist resistance.</p>
+        <p class='pindent'>Years later, an older Claude sits at his desk, writing the story of his master and mentor.
+            His pen glides across the page, but every sentence is shaped by the forms Augereau taught him to love. The
+            memoir becomes more than a biography—it becomes an act of preservation, a typographic resurrection. Each
+            word he writes is a quiet rebellion against forgetting, a testament to craftsmanship and moral courage.
+            Through his writing, Claude keeps Augereau alive—not in flesh, but in form: in every serif, every ascender,
+            every page margin. What the executioner destroyed, the apprentice reanimates with ink and memory. Garamont’s
+            fonts would outlive regimes, cross languages and appear centuries later in schoolbooks, novels and
+            presidential proclamations. Their elegance carries not just aesthetic value, but the spirit of humanist
+            resistance.</p>
     </section>
 
-            <div class="brand"> <img src="typobold_logo_200.png" width="40pt" style=" filter: grayscale(100%);" />
-            <p class="center">Type specimen in English language<br /> content aggregated by ChatGPT<br /> set
-                in Tensor-Regular<br /></p>
-        </div>
-
 </body>
-
 </html>
