@@ -9,11 +9,6 @@ tag = wght;
 {
 name = Italic;
 tag = ital;
-},
-{
-hidden = 1;
-name = XTRA;
-tag = XTRA;
 }
 );
 classes = (
@@ -609,8 +604,7 @@ fontMaster = (
 {
 axesValues = (
 400,
-0,
-400
+0
 );
 customParameters = (
 {
@@ -718,8 +712,7 @@ GSOffsetVertical = 4;
 {
 axesValues = (
 800,
-0,
-400
+0
 );
 customParameters = (
 {
@@ -828,8 +821,7 @@ GSOffsetVertical = 8;
 {
 axesValues = (
 400,
-1,
-400
+1
 );
 customParameters = (
 {
@@ -939,8 +931,7 @@ GSOffsetVertical = 2;
 {
 axesValues = (
 800,
-1,
-400
+1
 );
 customParameters = (
 {
@@ -247025,7 +247016,6 @@ instances = (
 {
 axesValues = (
 400,
-0,
 0
 );
 instanceInterpolations = {
@@ -247036,7 +247026,6 @@ name = Regular;
 {
 axesValues = (
 500,
-0,
 0
 );
 instanceInterpolations = {
@@ -247049,7 +247038,6 @@ weightClass = 500;
 {
 axesValues = (
 600,
-0,
 0
 );
 instanceInterpolations = {
@@ -247062,7 +247050,6 @@ weightClass = 600;
 {
 axesValues = (
 700,
-0,
 0
 );
 instanceInterpolations = {
@@ -247076,7 +247063,6 @@ weightClass = 700;
 {
 axesValues = (
 800,
-0,
 0
 );
 instanceInterpolations = {
@@ -247089,8 +247075,7 @@ weightClass = 800;
 {
 axesValues = (
 400,
-1,
-0
+1
 );
 exports = 0;
 instanceInterpolations = {
@@ -247102,8 +247087,7 @@ name = Italic;
 {
 axesValues = (
 500,
-1,
-0
+1
 );
 exports = 0;
 instanceInterpolations = {
@@ -247117,8 +247101,7 @@ weightClass = 500;
 {
 axesValues = (
 600,
-1,
-0
+1
 );
 exports = 0;
 instanceInterpolations = {
@@ -247132,8 +247115,7 @@ weightClass = 600;
 {
 axesValues = (
 700,
-1,
-0
+1
 );
 exports = 0;
 instanceInterpolations = {
@@ -247148,8 +247130,7 @@ weightClass = 700;
 {
 axesValues = (
 800,
-1,
-0
+1
 );
 exports = 0;
 instanceInterpolations = {
