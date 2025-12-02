@@ -2,10 +2,7 @@
 .appVersion = "3506";
 .formatVersion = 3;
 DisplayStrings = (
-"H/dieresiscomb.case/dieresiscomb.case/dieresiscomb.case ⁄/dotaccentcomb.case/dotaccentcomb.case/dotaccentcomb.case H",
-"¿o,O? w@y «n•n» n*q1qqq",
-"mmmmmmmmmmnnmmoommammbmmcmmdmmemmfmmgmmhmmimmjmmkmmlmmmmmnmmommpmmqmmrmmsmmtmmummvmmwmmxmmymmzmmämmömmümmßmmAmmBmmCmmDmmEmmFmmGmmHmmImmJmmKmmLmmMmmNmmOmmPmmQmmRmmSmmTmmUmmVmmWmmXmmYmmZmmÄmmÖmmÜmm&mm.mm,mm:mm;mm-mm!mm§mm%mm//mm(mm)mm=mm?mm*mm@mm1mm2mm3mm4mm5mm6mm7mm8mm9mm0mmenmmermmchmmdemmndmmiemmeimmtemminmmgemmunmmesmmhemmremmdimmnemmngmmstmmscmmismmbemmanmmsemmitmmssmmtimmicmmnammlimmuemmeinmmichmmndemmdiemmundmmdermmchemmendmmgenmmschmmchtmmdenmminemmngemmnunmmungmmdasmmhenmmindmmenwmmensmmiesmmstemmtenmmeremmlicmmachmmndimmssemmausmmersmmebemmerdmmenummnenmmraummistmmnicmmsenmmenemmndammtermmassmmenammvermmwirmmwiemmedemmesemmausmmbenmmbermmeitmmentmmestmmseimmandmmessmmannmmesimmgesmmnscmmnwimmteimmenimmigemmaenmmerammernmmrdemmrenmmtunmmingmmstammsiemmuermmegemmeckmmerummmmemmnermmndsmmnstmmrunmmsicmmennmminsmmmermmreimmeigmmengmmergmmertmmerzmmframmhremmheimmleimmneimmnaummsgemmttemmweimmabemmchdmmdesmmntemmrgemmtesmmunsmmvormmdem ",
-"/gravecomb.case/acutecomb.case/Jacute/hungarumlautcomb.case/caroncomb.alt.case/circumflexcomb.case/caroncomb.case/brevecomb.case/ringcomb.case/tildecomb.case"
+Ihngh
 );
 axes = (
 {
@@ -861,29 +858,8 @@ pos = 542;
 );
 name = Regular;
 stemValues = (
-48,
-46,
-40,
-90,
-96,
-99,
-104,
-108,
-40,
-96,
-99,
-104,
-108,
-40,
-96,
-99,
-104,
-108,
-40,
-96,
-99,
-104,
-108
+105,
+41
 );
 userData = {
 GSCornerRadius = 22;
@@ -970,29 +946,8 @@ pos = 562;
 );
 name = Black;
 stemValues = (
-48,
-66,
-68,
-170,
-185,
-188,
-183,
-178,
-68,
-185,
-188,
-183,
-178,
-68,
-185,
-188,
-183,
-178,
-68,
-185,
-188,
-183,
-178
+177,
+40
 );
 userData = {
 GSCornerRadius = 22;
@@ -1080,29 +1035,8 @@ pos = 542;
 );
 name = Italic;
 stemValues = (
-46,
-49,
-50,
-90,
-105,
-78,
-83,
-92,
-50,
-105,
-78,
-83,
-92,
-50,
-105,
-78,
-83,
-92,
-50,
-105,
-78,
-83,
-92
+96,
+42
 );
 userData = {
 GSCornerRadius = 22;
@@ -1190,29 +1124,8 @@ pos = 562;
 );
 name = "Black-Italic";
 stemValues = (
-42,
-66,
-68,
-155,
-166,
-154,
-156,
-177,
-68,
-166,
-154,
-156,
-177,
-68,
-166,
-154,
-156,
-177,
-68,
-166,
-154,
-156,
-177
+173,
+72
 );
 userData = {
 GSCornerRadius = 22;
@@ -1226,7 +1139,7 @@ glyphs = (
 {
 color = 3;
 glyphname = A;
-lastChange = "2025-11-30 03:01:16 +0000";
+lastChange = "2025-12-01 17:06:48 +0000";
 layers = (
 {
 anchors = (
@@ -12484,7 +12397,7 @@ unicode = 70;
 {
 color = 3;
 glyphname = G;
-lastChange = "2025-11-30 03:01:16 +0000";
+lastChange = "2025-12-01 17:07:02 +0000";
 layers = (
 {
 anchors = (
@@ -31571,7 +31484,7 @@ unicode = 81;
 {
 color = 3;
 glyphname = R;
-lastChange = "2025-11-30 03:01:16 +0000";
+lastChange = "2025-12-01 17:06:52 +0000";
 layers = (
 {
 anchors = (
@@ -88380,7 +88293,7 @@ metricRight = t;
 {
 color = 4;
 glyphname = a.sc;
-lastChange = "2025-11-23 11:24:59 +0000";
+lastChange = "2025-12-02 12:51:54 +0000";
 layers = (
 {
 anchors = (
@@ -97264,7 +97177,7 @@ width = 460;
 {
 color = 4;
 glyphname = g.sc;
-lastChange = "2025-11-23 11:24:59 +0000";
+lastChange = "2025-12-02 12:53:47 +0000";
 layers = (
 {
 anchors = (
@@ -114331,7 +114244,7 @@ metricWidth = o.sc;
 {
 color = 4;
 glyphname = r.sc;
-lastChange = "2025-11-23 11:24:59 +0000";
+lastChange = "2025-12-01 17:08:01 +0000";
 layers = (
 {
 anchors = (
@@ -269063,6 +268976,7 @@ weightClass = 800;
 kerningLTR = {
 m01 = {
 A = {
+A = -44;
 G = -44;
 H = 0;
 O = -22;
@@ -269114,7 +269028,7 @@ u = -44;
 udieresis = -44;
 };
 G = {
-A = 22;
+A = -20;
 e = 22;
 l = 0;
 n = 0;
@@ -269403,6 +269317,7 @@ y = -22;
 z = 0;
 };
 a.sc = {
+a.sc = -44;
 c.sc = -22;
 t.sc = -44;
 };
@@ -269491,6 +269406,9 @@ f = 0;
 j = 22;
 rcaron = 0;
 };
+g.sc = {
+a.sc = 0;
+};
 germandbls = {
 l = 22;
 };
@@ -269503,6 +269421,9 @@ four = 22;
 h = {
 H = 0;
 y = -22;
+};
+h.sc = {
+g.sc = 0;
 };
 hyphen = {
 A = -44;
@@ -269562,6 +269483,9 @@ period = 0;
 v = 0;
 w = -22;
 y = 0;
+};
+n.sc = {
+g.sc = -22;
 };
 nine = {
 four = -22;
@@ -269826,7 +269750,7 @@ two.osf = 0;
 };
 m002 = {
 A = {
-A = -6;
+A = -60;
 C = -12;
 G = -12;
 O = 0;
@@ -269930,7 +269854,7 @@ u = -24;
 y = -18;
 };
 G = {
-A = -6;
+A = -40;
 a = -6;
 h = -12;
 i = -12;
@@ -270318,7 +270242,8 @@ v = -20;
 z = 0;
 };
 a.sc = {
-r.sc = -20;
+a.sc = -40;
+r.sc = 0;
 s.sc = 0;
 t.sc = -40;
 u.sc = -20;
@@ -270490,6 +270415,9 @@ period = 20;
 quotesingle = -40;
 rcaron = 0;
 v = 0;
+};
+n.sc = {
+g.sc = -20;
 };
 nine = {
 zero = 0;
@@ -270731,11 +270659,12 @@ one.osf = 0;
 };
 "7AC17688-D084-48EF-8AFF-05483A60B77C" = {
 A = {
-A = -44;
+A = -40;
 C = -12;
 G = -12;
 O = -12;
 Q = -12;
+R = -20;
 T = -60;
 Thorn = 0;
 U = -40;
@@ -270852,7 +270781,7 @@ u = -24;
 y = -18;
 };
 G = {
-A = -6;
+A = -20;
 a = -6;
 h = -12;
 i = -12;
@@ -271229,6 +271158,7 @@ v = 0;
 z = 0;
 };
 a.sc = {
+a.sc = -20;
 c.sc = 0;
 o.sc = -20;
 t.sc = -60;
@@ -271356,6 +271286,9 @@ l = -2;
 };
 n = {
 v = -20;
+};
+n.sc = {
+g.sc = -20;
 };
 nine.osf = {
 period = -40;
@@ -271553,7 +271486,7 @@ u = 0;
 };
 m004 = {
 A = {
-A = -6;
+A = -60;
 C = -12;
 G = -12;
 O = -12;
@@ -271619,6 +271552,7 @@ u = -12;
 };
 E = {
 A = -6;
+G = -20;
 V = -12;
 W = -12;
 Y = -12;
@@ -271660,7 +271594,6 @@ u = -24;
 y = -18;
 };
 G = {
-A = -6;
 a = -6;
 h = -12;
 i = -12;
@@ -272054,6 +271987,7 @@ v = -20;
 z = 0;
 };
 a.sc = {
+a.sc = -40;
 u.sc = -20;
 v.sc = -60;
 y.sc = -40;
@@ -272228,6 +272162,9 @@ e.sc = -20;
 n = {
 i = -20;
 quoteright = -20;
+};
+n.sc = {
+g.sc = -20;
 };
 nine = {
 zero = 0;
@@ -272566,79 +272503,11 @@ value = TBLD;
 );
 stems = (
 {
-horizontal = 1;
 name = hstem;
 },
 {
 horizontal = 1;
-name = hstem0;
-},
-{
-horizontal = 1;
-name = hstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-horizontal = 1;
-name = hstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-horizontal = 1;
-name = hstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-horizontal = 1;
-name = hstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
-},
-{
-name = vstem0;
+name = vstem;
 }
 );
 unitsPerEm = 1156;
@@ -272648,5 +272517,5 @@ userData = {
 "Letterink-StrokeType" = Brush;
 };
 versionMajor = 1;
-versionMinor = 17;
+versionMinor = 18;
 }
