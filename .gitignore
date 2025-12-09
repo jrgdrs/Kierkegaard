@@ -13,7 +13,7 @@ instance_ufos
 build.ninja
 custom
 out
-
+artifact
 
 # OS generated files #
 ######################
