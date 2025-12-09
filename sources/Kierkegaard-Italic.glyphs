@@ -270367,6 +270367,12 @@ axesValues = (
 400,
 0
 );
+customParameters = (
+{
+name = "Scale to UPM";
+value = 2048;
+}
+);
 exports = 0;
 instanceInterpolations = {
 m01 = 1;
@@ -270377,6 +270383,12 @@ name = Regular;
 axesValues = (
 500,
 0
+);
+customParameters = (
+{
+name = "Scale to UPM";
+value = 2048;
+}
 );
 exports = 0;
 instanceInterpolations = {
@@ -270391,6 +270403,12 @@ axesValues = (
 600,
 0
 );
+customParameters = (
+{
+name = "Scale to UPM";
+value = 2048;
+}
+);
 exports = 0;
 instanceInterpolations = {
 m002 = 0.5;
@@ -270403,6 +270421,12 @@ weightClass = 600;
 axesValues = (
 700,
 0
+);
+customParameters = (
+{
+name = "Scale to UPM";
+value = 2048;
+}
 );
 exports = 0;
 instanceInterpolations = {
@@ -270418,6 +270442,12 @@ axesValues = (
 800,
 0
 );
+customParameters = (
+{
+name = "Scale to UPM";
+value = 2048;
+}
+);
 exports = 0;
 instanceInterpolations = {
 m002 = 1;
@@ -270431,6 +270461,12 @@ axesValues = (
 400,
 1
 );
+customParameters = (
+{
+name = "Scale to UPM";
+value = 2048;
+}
+);
 instanceInterpolations = {
 "7AC17688-D084-48EF-8AFF-05483A60B77C" = 1;
 };
@@ -270441,6 +270477,12 @@ name = Italic;
 axesValues = (
 500,
 1
+);
+customParameters = (
+{
+name = "Scale to UPM";
+value = 2048;
+}
 );
 instanceInterpolations = {
 "7AC17688-D084-48EF-8AFF-05483A60B77C" = 0.75;
@@ -270455,6 +270497,12 @@ axesValues = (
 600,
 1
 );
+customParameters = (
+{
+name = "Scale to UPM";
+value = 2048;
+}
+);
 instanceInterpolations = {
 "7AC17688-D084-48EF-8AFF-05483A60B77C" = 0.5;
 m004 = 0.5;
@@ -270467,6 +270515,12 @@ weightClass = 600;
 axesValues = (
 700,
 1
+);
+customParameters = (
+{
+name = "Scale to UPM";
+value = 2048;
+}
 );
 instanceInterpolations = {
 "7AC17688-D084-48EF-8AFF-05483A60B77C" = 0.25;
@@ -270481,6 +270535,12 @@ weightClass = 700;
 axesValues = (
 800,
 1
+);
+customParameters = (
+{
+name = "Scale to UPM";
+value = 2048;
+}
 );
 instanceInterpolations = {
 m004 = 1;

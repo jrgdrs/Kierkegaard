@@ -30,7 +30,7 @@ buildVariable: false
 buildStatic: true
 buildTTF: true
 buildOTF: false
-buildSmallCap: false
+# buildSmallCap: false
 
 # The next flags control autohinting.
 # autohintTTF: true
