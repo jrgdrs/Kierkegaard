@@ -143,17 +143,17 @@ Kierkegaard is available under the <a href="https://scripts.sil.org/OFL" target=
 
 - [Adamson (Esperanto)](documentation/specimens/Adamson.pdf)
 - [Brentano (German)](documentation/specimens/Brentano.pdf)
-- [Cicero (Latin)](documentation/specimens/Ciciero.pdf)
+- [Cicero (Latin)](documentation/specimens/Cicero.pdf)
 - [Crops (English)](documentation/specimens/Crops.pdf)
 - [Dumas (French)](documentation/specimens/Dumas.pdf)
-- [Enrödi (Hungarian)](documentation/specimens/Enrödi.pdf)
+- [Enrödi (Hungarian)](documentation/specimens/Endrődi.pdf)
 - [Etik (Danish)](documentation/specimens/Etik.pdf)
 - [Heisenberg (Vietnamese)](documentation/specimens/Heisenberg.pdf)
 - [Martens (Dutch)](documentation/specimens/Martens.pdf)
 - [Parisii (French)](documentation/specimens/Parisii.pdf)
 - [Picon (Spanish)](documentation/specimens/Picon.pdf)
 - [Schiller (English)](documentation/specimens/Schiller.pdf)
-- [Woolf (English)](documentation/specimens/Etik.pdf)
+- [Woolf (English)](documentation/specimens/Woolf.pdf)
 
 
 ![Sample Image](documentation/promotions/pages.png)
