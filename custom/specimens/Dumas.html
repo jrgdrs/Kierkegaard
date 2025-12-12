@@ -10,74 +10,15 @@
     @font-face { font-family: Bold; src: url("../fonts/ttf/Kierkegaard-Bold.ttf");}
     @font-face { font-family: SC; src: url("../fonts/ttf/KierkegaardSC-Regular.ttf");} */
 
-    @media print {}
-
-@page {
-    size: 125mm 198mm;
-    margin: 14mm;
-    margin-bottom: 28mm;
-    background-color: linen;
-}
-
-@page:first {
-    size: 125mm 198mm;
-    margin: 14mm;
-    margin-bottom: 0mm;
-    background-color: rgb(32, 232, 65);
-}
-
-@page :right {
-    @bottom-left {
-        content: counter(page);
-        font-family: Regular;
-        font-size: 10pt;
-        text-align: right;
-        border: 6pt solid transparent;
-        margin-bottom: 18pt;
-    }
-}
-
-@page :left {
-    @bottom-right {
-        content: counter(page);
-        font-family: Regular;
-        font-size: 10pt;
-        text-align: left;
-        border: 6pt solid transparent;
-        padding-bottom: 18pt;
-
-    }
-}
-
-.title {
-    color: linen;
-    font-family: Bold;
-    font-size: 48pt;
-    line-height: 40pt;
-    margin-top: 0;
-}
-
-body { }
-
-    h1 {
-        padding-top: calc(1.15em * 3);
-        font-family: Reular;
-        font-weight: normal;
-        font-size: 15spt;
-        line-height: 1.15em;  
-        letter-spacing: .02em;
+     @page:first {
+      background-color: rgb(255, 55, 238);
     }
 
-    h2, h3 {
-        font-family: Regular;
-        font-weight: normal;
-        line-height: 1.15em;
-    }
 
     p {
         font-family: Regular;
         font-size: 13pt;
-        line-height: 1.15em;
+        line-height: 15pt;
         margin: 0;
         text-indent:1em;
         text-align: justify;
@@ -103,8 +44,6 @@ body { }
 
     table.poem {
         font-family: Italic;
-        font-size: 11pt;
-        line-height: 1.15em;
         margin: 0;
         text-align: left;
         margin:1em;
@@ -137,10 +76,12 @@ body { }
     }
 
     div h1 {
-        page-break-before: always;
+        page-break-before: always; text-align: center; color:  rgb(255, 55, 238);;
     }
 
     .sc { font-family: SC; }
+
+    .title { font-family: Kierkegaard-MediumItalic;}
 
   </style>
 </head>
@@ -150,12 +91,12 @@ body { }
         <img src="assets/typobold_logo_200.png" width="40pt" style=" filter: grayscale(100%);"/>
         <p class="center">Type specimen in French language<br/>
           DRM free content from Project Gutenberg<br/>
-          set in Kierkegaard-Regular<br /></p>
+          set in Kierkegaard-Regular 13/15pt<br /></p>
         </div>
 
     <div class="head">    
         <h3 class="author">Alexandre Dumas</h3>
-        <h2 class="title">Journal de Madame Giovanni</h2>
+        <h2 class="title">Journal de <br/>Madame Giovanni</h2>
     </div>
 
     <div>
@@ -895,7 +836,7 @@ body { }
         <h1>IV</h1>
     </div>
 
-    <h3>HOBART-TOWN.</h3>
+    <h3>HOBARTTOWN.</h3>
 
     <p class='pindent'>
         Vers la fin de novembre, c’est-à-dire dans les plus beaux jours de l’été australien,

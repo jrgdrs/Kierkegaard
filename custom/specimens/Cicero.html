@@ -12,6 +12,13 @@
 
     @media print {
 
+          p {
+      font-size: 15pt;
+      line-height: 16pt;
+      hyphenate-limit-chars: 7 3 3;
+    }
+
+
 #intro {
   page: titelei;
 }
@@ -25,16 +32,16 @@
 
 @page:first {
   margin: 27mm 27mm 20mm 27mm;
-  background-color: rgb(0, 173, 141);
+  background-color: darkred;
 }
 
 @page titelei {
   @bottom-left {
-    content: '';
+    content: ';
   }
 
   @bottom-right {
-    content: '';
+    content: ';
   }
 }
 
@@ -70,13 +77,18 @@
     }
 
     dd {
+      font-size: 15pt;
+      line-height: 16pt;
+
       margin-left: 0;
-      font-family: Italic;
+      font-family: KierkegaardSC-Medium;
+      color: darkolivegreen;
+
     }
 
     .numero {
-      font-size: .8em;
-      font-family: Italic;
+      __font-size: .8em;
+      font-family: Bold;
       color: darkred;
     }
 
@@ -93,7 +105,7 @@
     </div>
     <div class="brand"> <img src="assets/typobold_logo_200.png" width="40pt" style=" filter: grayscale(100%);" />
       <p class="center">Type specimen in Latin language<br /> DRM free content from Wikisource<br /> set in
-        Kierkegaard<br /></p>
+        Kierkegaard 15/16pt<br /></p>
     </div>
     <div class="head"></div>
     <div class="head">
@@ -119,8 +131,8 @@
     ea, sed fruenda etiam [sapientia] est; sive hoc difficile est, tamen nec modus est ullus investigandi veri, nisi
     inveneris, et quaerendi defatigatio turpis est, cum id, quod quaeritur, sit pulcherrimum. etenim si delectamur, cum
     scribimus, quis est tam invidus, qui ab eo nos abducat? sin laboramus, quis est, qui alienae modum statuat
-    industriae? nam ut Terentianus Chremes non inhumanus, qui novum vicinum non vult 'fodere aut arare aut aliquid ferre
-    denique' – non enim illum ab industria, sed ab inliberali labore deterret –, sic isti curiosi, quos offendit noster
+    industriae? nam ut Terentianus Chremes non inhumanus, qui novum vicinum non vult fodere aut arare aut aliquid ferre
+    denique – non enim illum ab industria, sed ab inliberali labore deterret –, sic isti curiosi, quos offendit noster
     minime nobis iniucundus labor.</p>
   <p class="calibre7"><span class='numero'>4</span> Iis igitur est difficilius satis facere, qui se Latina scripta
     dicunt contemnere. in quibus hoc primum est in quo admirer, cur in gravissimis rebus non delectet eos sermo patrius,
@@ -129,10 +141,10 @@
     dicat, Latinas litteras oderit?</p>
   <p class="calibre7">Synephebos ego, inquit, potius Caecilii aut Andriam Terentii quam utramque Menandri legam?</p>
   <p class="calibre7"><span class='numero'>5</span> A quibus tantum dissentio, ut, cum Sophocles vel optime scripserit
-    Electram, tamen male conversam Atilii mihi legendam putem, de quo Lucilius: 'ferreum scriptorem', verum, opinor,
+    Electram, tamen male conversam Atilii mihi legendam putem, de quo Lucilius: ferreum scriptorem', verum, opinor,
     scriptorem tamen, ut legendus sit. rudem enim esse omnino in nostris poetis aut inertissimae segnitiae est aut
-    fastidii delicatissimi. mihi quidem nulli satis eruditi videntur, quibus nostra ignota sunt. an 'Utinam ne in nemore
-    . . .' nihilo minus legimus quam hoc idem Graecum, quae autem de bene beateque vivendo a Platone disputata sunt,
+    fastidii delicatissimi. mihi quidem nulli satis eruditi videntur, quibus nostra ignota sunt. an Utinam ne in nemore
+    . . . nihilo minus legimus quam hoc idem Graecum, quae autem de bene beateque vivendo a Platone disputata sunt,
     haec explicari non placebit Latine?</p>
   <p class="calibre7"><span class='numero'>6</span> Quid? si nos non interpretum fungimur munere, sed tuemur ea, quae
     dicta sunt ab iis quos probamus, eisque nostrum iudicium et nostrum scribendi ordinem adiungimus, quid habent, cur
@@ -165,8 +177,8 @@
     <dd class="calibre8">praeclarorum hominum ac primorum signiferumque,</dd>
     <dd class="calibre8">maluisti dici. Graece ergo praetor Athenis,</dd>
     <dd class="calibre8">id quod maluisti, te, cum ad me accedis, saluto:</dd>
-    <dd class="calibre8">'chaere,' inquam, 'Tite!' lictores, turma omnis chorusque:</dd>
-    <dd class="calibre8">'chaere, Tite!' hinc hostis mi Albucius, hinc inimicus.</dd>
+    <dd class="calibre8">chaere, inquam, Tite! lictores, turma omnis chorusque:</dd>
+    <dd class="calibre8">chaere, Tite! hinc hostis mi Albucius, hinc inimicus.</dd>
   </dl>
   <p class="calibre7"><span class='numero'>10</span> Sed iure Mucius. ego autem mirari [satis] non queo unde hoc sit tam
     insolens domesticarum rerum fastidium. non est omnino hic docendi locus; sed ita sentio et saepe disserui, Latinam
@@ -228,7 +240,7 @@
     enim eadem illa individua et solida corpora ferri deorsum suo pondere ad lineam, hunc naturalem esse omnium corporum
     motum.</p>
   <p class="calibre7"><span class='numero'>19</span> Deinde ibidem homo acutus, cum illud ocurreret, si omnia deorsus e
-    regione ferrentur et, ut dixi, ad lineam, numquam fore ut atomus altera alteram posset attingere itaque ** attulit
+    regione ferrentur et, ut dixi, ad lineam, numquam fore ut atomus altera alteram posset attingere itaque attulit
     rem commenticiam: declinare dixit atomum perpaulum, quo nihil posset fieri minus; ita effici complexiones et
     copulationes et adhaesiones atomorum inter se, ex quo efficeretur mundus omnesque partes mundi, quaeque in eo
     essent. Quae cum tota res (est) ficta pueriliter, tum ne efficit [quidem], quod vult. nam et ipsa declinatio ad
@@ -270,7 +282,7 @@
     quam deserere ullam officii partem, ad ea, quae hoc non minus declarant, sed videntur leviora, veniamus.</p>
   <p class="calibre7"><span class='numero'>25</span> Quid tibi, Torquate, quid huic Triario litterae, quid historiae
     cognitioque rerum, quid poetarum evolutio, quid tanta tot versuum memoria voluptatis affert? nec mihi illud dixeris:
-    'Haec enim ipsa mihi sunt voluptati, et erant illa Torquatis.' Numquam hoc ita defendit Epicurus neque Metrodorus
+    Haec enim ipsa mihi sunt voluptati, et erant illa Torquatis. Numquam hoc ita defendit Epicurus neque Metrodorus
     aut quisquam eorum, qui aut saperet aliquid aut ista didicisset. et quod quaeritur saepe, cur tam multi sint
     Epicurei, sunt aliae quoque causae, sed multitudinem haec maxime allicit, quod ita putant dici ab illo, recta et
     honesta quae sint, ea facere ipsa per se laetitiam, id est voluptatem. homines optimi non intellegunt totam rationem
@@ -374,8 +386,8 @@
     voluptas distinguique possit, augeri amplificarique non possit.</p>
   <p class="calibre7"><span class='numero'>39</span> At etiam Athenis, ut e patre audiebam facete et urbane Stoicos
     irridente, statua est in Ceramico Chrysippi sedentis porrecta manu, quae manus significet illum in hae esse
-    rogatiuncula delectatum: 'Numquidnam manus tua sic affecta, quem ad modum affecta nunc est, desiderat?' – Nihil
-    sane. – 'At, si voluptas esset bonum, desideraret.' – Ita credo. – 'Non est igitur voluptas bonum.' Hoc ne statuam
+    rogatiuncula delectatum: Numquidnam manus tua sic affecta, quem ad modum affecta nunc est, desiderat? – Nihil
+    sane. – At, si voluptas esset bonum, desideraret. – Ita credo. – Non est igitur voluptas bonum. Hoc ne statuam
     quidem dicturam pater aiebat, si loqui posset. conclusum est enim contra Cyrenaicos satis acute, nihil ad Epicurum.
     nam si ea sola voluptas esset, quae quasi titillaret sensus, ut ita dicam, et ad eos cum suavitate afflueret et
     illaberetur, nec manus esse contenta posset nec ulla pars vacuitate doloris sine iucundo motu voluptatis. sin autem
@@ -580,7 +592,7 @@
   <p class="calibre7"><span class='numero'>68</span> Quocirca eodem modo sapiens erit affectus erga amicum, quo in se
     ipsum, quosque labores propter suam voluptatem susciperet, eosdem suscipiet propter amici voluptatem. quaeque de
     virtutibus dicta sunt, quem ad modum eae semper voluptatibus inhaererent, eadem de amicitia dicenda sunt. praeclare
-    enim Epicurus his paene verbis: 'Eadem', inquit, 'scientia confirmavit animum, ne quod aut sempiternum aut diuturnum
+    enim Epicurus his paene verbis: Eadem', inquit, scientia confirmavit animum, ne quod aut sempiternum aut diuturnum
     timeret malum, quae perspexit in hoc ipso vitae spatio amicitiae praesidium esse firmissimum.'</p>
   <p class="calibre7"><span class='numero'>69</span> Sunt autem quidam Epicurei timidiores paulo contra vestra convicia,
     sed tamen satis acuti, qui verentur ne, si amicitiam propter nostram voluptatem expetendam putemus, tota amicitia

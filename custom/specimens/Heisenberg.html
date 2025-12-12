@@ -6,154 +6,19 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     
     <style>
-        /* @font-face {
-            font-family: Regular;
-            src: url("../fonts/ttf/Kierkegaard-Regular.ttf");
-        }
 
-        @font-face {
-            font-family: Italic;
-            src: url("../fonts/ttf/Kierkegaard-Italic.ttf");
-        }
+    @page:first {
+      background-color: rgb(39, 174, 48);
+    }
 
-        @font-face {
-            font-family: Bold;
-            src: url("../fonts/ttf/Kierkegaard-Bold.ttf");
-        } */
+    p {
+      font-size: 13pt;
+      line-height: 15pt;
+      hyphenate-limit-chars: 7 3 3;
+    }
 
-        @media print {}
+    h2.title { font-family: Kierkegaard-Semibold; }
 
-        @page {
-            size: 125mm 198mm;
-            margin: 14mm;
-            margin-bottom: 28mm;
-            background-color: linen;
-        }
-
-        @page:first {
-            size: 125mm 198mm;
-            margin: 14mm;
-            margin-bottom: 0mm;
-            background-color: rgb(148, 20, 176);
-        }
-
-        @page :right {
-            @bottom-left {
-                content: counter(page);
-                font-family: Regular;
-                font-size: 10pt;
-                text-align: right;
-                border: 6pt solid transparent;
-                margin-bottom: 18pt;
-            }
-        }
-
-        @page :left {
-            @bottom-right {
-                content: counter(page);
-                font-family: Regular;
-                font-size: 10pt;
-                text-align: left;
-                border: 6pt solid transparent;
-                padding-bottom: 18pt;
-
-            }
-        }
-
-        .title {
-            color: rgb(221, 151, 232);
-            font-family: Bold;
-            font-size: 48pt;
-            line-height: 40pt;
-            margin-top: 0;
-        }
-
-        body {}
-
-        h1 {
-            padding-top: calc(1.25em * 3);
-            font-family: Reular;
-            font-weight: normal;
-            font-size: 15spt;
-            line-height: 1.25em;
-            letter-spacing: .02em;
-        }
-
-        h2,
-        h3 {
-            font-family: Regular;
-            font-weight: normal;
-            line-height: 1.25em;
-        }
-
-        p {
-            font-family: Regular;
-            font-size: 13pt;
-            line-height: 1.15em;
-            margin: 0;
-            text-indent: 1em;
-            text-align: justify;
-            hyphens: auto;
-            font-variant-numeric: oldstyle-nums;
-            /* <numeric-figure-values> */
-
-        }
-
-        i {
-            font-family: Italic;
-            font-style: normal;
-
-        }
-
-        .ini {
-            text-indent: 0;
-            padding-top: calc(1.25em * 10);
-        }
-
-        .ini::first-letter {
-            -webkit-initial-letter: 3;
-            initial-letter: 3;
-            padding-right: 3pt;
-        }
-
-        table.poem {
-            font-family: Italic;
-            font-size: 11pt;
-            line-height: 1.35em;
-            margin: 0;
-            text-align: left;
-            margin: 1em;
-        }
-
-        .head {
-            page-break-after: always;
-        }
-
-        .right {
-            text-align: right;
-        }
-
-        .left {
-            text-align: left;
-            text-indent: 0;
-        }
-
-        .center {
-            text-align: center;
-            text-indent: 0;
-        }
-
-        .brand {
-            position: absolute;
-            top: 125mm;
-            width: 97mm;
-            text-align: center;
-            text-indent: 0;
-        }
-
-        div h1 {
-            page-break-before: always;
-        }
     </style>
 </head>
 
@@ -163,7 +28,7 @@
         <img src="assets/typobold_logo_200.png" width="40pt" style=" filter: grayscale(100%);" />
         <p class="center">Type specimen in Vietnamese language<br />
             DRM free content from TVE-4U<br />
-            set in Kierkegaard-Regular<br /></p>
+            set in Kierkegaard-Regular 13/15pt<br /></p>
     </div>
 
     <div class="head">

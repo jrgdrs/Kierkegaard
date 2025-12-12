@@ -10,7 +10,7 @@ if( process.argv[4] == undefined ){
 var PNGFILE = "./" + process.argv[2] + '.png';
 var FONTFILE = "../" + process.argv[3]; //fonts/ttf/Wittgenstein-SemiBoldItalic.ttf";
 
-console.log( "  node printProof.js " + INFILE + " " + FONTFILE + " " + PDFFILE + " "  );
+console.log( "  node printSpecimen.js " + INFILE + " " + FONTFILE + " " + PDFFILE + " "  );
 
 ( async () => {
     const browser = await puppeteer.launch();

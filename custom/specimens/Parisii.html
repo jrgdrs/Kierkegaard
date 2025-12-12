@@ -9,103 +9,10 @@
     @font-face { font-family: Italic; src: url("../fonts/ttf/Kierkegaard-Italic.ttf");}
     @font-face { font-family: Bold; src: url("../fonts/ttf/KierkegaardSC-SemiBold.ttf");} */
 
-    @media print {}
-
-    @page {
-      size: 125mm 198mm;
-      margin: 14mm;
-      margin-bottom: 28mm;
-
-      @bottom-center { content: counter(page); font-family: Regular; font-size: 10pt; text-align: center; border: 6pt solid transparent; margin-bottom: 18pt; }
-    }
-
     @page:first {
-      size: 125mm 198mm;
-      margin: 14mm;
-      margin-bottom:0mm;
+      background-color: linen;
     }
 
-    body { 
-      background-color: white;
-    }
-
-    h1 {
-        padding-top: calc(1.15em * 3);
-        font-family: Reular;
-        font-weight: normal;
-        font-size: 13spt;
-        line-height: 1.15em;  
-        letter-spacing: .02em;
-    }
-
-    h2, h3 {
-        font-family: Regular;
-        font-weight: normal;
-        line-height: 1.15em;
-    }
-
-    p {
-        font-family: Regular;
-        font-size: 10pt;
-        line-height: 1.08em;
-        margin: 0;
-        text-indent:1em;
-        text-align: justify;
-        hyphens: auto;
-        font-variant-numeric: oldstyle-nums; /* <numeric-figure-values> */
-
-    }
-
-    nam {
-        font-family: Bold;
-        font-style: normal;
-        text-transform: lowercase;
-    }
-
-    .ini { 
-        text-indent:0; 
-        padding-top: calc(1.15em * 10);
-    }
-
-    .ini::first-letter {
-        -webkit-initial-letter: 3;
-        initial-letter: 3;
-    }
-
-    table.poem {
-        font-family: Italic;
-        font-size: 10pt;
-        line-height: 1.15em;
-        margin: 0;
-        text-align: left;
-        margin:1em;
-    }
-
-    .head {
-        page-break-after: always;
-    }
-
-    .right {
-        text-align: right;
-    }
-
-    .left { 
-        text-align: left; 
-        text-indent: 0;
-    }
-
-    .center { 
-        text-align: center; 
-        text-indent: 0;
-    }
-
-    .brand { 
-        position: absolute; 
-        top:125mm; 
-        width: 97mm;
-        text-align: center; 
-        text-indent: 0;
-    }
 
     div h1 {
         page-break-before: always;
@@ -124,6 +31,9 @@
         color:darkblue;
     }
 
+    nam { font-family: Kierkegaard-ExtraBold; font-size:.88em; letter-spacing;.02em;}
+    h2.title { font-size: 28pt; line-height: 28pt; color:black; text-align:left; padding-left:1em;}
+
 
   </style>
 </head>
@@ -132,8 +42,8 @@
     <div class="brand">
         <img src="assets/typobold_logo_200.png" width="40pt" style=" filter: grayscale(100%);"/>
         <p class="center">Type specimen in French language<br/>
-          <nam>DRM</nam> free content from Project Gutenberg<br/>
-          set in <nam>OH</nam>amburgC-Regular<br /></p>
+          DRM free content from Project Gutenberg<br/>
+          set in Kierkegaard-Regular 11/12.5pt<br /></p>
         </div>
 
     <div class="head">    

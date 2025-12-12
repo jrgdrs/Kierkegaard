@@ -8,7 +8,7 @@ mkdir pages/otf
 mkdir pages/ttf
 
 rm pages/specimen/*.pdf
-cp documentation/SpecimenNL.html.pdf pages/specimen
+cp documentation/specimens/SpecimenNL.html.pdf pages/specimen
 
 rm pages/otf/*
 cp fonts/otf/* pages/otf
