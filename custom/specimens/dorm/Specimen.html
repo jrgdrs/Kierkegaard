@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+
+        <style>
+                @font-face { font-family: Kierkegaard-Regular; src: url("../fonts/ttf/Kierkegaard-Regular.ttf"); }
+                @font-face { font-family: Kierkegaard-Medium; src: url("../fonts/ttf/Kierkegaard-Medium.ttf"); }
+                @font-face { font-family: Kierkegaard-SemiBold; src: url("../fonts/ttf/Kierkegaard-SemiBold.ttf"); }
+                @font-face { font-family: Kierkegaard-Bold; src: url("../fonts/ttf/Kierkegaard-Bold.ttf"); }
+                @font-face { font-family: Kierkegaard-ExtraBold; src: url("../fonts/ttf/Kierkegaard-ExtraBold.ttf"); }
+
+                @font-face { font-family: Kierkegaard-Italic; src: url("../fonts/ttf/Kierkegaard-Italic.ttf"); }
+                @font-face { font-family: Kierkegaard-Medium-Italic; src: url("../fonts/ttf/Kierkegaard-Medium-Italic.ttf"); }
+                @font-face { font-family: Kierkegaard-SemiBold-Italic; src: url("../fonts/ttf/Kierkegaard-SemiBold-Italic.ttf"); }
+                @font-face { font-family: Kierkegaard-Bold-Italic; src: url("../fonts/ttf/Kierkegaard-Bold-Italic.ttf"); }
+                @font-face { font-family: Kierkegaard-ExtraBold-Italic; src: url("../fonts/ttf/Kierkegaard-ExtraBold-Italic.ttf"); }
+
+
+                @font-face { font-family: Kierkegaard-SmallCaps; src: url("../fonts/ttf/KierkegaardSC-Regular.ttf"); }
+
+
+                
+                @page {
+                        size: 297mm 210mm;
+                        margin: 6mm;
+                        __background-image: url("hahnemuehle.jpg");
+
+                        __background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .5)), url('hahnemuehle.jpg');
+                        __backdrop-filter: blur(4px);
+                }
+
+                body {
+                        color: rgba(0, 0, 0, .85);
+                        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.35);
+                        margin: 0;
+                        __background-image: url("hahnemuehle.jpg");
+                        __background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .5)), url('hahnemuehle.jpg');
+                        __backdrop-filter: blur(4px);
+
+                }
+
+                p,
+                body {
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                }
+
+                .section {
+                        page-break-before: always;
+                }
+
+                .fullbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .fullbox>* {
+                        flex: 0 0 250mm;
+                        margin-left: 5mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        border-top: 1pt solid black;
+                        text-align: left;
+                        width: 250mm; // explizit definieren wegen fit
+                }
+
+                .halfbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .halfbox>* {
+                        flex: 0 0 100mm;
+                        margin-left: 5mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        border-top: 1pt solid black;
+                        text-align: left;
+                        __overflow: hidden;
+                }
+
+                .thirdbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .thirdbox>* {
+                        flex: 0 0 65mm;
+                        margin-left: 5mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        border-top: 1pt solid black;
+                        text-align: left;
+                        __overflow: hidden;
+                }
+
+                p.info {
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-size: 8pt;
+                        line-height: 10pt;
+                        margin-top: 3pt;
+                        margin-bottom: 10pt;
+                        font-variation-settings: 'wght' 300;
+                        letter-spacing: 0;
+                        word-spacing: 0;
+                        color: brown;
+                }
+        </style>
+</head>
+
+<body>
+        <div class="fullbox section">
+                <div class="fitcomb">
+                        <p class="info">Typobold :: Typefaces Schriften Caractères<br /><br /><img
+                                        src="typobold_logo_200.png" /></p>
+                        <p style="font-family: Kierkegaard-Regular; font-variation-settings: 'wght' 450; padding: 0; margin: 0; font-size:48pt; line-height:60pt; border-top:0; ">Kierkegaard Renaissance Serif</p>
+                </div>
+        </div>
+        <script>
+
+                setSample("Kierkegaard-Regular", 400);
+                setSample("Kierkegaard-Medium", 500);
+                setSample("Kierkegaard-SemiBold", 600);
+                setSample("Kierkegaard-Bold", 700);
+                setSample("Kierkegaard-ExtraBold", 800);
+
+                setSample("Kierkegaard-Italic", 400);
+                setSample("Kierkegaard-Medium-Italic", 500);
+                setSample("Kierkegaard-SemiBold-Italic", 600);
+                setSample("Kierkegaard-Bold-Italic", 700);
+                setSample("Kierkegaard-ExtraBold-Italic", 800);
+
+
+
+                function setSample(fontFamily, fontWeight) {
+
+                        document.write("<div class=\"fullbox\">")
+
+                        spFigures(fontFamily, fontWeight, 60, 72, 0, 0, "german");
+
+                        spFit(fontFamily, fontWeight, 10, 10, 20, 20, "german");
+
+                        spBlock(fontFamily, fontWeight, 24, 28, 0, 0, "german");
+                        spBlock(fontFamily, fontWeight, 16, 18, 0, 0, "german");
+
+                        spBlock(fontFamily, fontWeight, 12, 16, 0, 0, "german");
+                        spBlock(fontFamily, fontWeight, 12, 14, 0, 0, "german");
+
+                        document.write("</div><div class=\"halfbox\">")
+
+                        spBlock(fontFamily, fontWeight, 16, 18, 0, 0, "german");
+                        spBlock(fontFamily, fontWeight, 12, 16, 0, 0, "german");
+                        spLong(fontFamily, fontWeight, 10, 12, 0, 0, "german");
+                        spLong(fontFamily, fontWeight, 8, 10, 0, 0, "german");
+
+                        document.write("</div><div class=\"thirdbox\">")
+
+                        spBlock(fontFamily, fontWeight, 10, 12, 0, 0, "german");
+
+                        spBlock(fontFamily, fontWeight, 9, 11, 0, 0, "german");
+                        spBlock(fontFamily, fontWeight, 9, 10, 0, 0, "german");
+                        spBlock(fontFamily, fontWeight, 9, 9, 0, 0, "german");
+
+                        spLong(fontFamily, fontWeight, 8, 10, 0, 0, "german");
+                        spLong(fontFamily, fontWeight, 8, 9, 0, 0, "german");
+                        spLong(fontFamily, fontWeight, 8, 8, 0, 0, "german");
+
+                        document.write("</div>")
+
+                }
+
+
+                //functions
+                document.addEventListener('readystatechange', event => {
+                        const nodeList = document.querySelectorAll("span.fit");
+                        for (let i = 0; i < nodeList.length; i++) {
+                                //nodeList[i].parentElement.style.backgroundColor = "Linen";
+                                let newFS = parseFloat(window.getComputedStyle(nodeList[i]).fontSize) * nodeList[i].parentElement.getBoundingClientRect().width / nodeList[i].getBoundingClientRect().width;
+                                console.log(i, window.getComputedStyle(nodeList[i]).fontSize, nodeList[i].parentElement.getBoundingClientRect().width, nodeList[i].getBoundingClientRect().width, (nodeList[i].parentElement.getBoundingClientRect().width / nodeList[i].getBoundingClientRect().width), newFS);
+                                nodeList[i].parentElement.style.fontSize = newFS + "px";
+                                nodeList[i].parentElement.style.lineHeight = newFS + "px";
+                        }
+                });
+
+
+                // fit Worte ausgeben
+                function spFit(fontFamily, fontWeight, fontSize, lineHeight, letterSpacing, wordSpacing, text) {
+                        document.write(
+                                "<div class=\"fitcomb section\" style=\"font-family: " + fontFamily + "; font-variation-settings: 'wght' " + fontWeight + "; font-size: " + fontSize + "pt; line-height: " + lineHeight + "pt; letter-spacing: " + letterSpacing / 100 + "em; word-spacing: " + wordSpacing / 100 + "em; padding, margin: 0;\"><p class=\"info\">" + fontFamily + " " + fontWeight + " </p><p><span class=\"fit\" style=\"letter-spacing:-.01em;\">Hamburg</span></p><p><span class=\"fit\">PARKHAUS</span></p><p><span class=\"fit\" style=\"letter-spacing:.01em;\">ALSTERKRUGCHAUSSEE</span></p><!--p><span class=\"fit\" style=\"letter-spacing:-.01em;\">typobold</span></p--><p><span class=\"fit\">Köhlbrandbrücke</span></p><p><span class=\"fit\">MONARCH</span></p><p><span class=\"fit\">NORMAN KINGS</span></p><p><span class=\"fit\">RECENT HEROISM</span></p><p><span class=\"fit\">ASK WHAT MAKES YOU</span></p><p><span class=\"fit\">COME ALIVE</span></p><p><span class=\"fit\">AND GO DO IT</span></p><p><span class=\"fit\">SIZE &amp; FORM</span></p><p><span class=\"fit\">WEIGHT</span></p><p><span class=\"fit\">LAYOUT</span></p><p><span class=\"fit\">SPACING</span></p><p><span class=\"fit\" style=\"letter-spacing:0em;\">Deliziosamente</span></p><p><span class=\"fit\" style=\"letter-spacing:0em;\">monsieur</span></p><p><span class=\"fit\" style=\"letter-spacing:0em;\">Kriminalkommissar</span></p--><p><span class=\"fit\" style=\"letter-spacing:0em;\">Bibliotheken</span></p><p><span class=\"fit\" style=\"letter-spacing:0em;\">Bundesdruckerei</span></p><p><span class=\"fit\" style=\"letter-spacing:0em;\">Editoriale</span></p><p><span class=\"fit\" style=\"letter-spacing:0em;\">Bluegrass</span></p><p><span class=\"fit\" style=\"letter-spacing:0em;\">Central</span></p><p><span class=\"fit\" style=\"letter-spacing:0em;\">Basketball</span></p><p><span class=\"fit\">Imperial</span></p><p><span class=\"fit\" style=\"letter-spacing:0em;\">Handgloves</span></p><p><span class=\"fit\">OHamburgefontsiv</span></p></div>"
+                        );
+                }
+
+                // Figurenverzeichnis ausgeben
+                function spFiguresOLD(fontFamily, fontWeight, fontSize, lineHeight, letterSpacing, wordSpacing, text) {
+                        document.write(
+                                "<div class=\"fitcomb\" style=\"font-family: " + fontFamily + "; font-variation-settings: 'wght' " + fontWeight + "; font-size: " + fontSize + "pt; line-height: " + lineHeight + "pt; letter-spacing: " + letterSpacing / 100 + "em; word-spacing: " + wordSpacing / 100 + "em; padding, margin: 0;\"><p class=\"info\">" + fontFamily + " " + fontWeight + " <br/> w" + letterSpacing + "/" + letterSpacing / 100 + "</p><p>abcdefghijklmn<br/>opqrstuvwxyzäöüß<br/>ABCDEFGHIJKLMN<br/>OPQRSTUVWXYZÄÖÜ<br/>0123456789 ,.- ;:_ !\"§$%&/()=?*'</p></div>"
+                        );
+                }
+
+                // Figurenverzeichnis ausgeben
+                function spFigures(fontFamily, fontWeight, fontSize, lineHeight, letterSpacing, wordSpacing, text) {
+                        document.write(
+                                "<div class=\"fitcomb\" style=\"font-family: " + fontFamily + "; font-variation-settings: 'wght' " + fontWeight + "; font-size: " + fontSize + "pt; line-height: " + lineHeight + "pt; letter-spacing: " + letterSpacing / 100 + "em; word-spacing: " + wordSpacing / 100 + "em; padding, margin: 0;\"><p class=\"info\">" + fontFamily + " " + fontWeight + " <br/> w" + letterSpacing + "/" + letterSpacing / 100 + "</p><p>AÄÆBCDEÉFGHIJKLMN OÖPQRSTUÜVWXYZ aäæbcdeéfghijklmn oöpqursßtuüvwxyz 0123456789 .,:;…!¡?¿*/-(){}[]‚„“”‘’«»‹›' @&¶§°</p></div>"
+                        );
+                }
+
+                // Textblöcke ausgeben
+                function spBlock(fontFamily, fontWeight, fontSize, lineHeight, letterSpacing, wordSpacing, text) {
+                        document.write(
+                                "<div class=\"block\"><p class=\"info\">" + fontFamily + " " + fontWeight + " : h " + fontSize + "/" + lineHeight + " : w " + letterSpacing + "/" + wordSpacing
+                                + "</p><p lang=\"de\" style=\"font-family: " + fontFamily + "; font-variation-settings: 'wght' " + fontWeight
+                                + "; font-size: " + fontSize + "pt; line-height: " + lineHeight + "pt; letter-spacing: " + letterSpacing / 100 + "em; word-spacing: " + wordSpacing / 100 + "em;\">"
+                                + "<!--br/>abcdefghijklmnopqrstuvwxyz<br/>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>1234567890<br/><br/-->In every type design the basic character is determined by the uniform design characteristics of all letters in the alphabet. However, this alone does not determine the standard of the typeface and the Quality of composition set with it. The appearence is something complex which forms itself out of many details like form, proportion, rhythm etc. <!--br/>THE APPEARANCE IS SOMETHING COMPLEX WHICH FORMS ITSELF OUT OF MANY DETAIL<br/-->Bei jeder Schriftgestaltung wird der Grundcharakter eines Alphabets von einheitlichen Formmerkmalen der Buchstaben bestimmt. Er allein besagt noch nichts über das Niveau einer Druckschrift und die Qualität des Satzgefüges. Das Erscheinungsbild ist etwas Komplexes das sich aus vielen Einzelheiten entsteht. <!--FORM UND PROPORTIONEN SIND DIE WICHTIGSTEN KRITERIEN BEIM BEURTEILEN<br/--> Le style de chaque caractere d'imprimerie se determine par des caractéristiques qui sont les memes pour toutes les lettres de l'alphabet. Dans tous les rapports formels et autres relatiojns il s'agit de phenomenes optiques irréductibles aux regles mathématiques. <!-- et que seule pourra per D'AUTRE PART MALGRÉ TOUTES LES RESSOURCES DE MÉCANISATION<br/--><!--Sehen wir das Gesamtbild unseres heutigen Lebens nur mit unseren Augen an, so können wir die Folgerung ziehen, daß dieses Gebilde einen chaotischen Charakter trägt, und es kann uns nicht wundern, daß diejenigen, welche sich in diesem scheinbaren Chaos unwohl fühlen, der Welt entfliehen oder sich in geistigen Abstraktionen verlieren wollen. Doch jedenfalls muß es uns klar sein, daß diese Flucht vor der Wirklichkeit ein ebenso großer Irrtum ist wie jene Anlehnung an den reinsten Materialismus. Weder die Flucht in das Mittelalter, noch der von verschiedenen Kunsthistorikern empfohlene Wiederaufbau des Olympos kann und die Lösung bringen. Unsere Zeit hat eine andere Mission zu erfüllen als die des Mittelalters und des Hellenismus. Um die Aufgabe unserer Zeit richtig zu verstehen, ist es notwendig, daß wir nicht nur mit unseren Augen, sondern vielmehr mit unseren innerlichen Sinnesorganen die Lebensstruktur erfassen. Haben wir einmal die Synthese des Lebens aus der Tiefe unseres Wesens gewonnen und als Inhalt von Kultur und Kunst anerkannt, so wird es uns nicht schwer fallen an Hand von Dokumenten, die uns die Tradition liefert, der Lösung des Problems näher zu kommen.<br/-->"
+                                + "</p></div>"
+
+                        );
+                }
+
+                // Long ausgeben
+                function spLong(fontFamily, fontWeight, fontSize, lineHeight, letterSpacing, wordSpacing, text) {
+                        document.write(
+                                "<div class=\"block\"><p class=\"info\">" + fontFamily + " " + fontWeight + " : h " + fontSize + "/" + lineHeight + " : w " + letterSpacing + "/" + wordSpacing
+                                + "</p><p lang=\"de\" style=\"font-family: " + fontFamily + "; font-variation-settings: 'wght' " + fontWeight
+                                + "; font-size: " + fontSize + "pt; line-height: " + lineHeight + "pt; letter-spacing: " + letterSpacing / 100 + "em; word-spacing: " + wordSpacing / 100 + "em; text-align: justify; hyphens: auto; \">"
+                                + "Het uiterlijk van een lettertype is afhankelijk van talloze factoren die harmonieus samenwerken om het effect en de kwaliteit van de lettertypestructuur te bepalen. Hier zijn enkele belangrijke aspecten die het ontwerp van een lettertype beïnvloeden: De vormen van de letters, cijfers en tekens moeten bij elkaar passen en in de juiste verhouding tot elkaar staan. De keuze voor een schreefloos, schreefloos of cursief lettertype heeft een grote invloed op het algemene uiterlijk. De dikte van de lijnen en de helderheid van de streken zijn bepalend voor de leesbaarheid en het karakter van een lettertype. De ruimte tussen de letters en tekens en de hoogte van de lijnen moeten worden aangepast zodat de tekst prettig leesbaar is en goed bij elkaar blijft. Het contrast tussen dikke en dunne lijnen in een lettertype en de textuur van de algemene structuur dragen bij tot de visuele aantrekkingskracht en het unieke karakter van het lettertype. Een lettertype bestaat vaak uit verschillende gewichten (bv. normaal, vet, cursief) en gewichten (bv. normaal, gecondenseerd), die het mogelijk maken om verschillende visuele hiërarchieën in de tekst te creëren. Extra ontwerpelementen zoals ligaturen (koppelingen tussen bepaalde lettercombinaties) of alternatieve tekenvarianten kunnen de visuele interesse verhogen. Het lettertype moet worden aangepast aan de behoeften van de doelgroep en het beoogde gebruik. Een lettertype voor wetenschappelijke teksten is anders ontworpen dan een lettertype voor advertenties. Culturele en historische invloeden: De culturele en historische relevantie van een lettertype kan de impact ervan aanzienlijk beïnvloeden. Een voorbeeld hiervan is het gebruik van gotische lettertypes in historische teksten. Het zorgvuldig balanceren van al deze elementen is cruciaal voor het ontwikkelen van een lettertype dat niet alleen esthetisch aantrekkelijk, maar ook functioneel en leesbaar is. De kunst van het letterontwerp vereist een grondige kennis van typografie en het vermogen om al deze aspecten te harmoniseren om een succesvol lettertype te ontwerpen."
+                                + "</p></div>"
+
+                        );
+                }
+
+
+        </script>
+
+        <div class="fullbox section">
+                <div class="fitcomb">
+                        <p class="info">The samples are labelled according to the following scheme:<br /><br />
+                                fontFamily fontWeight (fontWidth) : h fontSize/lineHeight : w
+                                letterSpacing/wordSpacing<br /><br />
+                                - fontFamily e.g. Bentinck<br />
+                                - fontWeight e.g. 300 (OpenType:usWeightClass)<br />
+                                - fontWidth e.g. 5 (OpenType:usWidthClass)<br />
+                                - fontSize e.g. 7 (PostScript:point)<br />
+                                - lineHeight e.g. 8 (PostScript:point)<br />
+                                - letterSpacing e.g. 20 (CSS:em/100)<br />
+                                - wordSpacing e.g. 10 (CSS:em/100)<br />
+                                <br />
+                        </p>
+
+                        <p style="margin-top:200px;">
+                                <img src="typobold_logo_200.png" />
+                        </p>
+
+                        <p class="info">Typobold is a nickname of me<br />
+                                typobold@joerg-drees.de<br /><br />
+                        </p>
+
+</body>
+
+</html>

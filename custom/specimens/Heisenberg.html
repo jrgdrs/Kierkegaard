@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    
+    <style>
+        /* @font-face {
+            font-family: Regular;
+            src: url("../fonts/ttf/Kierkegaard-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: Italic;
+            src: url("../fonts/ttf/Kierkegaard-Italic.ttf");
+        }
+
+        @font-face {
+            font-family: Bold;
+            src: url("../fonts/ttf/Kierkegaard-Bold.ttf");
+        } */
+
+        @media print {}
+
+        @page {
+            size: 125mm 198mm;
+            margin: 14mm;
+            margin-bottom: 28mm;
+            background-color: linen;
+        }
+
+        @page:first {
+            size: 125mm 198mm;
+            margin: 14mm;
+            margin-bottom: 0mm;
+            background-color: rgb(148, 20, 176);
+        }
+
+        @page :right {
+            @bottom-left {
+                content: counter(page);
+                font-family: Regular;
+                font-size: 10pt;
+                text-align: right;
+                border: 6pt solid transparent;
+                margin-bottom: 18pt;
+            }
+        }
+
+        @page :left {
+            @bottom-right {
+                content: counter(page);
+                font-family: Regular;
+                font-size: 10pt;
+                text-align: left;
+                border: 6pt solid transparent;
+                padding-bottom: 18pt;
+
+            }
+        }
+
+        .title {
+            color: rgb(221, 151, 232);
+            font-family: Bold;
+            font-size: 48pt;
+            line-height: 40pt;
+            margin-top: 0;
+        }
+
+        body {}
+
+        h1 {
+            padding-top: calc(1.25em * 3);
+            font-family: Reular;
+            font-weight: normal;
+            font-size: 15spt;
+            line-height: 1.25em;
+            letter-spacing: .02em;
+        }
+
+        h2,
+        h3 {
+            font-family: Regular;
+            font-weight: normal;
+            line-height: 1.25em;
+        }
+
+        p {
+            font-family: Regular;
+            font-size: 13pt;
+            line-height: 1.15em;
+            margin: 0;
+            text-indent: 1em;
+            text-align: justify;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            /* <numeric-figure-values> */
+
+        }
+
+        i {
+            font-family: Italic;
+            font-style: normal;
+
+        }
+
+        .ini {
+            text-indent: 0;
+            padding-top: calc(1.25em * 10);
+        }
+
+        .ini::first-letter {
+            -webkit-initial-letter: 3;
+            initial-letter: 3;
+            padding-right: 3pt;
+        }
+
+        table.poem {
+            font-family: Italic;
+            font-size: 11pt;
+            line-height: 1.35em;
+            margin: 0;
+            text-align: left;
+            margin: 1em;
+        }
+
+        .head {
+            page-break-after: always;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .left {
+            text-align: left;
+            text-indent: 0;
+        }
+
+        .center {
+            text-align: center;
+            text-indent: 0;
+        }
+
+        .brand {
+            position: absolute;
+            top: 125mm;
+            width: 97mm;
+            text-align: center;
+            text-indent: 0;
+        }
+
+        div h1 {
+            page-break-before: always;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="brand">
+        <img src="assets/typobold_logo_200.png" width="40pt" style=" filter: grayscale(100%);" />
+        <p class="center">Type specimen in Vietnamese language<br />
+            DRM free content from TVE-4U<br />
+            set in Kierkegaard-Regular<br /></p>
+    </div>
+
+    <div class="head">
+        <h3 class="author">Werner Heisenberg</h3>
+        <h2 class="title">Vật lý và triết học - Cuộc cách mạng trong khoa học hiện đại</h2>
+    </div>
+
+    <p class="ini">
+        Từ khi khởi đầu khoảng hơn 80 năm trước, cơ học lượng tử đã trở thành một bộ phận cơ bản và cốt yếu trong hành
+        trang của các nhà vật lý lý thuyết. Đã có vô số những cuốn sách giáo khoa dạy lý thuyết này một cách chuẩn mực,
+        nghĩa là trình bày rõ ràng cách sử dụng các phương pháp của nó. Chính các nguyên lý của cơ học lượng tử đã đặt
+        nền móng cho sự vận hành của các laser và các thiết bị điện tử, mà ngày nay được thấy ở những chỗ thật bất ngờ
+        như các đầu DVD và các máy tính tiền trong các siêu thị. Một bác sĩ khám các cơ quan nội tạng của một bệnh nhân,
+        không cần phải thâm nhập trực tiếp vào cơ quan đó, mà lại rất nhẹ nhàng, nhờ các phương tiện tạo ảnh bằng cộng
+        hưởng từ (MRI) cũng lại dựa trên một tính chất lượng tử rất tinh tế của hạt nhân nguyên tử. Lạ hơn nữa, các tính
+        toán của cơ học lượng tử đã đưa ra những tiên đoán về tính chất của các hạt cơ bản phù hợp với những phép đo
+        thực nghiệm với độ chính xác cao đến kinh ngạc. Nói tóm lại, đó là một lý thuyết đã được kiểm nghiệm rất chi li,
+        hữu ích một cách toàn diện và đồng thời cũng rất đáng tin cậy.
+    </p>
+    <p>
+        Mặc dù đã quen thuộc đến thấu đáo như thế, nhưng đa số các nhà vật lý, nếu bị ép, sẽ đều thừa nhận rằng họ vẫn
+        thấy có điều gì đó lạ lùng, điều gì đấy bí ẩn và không thể nắm bắt được hoàn toàn trong cơ học lượng tử. Sự vận
+        hành nội tại của bộ máy này vẫn thật khó hiểu. Sẽ là rất hữu ích để biết rằng các tiểu luận trong tập sách này
+        được rút ra từ những bài giảng Gifford của Werner Heisenberg đọc tại Đại học St. Andrew ở Scotland đúng nửa thế
+        kỷ trước, nhưng vẫn liên quan tới chính những vấn đề còn gây nhiều bối rối ngày nay. Giải pháp mà Heisenberg
+        trình bày, hay đúng hơn, có thể nói, là thái độ triết học mà ông bày tỏ, tất nhiên sẽ giúp ích cho một số người
+        và làm thất vọng một số người khác, cũng hệt như với những thính giả đã nghe ông lần đầu.
+    </p>
+    <p>
+        Để hiểu được tại sao cơ học lượng tử hiện vẫn khiến người ta bối rối, sẽ là rất hữu ích nếu ta xem xét lại một
+        cách ngắn gọn những nguồn gốc của nó. Trong câu chuyện này, bản thân Heisenberg đã đóng góp hai phát lộ quan
+        trọng.
+    </p>
+    <p>
+        Trong cái được gọi là lý thuyết lượng tử cũ, khởi nguồn từ Bohr vào năm 1913, các nguyên tử được hình dung như
+        những hệ Mặt trời thu nhỏ. Các electron quay xung quanh hạt nhân nhỏ và nặng theo đúng các định luật của cơ học
+        Newton. Nguyên lý lượng tử xuất hiện trong mô hình này đã đặt thêm một hạn chế đòi hỏi rằng chỉ một số quỹ đạo
+        trong số vô vàn những quỹ đạo khả dĩ là thực sự được phép. Khi electron nhảy giữa các quỹ đạo này thì nguyên tử
+        hoặc nhận vào hoặc phát ra một lượng tử của năng lượng điện từ - mà sau này được gọi là photon – phù hợp với
+        hiệu năng giữa hai quỹ đạo đó. Cơ chế này đã giải thích được tại sao các nguyên tử, vốn đã được biết hàng chục
+        năm trước, lại có những dấu hiệu phổ đặc trưng, khi phát hay hấp thụ ánh sáng chỉ ở một số những tần số xác
+        định.
+    </p>
+    <p>
+        Vào đầu những năm 1920, lý thuyết lượng tử cũ, đặc biệt là lý thuyết được phát triển bởi Arnold Sommerfeld ở
+        Munich, đã trở nên quá phức tạp và cồng kềnh, và đồng thời lại không giải thích được rất nhiều những nét tinh tế
+        trong phổ nguyên tử. Dường như có lẽ là các electron trong nguyên tử chuyển động theo những quy tắc khác một
+        cách căn bản so với cơ học cổ điển. Werner Heisenberg khi đó còn là một sinh viên của Sommerfeld ở Munich nên đã
+        hiểu rất rõ cuộc khủng hoảng này và chính ông là người, vào năm 1925, đã đưa ra một giải pháp lạ lùng và gây
+        sửng sốt. “Ý tưởng này tự nó đã gợi ý rằng”, - ông nói với chúng ta ở đây, “người ta cần phải viết ra những định
+        luật cơ học không phải như các phương trình cho vị trí và vận tốc của các electron mà là cho các tần số và biên
+        độ trong khai triển Fourier của chúng.”
+    </p>
+    <p>
+        Phát biểu này quả thật là quá khiêm tốn. Ý tưởng mà Heisenberg nói tới ở đây rõ ràng là của ông và chỉ của ông
+        mà thôi. Cũng như Einstein trong việc tạo dựng nên thuyết tương đối đã phải định nghĩa lại cái mà chúng ta gọi
+        là không gian và thời gian, Heisenberg cũng vậy, vào năm 1925, ông đã buộc phải đánh giá lại một cách sâu sắc
+        không kém về những khái niệm vị trí và vận tốc mà trước đó người ta xem là quá hiển nhiên.
+    </p>
+    <p>
+        Chuỗi Fourier là một công cụ toán học chuẩn theo đó một dao động bất kỳ, chẳng hạn như dao động của dây đàn
+        violon, đều có thể được biểu diễn như một tổ hợp thích hợp của các âm sơ cấp của dây đàn đó. Trong một biểu diễn
+        như thế, vị trí và vận tốc tức thời của một điểm bất kỳ dọc theo dây đàn đều được biểu diễn bằng một tổng có
+        trọng số của âm cơ bản và các họa âm của dây đó. Sự chói sáng thiên tài của Heisenberg là ở chỗ biết áp dụng
+        chính logic đó cho chuyển động của electron trong nguyên tử. Thay vì tư duy về vị trí và vận tốc của electron
+        như là những đặc trưng xác định nguyên thủy của nó, ông đã viết ra những biểu thức biểu diễn vị trí và vận tốc
+        một cách gián tiếp, như là một tổ hợp của những dao động sơ cấp của nguyên tử.
+    </p>
+    <p>
+        Nói một cách nhẹ nhàng thì đó là một cách làm hơi kỳ cục. Tuy nhiên, bằng cách thay thế những định nghĩa mới của
+        mình về vị trí và vận tốc vào những định luật chuẩn của cơ học, Heisenberg đã có một phát minh đầy kinh ngạc:
+        bằng một cách hoàn toàn mới ông đã rút ra được định luật về sự lượng tử hoá. Những phương trình của ông cho
+        những đáp số có nghĩa chỉ khi năng lượng của electron nhận một trong tập hợp hạn chế các giá trị. Và như
+        Heisenberg đã quá khiêm tốn để nói một cách trực tiếp trong các tiểu luận ở đây rằng ông chỉ là người phát hiện
+        ra mầm mống của cơ học lượng tử mà thôi.
+    </p>
+    <p>
+        Điều thú vị là, như Paul Dirac và Pascual Jordan sau này đã xác lập một cách hệ thống, các định luật của cơ học
+        cổ điển đã chuyển sang hệ thống mới của cơ học lượng tử một cách hoàn toàn không thay đổi. Cái thay đổi ở đây là
+        các đại lượng - những yếu tố được coi là cơ sở của cơ học, như vị trí và vận tốc chẳng hạn, bị những định luật
+        này chi phối.
+    </p>
+    <p>
+        Và đây chính là chỗ bắt đầu những khó khăn. Hai năm sau, trong Nguyên lý bất định nổi tiếng của mình, Heisenberg
+        vẫn tiếp tục chứng minh rằng trong cơ học lượng tử, vị trí và vận tốc không có một ý nghĩa rõ ràng và minh bạch
+        mà nó đã được hưởng trong cơ học cổ điển. Thay vì là những tính chất sơ cấp của một hạt, vị trí và vận tốc, theo
+        một nghĩa nào đó, trở thành một đặc trưng thứ cấp mà nhà thực nghiệm cần rút ra từ một hệ lượng tử nào đó bằng
+        cách làm một phép đo thích hợp. Và phép đo này cũng không phải đơn giản như người ta vẫn quen làm. Bạn đo vị trí
+        của một hạt càng chính xác thì bạn sẽ tìm được vận tốc của nó càng kém chính xác và ngược lại. Nguyên lý bất
+        định thường được diễn đạt dưới dạng như vậy. Tuy nhiên, một cách phát biểu thận trọng hơn nói rằng các hạt lượng
+        tử không có những tính chất nội tại thực sự tương ứng với vị trí và vận tốc và phép đo đã buộc hệ lượng tử phải
+        nhả ra những giá trị cho các đại lượng đó theo cách phụ thuộc vào phép đo đó được tiến hành như thế nào.
+    </p>
+    <p>
+        Thực tế, ngay cả nghĩ về một hạt lượng tử cũng rất dễ dẫn đến hiểu lầm bởi vì khái niệm được dán nhãn là “hạt”
+        cũng có những ý nghĩa không còn được áp dụng một cách đầy đủ nữa. Chỉ ít tháng sau khi Heisenberg phát biểu
+        phiên bản của mình về cơ học lượng tử, Erwin Schrodinger cũng đã đưa ra phương trình mang tên ông cung cấp một
+        bức tranh khác. Trong bức tranh Schrodinger, electron thuộc một nguyên tử có dạng một sóng dừng trải rộng – nói
+        một cách nôm na, đó là một sóng biểu diễn xác suất để tìm thấy electron ở nơi này hay khác xung quanh hạt nhân.
+        Vậy electron là sóng hay hạt? Câu trả lời, như Heisenberg khẳng định trong các tiểu luận này, là: các từ “sóng”
+        hay “hạt” được hình thức hoá trong cơ học cổ điển bằng sự đúc rút từ kinh nghiệm hằng ngày của chúng ta và theo
+        định nghĩa, hai khái niệm này là loại trừ nhau. Một sóng thì không thể là hạt và một hạt không thể là sóng. Một
+        đối tượng lượng tử, tự bản thân nó, chẳng là cái này cũng chẳng là cái kia. Nếu bạn quyết định đo một tính chất
+        giống như sóng (chẳng hạn như bước sóng, trong một thí nghiệm nhiễu xạ hay giao thoa) thì cái mà bạn quan sát
+        được sẽ nhìn giống như sóng. Còn trái lại, nếu đo một tính chất hạt (như vị trí hoặc vận tốc) thì bạn sẽ thấy
+        hành vi giống như hạt.
+    </p>
+    <p>
+        Khi nhận giải Nobel về Vật lý năm 1932, Heisenberg đã tuyến bố: “cơ học lượng tử... xuất hiện từ những nỗ lực mở
+        rộng nguyên lý tương ứng của Bohr thành một sơ đồ toán học hoàn chỉnh bằng cách chính xác hoá thêm những khẳng
+        định của ông”. Đó cũng là một tuyên bố quá khiêm nhường. Mặc dù có thể ông đã được dẫn dắt bởi nguyên lý tương
+        ứng của Bohr – nói một cách nôm na, đó là ý tưởng cho rằng các hệ lượng tử cần phải chuyển về hành vi và diện
+        mạo cổ điển ở thang vĩ mô – nhưng sự loé sáng của sáng tạo dẫn tới cơ học lượng tử thuần tuý là của Heisenberg.
+        Nhưng vào cuối năm 1926 và đầu năm 1927, Heisenberg và Bohr đã làm việc sát cánh bên nhau ở Copenhagen – hay là
+        đụng đầu nhau thì đúng hơn – và chính là sự trao đổi đầy căng thẳng đó đã tạo ra cả Nguyên lý bất định lẫn cái
+        gọi là cách giải thích Copenhagen của cơ học lượng tử mà sau đó Bohr đã làm rất nhiều để phát triển nó.
+        Heisenberg không phải đã nhượng bộ ngay những quan điểm của Bohr, nhưng vào thời gian đọc diễn từ nhận giải
+        thưởng Nobel và chắc chắn là khi đọc những bài giảng này, ông đã toàn tâm toàn ý đứng về phe Copenhagen và tin
+        tưởng ở Bohr đối với nhiều nguyên lý mà ông đã đi theo.
+    </p>
+    <p>
+        Như Heisenberg nói nhiều lần, cốt lõi của vấn đề là chuyện diễn dịch. Ngôn ngữ quy ước của vật lý được hình
+        thành theo thế giới mà chúng ta trải nghiệm - một thế giới mà trong đó những chiếc xe ô tô và các quả bóng bầu
+        dục bay với một vận tốc xác định và ở thời điểm bất kỳ đều có một vị trí xác định, trong khi các sóng tạo nên
+        một lớp các thực thể hoàn toàn khác, được mô tả bởi những thuật ngữ cũng rất khác. Tuy nhiên, ở bên dưới tất cả
+        những chuyện đó là thế giới của các hiện tượng lượng tử mà chúng ta có thể lĩnh hội được thông qua vô số các
+        phép đo và quan sát. Lẽ tự nhiên là chúng ta mong muốn có thể mô tả tốt hơn thế giới lượng tử bằng ngôn ngữ cổ
+        điển quen thuộc của chúng ta, và đó chính là lúc các khó khăn xuất hiện. Thế giới lượng tử không phải là thế
+        giới của các sóng và hạt, của vị trí và vận tốc. Chỉ khi thực hiện các phép đo chúng ta mới làm cho các đại
+        lượng đó có lại ý nghĩa quen thuộc của chúng - một ý nghĩa mặc dù vẫn chịu sự hạn chế được áp đặt bởi Nguyên lý
+        bất định. Mọi cố gắng để mô tả thế giới lượng tử theo ngôn ngữ cổ điển chắc chắn sẽ bị rơi vào sự thiếu nhất
+        quán và mâu thuẫn.
+    </p>
+    <p>
+        Dưới sức ép của sự không thoả đáng của mỗi bức tranh sóng hay hạt riêng rẽ, Heisenberg đã nói với chúng ta rằng
+        “bằng cách chơi với cả hai bức tranh, bằng cách đi từ bức tranh này sang bức tranh khác rồi quay ngược lại, cuối
+        cùng rồi chúng ta sẽ có một ấn tượng đúng đắn về loại thực tại lạ lùng nằm phía sau các thí nghiệm về nguyên
+        tử”. Điều đó, tôi e rằng, sẽ làm cho khá nhiều độc giả có ấn tượng như là một thủ đoạn lẩn tránh. Kể ra cũng tốt
+        thôi, thưa GS. Heisenberg, - các độc giả này có thể nói – nhưng ngài có thể cho chúng tôi biết cái “loại thực
+        tại lạ lùng” ấy gồm những cái gì không? Lạy Chúa, đó rốt cuộc lại là cái mà chúng ta không thể làm được, chí ít
+        là không thể làm được một cách thoả đáng.
+    </p>
+    <p>
+        Chiến lược của trường phái Copenhagen để xử lý cái ngõ cụt này là tiếp tục dùng ngôn ngữ cũ - tức là sóng và
+        hạt, vị trí và vận tốc – nhưng theo một cách hiểu chặt chẽ rằng những khái niệm đó được thể hiện trong các từ
+        này không còn theo nghĩa nguyên thủy nữa mà phải thông qua môi giới là các phép đo và quan sát. Và vì vậy đã
+        xuất hiện một khái niệm được phát biểu một cách rộng rãi rằng trong cơ học lượng tử, hành động đo xác định cái
+        được đo hoặc rằng cái được đo và cái đo có liên quan mật thiết với nhau.
+    </p>
+    <p>
+        Như một hệ quả, dường như tri thức của chúng ta về thế giới trở nên tùy tiện và mang tính chủ quan theo cách
+        hoàn toàn không giống như trong vật lý cổ điển. Nếu như chúng ta nhận được các thông tin khác nhau tùy thuộc vào
+        loại phép đo mà chúng ta tiến hành và nếu chúng ta có thể chọn một cách tự do sẽ làm tập hợp các phép đo này hay
+        khác thì liệu chúng ta có thể kết luận được rằng thế giới của những sự thật rành rành (mà Heisenberg gọi là thế
+        giới của các sự thật cứng), như ông Gradgridn - một nhân vật của Dickens đã từng nói, sẽ bị tiêu ma không? Rằng
+        cái cách thức mà thế giới đó trình hiện liệu có phụ thuộc theo một cách hầu như kỳ quái vào cách thức mà chúng
+        ta chọn để nhìn hay không?
+    </p>
+    <p>
+        Heisenberg rất hăng hái tranh luận chống lại những suy luận kiểu như vậy. Một phép đo, ông nói, là một hành động
+        riêng biệt và cụ thể, nó cung cấp một mẩu thông tin xác định. Việc thế giới được phát lộ cho chúng ta nhờ khoa
+        học phụ thuộc vào loại thông tin mà chúng ta có thể tìm ra là điều luôn luôn đúng. “Chúng ta cần nhớ rằng”,
+        Heisenberg nói, “cái mà chúng ta quan sát được không phải là chính bản thân tự nhiên mà là tự nhiên được phô bày
+        trước phương pháp truy vấn của chúng ta”.
+    </p>
+    <p>
+        Ở đây một lần nữa độc giả lại cảm thấy khó chịu vì câu trả lời không thoả đáng. Về mặt cổ điển, thế giới được
+        coi như là một tập hợp các sự thật. Chúng ta càng quan sát tỉ mỉ thì càng thu thập được nhiều những sự thật đó.
+        Tuy nhiên, trong cơ học lượng tử, một vấn đề mới và khá rắc rối là việc biết một loại sự thật về thế giới lại
+        rất hay cản trở vĩnh viễn sự hiểu biết của chúng ta về một loại sự thật khác. Vậy thì khi đó liệu thực sự có một
+        nền tảng vững chắc cho thế giới của những dữ liệu khách quan và thông tin đo được mà chúng ta sống trong đó hay
+        không?
+    </p>
+    <p>
+        Câu trả lời của trường phái Copenhagen là khẳng định rằng việc đặt ra câu hỏi như vậy về thực chất là đòi hỏi
+        giải thích cơ học lượng tử bằng vật lý cổ điển, điều mà theo định nghĩa là không thể làm được. Nhưng điều đó
+        không mách bảo chúng ta, thay vì, nên suy nghĩ như thế nào. Thông qua sự đề cập đến câu đố đó – tức chúng ta sẽ
+        mô tả hiện trạng này như thế nào khi chúng ta đã chấp nhận ngay từ đầu rằng chúng ta không có ngôn ngữ để làm
+        được điều đó – Heisenberg đã dấn thân vào một chuyến ngao du triết học bắt đầu từ những người Hy Lạp và đưa
+        chúng ta đến với Kant. Điều mà ông làm đó đã tách ông ra khỏi các nhà vật lý hiện đại nhất, những người thường
+        coi khinh hoặc là không đếm xỉa đến tư duy triết học về môn học của họ. Nhưng Heisenberg được giáo dục ở Đức vào
+        đầu thế kỷ XX và có một giáo sư về triết học cổ điển là chính cha ông. Vì vậy, đối với Heisenberg, có một hiểu
+        biết tốt về triết học đơn giản chỉ là biểu hiện của một nền giáo dục phổ thông tốt.
+    </p>
+    <p>
+        Heisenberg đã rất nhấn mạnh sự phân biệt giữa tinh thần và vật chất của Descartes, cốt lõi của niềm xác tín cổ
+        điển vào thực tại khách quan - tức là một thế giới vật chất tồn tại độc lập và chờ đợi sự xem xét vô tư của
+        chúng ta. Tính tự phụ đó, thực tế, có thể đã là yếu tố trung tâm đối với sự xuất hiện của vật lý cổ điển, nhưng
+        chúng ta không nên vì thế mà xem nó như một chân lý hiển nhiên, không còn tranh cãi. Ví dụ, Aristotle đã hình
+        dung vật chất sờ mó được như là sự áp đặt của hình thái lên “cái tiềm tàng”, một loại bản chất bao gồm khả năng
+        chứ không phải là thực tại. Nhưng chắc chắn Heisenberg không hề muốn gợi ý rằng Aristotle bằng cách nào đó đã
+        tiên đoán được hàm sóng của Schrodinger. Ông đã đưa ra một ý kiến hữu ích rằng các khái niệm hiện đại của chúng
+        ta về thực tại và vật chất, mặc dù xem ra có vẻ như là dễ hiểu, nhưng không phải bao giờ cũng là rõ ràng và đã
+        xuất hiện thông qua một cuộc vật lộn trí tuệ sâu sắc.
+    </p>
+    <p>
+        Và nếu như những khái niệm như vậy đã thay đổi trong quá khứ, thì chắc chắn rằng chúng có thể sẽ lại thay đổi.
+        Chỉ bởi vì một tập hợp các ý tưởng và nguyên lý đã tỏ ra là hữu ích trên một vũ đài nào đó, Heisenberg thận
+        trọng, chúng ta không nên bị mê hoặc bởi ý nghĩ rằng chúng ta đã chạm được vào các chân lý áp dụng được ở khắp
+        nơi.
+    </p>
+    <p>
+        Thuyết tương đối đã cung cấp một ví dụ ít tranh cãi hơn về nguyên lý này. Albert Einstein đã chứng minh rằng
+        không gian và thời gian không phải là tuyệt đối như là trong vũ trụ của Newton và tính đồng thời tùy thuộc vào
+        con mắt của người quan sát. Đối với một số nhà vật lý ở đầu thế kỷ XX, sự phá vỡ đó của quan điểm “lành mạnh” cũ
+        về không gian và thời gian là quá thể và do đó thuyết tương đối đã bị tấn công dữ dội. Nhưng rồi cuộc khủng
+        hoảng đã nhanh chóng qua đi một cách yên lành. Những thay đổi mà thuyết tương đối đòi hỏi là không quá ghê gớm
+        và không phải là không thể chấp nhận được như thoạt đầu người ta tưởng - chủ yếu là bởi vì thuyết tương đối
+        không phủ nhận sự đúng đắn của “thuyết duy thực cứng” – theo như cách gọi của Heisenberg. Chẳng hạn, hai người
+        quan sát có thể thấy một chuỗi các sự kiện nào đó diễn ra theo trình tự khác nhau, nhưng không có sự phủ nhận
+        các sự kiện đó thực sự đã xảy ra và quan điểm chính xác của thuyết tương đối là: nó cung cấp một cách thức hợp
+        lý cho những người quan sát để họ hiểu được tại sao họ lại không nhìn thấy cùng một trình tự thời gian.
+    </p>
+    <p>
+        Trái lại, với cơ học lượng tử, các giả thiết cổ điển đã bị phá vỡ tan tành, nhưng thay vào vị trí của chúng lại
+        là những giải thích rất không thoả đáng. Được nhìn nhận theo viễn cảnh đó, cách giải thích của trường phái
+        Copenhagen được coi là tốt nhất với tư cách là một hệ thống thiết thực và khéo léo cho phép các nhà vật lý vẫn
+        sử dụng được lý thuyết trong khi tạm cách ly ra một số câu hỏi về cơ bản là không trả lời được. Không có gì đáng
+        ngạc nhiên khi chiến lược này đã gây ra sự phản đối. Sự thảo luận của Heisenberg về những phê phán cách giải
+        thích của trường phái Copenhagen là đề tài được cập nhật nhất ở đây, bởi vì rất nhiều phê phán đó đã phai nhạt
+        từ lâu. Tuy nhiên, có hai ý tưởng đáng kể vẫn còn tồn tại một cách dai dẳng.
+    </p>
+    <p>
+        Vào đầu những năm 1950, không lâu trước khi đọc những bài giảng này, David Bohm đã đưa ra cách xây dựng lại cơ
+        học lượng tử, sao cho, Bohm tuyên bố, nó sẽ được sự ủng hộ của triết học truyền thống, nhưng vẫn không mất đi
+        một mảy may nào sự thành công đối với thực nghiệm của nó. Theo Bohm, các tính chất của một hạt bao gồm “các biến
+        ẩn” mà người quan sát không thể truy nhập được, nhưng lại quyết định kết cục của phép đo. Khi này, sự không thể
+        tiên đoán được dường như của các sự kiện lượng tử hoá ra là do chúng ta đã không đếm xỉa đến các biến ẩn đó. Về
+        bề ngoài, điều này làm cho cơ học lượng tử trở nên rất giống cơ học cổ điển của các nguyên tử trong một chất
+        khí, ở đó chúng ta có thể đưa ra các tiên đoán có tính chất thống kê về hành vi của chất khí như là một toàn bộ,
+        ngay cả khi thậm chí chúng ta không thể biết được từng nguyên tử riêng lẻ làm gì. Tuy nhiên, về mặt khái niệm, ở
+        đây có một sự khác biệt to lớn. Trong cơ học cổ điển, ta có thể nghĩ cách làm ra những thí nghiệm tinh xảo hơn
+        để xác định chính xác hơn tính chất của các nguyên tử. Trong cơ học Bohm, môn cơ học vẫn còn thu hút được một
+        nhóm những người ủng hộ nhiệt thành nhất, thì thông tin được mang bởi các biến ẩn là thực sự không có hạn chế -
+        như thực tế, nó cần phải thế - nếu như những biểu hiện ra bên ngoài của cơ học lượng tử vẫn còn không thay đổi.
+    </p>
+    <p>
+        Heisenberg đã cung cấp rất nhiều lý do giàu sức thuyết phục lý giải tại sao cơ học của Bohm không hề hấp dẫn như
+        người ta tưởng, nhưng thái độ cơ bản của ông là cách tiếp cận dùng các biến ẩn đã đạt được sự trở lại một phần
+        thuyết duy thực cổ điển một cách khá mù mờ bằng cái giá phải phá huỷ đi rất nhiều vẻ đẹp toán học và đối xứng
+        của cơ học lượng tử ở dạng thuần khiết của nó. Nói tóm lại, cơ học của Bohm là xấu xí.
+    </p>
+    <p>
+        Đối lập với quan điểm của trường phái Copenhagen, như chúng ta đã biết, có cả Einstein, người suốt đời gắn bó
+        với “thuyết duy thực cứng”. Năm 1935, với hai đồng nghiệp trẻ của mình là Boris Podolsky và Nathan Rosen, ông đã
+        cho công bố bài báo “Einstein Podolsky Rosen” (EPR) nổi tiếng, trong đó đã vạch ra cái mà các tác giả coi như là
+        một lỗi lầm có thể chứng minh được trong cơ học lượng tử. Sự phân tích EPR yêu cầu chúng ta suy nghĩ về hai hạt
+        xuất hiện từ một sự kiện nào đó, sao cho một số tính chất của chúng có tương quan với nhau, sau đó bay ra xa
+        nhau. Một nhà thực nghiệm đo một tính chất nào đó của một trong hai hạt ấy, ngay lập tức sẽ biết được tính chất
+        tương ứng của hạt kia. Einstein, Podolsky và Rosen lập luận rằng vì thí nghiệm đó cho phép nhà vật lý nhận được
+        một sự hiểu biết về một hạt mà không cần phải quan sát nó một cách trực tiếp, nên các tính chất của hạt phải
+        thuộc về nội tại của nó – nghĩa là chúng đã được cố định từ trước như tư duy cổ điển quy định chứ không phải là
+        bất định như cơ học lượng tử khẳng định.
+    </p>
+    <p>
+        Trong nhiều năm, quan điểm mà EPR đưa ra dường như, may lắm, được coi là một nhận xét có tính siêu hình. Tuy
+        nhiên, khoảng một chục năm sau khi Heisenberg đọc những bài giảng này, nhà vật lý John Bell đã chế tạo ra một
+        cách thông minh để biến sự phân tích EPR thành một phép kiểm chứng trong thực tiễn, và nếu khó khăn thì trong
+        phòng thí nghiệm. Nếu các hạt, trước khi đo, thực sự đã có những tính chất xác định nhưng chưa biết chứ không
+        phải những thuộc tính không xác định như suy ra từ cơ học lượng tử, thì một thực nghiệm kiểu do Bell đề xuất sẽ
+        cho những kết quả khác với những tiên đoán của cơ học lượng tử. Chỉ sau khi Heisenberg qua đời vào năm 1976
+        những thực nghiệm như vậy cuối cùng mới được thực hiện, nhưng với những kết quả xác nhận cơ học lượng tử và bác
+        bỏ quan điểm của EPR. Bài học, như Heisenberg đã chỉ ra trong sự bàn thảo của ông về quan điểm của Einstein, đó
+        là: thực tại theo cơ học lượng tử không giống như thực tại cổ điển, bất kể Einstein có thích điều đó hay không.
+    </p>
+    <p>
+        Cách giải thích chuẩn của cơ học lượng tử, do đó, vẫn tiếp tục tồn tại và sự trình bày tao nhã của Heisenberg
+        vẫn còn giá trị và hiệu lực của nó. Nhưng câu chuyện vẫn còn chưa kết thúc.
+    </p>
+    <p>
+        Chiến lược của trường phái Copenhagen đã vận hành tuyệt vời đối với các nhà thực nghiệm trong các phòng thí
+        nghiệm của họ, thậm chí đối với cả các nhà vật lý thiên văn nghiên cứu cấu trúc của các sao, các thiên hà, bởi
+        vì trong những trường hợp đó, không bao giờ có sự lầm lẫn nghiêm trọng về chuyện bộ phận nào cần phải xử lý theo
+        cơ học lượng tử và bộ phận nào theo cơ học cổ điển. Nhưng khi mở rộng phạm vi của chúng ta để bao gồm cả toàn bộ
+        vũ trụ thì sự phân biệt rạch ròi này không thể duy trì được nữa. Vũ trụ xuất phát từ Big Bang, hay nói ngắn gọn,
+        từ sự hỗn độn dày đặc các hạt cơ bản điên cuồng tương tác với nhau. Sau đó, khi Vũ trụ dãn nở và lạnh đi, những
+        cấu trúc bắt đầu đột sinh – mà trước hết là chính vật chất, sau đó là sự kết tập của vật chất dưới dạng các ngôi
+        sao sớm nhất và cứ tiếp tục như vậy cho tới khi chúng ta đi tới Vũ trụ trong trạng thái hiện nay của nó. Trong
+        quá trình tiến hóa đó, một tập hợp thực một cách khách quan các thiên hà, các sao, và các hành tinh bằng cách
+        nào đó đã đột sinh từ đám sương mù lượng tử bất định, nhưng nó đã làm như vậy mà không có sự can thiệp của người
+        đo hay người quan sát bởi vì Vũ trụ là toàn bộ những gì hiện hữu.
+    </p>
+    <p>
+        Vì quan điểm của trường phái Copenhagen dựa trên sự phân biệt giữa người đo và cái được đo, nên nó sẽ gặp khó
+        khăn khi chỉ có một hệ vũ trụ, một toàn thể duy nhất liên quan với nhau. Nhưng thậm chí có như vậy chăng nữa thì
+        tinh thần Copenhagen vẫn có thể sẽ tiếp tục tồn tại. Khi viện đến quá trình có tên là “mất kết hợp”, các nhà vật
+        lý lập luận rằng sự tương tác nội tại của một hệ lượng tử phức tạp tạo nên một loại tự đo liên tục cho phép hệ,
+        như một toàn bộ, thể hiện những tính chất xác định và cố định thậm chí mặc dù trạng thái lượng tử bên dưới nó là
+        thay đổi liên tục. Do tính dừng của chúng, những tính chất này được nhìn nhận như là độc lập và là hiện thực
+        khách quan, do đó chúng chính là những tính chất mà chúng ta đã tự nhiên gán cho cái nhãn là cổ điển. Nếu như sơ
+        đồ này thành công, nó sẽ là cơ sở cho nhận xét của Heisenberg nói rằng vật lý cổ điển “chỉ là sự lý tưởng hóa
+        trong đó chúng ta có thể nói về các bộ phận của thế giới mà không cần tham chiếu gì đến bản thân chúng ta”.
+    </p>
+    <p>
+        Điều này hiện vẫn còn chưa được hiểu rõ. Hiện nay, sự phê phán có thể còn dai dẳng trong sự phàn nàn rằng cách
+        giải thích Copengahen về cơ học lượng tử là chưa thỏa đáng vì nó vẫn chưa trả lời được cho chúng ta một số câu
+        hỏi sơ đẳng. Không thể nói, mà thực tế không cần phải nói, thế giới lượng tử “thực sự” là như thế nào và chúng
+        ta sẽ lâm vào khó khăn với những câu hỏi về Vũ trụ. Nhưng tôi thì lại muốn mô tả những thiếu sót đó như là những
+        ưu điểm. Giải thích của trường phái Copenhagen đã cung cấp một cách sử dụng cơ học lượng tử một cách đáng tin
+        cậy, còn những vấn đề mà nó chưa trả lời được cũng chính là những câu hỏi sẽ chưa được giải đáp chừng nào các
+        nhà vật lý chưa giải quyết được câu đố cuối cùng của họ, đó là làm thế nào kết hợp được nhuần nhuyễn cơ học
+        lượng tử với lý thuyết hấp dẫn. Những thực nghiệm kiểu EPR minh họa cho một cách xung đột giữa hai bộ phận này.
+        Một phép đo trên một hạt, dường như, lại có thể xác lập tức thì những tính chất trước đó còn bất định của hạt
+        kia (đối tác của hạt thứ nhất), thậm chí ngay cả khi, theo những tiêu chuẩn cổ điển, hai hạt đã hoàn toàn tách
+        rời nhau. Tính phi định xứ đó – theo như cách gọi của các nhà vật lý (với sự khó chịu công khai, Einstein gọi nó
+        là “hành động ma quỷ từ xa”) giờ đây là điều không thể phủ nhận được bằng thực nghiệm, nhưng đồng thời nó lại
+        dường như xung đột với tinh thần của tính nhân quả cổ điển được hiện thân trong thuyết tương đối rộng.
+    </p>
+    <p>
+        Một biện pháp xử lý theo cơ học lượng tử đối với hấp dẫn, theo cách nào đó, sẽ giải quyết được sự xung đột này
+        của các nguyên lý bằng cách chỉ ra tính nhân quả, sự bất định và cấu trúc của không gian và thời gian sẽ được
+        tích hợp với nhau một cách hài hòa như thế nào. Và điều này, đến lượt mình, sẽ rọi ánh sáng vào cái thế giới bên
+        trong được mô tả bởi cơ học lượng tử vẫn còn đầy bí ẩn. Trong khi chờ đợi đến lúc đó, những ai muốn hiểu xem các
+        nhà vật lý đã xoay xở như thế nào để hiểu được cái lĩnh vực cực kỳ thành công nhưng cũng còn nhiều bất ổn này
+        của vật lý, thì cách tốt nhất là hãy đọc những bài giảng đã trở thành kinh điển này của Heisenberg.
+    </p>
+
+    <hr>
+
+</body>
+
+</html>

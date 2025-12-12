@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zufällige Wörter</title>
+  <style>
+    @font-face { font-family: Regular; src: url("../fonts/ttf/Kierkegaard-Regular.ttf"); }
+    @font-face { font-family: Italic; src: url("../fonts/ttf/Kierkegaard-Italic.ttf"); }
+    @font-face { font-family: Bold; src: url("../fonts/ttf/Kierkegaard-Bold.ttf"); }
+    @font-face { font-family: BoldItalic; src: url("../fonts/ttf/Kierkegaard-BoldItalic.ttf"); }
+
+    html,body{height:100%;margin:0}
+    body{background:#2f2f2f;overflow:hidden;font-family:Regular, sans-serif}
+    #stage{position:relative;width:100%;height:100%;overflow:visible;}
+    .word{
+      position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+      white-space:nowrap;pointer-events:none;user-select:none;
+      padding:0.3em 0.4em;
+      transition:opacity 2.08s ease, filter 2.08s ease, transform 1.6s cubic-bezier(.2,.9,.2,1);
+      will-change:opacity,filter,transform;
+      text-rendering:optimizeLegibility;
+    }
+  </style>
+</head>
+<body>
+  <div id="stage" aria-hidden="true"></div>
+
+  <script>
+  const words = [
+    'dream','light','time','space','future','mind','truth','fire','stone','river','wind','shadow','echo','path','voice','heart','storm','memory','wave','field',
+    'sky','seed','thought','ocean','spark','dreamer','moment','vision','silence','forest','sound','cloud','mountain','dust','feather','flame','story','dreams','hope',
+    'soul','energy','mirror','night','day','world','circle','magic','shape','flow'
+  ];
+
+  (function(){
+    function XorShift128Plus(a,b,c,d){
+      this.s = new Uint32Array(4);
+      this.s[0]=a|0; this.s[1]=b|0; this.s[2]=c|0; this.s[3]=d|0;
+    }
+    XorShift128Plus.prototype.next = function(){
+      let s0 = this.s[0]>>>0, s1 = this.s[1]>>>0, s2 = this.s[2]>>>0, s3 = this.s[3]>>>0;
+      let t = (s0 ^ (s0 << 11)) >>> 0;
+      this.s[0] = s1; this.s[1] = s2; this.s[2] = s3;
+      this.s[3] = ((s3 ^ (s3 >>> 19)) ^ (t ^ (t >>> 8))) >>> 0;
+      return (this.s[3] + s3) >>> 0;
+    };
+    XorShift128Plus.prototype.random = function(){ return (this.next()>>>0)/4294967296; };
+
+    const seedArr = new Uint32Array(4);
+    crypto.getRandomValues(seedArr);
+    window._rng = new XorShift128Plus(seedArr[0],seedArr[1],seedArr[2],seedArr[3]);
+
+    window.gaussian = (function(){
+      let spare = null;
+      return function(mean=0, sd=1){
+        if(spare!==null){let v=spare; spare=null; return mean+sd*v;}
+        let u,v,s; do{u=_rng.random()*2-1;v=_rng.random()*2-1;s=u*u+v*v;}while(s===0||s>=1);
+        const mul=Math.sqrt(-2*Math.log(s)/s);
+        spare=v*mul; return mean+sd*(u*mul);
+      };
+    })();
+  })();
+
+  const stage=document.getElementById('stage');
+  const maxVisible=24;
+  const addInterval=200; // 5-fache Geschwindigkeit (jede 0,2 Sek.)
+  let visibleWords=[]; let zIndex=1;
+
+  const fontVariants=['Regular','Italic','Bold','BoldItalic'];
+
+  function pickRandom(arr){ return arr[Math.floor(_rng.random()*arr.length)]; }
+
+  function randomTertiaryColor(){
+    const hue=Math.floor(_rng.random()*360);
+    const saturation=30+_rng.random()*40;
+    const lightness=45+_rng.random()*20;
+    return `hsl(${hue} ${saturation}% ${lightness}%)`;
+  }
+
+  function createWordElement(text){
+    const el=document.createElement('div');
+    el.className='word';
+    el.textContent=text;
+
+    el.style.fontFamily=pickRandom(fontVariants);
+    el.style.fontSize=(20+Math.floor(_rng.random()*(400-20+1)))+'pt';
+    el.style.color=randomTertiaryColor();
+
+    const vw=window.innerWidth, vh=window.innerHeight;
+    const centerX=vw/2, centerY=vh/2;
+    const sigmaX=vw*0.45, sigmaY=vh*0.3;
+    let x=gaussian(centerX,sigmaX);
+    let y=gaussian(centerY,sigmaY);
+    if(x<0)x=-_rng.random()*50; if(y<0)y=-_rng.random()*50;
+
+    el.style.left=x+'px'; el.style.top=y+'px';
+    el.style.zIndex=(++zIndex).toString();
+
+    el.dataset.targetOpacity=0.3+_rng.random()*0.5;
+    el.dataset.startBlur=8+Math.floor(_rng.random()*24);
+    el.style.opacity='0';
+    el.style.filter=`blur(${el.dataset.startBlur}px)`;
+
+    return el;
+  }
+
+  function showWord(){
+    const el=createWordElement(pickRandom(words));
+    stage.appendChild(el);
+    visibleWords.push(el);
+
+    requestAnimationFrame(()=>{
+      ensureInViewport(el);
+      el.style.opacity=el.dataset.targetOpacity;
+      el.style.filter='blur(0px)';
+      el.style.transform=`translate(-50%,-50%) scale(${0.92+_rng.random()*0.36})`;
+    });
+
+    if(visibleWords.length>maxVisible){ fadeOutAndRemove(visibleWords.shift()); }
+  }
+
+  function fadeOutAndRemove(el){
+    el.style.opacity='0';
+    el.style.filter=`blur(${8+Math.floor(_rng.random()*36)}px)`;
+    el.addEventListener('transitionend',()=>{ if(el.parentElement) el.parentElement.removeChild(el); });
+  }
+
+  function ensureInViewport(el){
+    const rect=el.getBoundingClientRect(), vw=window.innerWidth, vh=window.innerHeight;
+    let left=rect.left, top=rect.top, changed=false;
+    const margin=50;
+    if(rect.left<-margin){left=rect.width/2+margin;changed=true;}
+    if(rect.right>vw+margin){left=vw-rect.width/2-margin;changed=true;}
+    if(rect.top<-margin){top=rect.height/2+margin;changed=true;}
+    if(rect.bottom>vh+margin){top=vh-rect.height/2-margin;changed=true;}
+    if(changed){ el.style.left=(left+rect.width/2)+'px'; el.style.top=(top+rect.height/2)+'px'; }
+  }
+
+  setInterval(showWord, addInterval);
+  showWord();
+
+  window.addEventListener('resize',()=>{
+    visibleWords.forEach(el=>{
+      const vw=window.innerWidth, vh=window.innerHeight;
+      const centerX=vw/2, centerY=vh/2;
+      const sigmaX=vw*0.45, sigmaY=vh*0.3;
+      el.style.left=gaussian(centerX,sigmaX)+'px';
+      el.style.top=gaussian(centerY,sigmaY)+'px';
+    });
+  });
+
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    visibleWords.forEach(el=>{el.style.opacity=el.dataset.targetOpacity; el.style.filter='none'; el.style.transition='none';});
+  }
+  </script>
+</body>
+</html>

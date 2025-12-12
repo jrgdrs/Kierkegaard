@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Number Art — A4 Times Digits (solid, no rotation)</title>
+<style>
+
+    @font-face { font-family: Regular; src: url("../fonts/ttf/Kierkegaard-Regular.ttf");}
+
+  :root {
+    --page-w: 210mm;
+    --page-h: 297mm;
+    --bg: #dbc9c9;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+  }
+  .page {
+    position: relative;
+    width: var(--page-w);
+    height: var(--page-h);
+    margin: 18px auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    background: var(--bg);
+  }
+  .digit {
+    position: absolute;
+    font-family: Regular;
+    line-height: 1;
+    transform-origin: center center;
+    pointer-events: none;
+    user-select: none;
+  }
+  @page { size: A4 portrait; margin: 0; }
+  @media print {
+    html, body { background: var(--bg); }
+    .page { box-shadow: none; margin: 0; left: 0; top: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- doubled number of digits, no rotation, solid colors -->
+    <span class="digit" style="left:5mm; top:8mm; font-size:200mm; color:hsl(45,80%,80%);">3</span>
+    <span class="digit" style="left:120mm; top:10mm; font-size:120mm; color:hsl(200,80%,70%);">8</span>
+    <span class="digit" style="left:20mm; top:90mm; font-size:96mm; color:hsl(330,65%,70%);">0</span>
+    <span class="digit" style="left:45mm; top:60mm; font-size:64mm; color:hsl(120,60%,65%);">7</span>
+    <span class="digit" style="left:170mm; top:70mm; font-size:54mm; color:hsl(260,60%,70%);">5</span>
+    <span class="digit" style="left:10mm; top:170mm; font-size:88mm; color:hsl(15,80%,70%);">2</span>
+    <span class="digit" style="left:90mm; top:150mm; font-size:140mm; color:hsl(210,70%,60%);">9</span>
+    <span class="digit" style="left:145mm; top:140mm; font-size:36mm; color:hsl(50,85%,70%);">1</span>
+    <span class="digit" style="left:30mm; top:220mm; font-size:40mm; color:hsl(290,60%,65%);">6</span>
+    <span class="digit" style="left:190mm; top:220mm; font-size:28mm; color:hsl(10,75%,65%);">4</span>
+    <span class="digit" style="left:0mm; top:250mm; font-size:20mm; color:hsl(220,50%,75%);">5</span>
+    <span class="digit" style="left:30mm; top:10mm; font-size:14mm; color:hsl(160,60%,70%);">8</span>
+    <span class="digit" style="left:50mm; top:200mm; font-size:10mm; color:hsl(340,60%,70%);">0</span>
+    <span class="digit" style="left:140mm; top:240mm; font-size:6mm; color:hsl(80,60%,68%);">3</span>
+    <span class="digit" style="left:200mm; top:10mm; font-size:8mm; color:hsl(15,90%,70%);">1</span>
+    <span class="digit" style="left:180mm; top:120mm; font-size:160mm; color:hsl(260,50%,72%);">4</span>
+    <span class="digit" style="left:10mm; top:120mm; font-size:44mm; color:hsl(30,80%,65%);">9</span>
+    <span class="digit" style="left:95mm; top:30mm; font-size:26mm; color:hsl(200,60%,72%);">2</span>
+    <span class="digit" style="left:120mm; top:200mm; font-size:22mm; color:hsl(320,70%,68%);">7</span>
+    <span class="digit" style="left:75mm; top:120mm; font-size:12mm; color:hsl(100,65%,70%);">6</span>
+    <span class="digit" style="left:165mm; top:5mm; font-size:36mm; color:hsl(190,70%,68%);">0</span>
+    <span class="digit" style="left:190mm; top:180mm; font-size:52mm; color:hsl(260,80%,70%);">8</span>
+    <span class="digit" style="left:80mm; top:230mm; font-size:70mm; color:hsl(45,80%,72%);">1</span>
+    <span class="digit" style="left:40mm; top:30mm; font-size:18mm; color:hsl(10,80%,68%);">3</span>
+    <span class="digit" style="left:110mm; top:90mm; font-size:30mm; color:hsl(140,70%,68%);">5</span>
+    <span class="digit" style="left:5mm; top:140mm; font-size:8mm; color:hsl(220,60%,70%);">2</span>
+    <span class="digit" style="left:200mm; top:260mm; font-size:4mm; color:hsl(280,60%,70%);">9</span>
+    <span class="digit" style="left:98mm; top:80mm; font-size:2mm; color:hsl(0,0%,100%);">7</span>
+    <span class="digit" style="left:150mm; top:260mm; font-size:3mm; color:hsl(30,80%,85%);">4</span>
+    <span class="digit" style="left:30mm; top:260mm; font-size:6mm; color:hsl(200,60%,78%);">6</span>
+    <span class="digit" style="left:122mm; top:35mm; font-size:10mm; color:hsl(120,70%,75%);">0</span>
+    <span class="digit" style="left:56mm; top:170mm; font-size:16mm; color:hsl(260,55%,70%);">1</span>
+    <span class="digit" style="left:180mm; top:250mm; font-size:26mm; color:hsl(10,60%,70%);">8</span>
+    <span class="digit" style="left:2mm; top:100mm; font-size:34mm; color:hsl(200,60%,70%);">5</span>
+    <span class="digit" style="left:170mm; top:210mm; font-size:12mm; color:hsl(330,60%,70%);">2</span>
+    <span class="digit" style="left:60mm; top:40mm; font-size:8mm; color:hsl(45,80%,80%);">9</span>
+    <span class="digit" style="left:100mm; top:260mm; font-size:14mm; color:hsl(170,60%,72%);">3</span>
+    <span class="digit" style="left:140mm; top:100mm; font-size:6mm; color:hsl(210,60%,76%);">1</span>
+    <span class="digit" style="left:28mm; top:190mm; font-size:7mm; color:hsl(290,60%,70%);">0</span>
+    <span class="digit" style="left:185mm; top:95mm; font-size:9mm; color:hsl(20,70%,72%);">6</span>
+    <span class="digit" style="left:36mm; top:80mm; font-size:5mm; color:hsl(260,30%,85%);">4</span>
+    <span class="digit" style="left:80mm; top:10mm; font-size:4mm; color:hsl(0,0%,98%);">2</span>
+    <span class="digit" style="left:132mm; top:180mm; font-size:11mm; color:hsl(200,60%,72%);">7</span>
+    <span class="digit" style="left:110mm; top:10mm; font-size:22mm; color:hsl(340,60%,70%);">5</span>
+    <span class="digit" style="left:10mm; top:40mm; font-size:30mm; color:hsl(100,60%,68%);">1</span>
+    <span class="digit" style="left:50mm; top:250mm; font-size:18mm; color:hsl(230,60%,70%);">8</span>
+    <span class="digit" style="left:155mm; top:40mm; font-size:14mm; color:hsl(40,80%,70%);">0</span>
+    <span class="digit" style="left:90mm; top:180mm; font-size:9mm; color:hsl(300,60%,74%);">9</span>
+    <span class="digit" style="left:135mm; top:220mm; font-size:5mm; color:hsl(160,60%,80%);">3</span>
+    <span class="digit" style="left:3mm; top:210mm; font-size:2mm; color:hsl(0,0%,100%);">1</span>
+
+  </div>
+</body>
+</html>

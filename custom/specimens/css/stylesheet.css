@@ -1,0 +1,179 @@
+@font-face { font-family: Regular; src: url("../../fonts/ttf/Kierkegaard-Regular.ttf");}
+@font-face { font-family: Italic; src: url("../../fonts/ttf/Kierkegaard-Italic.ttf");}
+@font-face { font-family: Bold; src: url("../../fonts/ttf/Kierkegaard-Bold.ttf");}
+@font-face { font-family: SC; src: url("../../fonts/ttf/KierkegaardSC-Regular.ttf");}
+
+
+@media print {
+
+    #intro {
+      page: titelei;
+    }
+
+    @page {
+      size: 125mm 198mm;
+      margin: 14mm;
+      margin-bottom: 28mm;
+      background-color: linen;
+    }
+
+    @page:first {
+      size: 125mm 198mm;
+      margin: 7mm 7mm 0mm 7mm;
+      background-color: orange;
+    }
+
+    @page titelei {
+      @bottom-left {
+        content: '';
+      }
+
+      @bottom-right {
+        content: '';
+      }
+    }
+
+    @page :right {
+      margin: 14mm 16mm 21mm 12mm;
+
+      @bottom-left {
+        content: counter(page);
+        font-family: Regular;
+        font-size: 10pt;
+        text-align: right;
+        border: 6pt solid transparent;
+        margin-bottom: 18pt;
+      }
+    }
+
+    @page :left {
+      margin: 14mm 12mm 21mm 16mm;
+
+      @bottom-right {
+        content: counter(page);
+        font-family: Regular;
+        font-size: 10pt;
+        text-align: left;
+        border: 6pt solid transparent;
+        padding-bottom: 18pt;
+      }
+    }
+  }
+
+  .title {
+    color: whitesmoke;
+    font-family: Bold;
+    font-size: 40pt;
+    line-height: 40pt;
+    margin-top: 0;
+    padding-top: 12pt;
+    border-top: 2pt solid white;
+  }
+
+  body {}
+
+  h1 {
+    padding-top: calc(1.25em * 3);
+    font-family: Regular;
+    font-weight: normal;
+    font-size: 15spt;
+    line-height: 1.25em;
+    letter-spacing: .02em;
+  }
+
+  h2,
+  h3 {
+    font-family: Regular;
+    font-weight: normal;
+    line-height: 1.25em;
+    text-align: center;
+  }
+
+  p,
+  .par {
+    font-family: Regular;
+    font-size: 11pt;
+    line-height: 1.15em;
+    margin: 0;
+    text-indent: 1em;
+    text-align: justify;
+    hyphens: auto;
+    font-feature-settings: "liga", "onum";
+  }
+
+  i {
+    font-family: Italic;
+    font-style: normal;
+  }
+
+  .ini,
+  .first {
+    font-family: Regular;
+    text-indent: 0;
+    padding-top: calc(1.25em * 7);
+    page-break-before: always;
+  }
+
+  .ini::first-letter,
+  .first::first-letter {
+    font-family: Regular;
+    -webkit-initial-letter: 3;
+    initial-letter: 3;
+    padding-right: 3pt;
+  }
+
+  table.poem {
+    font-family: Italic;
+    font-size: 11pt;
+    line-height: 1.35em;
+    margin: 0;
+    text-align: left;
+    margin: 1em;
+  }
+
+  .head,
+  section {
+    page-break-after: always;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  .left {
+    text-align: left;
+    text-indent: 0;
+  }
+
+  .center {
+    text-align: center;
+    text-indent: 0;
+  }
+
+  .brand {
+    position: absolute;
+    top: 132mm;
+    width: 109mm;
+    text-align: center;
+    text-indent: 0;
+  }
+
+  pre {
+    display: none;
+  }
+
+  .pagenum {
+    display: none;
+  }
+
+  .footnotes {
+    display: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  h2.main {
+    display: none;
+  }

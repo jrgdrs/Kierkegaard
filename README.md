@@ -3,7 +3,7 @@
     
 Kierkegaard is a modern serif typeface in renaissance style that merges historical grace with contemporary precision. Drawing inspiration from the philosophical spirit of Søren Aabye Kierkegaard (1813–1855), this type family celebrates the creative potential born from constraint — echoing Kierkegaard’s insight that “The more one limits oneself, the more resourceful one becomes”
 
-![Sample Image](documentation/Promo/Kierkegaard_Page_21.png)
+![Sample Image](documentation/promo/Kierkegaard_Page_21.png)
 Quote from Kierkegaard set in Kierkegaard
 
 At its core, Kierkegaard embodies this principle through restraint and refinement. The design balances the organic flow of broad-nib calligraphy with the structural clarity of modern typography. Each letterform is carefully modeled with subtly curved stems, allowing the font to convey warmth and humanity within a rational, typographic framework.
@@ -11,7 +11,7 @@ At its core, Kierkegaard embodies this principle through restraint and refinemen
 The result is a typeface that feels both timeless and alive — rooted in the heritage of Renaissance serifs yet adaptable for contemporary design needs. From editorial layouts to branding, long-form text, and digital interfaces, <strong>Kierkegaard</strong> lends a thoughtful and intellectual tone without losing approachability.
 
 
-![Sample Image](documentation/Promo/Kierkegaard_Page_12.png)
+![Sample Image](documentation/promo/Kierkegaard_Page_12.png)
 Sample set of uppercase and lowercase letters showing the characteristic curved stems and broad-nib modulation.
 
 
@@ -23,7 +23,7 @@ The complete family contains 20 members in five weights, each paired with a matc
 
 Every glyph in Kierkegaard has been designed to support thoughtful expression. The balance of classical proportion and modern restraint makes it suitable for designers seeking harmony between intellectual depth and visual simplicity.
 
-![Sample Image](documentation/Promo/Kierkegaard_Page_03.png)
+![Sample Image](documentation/promo/Kierkegaard_Page_03.png)
 Weight range overview — from Light to Bold, including italics — illustrating contrast and balance.
 
 
@@ -33,7 +33,7 @@ Kierkegaard’s design process was guided by the same spirit of creative discipl
 
 Just as Søren Kierkegaard urged thinkers to explore beyond the boundaries of convention, this font encourages typographers to reimagine the limits of traditional serif design. Its name pays homage to the philosopher not merely as a historical figure but as a symbol of introspection, creativity, and human depth.
 
-![Sample Image](documentation/Promo/Kierkegaard_Page_17.png)
+![Sample Image](documentation/promo/Kierkegaard_Page_17.png)
 Editorial layout mockup demonstrating Kierkegaard’s readability and tone in print and digital media.
 
 ## Applications
@@ -49,39 +49,38 @@ Kierkegaard is available under the <a href="https://scripts.sil.org/OFL" target=
 ## The members of the Kierkegaard family
 
 400
-
-![Sample Image](documentation/image-Kierkegaard-Regular.png)
-![Sample Image](documentation/image-KierkegaardSC-Regular.png)
-![Sample Image](documentation/image-Kierkegaard-Italic.png)
-![Sample Image](documentation/image-KierkegaardSC-Italic.png)
+![Sample Image](documentation/images/Image-Kierkegaard-Regular.png)
+![Sample Image](documentation/images/Image-KierkegaardSC-Regular.png)
+![Sample Image](documentation/images/Image-Kierkegaard-Italic.png)
+![Sample Image](documentation/images/Image-KierkegaardSC-Italic.png)
 
 500
 
-![Sample Image](documentation/image-Kierkegaard-Medium.png)
-![Sample Image](documentation/image-KierkegaardSC-Medium.png)
-![Sample Image](documentation/image-Kierkegaard-MediumItalic.png)
-![Sample Image](documentation/image-KierkegaardSC-MediumItalic.png)
+![Sample Image](documentation/images/Image-Kierkegaard-Medium.png)
+![Sample Image](documentation/images/Image-KierkegaardSC-Medium.png)
+![Sample Image](documentation/images/Image-Kierkegaard-MediumItalic.png)
+![Sample Image](documentation/images/Image-KierkegaardSC-MediumItalic.png)
 
 600
 
-![Sample Image](documentation/image-Kierkegaard-SemiBold.png)
-![Sample Image](documentation/image-KierkegaardSC-SemiBold.png)
-![Sample Image](documentation/image-Kierkegaard-SemiBoldItalic.png)
-![Sample Image](documentation/image-KierkegaardSC-SemiBoldItalic.png)
+![Sample Image](documentation/images/Image-Kierkegaard-SemiBold.png)
+![Sample Image](documentation/images/Image-KierkegaardSC-SemiBold.png)
+![Sample Image](documentation/images/Image-Kierkegaard-SemiBoldItalic.png)
+![Sample Image](documentation/images/Image-KierkegaardSC-SemiBoldItalic.png)
 
 700
 
-![Sample Image](documentation/image-Kierkegaard-Bold.png)
-![Sample Image](documentation/image-KierkegaardSC-Bold.png)
-![Sample Image](documentation/image-Kierkegaard-BoldItalic.png)
-![Sample Image](documentation/image-KierkegaardSC-BoldItalic.png)
+![Sample Image](documentation/images/Image-Kierkegaard-Bold.png)
+![Sample Image](documentation/images/Image-KierkegaardSC-Bold.png)
+![Sample Image](documentation/images/Image-Kierkegaard-BoldItalic.png)
+![Sample Image](documentation/images/Image-KierkegaardSC-BoldItalic.png)
 
 800
 
-![Sample Image](documentation/image-Kierkegaard-ExtraBold.png)
-![Sample Image](documentation/image-KierkegaardSC-ExtraBold.png)
-![Sample Image](documentation/image-Kierkegaard-ExtraBoldItalic.png)
-![Sample Image](documentation/image-KierkegaardSC-ExtraBoldItalic.png)
+![Sample Image](documentation/images/Image-Kierkegaard-ExtraBold.png)
+![Sample Image](documentation/images/Image-KierkegaardSC-ExtraBold.png)
+![Sample Image](documentation/images/Image-Kierkegaard-ExtraBoldItalic.png)
+![Sample Image](documentation/images/Image-KierkegaardSC-ExtraBoldItalic.png)
 
 
 ## Specimen sheets

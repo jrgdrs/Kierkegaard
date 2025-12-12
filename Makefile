@@ -12,7 +12,36 @@ help:
 	@echo "  make test:   Tests the fonts with fontspector"
 	@echo "  make proof:  Creates HTML proof documents in the proof/ directory"
 	@echo "  make images: Creates PNG specimen images in the documentation/ directory"
+	@echo "  make cpages: Creates custom GITHUB pages as demo folder into pages/ directory"
+	@echo "  make cimages: Creates custom PNG preview images into documentation/images/ directory"
+	@echo "  make cproofs: Creates custom PDF proof documents into documentation/proofs/ directory"
+	@echo "  make cspecimen: Creates custom PDF specimen documents into documentation/specimens/ directory"
+	@echo "  make cmaps: Creates custom PDF map documents into documentation/maps/ directory"
+	@echo "  make call: Creates all custom documents"
 	@echo
+
+call:
+	custom/makeImages.sh
+	custom/makeProofs.sh
+	custom/makeSpecimens.sh
+	custom/makeMaps.sh
+	custom/makePages.sh
+
+cpages: 
+	custom/makePages.sh
+
+cimages: 
+	custom/makeImages.sh
+
+cproofs: 
+	custom/makeProofs.sh
+
+cspecimen: 
+	custom/makeSpecimens.sh
+
+cmaps: 
+	custom/makeMaps.sh
+	
 
 build: build.stamp
 
@@ -58,3 +87,4 @@ update: venv
 
 	git commit -m "Update requirements" requirements.txt
 	git push
+

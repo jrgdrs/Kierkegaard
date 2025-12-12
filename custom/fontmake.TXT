@@ -1,0 +1,16 @@
+fontmake -i OHamburgC Italic -o ufo -g OHamburgC-Italic.glyphs --ufo-structure=json --instance-dir instance_ufos
+
+fontmake -o ufo -g OHamburgC-Italic.glyphs --instance-dir instance_ufox
+
+drees@Jorgs-MacBook-Pro OHamburgC % fontmake -o ufo -g OHamburgC-Italic.glyphs --instance-dir instance_ufox
+
+usage: fontmake [-h] [--version] [-g GLYPHS | -u UFO [UFO ...] | -m DESIGNSPACE] [--glyph-data GLYPHDATA] [-o FORMAT [FORMAT ...]]
+                [--output-path OUTPUT_PATH | --output-dir OUTPUT_DIR] [-i [INSTANCE_NAME]] [--variable-fonts [VARIABLE_FONT_FILENAME]] [-M] [--family-name FAMILY_NAME]
+                [--round-instances] [--designspace-path DESIGNSPACE_PATH] [--master-dir MASTER_DIR] [--instance-dir INSTANCE_DIR] [--no-write-skipexportglyphs] [--validate-ufo]
+                [--check-compatibility | --no-check-compatibility] [--expand-features-to-instances] [--fea-include-dir FEA_INCLUDE_DIR] [--no-generate-GDEF]
+                [--save-ufo-as-zip | --ufo-structure {package,zip,json}] [--indent-json] [--keep-overlaps] [--overlaps-backend BACKEND] [--keep-direction]
+                [--ttf-curves {cu2qu,mixed,keep-quad,keep-cubic}] [-e ERROR] [-f] [-a [AUTOHINT]] [-A] [--cff-round-tolerance FLOAT] [--optimize-cff OPTIMIZE_CFF]
+                [--subroutinizer {compreffor,cffsubr}] [--no-optimize-gvar] [--filter CLASS] [--no-auto-use-my-metrics] [--drop-implied-oncurves]
+                [--interpolate-binary-layout [MASTER_DIR]] [--feature-writer CLASS] [--debug-feature-file FILE] [--mti-source MTI_SOURCE] [--production-names | --no-production-names]
+                [--subset | --no-subset] [-s | -S] [--timing] [--verbose LEVEL]
+                [INPUTS ...]

@@ -1,0 +1,3307 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+  <style>
+
+    /* @font-face { font-family: Regular; src: url("../fonts/ttf/Kierkegaard-Regular.ttf"); } 
+    @font-face { font-family: Italic;  src: url("../fonts/ttf/Kierkegaard-Italic.ttf"); } 
+    @font-face { font-family: Bold;   src: url("../fonts/ttf/Kierkegaard-Bold.ttf"); } */
+
+    @media __print {
+
+      #intro {
+        page: titelei;
+      }   
+      
+      @page {
+        size: 125mm 198mm;
+        margin: 14mm;
+        margin-bottom: 28mm;
+        background-color: linen;
+      }
+
+      @page:first {
+        size: 125mm 198mm;
+        margin: 7mm 7mm 0mm 7mm;
+        background-color: goldenrod;
+      }
+
+      @page titelei {
+        @bottom-left { content: '' ; }
+        @bottom-right { content: '' ; }
+      }
+
+      @page :right {
+        margin: 14mm 16mm 21mm 12mm;
+        @bottom-left {
+          content: counter(page);
+          font-family: Regular;
+          font-size: 10pt;
+          text-align: right;
+          border: 6pt solid transparent;
+          margin-bottom: 18pt;
+        }
+      }
+
+      @page :left {
+        margin: 14mm 12mm 21mm 16mm;
+        @bottom-right {
+          content: counter(page);
+          font-family: Regular;
+          font-size: 10pt;
+          text-align: left;
+          border: 6pt solid transparent;
+          padding-bottom: 18pt;
+
+        }
+      }
+
+    }
+
+    .title {
+      color: linen;
+      font-family: Bold;
+      font-size: 64pt;
+      line-height: 52pt;
+      margin-top: 0;
+      padding-top: 12pt;
+      border-top: 2pt solid white;
+    }
+
+    body {}
+
+    h1 {
+      padding-top: calc(1.25em * 3);
+      font-family: Regular;
+      font-weight: normal;
+      font-size: 15spt;
+      line-height: 1.25em;
+      letter-spacing: .02em;
+    }
+
+    h2,
+    h3 {
+      font-family: Regular;
+      font-weight: normal;
+      line-height: 1.25em;
+      text-align: center;
+    }
+
+    .title {
+      color: linen;
+      font-family: Bold;
+      font-size: 48pt;
+      line-height: 40pt;
+      margin-top: 0;
+    }
+
+    p {
+      font-family: Regular;
+      font-size: 14pt;
+      line-height: 1.05em;
+      margin: 0;
+      text-indent: 1em;
+      text-align: justify;
+      hyphens: auto;
+      font-variant-numeric: oldstyle-nums;
+      /* <numeric-figure-values> */
+
+    }
+
+    i {
+      font-family: Italic;
+      font-style: normal;
+    }
+
+    .ini {
+      text-indent: 0;
+      padding-top: calc(1.25em * 10);
+    }
+
+    .ini::first-letter {
+      -webkit-initial-letter: 3;
+      initial-letter: 3;
+    }
+
+    table.poem {
+      font-family: Italic;
+      font-size: 11pt;
+      line-height: 1.35em;
+      margin: 0;
+      text-align: left;
+      margin: 1em;
+    }
+
+    .head, section{
+      page-break-after: always;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .left {
+      text-align: left;
+      text-indent: 0;
+    }
+
+    .center {
+      text-align: center;
+      text-indent: 0;
+    }
+
+    .brand {
+      position: absolute;
+      top: 132mm;
+      width: 109mm;
+      text-align: center;
+      text-indent: 0;
+    }
+
+    div h1 {
+      page-break-before: always;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <section id="intro">
+    <div class="head">
+      <h2 class="title"><span style="color:black;">Hendrik Adamson</span><br />Auli - rakonto pri knabeto</h2>
+    </div>
+    <div class="brand">
+      <img src="assets/typobold_logo_200.png" width="40pt" style=" filter: grayscale(100%);" />
+      <p class="center">Type specimen in Esperanto language<br />
+        DRM free content from FadedPage.com<br />
+        set in Kierkegaard-Regular<br /></p>
+    </div>
+    <div class="head"></div>
+    <div class="head">
+      <h3 class="author">Hendrik Adamson<br />Auli — rakonto pri knabeto</h2>
+    </div>
+    <div class="head"></div>
+  </section>
+
+  <section id="1">
+    <h2>I.</h2>
+    <p>Oni kvaza&#365; frapegis per bastonego al la dommuro kaj &#309;etadis
+      plenmanojn da hajleroj al la fenestrovitroj. Fulmegis kaj tondregis,
+      kvaza&#365; tujmomente la muroj de &#349;tondrinkejo renversi&#285;us. La timige
+      mallumega nokto estas plena de teruro kaj fantomoj. Post pli la&#365;ta
+      ektondro, kiu a&#365;di&#285;is kvaza&#365; eksplodo de grenado giganteca, Auli
+      veki&#285;is, manapogi&#285;is kaj ekrigardis al la fenestro. E&#265; la rozeta
+      brilo de fulmo ne povis forigi lian palecon. La timta&#365;zita viza&#285;o
+      havis koloron de pasintvespere survestita ne&#285;oblanka &#265;emizo. &#264;u li
+      &#309;us nur son&#285;is; &#265;u <i>nun</i> estas son&#285;o a&#365; li jam veki&#285;is? &#264;u li
+      vivas ankora&#365; a&#365; jam mortis? &#264;u en son&#285;o a&#365; efektive la fulmo
+      lin trafis kaj mortigis? Iom post iom eniris en la konscion la sento
+      de l' ankora&#365;a vivo, iom post iom sorbi&#285;is en la sangon agrablo
+      pro tio. Sed subite ekatakis nova timekscito: ke la son&#285;o estis nur
+      anta&#365;signo de tio, kio esti&#285;os eble nun-nun ... en kia ajn momento;
+      kio tiam? Kaj tuj ekhavis la penso plenan konvinkecon, rokofirman
+      fidindecon: certe la terura son&#285;o anta&#365;diris tion, ke li devos
+      morti jam hodia&#365; pro sia granda kulpo. Sed se li provus pre&#285;i, eble
+      la Patro &#264;iela ne estus tiel severa, eble li malplisevere priju&#285;us
+      lin kaj lasus al li la vivon! Sed<!-- p.6 --> e&#265; pre&#285;i li ne povis: ne eblis
+      movi la membrojn rigidi&#285;intajn, la manoj malelastaj ne kuni&#285;is, la
+      genuoj lignecaj ne fleksi&#285;is, la lango estis alkatenita kaj la penso
+      ripetadis sen&#265;ese: nun li min mortbatas, nun estas la fino. Frapo
+      post frapo malsuprentondregis kaj &#265;iu el ili kvaza&#365; trapenetris
+      Auli-n de cerbo &#285;is koro, de verto &#285;is plando.</p>
+
+    <p>Tiam plikvieti&#285;is la ventego kiel anka&#365; la fulmotondro, kaj
+      Auli, vidante, ke la vivo, almena&#365; por momento, estas garantiita,
+      rericevis sian kura&#285;on, e&#265; ne pensis plu pre&#285;i, sed ekmeditis
+      pri io pli &#265;iutaga kaj ordinara. Tre ordinaraj liaj pensoj tamen
+      ne estis, &#265;ar la malgranda kapeto de Auli &#265;iam estis okupita per
+      solvado de diversspecaj komplikaj problemoj. Tiel ekzemple la avinon,
+      kiu pa&#349;tis ilian bovinon, la tutan posttagmezon, li &#285;enadis per la
+      demando, kial la suno subiras nur vespere, &#265;u &#285;i ne povas tion fari
+      jam dum tagmezo. Auli nome volis, ke la avino hejmenpelu la bovinon
+      pli frue; la avino rediris, ke &#349;i ne povas fari tion anta&#365; la
+      sunsubiro, sed la suno subiras nur vespere.</p>
+
+    <p>Nun Auli rompadis la kapon pri la demando, kial la Patro &#264;iela estas
+      tiel kolera kaj volas lin mortigi, kiel tion diris la avino. &#264;u
+      &#265;io &#265;i entute estis la fara&#309;o de l' Patro &#264;iela? Eble pli pravis
+      Petsu-knabo dirinte, ke la Patro &#264;iela en tiaspecaj okazoj tute ne
+      estas hejme kaj liaj knaboj tiam petola&#265;as: ekbruligas alumetojn
+      kaj dispu&#349;as la &#349;tonojn de la vaporforno. Eble la Patro &#264;iela kun
+      sia panjo, samkiel la gepatroj de Auli, foriris en la arbaron por
+      alporti ligna&#309;on, kaj la knaboj havas plenan liberon por petola&#265;i
+      kaj timigadi Auli-n. Eble la knaboj ne havas avinon, kiu ilin bridus.</p><!-- p.7 -->
+
+    <p>Auli eka&#365;skultis. El la alia &#265;ambro a&#365;di&#285;is du spirbruetoj: tiuj
+      de la avino kaj fratino. Se li nun levi&#285;us treege malla&#365;te kaj
+      elirus eksteren por man&#285;i la hajleron? La malbona pordo plorbleketas
+      kvaza&#365; hundo malsata, eble la avino veki&#285;os kaj ekgrumblos. Tio
+      ne multe signifus, sed &#349;i denuncos. &#348;i ja denuncos kaj tiam oni
+      havas por fari ne nur kun la Patro &#264;iela, kies punoj tamen estas
+      pli-malpli problemaj. Auli rezignas la eliron kaj da&#365;rigas la
+      meditadon pri l' familiaj aferoj de la Patro &#264;iela. Al la Patro
+      &#264;iela oni devas diri dankon, kiam oni estas satman&#285;inta. Foje
+      demandis Auli, &#265;u oni ne devas diri anka&#365; al la Patrino &#264;iela.
+      El la respondo li konkludis, ke la Patrino &#264;iela kvaza&#365; entute
+      ne ekzistas, sed tio ja ne povas esti, &#265;ar kio estas la patro sen
+      patrino? Kiu kuiras al ili man&#285;a&#309;on kaj lavas ilian tola&#309;on, kiu
+      iras kun patro en arbaron por &#349;teli ligna&#309;on kaj kiu detiras poste
+      al la patro la kotkovritajn botojn? Patrino supozeble ekzistas, sed
+      pri &#349;i oni ver&#349;ajne ne volas paroli. Eble &#349;i ne estas la vera
+      patrino, sed ia &raquo;kromvirino&laquo;, kiel tiu de la patro de Petsu-knabo.
+      Sed la Patro &#264;iela ja ne toleras kromvirinojn, kiel diris la avino.
+      En la kapo de Auli ekturni&#285;is stranga radaro, li kuntiris sin sur
+      la ku&#349;ejo kaj rigidi&#285;is. Sed iom post iom liaj sentemaj oreloj
+      kaptis pa&#349;ojn &#349;telirajn kaj tio eltiris lin el la komenci&#285;anta
+      son&#285;a vizio. Auli rigardis al la inter&#265;ambra pordo kaj vidis sur
+      la sojlo blankan figuron, kiu manetende ser&#265;is al li la vojon. Auli
+      volvi&#285;is kun la kapo en la litkovrilon kaj tremante ekatendis.
+      Anka&#365; nun li ne povis pre&#285;i, kvankam mortotimo lin ekregis kaj la
+      vivo &#349;ajnis esti pli kara ol iam anta&#365;e. Simile al struto li ka&#349;is
+      sian kapon kaj dorlotis en si la malfortan espereton, ke eble oni<!-- p.8 -->
+      ne rimarkos lin kaj pa&#349;os feli&#265;e la dan&#285;ero nekonata. Sed tiu
+      esta&#309;o mistera, &#285;i alproksimi&#285;as, &#285;i trovi&#285;as jam &#265;i tie &#265;e la
+      lito, &#285;i karesas mane la litkovrilon, palpas tra la kovrilo la kapon
+      de Auli, lian nazon, bu&#349;on, liajn okulojn. Auli timas moveti e&#265;
+      hareton&mdash;&#265;irka&#365; lia koro i&#285;as malvarme. Nun ...</p>
+
+    <p>&raquo;Auli&laquo;, oni flustris malla&#365;tege.</p>
+
+    <p>Auli e&#265; la spiron retenas; eble tiel la alveninto supozas lin
+      mortinta kaj foriros.</p>
+
+    <p>Sed tiu e&#265; ne pensas pri foriro; tiu ektiras la litkovrilon por
+      &#285;in fortiri de Auli. Kro&#265;fingre Auli firmtenas la randon de
+      la kovrilo kaj kontra&#365;staras per &#265;iuj fortoj, sed kiom da ili
+      entute li havas: balda&#365; estas rompita la kontra&#365;staro kaj Auli,
+      sentante sian malforton, &#309;etas sin en la lasta momento surbrusten,
+      ka&#349;ante la kapon en la kuseno, por ne vidi la plej teruran, kio nun
+      evidente okazos. Li kvaza&#365; sentas &#265;e sia nuko la malvarman klingon
+      de fal&#265;ilo, per kiu la mortan&#285;elo tratran&#265;os lian kolon, li
+      submeti&#285;as al la destino de l' sorto: oni mortigu lin jam, sed tiel,
+      ke al li mem ne estu videble.</p>
+
+    <p>Anstata&#365; la fal&#265;iltran&#265;o en la kolon, plekti&#285;as du molaj brakoj
+      &#265;irka&#365; la malgranda korpo de Auli kaj eligas lin el la lito. Auli
+      volas helpkrii, sed ne kura&#285;as; deziras sin for&#349;iri kaj forkuri,
+      sed ne havas la forton. Nun oni kaptas lin &#265;e la &#349;ultretoj kaj oni
+      returnas la knabon.</p>
+
+    <p>&raquo;H&#228;ilu&laquo;, ekkrias la etulo, konsterni&#285;inta pro la neatendita
+      metamorfozo.</p>
+
+    <p>&raquo;Silentu, la avino veki&#285;os! &#264;u vi min timas?&laquo;</p>
+
+    <p>Auli preska&#365; volus konfesi &#265;ion, sed tiam venkas la vireca
+      memestimo:</p>
+
+    <p>&raquo;Ne, mi ne timis, mi timas entute nenion; mi<!-- p.9 --> e&#265; tiam ne timis,
+      kiam la Patro &#264;iela ripro&#265;adis.&laquo;</p>
+
+    <p>&raquo;Sed mi timis tiam.&laquo;</p>
+
+    <p>&raquo;Vi ja estas knabino.&laquo;</p>
+
+    <p>La argumento estas por amba&#365; pli ol konvinka.</p>
+
+    <p>&raquo;Auli, ni eliru kolekti hajlerojn. Mi, sola timas.&laquo;</p>
+
+    <p>&raquo;Sed se la avino veki&#285;os.&laquo;</p>
+
+    <p>&raquo;Ne gravas, ni diros, ke ni iros ...&laquo;</p>
+
+    <p>Ke Auli mem tion ne &#285;ispensis. Sed H&#228;ilu estas pli ruza, &#349;i
+      ja estas knabino. Ke Auli estas anka&#365; pli juna, tion Auli ne
+      kunkalkulas.</p>
+
+    <p>Malla&#365;te, nekompareble malla&#365;te &#349;teliris amba&#365; junaj frandemuloj
+      kaj feli&#265;e evitis &#265;iujn dan&#285;erojn, kiel la &#349;ipo direktata de
+      sperta piloto. La ekstera pordo ja malgajege veblekis, sed anka&#365; &#285;i
+      ne povis malka&#349;i la sekreton de la infanoj: evidente la avino tre
+      laci&#285;is kaj, en profunda dormo, a&#365;dis nenion.</p>
+
+    <p>La luno tra&#349;ovis sian kapon inter la nub&#265;ifonoj kvaza&#365; malsata
+      palviza&#285;a infano kaj rigardadis rektigante la kolon avide: kiel du
+      hometoj, en &#265;emizetoj kaj nudpiedaj, tremskui&#285;ante pro malvarma
+      vento kolektadas la hajlerojn kaj enbu&#349;igas avidege. Tiam &#285;i
+      ektiris al la kapo kun peza ek&#285;emo la &#265;ifonitan litkovrilon kaj
+      lasis brili de tempo al tempo siajn malsatajn deziregemajn okulojn.
+      La korpoj de l' infanoj ricevis pro malvarma vento la koloron de
+      hepatiko, la dentoj saltadante supren-malsupren ne trafis unuj la
+      aliajn, sed malgra&#365; &#265;io &#265;i oni doma&#285;is forlasi la feli&#265;egan
+      landon de hajleroj. Auli meditadis, kial ne &#265;iutage hajlas per pli
+      grandaj, multe pli grandaj hajleroj kaj kial la hajleroj degelas; &#265;u
+      ili ne povus konservi&#285;i ne degelintaj, tiam oni povus ilin uzi dum
+      sufi&#265;e longa tempo. A&#365; kial la hajleroj ne kreskas,<!-- p.10 --> kiam la Patro
+      &#264;iela ilin semas, kiel kreskadas sur la kampo aliaj kreska&#309;oj.
+      Auli preska&#365; konsentus iri al la Patro &#264;iela, se tiu enlasus lin
+      en sian hajlerujon. Se oni nur povas reveni, &#265;ar kiu scias, eble
+      ne trovi&#285;as &#265;e l' Patro &#264;iela tiaspecaj bonegaj franda&#309;oj, kiel
+      okzaloj, junaj alkreska&#309;oj de piceoj kaj pinarboj kaj blanka mola&#309;o
+      de kelkaj herbotrunkoj? &#264;u tie oni povas mordeti la alno&#349;elon, &#265;u
+      tie kreskas sorpoberoj kaj sufi&#265;e acidaj sova&#285;aj pomoj?</p>
+
+    <p>Frosto-malbonulo kurbigis amba&#365; etulojn kaj igis tamen fine
+      pensi pri &#265;ambreniro. Oni suprentiris la &#265;emizetojn kaj dum
+      vidi&#285;is la bluetaj femuroj, oni kolektadis en la sinojn la valoran
+      hava&#309;on, kiom oni povis, &#265;e kio la veramo de Auli igis lin konfesi
+      al la fratino: &raquo;H&#228;ilu, mi tamen timis, kiam la Patro &#264;iela
+      ripro&#265;adis&laquo;. Kaj kiam H&#228;ilu diris nenion: &raquo;H&#228;ilu, mi timis
+      anka&#365; vin, kiam vi alvenis.&laquo; Kiam H&#228;ilu plu silentadis, li rekte
+      eldiris: H&#228;ilu, ne iru al la avino, mi timas dormi sola. Tiam H&#228;ilu
+      diris kolerete: &raquo;Stultulo, mi e&#265; ne povos iri kun hajleroj al la
+      avino, mi devos veni al vi.&laquo; Kaj Auli, la mizerulo, tro malfrue
+      komprenis, ke li malka&#349;is sian gravan sekreton tute senbezone; kion
+      opinias nun H&#228;ilu pri li: timas kvaza&#365; knabino. Kaj se li timas,
+      &#265;u li ne aliformi&#285;os en knabinon, kiel asertas Petsu-knabo. Li ne
+      havis tempon, por pli longe sin turmentadi per meditado: ili devis
+      reeniri en la &#265;ambron kaj oni devis kolekti &#265;iujn fortojn kaj
+      kapablojn, por iri tiel malla&#365;te, ke avino ja ne veki&#285;u.</p>
+
+    <p>Auli kaj H&#228;ilu sidis unu apud la alia sur la litrando kaj frandis
+      la lastajn hajlerojn. La &#265;emizetoj de malsupre malseki&#285;is kaj ili
+      rulis ilin kiel eble plej alten, por ke la malseka &#349;tofo ne tu&#349;u la
+      korpon. Tiam<!-- p.11 --> venkis la laceco kaj la etaj hometoj falis en reciproka
+      &#265;irka&#365;preno en la plej dol&#265;an dormon.</p>
+
+    <p>Alvenis la mateno nuba kaj malhela kvaza&#365; farunsupo, en kiun oni
+      avare pogute ver&#349;as lakton, tiel ke &#285;i apena&#365; povas grizi&#285;i, a&#365;
+      kvaza&#365; maljunulo ebria malfermus post nokta dibo&#265;ado siajn sen tio
+      malklarajn okulojn. E&#265; la birdoj tre malvigle &#265;irpis kaj ne ili
+      ka&#365;zis la eksterordinare<!-- orig: ektesordinare --> fruan veki&#285;on de Auli. La gepatroj estis
+      revenintaj hejmen, tion pruvis jam la botegoj de patro, en kiujn
+      estus enigeblaj po du Auli unu super alia, tiel ke la supra, starante
+      sur la verto de la malsupra, e&#265; sur la piedfingroj apena&#365; povus
+      rigardi trans la randon de la tibiingo. Auli eligis sian nukon el la
+      brakoj de H&#228;ilu kaj ordigis la nokte suprenvolvitan &#265;emizeton al
+      &#285;ia loko.</p>
+
+    <p>&raquo;Auli, H&#228;ilu, elliti&#285;u, elpelu la bovinon, la avino hodia&#365;
+      malsanetas,&laquo; a&#365;di&#285;is kvaza&#365; de ie tre malproksime la vokado de
+      patrino kaj: &raquo;Knabino, kial vi vin nudigis kvaza&#365; karoton,&laquo; oni
+      poste ripro&#265;is. &raquo;Rigardu, kiel bone Auli dormas.&laquo;</p>
+
+    <p>Auli ne volis elliti&#285;i. Nur la kunigitaj fortoj de patrino kaj
+      H&#228;ilu finfine lin venkis. Eble ne tiom oni lin perfortus, sed H&#228;ilu
+      rifuzis pa&#349;tiri sola. Fine la vireto estis vestita kaj oni ekiris
+      ansermar&#349;e en la sekva vicordo: anta&#365;e bovino Maasik kun &#265;iuj
+      kornoj kaj vosto, meze H&#228;ilu kun vergo, kaj malanta&#365;e Auli kun
+      duondormantoj, veki&#285;antaj pensoj, dum &#265;e la hejma pordego staradis
+      la patrino kaj ilin postrigardante, la okulojn per manplato &#349;irmis
+      de sunlumo, kaj la patro &#265;e lignosegado murmuris la verseton:</p>
+
+    <div class="poezio">
+      <div class="strofo">
+        <span class="i0">&raquo;Auli kaj H&#228;ilu,</span><br />
+        <span class="i0">bovineton pelu.&laquo;</span>
+      </div>
+    </div><!-- p.12 -->
+
+    <p>La patro promesis al Auli desegi de lignobloko belan diskon. En kia
+      ajn okazo tio estus neeldireble &#285;ojiginta Aulin, sed hodia&#365; li
+      akceptis la &#285;ojigan avizon tre apatie: kion valoris disko, kiam
+      temis pri io multe pli grava. Auli rekte ekploris, kiam H&#228;ilu ne
+      volis alpeli la bovinon al tiu de Petsu-knabo, &#265;ar H&#228;ilu toleris
+      nek Petsu-knabon, nek liajn petola&#309;ojn. Fine oni interkonsentis pri
+      &raquo;por tre mallonga tempo&laquo; kaj ekiris.</p>
+
+    <p>Petsu-knabo pa&#349;tadis sur la dehakejo kaj rajdsidante sur arbostumpo,
+      frapadis &#285;uste la &#349;elon de fajfilvergo, kiam lia nigrebunta
+      Kl&#228;hvi ekmurmuris. Levinte la okulojn kaj ekvidante la venantajn la
+      kria&#265;ulo tuj a&#265;vo&#265;e ekkriegis:</p>
+
+    <div class="poezio">
+      <div class="strofo">
+        <span class="i0">&raquo;Geedzigo, geedzigo!</span><br />
+        <span class="i0">gefian&#265;oj venas.</span><br />
+        <span class="i0">Auli H&#228;ilu-n edzinigas,</span><br />
+        <span class="i0">Maasik estas doto.&laquo;</span>
+      </div>
+    </div>
+
+    <p>H&#228;ilu tuj reenirigis Maasikon, sed Auli, venkinte la tutan abomenon,
+      iris al sia &#265;iama turmentanto, kvaza&#365; li povus atendi de tie ion
+      bonan.</p>
+
+    <p>&raquo;Bonan tagon, fian&#265;o&laquo;, ekmokis Petsu-knabo, pin&#265;ante la fingron
+      de Auli per vergopinte entran&#265;ita pin&#265;ilo kaj kiam &#265;e la lasta
+      ekgutadis larmoj: &raquo;Vidu, vidu, al li e&#265; ne pla&#265;as en&#349;ovi en la
+      fendon.&laquo;</p>
+
+    <p>Sed por Auli ekzistadis nur ununura problemo kaj &#285;in li devis solvi
+      je &#265;ia prezo.</p>
+
+    <p>&raquo;A&#365;du&laquo;, li volis komenci la demandadon.</p>
+
+    <p>Kl&#228;hvi kuris al iu renkonte kaj Petsu-knabo atentege ekrigardis, kiu
+      estas venonta.</p>
+
+    <p>&raquo;Estas Tilma,&laquo; li fine rekonis.</p><!-- p.13 -->
+
+    <p>Kaj estis Tilma, fratino de Petsu-knabo; &#349;i alportis man&#285;a&#309;on.
+      Knabino kun nigra ta&#365;zita, penda&#265;anta hararo kaj kun &#265;irka&#365;vagadantaj
+      &#349;telistokuloj. Nenien en fremdaj domoj oni volis &#349;in enlasi pro
+      &#349;iaj alglui&#285;antaj fingroj.</p>
+
+    <p>&raquo;Kie vi tiel longe dormadis&laquo;, Petsu-knabo tuj ekripro&#265;is la
+      fratinon, &raquo;mi mortadas tie &#265;i pro malsato.&laquo;</p>
+
+    <p>&raquo;Pli bone estus, se vi tute mortus; tia kverelula&#265;o! Vi &#265;iam
+      kvereladas; tial oni vin nenie toleras kaj nenien enlasas.&laquo;</p>
+
+    <p>&raquo;Vin, &#349;telistinon, oni ne enlasas: &#265;io foriras kun vi, kio estas
+      movebla.&laquo;</p>
+
+    <p>Fari&#285;is ne oportune varmege. Auli vidis, ke nun ne estas eble fari
+      multe. Kaj anka&#365; H&#228;ilu jam vokis kelkfoje. Li iris.</p>
+
+    <p>&raquo;Iru, iru, la edzino atendas&laquo;, mokadis Petsu-knabo, &raquo;mi ilin
+      geedzigis. Maasik estos por doto.&laquo; Kion la fratino diris, Auli tion
+      ne a&#365;dis.</p>
+
+    <p>H&#228;ilu plektadis kroneton el leontondoj. Alian, pretan, &#349;i estis
+      metinta al la kapo.</p>
+
+    <p>&raquo;&#264;u tio estos por mi,&laquo; demandis Auli.</p>
+
+    <p>&raquo;Jam Petsu-knabo faros por vi pli bonan,&laquo; &#349;i respondis malafable.</p>
+
+    <p>Auli mallevis la kapon, en liaj okuloj aperis malseketo, e&#265; H&#228;ilu
+      estas al li malafabla.</p>
+
+    <p>Sed H&#228;ilu ne longe koleretis. Venis por mezuri &#265;u la longo
+      sufi&#265;as, kaj kiam &#285;i sufi&#265;is, &#349;i kunligis la ekstrema&#309;ojn kaj la
+      kroneto estis preta. Kiel belete &#285;i harmoniis kun la laktoblankaj
+      bukletoj de Auli.</p>
+
+    <p>&raquo;H&#228;ilu, anka&#365; Tilma estis tie.&laquo;</p>
+
+    <p>&raquo;&#348;i estu. Neniajn rilatojn mi havas kun via Tilma.&laquo;</p><!-- p.14 -->
+
+    <p>&raquo;Sed ne mia Tilma &#349;i estas. Ili kverelis. Kaj mi foriris. Mi ne
+      scias, &#265;u Tilma estas knabino?&laquo;</p>
+
+    <p>&raquo;Kio &#349;i do estus?&laquo;</p>
+
+    <p>&raquo;Sed &#349;i estas tiel kura&#285;a kiel iu ajn knabo. Kaj povas esti, ke se
+      la knabino estas kura&#285;a, &#349;i fari&#285;os knabo.&laquo;</p>
+
+    <p>&raquo;Ne fari&#285;os.&laquo;</p>
+
+    <p>&raquo;Sed se la knabo povas timi, ke li fari&#285;os knabino.&laquo;</p>
+
+    <p>&raquo;Certe ne fari&#285;os.&laquo;</p>
+
+    <p>Estus ja bonega &#265;io &#265;i, opiniis Auli, sed ne plene li konvinki&#285;is:
+      eble, malgra&#365; &#265;io, Petsu-knabo konas pli bone la aferojn, senka&#365;ze
+      li ja ne estus dirinta. Se Auli nur povus iri pridemandi. Sed
+      kiamaniere?</p>
+
+    <p>&raquo;Auli kaj H&#228;ilu,&laquo; oni vokis de malproksimege, &raquo;iru kaj prenu vian
+      doton, alie Mustik eligos &#285;iajn intestojn.&laquo;</p>
+
+    <p>Kaj vere Maasik, profitante la tempon, kiam la infanoj ne sufi&#265;e
+      fervore &#285;in priatentis, foriris viziti Mustikon de Petsu.</p>
+
+    <p>&raquo;Iru,&laquo; ordonis H&#228;ilu, enmanigante al Auli la vergon, &raquo;kaj tuj
+      revenigu de tie Maasikon.&laquo;</p>
+
+    <p>Auli senprokraste konsentis, &#265;io &#265;i ja esti&#285;is kvaza&#365; la&#365; mendo.
+      La bovinoj tute ne havis malamikajn intencojn: ili tre komplezeme
+      lekpurigadis unu la alian. Petsu-knabo montris al Auli ion en sia
+      mano.</p>
+
+    <p>&raquo;Nu, feli&#265;a fian&#265;o, bofilo de propra patro, rigardu, kio &#285;i
+      estas!&laquo;<!-- orig: estas! --></p>
+
+    <p>Auli rigardis, skuis la kapon.</p>
+
+    <p>&raquo;Priflaru, kian odoron ili havas!&laquo;</p>
+
+    <p>Auli priflaris: &raquo;Malbonan.&laquo;</p>
+
+    <p>Petsu-knabo malpla&#265;e ekrida&#265;is: &raquo;Malbonan. Do,<!-- p.15 --> vi diras, malbonan
+      odoron ili havas. Nu, man&#285;u, man&#285;u ilin, vi devas ilin forman&#285;i.&laquo;</p>
+
+    <p>Kaj li komencis enbu&#349;igi al Auli tiun malbonodora&#309;on. Auli
+      kontra&#365;staris kiom li povis, &#349;irmadis la bu&#349;on per mano,
+      el&#349;iradis, kra&#265;adis. Fine Petsu-knabo laci&#285;is.</p>
+
+    <p>&raquo;&#264;u vi anka&#365; scias, kion vi man&#285;is? &#284;i estis la haroj de Tilma.
+      Mi nudigis de haroj la duonon de &#349;ia kapo.&laquo;</p>
+
+    <p>Auli jam konis la har&#349;iradojn de Petsu-knabo. Li penis la&#365;eble
+      eviti la temon.</p>
+
+    <p>&raquo;A&#365;du, se la knabo timas, &#265;u li fari&#285;os knabino?&laquo;</p>
+
+    <p>&raquo;De kie vi tion a&#365;dis?&laquo;</p>
+
+    <p>&raquo;Vi mem foje diris.&laquo;</p>
+
+    <p>En la kapo de Petsu-knabo levi&#285;is la suno de diveno.</p>
+
+    <p>&raquo;Jes, li fari&#285;os. Mi mem havas onklinon, kiu anta&#365;e estis onklo.&laquo;</p>
+
+    <p>Auli volis pli detale pridemandi, kiel fari&#285;os efektive tiaspeca
+      kontra&#365;natura fenomeno, sed jam a&#365;di&#285;is la malpacienca voko de
+      H&#228;ilu: &raquo;Auli!&laquo;</p>
+
+    <p>Auli ekpelis Maasik-on, al kiu ne tre pla&#265;is disi&#285;i de sia amikino.
+      H&#228;ilu rapidis helpi al Auli kaj &#265;e &#349;ia energia kunagado oni
+      balda&#365; foriris el la dan&#285;era regiono. De malproksime a&#365;di&#285;is nur
+      la kantado de Petsu-knabo:</p>
+
+    <div class="poezio">
+      <div class="strofo">
+        <span class="i0">&raquo;Kio &#285;i estis? Kio &#285;i estis?</span><br />
+        <span class="i0">Auli ja &#265;e H&#228;ilu dormis.&laquo;</span>
+      </div>
+    </div>
+
+    <p>Post kelke da tempo alvenis la avino kun hundo S&#228;rtsu.</p>
+
+    <p>&raquo;Avineto, &#265;u vi ree estas sana?&laquo;</p><!-- p.16 -->
+
+    <p>&raquo;Kia estas sano de maljuna homo. Iru hejmen, mi mem pa&#349;tos la
+      bovinon.&laquo;</p>
+
+    <p>Estis ja bonege, ke avino venis kun permeso de hejmeniro. Sur la
+      pa&#349;tejo restis la avino, Maasik kaj S&#228;rtsu, la infanoj foriris.</p>
+
+    <p>H&#228;ilu vigle pa&#349;adis anta&#365;e, anka&#365; Auli penadis, sed lia pa&#349;ado
+      ne &#265;iam prosperis. H&#228;ilu devis atendi.</p>
+
+    <p>&raquo;Nu venu, venu, kion vi tie kovadas, onklino,&laquo; &#349;i koleretis.</p>
+
+    <p>La vorto &raquo;onklino&laquo; kvaza&#365; ekpikis, kvaza&#365; dolorige ekpu&#349;etis,
+      sed tiu &raquo;io&laquo;, kiu estis ekregonta Aulin, malhelpis la akrecon de
+      sentado.</p>
+
+    <p>&raquo;Mi ne povas plu, miaj piedoj laci&#285;is,&laquo; li spiregadis.</p>
+
+    <p>&raquo;Kuru pli ofte al Petsu-knabo,&laquo; malice mokadis H&#228;ilu, sed vidante
+      la malsanetan viza&#285;on de Auli, tuj pli mildigis sian severecon kaj
+      invitis: &raquo;Nu, venu sur&#349;ultren!&laquo;</p>
+
+    <p>Kaj sur&#349;ultre de la fratino alvenis hejmen la vireto, kies kapo
+      estis plena de zorgegoj.</p>
+
+    <p>&raquo;Jen mirinda&#309;o, knabino portadas knabon; la knabo ja devus portadi
+      la knabinon,&laquo; &#349;ercadis, konversacianta trans barilo kun patro, la
+      barboza T&#246;ss-Mihkel, veninta por forigi la tertuberojn kaj defal&#265;i
+      la arbustaron. Oni volis a&#265;eti fal&#265;ma&#349;inon, tial la herbejon oni
+      devis ebenigi sur la bieneto.</p>
+
+    <p>&raquo;Kia knabo li estas,&laquo; karese diris la patrino rapide alveninte
+      kaj preninte Aulin en la sinon, &raquo;malgranda hometo. &#264;u la piedoj
+      laci&#285;is?&laquo;</p>
+
+    <p>&raquo;Laci&#285;is,&laquo; respondis Auli langvore kaj pensis en si mem: &raquo;Anka&#365;
+      &#349;i! Anka&#365; la patrino ne rigardas min knabo.&laquo;</p><!-- p.17 -->
+
+    <p>&raquo;Rigardu, kian belan diskon mi por vi desegis,&laquo; montris la patro.</p>
+
+    <p>&raquo;Ho jes, kiel bela &#285;i estas, &#285;uste tian volus havi anka&#365; mi. Donu
+      al mi, mi forprenos &#285;in,&laquo; incitetis T&#246;ss-Mihkel &#349;erce.</p>
+
+    <p>&raquo;Venu rapide, alie la onklo forprenos,&laquo; invitis la patro Auli-n.</p>
+
+    <p>La ordinara Auli estus elbaraktinta el la sino de la patrino kaj
+      alkurinta kun la&#365;ta kriego, sed la nuna nur rigardadis kun fingro
+      enbu&#349;e, kun lar&#285;e malfermitaj senbrilaj okuloj.</p>
+
+    <p>&raquo;La infano laci&#285;is, lasu lin trankvila, diris la patrino milde
+      karesante la kapon de Auli. Al Auli ruli&#285;is bulo en la gor&#285;on,
+      larmoj en la okulojn kaj plorado elver&#349;i&#285;is kvaza&#365; depost digo.</p>
+
+    <p>&raquo;H&#228;ilu, prenu, portu al li la diskon. Ne ploru, fileto, onklo ne
+      rajtas forpreni la diskon de infano.&laquo;</p>
+
+    <p>Oni alportis la diskon, alvenis H&#228;ilu kaj karesis kaj kisis la
+      vangojn de Auli, alvenis anka&#365; la aliaj, sed Auli ne povis &#265;esi
+      ploradi; li mem ne sciis, kio &#285;i estas.</p>
+
+    <p>&raquo;Ni iru en la &#265;ambron; la infano man&#285;os kaj tuj enliti&#285;os,&laquo;
+      decidis la patrino.</p>
+
+    <p>Oni iris en la &#265;ambron kaj por man&#285;i estis pizosupo, la plej
+      pla&#265;a al Auli. La patrino kaj H&#228;ilu konkuradis unu kun la alia
+      lin man&#285;igante, proponadis tion kaj alian. Auli gustumis unu-du
+      kulerplenojn kaj poste diris: &raquo;Mi ne volas.&laquo;</p>
+
+    <p>&raquo;Kion vi do volas? Eble bulkon? La patro alportos el la butiko.&laquo;</p>
+
+    <p>&raquo;Mi volas nek bulkon, nek ion alian.&laquo;</p>
+
+    <p>La patrino estis senkonsila.</p>
+
+    <p>&raquo;Kion vi faris al li, bubino?&laquo;</p><!-- p.18 -->
+
+    <p>&raquo;Nenion mi faris. Li estis &#265;e Petsu-knabo,&laquo; penis H&#228;ilu sin
+      ekskuzi.</p>
+
+    <p>&raquo;Kial vi permesis tion?&laquo;</p>
+
+    <p>&raquo;&#264;u mi permesis? li mem senpermese iris,&laquo; ekskuzadis sin H&#228;ilu
+      kaj time atendis, ke Auli nun diros al la patrino, kiel la fratino
+      igis lin revenigi la bovinon.</p>
+
+    <p>Sed Auli a&#365;skultis apatie, kvaza&#365; lin ne koncernus la afero entute,
+      kaj kiam la patrino demandis: &raquo;&#264;u Petsu-knabo vin suferigis,&laquo; Auli
+      nur redemandis:</p>
+
+    <p>&raquo;Panjo, &#265;u la onklino de Petsu-knabo estis anta&#365;e onklo?&laquo;</p>
+
+    <p>&raquo;Li deliras,&laquo; eklamentis la patrino kaj enlitigis la infanon.</p>
+
+    <p>H&#228;ilu estis iom &#265;agrenita, ke &#349;in oni ripro&#265;is pro Auli, aliokaze
+      anka&#365; &#349;i kunirus. Nun &#349;i sidadis &#265;e la fenestro kaj rigardis kun
+      malbonhumore aspektanta viza&#285;o eksteren. Sed kiam &#349;i a&#365;dis &#285;emadi
+      la fraton, ekregis &#349;in kompato kaj anka&#365; &#349;i rapidis al Auli.</p>
+
+    <p>&raquo;Kio doloras al vi,&laquo; demandis la patrino.</p>
+
+    <p>&raquo;La ventro doloras&mdash;tie &#265;i.&laquo;</p>
+
+    <p>La patrino masa&#285;adis, deklamis la sor&#265;vortojn &raquo;keermus-kaarmus&laquo;,
+      donis ian tinkturon. Auli &#285;emadis jen pli la&#365;te, jen pli malla&#365;te.
+      La patrino palpadis liajn ardantajn vangojn kaj frunton.</p>
+
+    <p>&raquo;&#264;u anka&#365; la kapo doloras?&laquo;</p>
+
+    <p>&raquo;La kapo ne doloras&mdash;tiel.&laquo;</p>
+
+    <p>&raquo;H&#228;ilu, kuru rapide al la pa&#349;tejo. La avino pelu hejmen la
+      bovinon, eble &#349;i konas ian rimedon.&laquo;</p>
+
+    <p>H&#228;ilu ekrapidis pli ol ordinare: &#349;i ja sciis, kiom gravan komision
+      &#349;i havas. Intertempe venis en la &#265;ambron la patro.</p>
+
+    <p>&raquo;Nu, fileto, kiel vi fartas?&laquo;</p>
+
+    <p>Auli ridetis malforte kaj kvaza&#365; sentante sin iomete<!-- p.19 --> kulpa: Jen,
+      kiel vi vidas pa&#265;jo, mi respondus, sed mi mem ne scias. Anstata&#365; li
+      respondis la patrino:</p>
+
+    <p>&raquo;Li ardadas kaj &#285;emadas kaj plendas pri ventro-doloro tie &#265;i.&laquo;</p>
+
+    <p>La patro ekridis per rido lar&#285;a, bondezira kaj kura&#285;iga.</p>
+
+    <p>&raquo;Malgrava&#309;o, forpasos, nenion &#285;i povos fari al viro.&laquo;</p>
+
+    <p>&raquo;Eble ni invitu la kuraciston,&laquo; proponis la patrino, plena de
+      zorgoj pro sia favorato.</p>
+
+    <p>&raquo;Ni iom atendu,&laquo; decidis la patro, &raquo;eble la malsano &#265;esos anka&#365;
+      sen li.&laquo;</p>
+
+    <p>Kaj li foriris el la &#265;ambro.</p>
+
+    <p>Auli inter la doloratakoj ekdormis per malpeza fu&#285;ema dormo.
+      Kiam alvenis la avino, &#349;i ser&#265;adis en siaj ujetoj kaj kestetoj,
+      volva&#309;etoj kaj liga&#309;etoj, kolektadis de tie kaj tie &#265;i eretojn kaj
+      grajnetojn, foliojn kaj radikfran&#285;etojn, florojn kaj bur&#285;onojn,
+      trunketojn kaj &#349;elon sekigitan, ordonis ion kuiri, donis alian
+      nekuirite en la bu&#349;on a&#365; metis sur la ventron. Auli akceptis
+      &#265;ion obeeme, permesis al &#349;i premadi kaj masa&#285;i, sor&#265;murmuri kaj
+      krucdesegnadi, sed nenio helpis, la suferoj &#265;iam plii&#285;is.</p>
+
+    <p>Jen alvenis vila&#285;maljunulinoj kun siaj medikamentoj kaj da&#365;rigis la
+      kuracadon de Auli.</p>
+
+    <p>Venis onklino de M&#228;eltpere kaj alportis verm-eligilon. Oni &#285;in
+      endonis.</p>
+
+    <p>Venis boonklino de Altpere kun botelo da brando. Oni al&#349;miris
+      de ekstere.</p>
+
+    <p>Venis Tiiu el Tagaru kun tinkturo de asafetido. Oni &#285;in endonis.</p>
+
+    <p>Venis anka&#365; multaj aliaj kaj kun &#265;ies alveno ricevis la malfeli&#265;a
+      Auli &#265;iam ion, a&#365; interne a&#365; ekstere,<!-- p.20 --> tiel ke se li anta&#365;e estus
+      tute sana, nun li devis malsani&#285;i post tiom intensa kuracado. Kio
+      scias, kio estus fari&#285;inta, se ne alvenus la baptopatrino de Auli.
+      &#348;i forpelis &#265;iujn vila&#285;maljunulinojn kaj diris al la patrino:</p>
+
+    <p>&raquo;Kion vi faras, &#265;u vi volas mortigi la infanon?&laquo;</p>
+
+    <p>&raquo;Kion mi faru, kiam li kriadas kaj &#285;emadas.&laquo;</p>
+
+    <p>&raquo;Do venigu la kuraciston, bonaj hometoj!&laquo;</p>
+
+    <p>&raquo;Sed la maljunulo ne iras.&laquo;</p>
+
+    <p>&raquo;Do mi mem iros. Sed gardu vin, ke vi ne permesu al tiuj
+      sor&#265;istinoj transpa&#349;i vian sojlon.&laquo;</p>
+
+    <p>Kaj jam &#349;i foriris.</p>
+
+    <p>&raquo;Kien iris baptopatrino?&laquo;</p>
+
+    <p>&raquo;&#348;i iris venigi la kuraciston.&laquo;</p>
+
+    <p>Auli konsideris en si mem, &#265;u la kuracisto estas io bona a&#365;
+      malbona, &#265;u lin oni endonas a&#365; de ekstere al&#349;miras. A&#365; ... anta&#365;
+      liaj okuloj aperis la zorgoplena figuro de la baptopatrino, kiu,
+      simile al la avino, klopode ser&#265;adas en siaj ujetoj kaj kestetoj,
+      volva&#309;etoj kaj liga&#309;etoj kaj ser&#265;as en ili&mdash;la kuraciston.</p>
+
+    <p>&raquo;Panjo!&laquo;</p>
+
+    <p>&raquo;Nu&laquo;, &#349;i timi&#285;as pro la subita ekvoko.</p>
+
+    <p>&raquo;Unu kesteto de avino estas en la provizejo sub la bretaro, eble en
+      &#285;i estas la kuracisto.&laquo;</p>
+
+    <p>&raquo;La kuracisto ne trovi&#285;as en kesteto, li estas homo.&laquo;</p>
+
+    <p>&raquo;Homo,&laquo; miris Auli.</p>
+
+    <p>&raquo;Kuracisto estas sa&#285;a homo, kiu scipovas resanigi.&laquo;</p>
+
+    <p>&raquo;&#264;u mi ne estas sana?&laquo;</p>
+
+    <p>&raquo;Ne, vi estas malsana.&laquo;</p>
+
+    <p>&raquo;Malsana. Ha, tiel oni estas malsana? Kaj oni poste mortos?&laquo;</p>
+
+    <p>&raquo;Ne parolu tiel, karuleto!&laquo;</p><!-- p.21 -->
+
+    <p>Sed<!-- orig: &raquo;Sed --> la avino &#265;iam diris: &raquo;Kuru, kuru ekstere, poste vi
+      malsani&#285;os kaj mortos.&laquo;</p>
+
+    <p>&raquo;Vi ne mortos, resani&#285;os.&laquo;</p>
+
+    <p>Tiu &raquo;resani&#285;os&laquo; iom strange e&#293;adas en la oreloj de Auli. Li
+      ekser&#265;as en siaj ne multnombraj rememoroj. Vere iam diris ilia patro
+      al Petsu-maljunulo: &raquo;Vi resani&#285;os kaj ankora&#365;foje edzi&#285;os.&laquo;</p>
+
+    <p>&raquo;Panjo, &#265;u anka&#365; mi edzi&#285;os tiam?&laquo;</p>
+
+    <p>&raquo;Certe vi edzi&#285;os, kiam alvenos la tempo.&laquo;</p>
+
+    <p>&raquo;&#264;u anka&#365; H&#228;ilu edzi&#285;os?&laquo;</p>
+
+    <p>&raquo;Ne, H&#228;ilu ne edzi&#285;os.&laquo;</p>
+
+    <p>&raquo;&#264;u la knabinoj ne edzi&#285;os?&laquo;</p>
+
+    <p>&raquo;Ili ne edzi&#285;os.&laquo;</p>
+
+    <p>&raquo;Sed mi edzi&#285;os?&laquo;</p>
+
+    <p>&raquo;Jes, vi edzi&#285;os.&laquo;</p>
+
+    <p>Auli iomete primeditis. Tiam li &#349;telatakis de alia flanko:</p>
+
+    <p>&raquo;Sed kion faras la knabinoj?&laquo;</p>
+
+    <p>&raquo;La knabinoj edzini&#285;os.&laquo;</p>
+
+    <p>&raquo;Do H&#228;ilu edzini&#285;os?&laquo;</p>
+
+    <p>&raquo;Ver&#349;ajne &#349;i edzini&#285;os, se ebli&#285;os.&laquo;</p>
+
+    <p>&raquo;Sed mi ja ne edzini&#285;os?&laquo;</p>
+
+    <p>&raquo;Ne, la knaboj ne edzini&#285;as, ili edzinigas la knabinojn.&laquo;</p>
+
+    <p>Tiel. &#284;i estis sufi&#265;e turmenta konversacio. Auli kunpremis dum
+      doloratakoj la dentojn kaj suferis vire, por ruzete scii&#285;i &#265;e
+      panjo, kio &#349;i lin opinias esti. Kvankam la konversacio ne donis
+      plenan certecon, tamen e&#265; tiom estis bonvena. Auli estis nun
+      kelkrilate kontentigita, nur la doloro en ventro, tiu&mdash;malsano.</p>
+
+    <p>&raquo;Panjo, &#265;u tiu doloro estas malsano?&laquo;</p>
+
+    <p>&raquo;Jes, infaneto, malsano doloras.&laquo;</p><!-- p.22 -->
+
+    <p>&raquo;Sed se oni batas per vergoj, &#265;u anka&#365; tio estas malsano?&laquo;</p>
+
+    <p>&raquo;Tiam ne estas malsano, tiam oni punas.&laquo;</p>
+
+    <p>&raquo;Sed &#265;u malsano ne estas puno?&laquo;</p>
+
+    <p>&#264;e panjo e&#265; la bu&#349;o malfermi&#285;is: kia hometo li estas kaj kiel li
+      demandas, ke e&#265; &#349;i&mdash;maljuna homo&mdash;scipovas diri nenion. Kio do el
+      li fari&#285;os, se li restos viva.</p>
+
+    <p>Auli ne kontentis pri neplena scio. Li demandesploris, kiu sendas la
+      malsanon, pro kio li sendas kaj &#265;u ne povus la Patro &#264;iela tiel
+      aran&#285;i la aferon, ke la malsanoj tute ne ekzistu.</p>
+
+    <p>Dum kelka tempo regis silento. Tiam a&#365;di&#285;is, simile al la
+      &raquo;he&#365;reka&laquo; de Arkimedo, la ekkrio de Auli: &raquo;Hajleroj.&laquo;</p>
+
+    <p>&raquo;Kiaj hajleroj,&laquo; demandis la patrino, sed ne ricevinte respondon,
+      &#349;i opiniis, ke la infano deliras kaj &#349;i lasis lin trankvila.</p>
+
+    <p>Auli sciis nun, ke la Patro &#264;iela punas lin pro man&#285;ado de hajleroj
+      kaj miris nur, kiel H&#228;ilu, lia kunkulpulino, povis eviti la punon.
+      Kvankam la afero lin treege interesis, tamen li laci&#285;is kaj ne havis
+      forton por plia demandado.</p>
+
+    <p>Li ekdormis por mallonga tempo kaj kiam li ree malfermis la okulojn,
+      apud la lito staris fremda onklo kun stranga kaprobarbo kaj kun
+      nazpin&#265;iloj. Staris kaj gaje ridadis:</p>
+
+    <p>&raquo;Nu, eta vireto, kio estas al vi? &#264;u klako en stomako a&#365; pesto en
+      intesto?&laquo;</p>
+
+    <p>Li mezuris temperaturon, esploris la pulson, rigardis al sia
+      po&#349;horlo&#285;o, prempalpis kaj masa&#285;is, demandis kaj esploris. &#264;ies
+      okuloj estis alnajlitaj al la kuracisto, en ili ardis senvorta
+      demando.</p><!-- p.23 -->
+
+    <p>&raquo;Cekinflamo. Brulumo en intesto. Bezoni&#285;as apendiktomio. Oni devas
+      lin operacii; nu, tran&#265;i, se vi ne komprenas. Vi devas tuj veturigi
+      lin en la urbon, alie ...&laquo;</p>
+
+    <p>Li finis per gesto.</p>
+
+    <p>&raquo;Kiel ni, malri&#265;uloj, havigos la monon necesan?&laquo;</p>
+
+    <p>&raquo;Tjes, tion mi ne povas diri. Penu iel havigi.&laquo;</p>
+
+    <p>&raquo;&#264;u alie la afero ne estas aran&#285;ebla?&laquo;</p>
+
+    <p>&raquo;Alie &#285;i ne estos, t-jes.&laquo;</p>
+
+    <p>Kaj por liberi&#285;i de la malagrabla konversacio, li turnas sin
+      ankora&#365; fojon al Auli: &raquo;Adia&#365;, vireto, vi vidos la urbon kaj oni
+      tie vin resanigos, tjes.&laquo;</p>
+
+    <p>Finita estis la vizito, la patro mem reveturigis la kuraciston.</p>
+
+    <p>Stranga &#349;ajnis al Auli la absurda logiko: por resanigi, oni devas
+      lin tran&#265;i. Kaj kiel oni lin tran&#265;os? &#264;u per tran&#265;ilo, kiel la
+      patrino tran&#265;as el la sapokuira&#309;o kubeton post kubeto. Kio restos
+      tiam el li?</p>
+
+    <p>&raquo;Panjo, &#265;u en la urbo oni tran&#265;os el mi kubetojn?&laquo;</p>
+
+    <p>&raquo;Kiajn kubetojn?&laquo;</p>
+
+    <p>&raquo;&#264;u tiel oni tran&#265;os, kiel vi tran&#265;as la sapokuira&#309;on?&laquo;</p>
+
+    <p>&raquo;Oni ne tiel tran&#265;os.&laquo;</p>
+
+    <p>&raquo;&#264;u oni distran&#265;os en du partojn? La&#365;longe a&#365; la&#365;lar&#285;e?&laquo;</p>
+
+    <p>&raquo;Oni entran&#265;os nur etan-etan vundeton kaj poste oni tuj
+      kunkudros.&laquo;</p>
+
+    <p>&raquo;&#264;u per kudroma&#349;ino oni kudros?&laquo;</p>
+
+    <p>&raquo;Per malgranda ora kudrileto kaj silka fadeno.&laquo;</p>
+
+    <p>Al Auli rememori&#285;as liaj etaj vundetoj, kiujn neniu kunkudris
+      per ora kudrileto, nek per silka fadeno,<!-- p.24 --> sed al kiuj oni metis
+      pice-rezinon kaj kiujn oni banda&#285;is per mola &#265;ifona&#309;o.</p>
+
+    <p>&raquo;Sed, panjo, &#265;u banda&#285;i oni ne povas?&laquo;</p>
+
+    <p>&raquo;Oni anka&#365; banda&#285;as.&laquo;</p>
+
+    <p>&raquo;Panjo, mi ne volas, ke oni min kudru.&laquo;</p>
+
+    <p>&raquo;Do oni ne kudros, ekdormu nun!&laquo;</p>
+
+    <p>Auli fermas la okuletojn, sed lia vigla kapeto laboradas. Bonege, se
+      oni ne kudros. Tiuj onkloj estas tolereblaj. Sed ...</p>
+
+    <p>&raquo;Panjo, &#265;u oni tran&#265;os en la fingropinton?&laquo;</p>
+
+    <p>&raquo;Ne, en la ventron, kara fileto.&laquo;</p>
+
+    <p>En la ventron? Terurege! Kiel la rano estis entran&#265;ita de la patro
+      per fal&#265;ilo.</p>
+
+    <p>&raquo;Sed tiam ja eli&#285;os la intestoj.&laquo;</p>
+
+    <p>&raquo;En intesto trovi&#285;as la malsano. Alie ne eblas vin resanigi, oni
+      devos elpreni de tie la ka&#365;zon de malsano.&laquo;</p>
+
+    <p>Al Auli mankas forto por da&#365;rigi la demandadon. Tiom da nova&#309;oj,
+      perfoje, ja turnadus kies ajn kapon.</p>
+
+    <p>La panjo eliris kaj restigis H&#228;ilun gardadi la malsanulon. Iu
+      stumble enfalas trans la sojlo: Petsu-knabo. H&#228;ilu glui&#285;as
+      proksime-proksimege al la frateto, preta &#265;iumomente elgrati la
+      okulojn de la fremdulo, timante, ke tiu povus iel misfari al Auli.
+      Sed Petsu-knabo mem havas &#265;agrenegon: la gepatroj dungigis lin
+      al bienetmastro por pa&#349;tado, kio malpliigis lian humoron je cent
+      gradoj. Imagi&#285;is eterna sklaveco, vipo kaj katenoj, dum hejme estis
+      eterna bonestado: promenadi post la ununura bovino kaj ordoni al
+      aliaj, kiom nur pla&#265;as. Tilma malice mokis: &raquo;Ne pensu, buba&#265;o,
+      ke vi nun la&#365;anta&#365;e bonfartos, oni altiros viajn orelojn al
+      boto&#349;tipoj, la patrino mem diris!&laquo; Kaj evidente &#349;i anka&#365; diris,
+      alie Tilma ne scius paroli pri tio.</p><!-- p.25 -->
+
+    <p>Petsu-knabo estis tre humila kaj bonvola: e&#265; fojeton ne ekparolis
+      iel maldece. Li demandis kondolence pri la sanstato de Auli. Auli
+      interpretis la aferon la&#365; sia kompreno. La onklo kun grandaj okuloj
+      diris, ke en lia intesto io brulas. Eble la knaboj de La &#264;iela
+      Patro &#309;etis tien, en &#265;i tiu nokto de hajlado, alumeton. Nun oni
+      alimaniere ne povas elpreni, li devas veturi en la urbon; tie oni
+      entran&#265;os en la ventron, elprenos la alumeton kaj kunkudros la
+      ventron per ora kudrilo kaj silka fadeno. Kaj nenio plu.</p>
+
+    <p>Petsu-knabo a&#365;skultadis kaj kapjesadis aprobe al tiom simpla
+      resani&#285;maniero. Tiam li ekplendis pri sia malfeli&#265;o kaj &#349;ajnis
+      e&#265; ne rimarki la cirkonstancon, ke tiurilate H&#228;ilu malka&#349;e
+      vidigis sian plezuron. Por li en la nuna momento estis tute egale,
+      kiel rilatis aliaj al lia afero, li &#265;efe bezonis iun, al kiu li
+      povu paroli pri &#265;io, malpezigi la koron. Fine anka&#365; tiu &#265;i temo
+      el&#265;erpi&#285;is kaj Petsu-knabo vidigis intencon de foriro. Anta&#365;e li
+      longe ser&#265;adis en la po&#349;oj kaj kiam li trovis la ser&#265;iton, li
+      enmanigis &#285;in al Auli. La koron de Auli plenigis kompatemo senlima
+      kaj homamo senfina. Li flustris:</p>
+
+    <p>&raquo;Mi beda&#365;ras.&laquo;</p>
+
+    <p>&raquo;Kion vi beda&#365;ras,&laquo; demandis Petsu-knabo.</p>
+
+    <p>&raquo;Ke ili vin fordonas.&laquo;</p>
+
+    <p>&raquo;Ho, bagatela&#309;o, ne multe &#285;i gravas por viro,&laquo; fanfaronis
+      Petsu-knabo kaj ekser&#265;is la anson.</p>
+
+    <p>Auli seriozi&#285;is, li rememoris pri io.</p>
+
+    <p>&raquo;A&#365;du!&laquo;</p>
+
+    <p>&raquo;Nu?&laquo;</p>
+
+    <p>&raquo;&#264;u via onklino estis iam onklo?&laquo;</p>
+
+    <p>Petsu-knabo ne kura&#285;is profani la solenan momenton per mensogado.</p><!-- p.26 -->
+
+    <p>&raquo;Ne estis, mi mensogis.&laquo;</p>
+
+    <p>&raquo;Diru: Je Dio!&laquo;</p>
+
+    <p>&raquo;Je Dio, mi mensogis. Mia onklino neniam estis onklo. Pardonu al
+      mi!&laquo;</p>
+
+    <p>Auli etendas la manon. Li estus tujmomente pardoninta al la tuta
+      mondo, tiom granda fari&#285;is subite lia koro. Petsu-knabo foriris.
+      Auli rigardis la ricevitan donacon. Ora butono (la oro tamen estis
+      nur kupro) &#285;i estas belega. Li alkudros &#285;in al sia jaketo. Kiel
+      bona estas Petsu-knabo: li donacis al Auli oran butonon. Se anka&#365;
+      Auli povus donaci ion al iu.</p>
+
+    <p>Subite Aulin ekregis granda ideo.</p>
+
+    <p>&raquo;H&#228;ilu, se mi trinkos, &#265;u la akvo ver&#349;i&#285;os en la inteston?&laquo;</p>
+
+    <p>&raquo;Mi ne scias, mi iros, demandos patrinon.&laquo;</p>
+
+    <p>&raquo;Iru, demandu, estu bona!&laquo;</p>
+
+    <p>H&#228;ilu iris, Auli tremis pro ekscito.</p>
+
+    <p>&raquo;Jes, la akvo ver&#349;i&#285;os en la inteston,&laquo; diris H&#228;ilu reveninte.</p>
+
+    <p>&raquo;Do alportu akvon, sed tre multe! Kun granda kru&#265;o.&laquo;</p>
+
+    <p>H&#228;ilu alportis la akvon. Auli sin sidigis.</p>
+
+    <p>&raquo;Metu nun la orelon tien,&mdash;&#265;i tien!&laquo;</p>
+
+    <p>H&#228;ilu metis la orelon al la ventro de Auli.</p>
+
+    <p>&raquo;Alpremi&#285;u proksimen&mdash;proksimen kaj a&#365;skultu atentege!&laquo;</p>
+
+    <p>Auli trinkis kaj trinkis, H&#228;ilu a&#365;skultadis kaj a&#365;skultadis.</p>
+
+    <p>&raquo;&#264;u vi a&#365;dis ion?&laquo;</p>
+
+    <p>&raquo;Mi ne a&#365;dis.&laquo;</p>
+
+    <p>&raquo;&#264;u vi vere ne a&#365;dis?&laquo;</p>
+
+    <p>&raquo;Vere mi ne a&#365;dis.&laquo;</p>
+
+    <p>&raquo;Diru: Je Dio!&laquo;</p><!-- p.27 -->
+
+    <p>&raquo;Je Dio, mi ne a&#365;dis.&laquo;</p>
+
+    <p>Auli &#265;agreni&#285;is. Estas ja malfacile disi&#285;i de sia favorata ideo.
+      Auli volis helpi al si mem: estingi la bruladon en la intesto, sed
+      nun H&#228;ilu ne a&#365;dis la sibladon de estingi&#285;o.</p>
+
+    <p>Por Auli komenci&#285;is malbonaj horoj. Senhelpe&mdash;senkonsile &#265;iuj
+      staradis &#265;e la lito&mdash;la patrino, la avino kaj H&#228;ilu, kelkfoje
+      anka&#365; la patro al ili ali&#285;is. Unu vo&#265;etadis, alia konsolis, tria
+      ploris kaj karesis la molan hararon kaj palajn vangojn, dum la kvara
+      penis &#349;erci: &raquo;La malsano tuj fini&#285;u, mia knabo resani&#285;u!&laquo; sed
+      la &#349;erco tute ne estis gaja &#349;erco, &#285;i estis malgaja &#349;erco,
+      altrudita, la&#365;&#349;ajna &#349;erco, kiel povus &#349;erci komedianto havante
+      en la koro obsedan suferon a&#365; funebron. La doloro ekatakis emfaze
+      kaj igis la etan suferanton &#349;vitegi je la tuta korpo, la hararo
+      malseki&#285;is kvaza&#365; &#285;i estus &#309;us lavita. Inter doloratakoj, la
+      malsanulo trankvili&#285;is kaj e&#265; ridetis tra larmoj, kiel kelkafoje
+      kaj pluvadas kaj la suno brilas samtempe. En unu el tiaj sunbrilaj
+      momentoj Auli subite demandis:</p>
+
+    <p>&raquo;&#264;u la urbo havas grandan breton?&laquo;</p>
+
+    <p>&raquo;Kian breton,&laquo; ne komprenis la aliaj.</p>
+
+    <p>&raquo;Kie oni sin ban-vergas.&laquo;</p>
+
+    <p>&raquo;A&#293;,&laquo; divenis la patrino, &raquo;la urbo ne estas vaporbanejo, en la
+      urbo trovi&#285;as multe da domoj kaj pre&#285;ejoj kaj&mdash;vi ja mem poste
+      vidos.&laquo;</p>
+
+    <p>&raquo;Sed &#265;u la urbo estas malproksime, panjo?&laquo;</p>
+
+    <p>&raquo;Malproksime, karuleto, malproksime.&laquo;</p>
+
+    <p>&raquo;Sed kiel ni &#285;in atingos, mi piediri ne povas, eble panjo min
+      portos.&laquo;</p>
+
+    <p>&raquo;Ni veturos &#265;evale, eble per ma&#349;ino.&laquo;</p>
+
+    <p>&raquo;Per tiu &#265;i?&laquo; kaj Auli montris al la kudroma&#349;ino.</p><!-- p.28 -->
+
+    <p>&raquo;Ne, per relvojma&#349;ino.&laquo;</p>
+
+    <p>Nova febroatako &#265;esigis la demandadon. S&#228;rtsu ekstere ekbojegis.</p>
+
+    <p>&raquo;Iru pririgardi, kial la hundo bojas,&laquo; ordonis la avino al H&#228;ilu.
+      H&#228;ilu ne povis e&#265; formoveti&#285;i de la rando de l' lito, kiam eniris
+      la baptopatrino de Auli kaj malanta&#365; &#349;i la patro.</p>
+
+    <p>&raquo;Kion vi kovadas tie &#265;i; ekripro&#265;is la baptopatrino, ke vi ne
+      aran&#285;is vin por la forveturo, al vi ebli&#285;us pli frue forveturi.&laquo;</p>
+
+    <p>&raquo;Kion ni havas por aran&#285;i,&laquo; ekmurmuris la patro kaj eliris por
+      jungi la &#265;evalon, dum la patrino en&#265;ambre preparis kion kunpreni
+      kaj al la hejmerestontaj&mdash;al la avino kaj al H&#228;ilu&mdash;ordonadis rilate
+      al la hejma mastrumado: kiom almiksi farunon al la trinkakvo de
+      Maasik, kiomfoje man&#285;igi la porkidon dumtage, el kia silo preni
+      la terpomojn, kia kokino ovumas en la subtegmento, kiaj ovoj estas
+      vendendaj unuavice al la akaparisto kaj je kia prezo la duo. La
+      baptopatrino prenis el papervolva&#309;o verdan delikatlanan kostumon kaj
+      ekvestis Aulin.</p>
+
+    <p>La patro revenis el ekstere: &raquo;Nu, &#265;u vi estas pretaj?&laquo;</p>
+
+    <p>&raquo;H&#228;ilu, adia&#365;diru nun al la frateto,&laquo; ordonis la patrino, &raquo;eble
+      vi plu ne ...&laquo;</p>
+
+    <p>Kaj &#349;i ekploris, H&#228;ilu sekvis la ekzemplon.</p>
+
+    <p>Auli vidis la aliajn plorantaj kaj ali&#285;is al ili.</p>
+
+    <p>&raquo;Kion &#349;i faras, maljuna homino;&laquo; koleretis la patro, &raquo;vidu, kiel
+      &#349;i plorigas la infanojn senka&#365;ze, senkiale.&laquo;</p>
+
+    <p>La baptopatrino ekrapidis por konsoli Aulin: &raquo;Nenio malbona
+      fari&#285;os, mia baptofilo resani&#285;os, balda&#365; revenos kaj tuj
+      baptopatrinon vizitos.&laquo;</p><!-- p.29 -->
+
+    <p>Kaj al la patrino: &raquo;&#264;esu, kial vi plorigas la infanojn!&laquo;</p>
+
+    <p>Al tio la patrino: &raquo;Kiel mi povus alie, se mi estas tiom
+      sentimentala.&laquo;</p>
+
+    <p>Fine oni venkis la sentimentalecon, sekigis la plorantajn okulojn,
+      inspektis la karajn lokojn kaj ekveturis&mdash;direkte al la urbo.</p>
+
+    <p>Kiam renkonte veturis sinjoroj, la patro jam fruege turnis flanken.
+      Sinjorino a&#365; fra&#365;lino etendis al Auli la manojn kaj ekkrietis:</p>
+
+    <p>&raquo;Kiel bela knabeto! Se anka&#365; mi havus tian!&laquo; Kaj jam ili estis
+      preterveturintaj.</p>
+
+    <p>La patro trifoje kra&#265;is: &raquo;Fi, fi, fi! Eble &#349;i sor&#265;rigardis la
+      infanon. Nescieble, kiu kian okulon havas.&laquo;<!-- orig: havas. --></p>
+
+    <p>Sed la patrino aliopiniis: &raquo;Gravaj sinjoroj la unuaj renkonti&#285;is.
+      Eble &#285;i anta&#365;diras bon&#349;ancon.&laquo;<!-- orig: bon&#349;an&#265;on: --></p>
+
+    <p>&raquo;Eble,&laquo; cedis anka&#365; la patro kaj ekbruligis la pipon.</p>
+
+    <hr />
+
+    <p>Fine Auli vidis anka&#365; la urbon. Nenion eksterordinaran &#285;i al li
+      prezentis.<!-- orig: prezentis, --> Io deprimis lin kaj malklarigis lian konscion. Aliokaze li
+      certe multe havus por rigardadi kaj demandadi, admiradi la stratojn,
+      elpenda&#309;ojn, domojn, homojn, sed nun li estis indiferenta, apatia.</p>
+
+    <p>&raquo;Kien ni nun veturu,&laquo; demandis patro haltinte sur la strato.</p>
+
+    <p>&raquo;Mari ja diris: en klinikon.&laquo;</p>
+
+    <p>&raquo;Klinikon, klinikon, mi mem a&#365;dis, sed kie trovi&#285;as tiu &#265;i
+      kliniko.&laquo;</p>
+
+    <p>&raquo;Demandu iun.&laquo;</p>
+
+    <p>La patro ekrigardis la homojn preterirantajn, salutis kelkajn
+      fojojn: &raquo;Bonan tagon sinjoroj, bonan<!-- p.30 --> tagon sinjorinoj, bonan tagon
+      fra&#365;linoj,&laquo; sed la sinjoroj-sinjorinoj, fra&#365;linoj movigadis
+      kvaza&#365; per risortoj stre&#265;itaj kaj ne povis sin haltigi. La patro
+      trans&#309;etis la kondukilojn al la patrino, desaltis de la veturilo kaj
+      direkti&#285;is kun decida mieno al ia ulo.</p>
+
+    <p>&raquo;Bonan tagon, junsinjoroj!&laquo;</p>
+
+    <p>&raquo;Junsinjoroj&laquo; (tamen ne en pluralo!) havis violan nazon kun
+      samkoloraj vangoj kaj ru&#285;ajn elstarantajn okulojn.</p>
+
+    <p>&raquo;Ne incitu,&laquo; li ekkriis abrupte, &raquo;&#265;u vi volas interbati&#285;i, he?&laquo;</p>
+
+    <p>&raquo;Estu afabla, diru, kie estas la kliniko?&laquo;</p>
+
+    <p>&raquo;Kliniko? Kiun? &#264;evalon? edzinon? infanon? vin mem? Nu? Rapide!
+      mankas tempo. Kia kliniko? he?&laquo;<!-- orig: he? --></p>
+
+    <p>&raquo;&#264;u pluraj ekzistas?&laquo;</p>
+
+    <p>&raquo;&#264;iaspecaj! Por &#265;evalo veterinara, por edzino virina, por infano
+      infana, por vi meme frenezulejo.&laquo;</p>
+
+    <p>&raquo;La infano malsanas,&laquo; aldiris la patro, sed la veloj de lia
+      vidalvidulo subite ek&#349;velis pro vento: &#265;u li vidis iun a&#365; opiniis,
+      ke lin oni vidis, li forvapori&#285;is senspure.</p>
+
+    <p>Virino, deflanke a&#365;dinte la aferon, gvidis ilin al la necesa loko.
+      Tie &#265;io prosperis jam multe pli vigle, kvaza&#365; oni estus atinginta
+      post surmaraj &#349;tormoj kvietan havenon. Aulin oni metis inter
+      litotukojn, kie li balda&#365; ekdormis, lacigita de la voja&#285;o kaj &#265;io
+      cetera. La patrino restis gardanta apud Auli, dum la patro devis
+      ser&#265;i al si noktejon aliloke. Li trovis &#285;in en iu korto-enveturejo,
+      kie li dormetis sur la veturilo &#285;is mateni&#285;o. Kaj tiamaniere
+      plurajn noktojn: li ne volis hejmenveturi, anta&#365;e pasis kelkaj
+      tagoj post la operacio kaj oni estis pli-malpli certa pri resani&#285;o.
+      Anka&#365; la patrino ne fartis multe pli bone: kurbiginte la dorson<!-- p.31 --> &#349;i
+      sidadis apud la lito de Auli, nur por momentoj &#349;i metis la kapon al
+      la kusenrando a&#365; al la mano, apogi&#285;ante kubute al tablo.</p>
+
+    <p>Kiam Auli veki&#285;is, katenis lian atenton plej unue la brilanta
+      globeto sur la alta piedlokfosto de la lito, kiu pla&#265;is al li
+      pleje el &#265;iuj &#285;is tiam konataj objektoj. &#284;in li volus havigi por
+      kompletigo de sia malgranda hava&#309;o. Tiam li ek&#285;emetis: &#265;io ja
+      estas tiel terure kara, kiel li a&#365;dis de la aliaj. A&#365;di&#285;is la
+      vo&#265;o de la patrino. &#348;i konversaciis kun iu. Pri li.</p>
+
+    <p>&raquo;Do oni jam operaciis?&laquo;</p>
+
+    <p>Oni operaciis, t. e. oni tran&#265;is? Lin? Auli ree ek&#285;emis kaj iom pli
+      la&#365;te. La patrino havis atenteman koron kaj viglan pa&#349;on.</p>
+
+    <p>&raquo;&#264;u min oni tran&#265;is?&laquo;</p>
+
+    <p>&raquo;Malmultete. Tre malgrandan vundeton.&laquo;</p>
+
+    <p>&raquo;Ha.&laquo; La globeto brilis kiel anta&#365;e, sed &#265;irka&#365; &#285;i kolekti&#285;is
+      nebula&#309;o, komence maldika, sed iom post iom &#285;i plidensi&#285;is, &#285;is
+      kiam &#265;io dronis en nebulo kaj alvenis nirvano. Kvaza&#365; de senlimaj
+      malproksimoj li a&#365;dis la paroladon de la patro, tiam oni flustradis,
+      pa&#349;adis sur la piedfingroj, sed la palpebroj de Auli estis treege
+      pezaj. Ne nur la palpebroj, sed &#265;iu molekulo, &#265;iu atomo estis
+      kvaza&#365; najle fiksita al sia loko, tiel ke li povis nek movi&#285;i, nek
+      al io reagi. Kio alvenis, estis ne ordinara dormo kun son&#285;aj vizioj,
+      sed kelkatempa neekzistado, morto.</p>
+
+    <p>Kiam Auli rekonscii&#285;is, &#265;irka&#365; li agadis fremdaj manoj, klini&#285;is
+      super li fremdaj viza&#285;oj, la patrino estis &#349;ovita pli malanta&#365;en.
+      Sed &#349;i &#265;eestis.</p>
+
+    <p>&raquo;Estu trankvila, vireto, ni zorgeme banda&#285;os vian vundon.&laquo;</p>
+
+    <p>Auli jam estis trankvila, permesis sin banda&#285;i,<!-- p.32 --> a&#365;skultadis, kiel
+      oni admonas lin ke li ku&#349;u &#265;iam trankvile.</p>
+
+    <p>&raquo;&#264;io prosperos bone, li balda&#365; resani&#285;os,&laquo; oni diris; kaj la
+      patrino &#285;ojis.</p>
+
+    <p>Sed ne fari&#285;is &#265;io tiel facile. Auli estis turmentata de soifo. Li
+      petis, ke oni donu al li trinki.</p>
+
+    <p>&raquo;Vi ne povas nun, karuleto, atendu &#285;is vi plisani&#285;os, tiam ...&laquo;</p>
+
+    <p>Facile estas diri: atendu. Auli komence anka&#365; provis sekvi la
+      konsilon, sed &#285;is kiam li povos elteni!</p>
+
+    <p>Balda&#365; li denove petis kaj &#265;iam pli insiste.</p>
+
+    <p>&raquo;Mankas &#285;uste la akvo!&laquo;</p>
+
+    <p>&raquo;Ordonu alporti,&laquo; li insistadis.</p>
+
+    <p>Sekvis ripro&#265;oj: &raquo;Vi ne volas doni al mi trinki.&laquo;</p>
+
+    <p>&raquo;&#264;u mi rifuzus, sed ...&laquo;</p>
+
+    <p>Oni malsekigis la lipojn, kies ha&#365;to estis fendi&#285;inta pro sekeco
+      kaj la krustan langon, per tukangulo trempita en akvon. Kaj nenion
+      plu. Auli ne povis ku&#349;i trankvile. La patrino kun penego lin
+      fikstenis. Pro la penego &#349;i laci&#285;is. Levis a&#365;tomate la kru&#265;on al
+      la lipoj.</p>
+
+    <p>&raquo;Mem vi trinkas, sed al mi ne donas.&laquo;</p>
+
+    <p>La patrino remetis la kru&#265;on ne gustuminte e&#265; guteton: certe!
+      la infano devas elteni kaj &#349;i ne povas. Dum la trinkado estos
+      malpermesite al Auli, anka&#365; &#349;i ne prenos e&#265; guteton en sian
+      bu&#349;on.</p>
+
+    <p>Auli estis regata de soifosento kaj de fantazioj pri trinkado. Li
+      deliris kaj &#265;iuj liaj halucinacioj turni&#285;adis &#265;irka&#365; unu kaj tio
+      sama.</p>
+
+    <p>Jen li vidis la bestojn, kiuj &#265;iuj trinkadis: bovoj, &#265;evaloj,
+      &#349;afoj. E&#265; la hundo kaj kato lekadis avide la akvon. Kokoj rektigis
+      la kropojn kaj levis la bekojn supren, malanta&#365;en kurbigante la
+      kolojn. &#264;iuj ili trinkadis kaj trinkadis senhalte, sen&#265;ese.</p><!-- p.33 -->
+
+    <p>&raquo;Panjo, ili fortrinkos la tutan akvon,&laquo; ekplendis Auli.</p>
+
+    <p>&raquo;Kiuj ili?&laquo;</p>
+
+    <p>&raquo;Kokoj.&laquo;</p>
+
+    <p>Memori&#285;is nur la lasta &#265;enero de la vizio.</p>
+
+    <p>&raquo;Estu trankvila, karuleto, nek kokoj, nek iu alia povos fortrinki la
+      tutan akvon.&laquo;</p>
+
+    <p>Poste Auli estis hejme. Prenis el la sitelo akvon per kru&#265;o.
+      Sed Petsu-knabo forprenis la kru&#265;on kaj la akvon fortrinkis,
+      prenis la sitelon kaj anka&#365; &#285;in malplenigis. Iris al ilia puto,
+      malsuprenklini&#285;is kaj ektrinkis ...</p>
+
+    <p>Ili estis en la &#349;vitbanejo: la patro, patrino, Auli, H&#228;ilu kaj la
+      avino. Auli estis turmentata de soifo.</p>
+
+    <p>&raquo;Panjo, mi volas trinki,&laquo; li insiste petis.</p>
+
+    <p>&raquo;H&#228;ilu, donu al li per pokaleto el la tino,&laquo; ordonis la patrino.</p>
+
+    <p>H&#228;ilu iris al la tino, kaptis &#285;in amba&#365;mane &#265;e teniloj, klini&#285;is
+      kaj ektrinkis. Subite la tino falis flanken kaj la akvo elfluis al la
+      planko.</p>
+
+    <p>Auli ne plu povis eliri el la vaporbanejo. Estis varmege, sed la
+      avino &#265;iam per granda &#265;erpilo ver&#349;adis akvon al la vaporforno.</p>
+
+    <p>&raquo;Avino, plu ne ver&#349;u akvon, mi ne eltenos la varmegon, portu al mi
+      akvon!&laquo;</p>
+
+    <p>Sed la avino &#349;ajnigis sin surda kaj da&#365;rigis la akvover&#349;adon. Tiam
+      alvenis H&#228;ilu kun akvopokaleto postdorse ka&#349;ita, por ke la avino ne
+      vidu; palpebrumis al Auli: &raquo;Prenu kaj trinku!&laquo;</p>
+
+    <p>Auli volis ektrinki, sed la avino intervenis, forprenis la pokaleton
+      kaj kolerete diris al H&#228;ilu:</p>
+
+    <p>&raquo;Vi ne rajtas doni trinki al la infano.&laquo;</p><!-- p.34 -->
+
+    <p>Auli malfermis la okulojn. Apud la lito staris la patrino kun
+      akvopokaleto en la mano, fremda onklino tenis &#349;in je mano kaj severe
+      diris:</p>
+
+    <p>&raquo;Vi ne rajtas doni trinki al la infano. &#264;u vi ne a&#365;dis, kion la
+      kuracisto diris?&laquo;</p>
+
+    <p>Kaj &#349;i forportis la pokaleton.</p>
+
+    <p>Feli&#265;e, fine alvenis dormo kaj forportis Aulin en mondon alian
+      kaj pli bonan. &#284;i estis plu nek la &#309;usa duondorma delirado, nek
+      la anta&#365;a estado en la abismoj de la morto, sed proksima al la
+      trankvila refre&#349;iga normala dormo. Post la veki&#285;o, matene, la
+      suferado pro soifo ne senti&#285;is tiel akre, kaj kiam oni permesis doni
+      per tekulereto guteton al la langopinto, Auli montris al la granda
+      akvokru&#265;o kaj diris:</p>
+
+    <p>&raquo;Kiam ni hejmeniros, ni portos al ni tiel grandan kru&#265;on kaj donos
+      el &#285;i trinki al H&#228;ilu <i>tiom, kiom &#349;i volas</i>.&laquo;</p>
+
+    <p>La patro, kiu restadis en la urbo tiun kaj du aliajn tagojn, ofte
+      vizitis kaj foje alportis oran&#285;on.</p>
+
+    <p>&raquo;Nur ne forglutu,&laquo; avertis la patrino, doninte al Auli pecon da
+      oran&#285;o por ke li su&#265;u el &#285;i la sukon.</p>
+
+    <p>&raquo;Mi ne forglutos, panjo kara, &#265;u vi entute al mi ne fidas,&laquo; petege
+      diris Auli kaj por pruvi elprenis la oran&#285;opecon el la bu&#349;o.</p>
+
+    <p>Fine&mdash;en la tria, kvara tago&mdash;la patro ekveturis hejmen. La patrino
+      donis instrukciojn al la patro kaj sendis ilin kun la patro al la
+      hejmanoj, sed, post &#265;iuj &#265;i zorgoj kaj penadoj, en la kapo regadis
+      kaoso; ne unu fojon &#349;i impliki&#285;is kaj rekomencis kaj finfine diris
+      la patro: &raquo;Mi nenion plu memoras el &#265;iuj viaj diradoj.&laquo; Auli,
+      de sia flanko, sendis salutojn al H&#228;ilu, kaj al avino, kaj al
+      baptopatrino, kaj ...<!-- orig: ...&laquo; --></p>
+
+    <p>&raquo;Min ne multe oni tran&#265;is, nur etan vundeton;<!-- p.35 --> mi plu la akvon
+      ne tralasas, al mi oni donas jam sufi&#265;ete trinki. Donu al H&#228;ilu
+      multe-multege trinki. Kaj al Maasik. Kaj al &#265;iuj.&laquo;</p>
+
+    <p>En la sekva tago la stato de la malsanulo pli malboni&#285;is. Atakis
+      febro, la etulo ree &#309;eti&#285;adis kaj deliris. Nostalgio ekregis la
+      infanon, li ekpetegis la patrinon: &raquo;Panjo, mi volas hejmen.&laquo; &mdash;<!-- orig: --> &raquo;Vi
+      estas malsana, resani&#285;u, tiam ni tuj ekiros.&laquo; &mdash;<!-- orig: --> &raquo;Mi<!--
+    orig: Mi --> ja estas sana,
+      mi morga&#365; resani&#285;is,&laquo; asertis la knabeto kaj penegis foriri, &#265;iam
+      foriri. Tiam li vidis sin hejme. H&#228;ilu venis renkonte plorante
+      kaj demandis: &raquo;Auli, &#265;u vi ree estas sana?&laquo; &mdash;<!-- orig: --> &raquo;Jes,<!--
+    orig: Jes, --> mi estas sana,
+      sed kial vi ploras?&laquo;<!-- orig: ploras? --> H&#228;ilu ne respondis. &raquo;Mi nun pa&#349;tados kun
+      vi Maasikon,&laquo; ekparolis Auli. H&#228;ilu pli malgaje ekploregis kaj
+      diris: &raquo;Ni ne havas plu Maasikon.&laquo; &mdash; &raquo;Kiel ni ne havas? kie &#285;i
+      restis?&laquo; &mdash; &raquo;Oni &#285;in vendis, la patro bezonis monon por pagi pro
+      vi, ke vi estis en la urbo.&laquo; Auli malgaji&#285;is: &raquo;Baptopatrino, vi
+      promesis pagi por mi kaj nun vi lasis forvendi Maasikon. De kie
+      ni nun ricevos la lakton kaj buteron kaj nutra&#309;on por grasigi la
+      porkon? Baptopatrino se mi tion scius, mi ne estus irinta en la
+      urbon.&laquo; Tiam alvenis la baptopatrino kun granda belega bovino
+      &#265;eflanke. &raquo;Mi donacas al vi bovinon multe pli bonan ol Maasik.&laquo; &mdash;
+      &raquo;Baptopatrino, mi ne volas pli bonan, mi volas nur Maasikon. Tiu &#265;i
+      bovinego multe man&#285;egas, la patro ne povas havigi al &#285;i sufi&#265;e da
+      fojno.&laquo;</p>
+
+    <p>Kaj subite la bovinego ekman&#285;is. &#284;i man&#285;is kaj man&#285;is kaj mem nur
+      &#285;emspiregis. &#284;i forman&#285;is iliajn brasikojn kaj napojn de sur la
+      bedoj apud la dompordo, forman&#285;is la &#265;edomajn hordeon kaj pizojn,
+      forman&#285;is la berarbustojn kaj jam disrompadis la fruktarbojn:
+      kaptegis bu&#349;en la bran&#265;egojn kvaza&#365; pajla&#309;on<!-- p.36 --> pofaske kaj mem
+      &#265;iam pligrandi&#285;is kaj plialti&#285;is simile al monto.</p>
+
+    <p>Kaj subite estis tie Maasik. &#284;i blekis: &raquo;Nenien mi estas vendita.&laquo;
+      Kaj ekluktis kun tiu granda bovinego. Sed Maasik ja estas malgranda
+      kaj malforta, &#265;u &#285;i povos venki la alian. Tamen, malgra&#365;
+      &#265;io. Rigardu: la bovinego sin retiras. La bovinego cedas al la
+      malgranda Maasik, &#285;i ne povas &#285;in venki. Tiam Auli devis foriri
+      ien malproksimen gastadi. Li kontra&#365;vole devis. Li estis en nova
+      vestaro, piedvestita, nur necesis ekiri. Neniu, kiun li kunvokis,
+      konsentis lin akompani. Panjo ne, pa&#265;jo ne, H&#228;ilu ne, avino ne,
+      baptopatrino ne, neniu volis, e&#265; ne unu animo.</p>
+
+    <p>Auli malfermis siajn grandajn, febrajn okulojn kaj rigardis al la
+      patrino kun fremda forestanta rigardo.</p>
+
+    <p>&raquo;Panjo, ordonu, ke H&#228;ilu kun mi kuniru!&laquo;</p>
+
+    <p>&raquo;Kien?&laquo;</p>
+
+    <p>Respondo ne ricevi&#285;is.</p>
+
+    <p>&raquo;H&#228;ilu ne estas tie &#265;i.&laquo;</p>
+
+    <p>&raquo;Tiam vi mem kuniru.&laquo;</p>
+
+    <p>La patrino sciis nenion por diri.</p>
+
+    <p>&raquo;Sed kiel mi iros tutsola&laquo;, eli&#285;as el la turmentita animo kor&#349;ira
+      vekrio.</p>
+
+    <p>La kompatinda patrino pensis, ke Auli ekiros tien, kien irante nenia
+      mortemulo havas kuniranton, nek akompananton.</p>
+
+    <p>Kvankam la mateno trovis Aulin en tiu &#265;i valo de doloroj kaj e&#265;
+      pli fre&#349;an kaj pli viglan ol anta&#365;e, tamen la patrino ne kura&#285;is
+      ne sciigi al la hejmanoj, ke la stato de Auli pli malboni&#285;is, ili
+      rapide veturu lin viziti.</p>
+
+    <p>Alvenis iutage la baptopatrino kaj H&#228;ilu. Auli<!-- p.37 --> estis tre esperiga:
+      oni diris, se la resani&#285;o tiel progresos, la knabeto post unu
+      semajno plu ne bezonos la klinikon. La baptopatrino tuj demandis,
+      kion Auli volas por donaco. Auli montris fingre la litoglobeton kun
+      argumento: &raquo;&#284;i brilas.&laquo;</p>
+
+    <p>&raquo;&#284;uste &#285;in ni ne povas ricevi, sed ni portos ion alian,
+      samspecan.&laquo;</p>
+
+    <p>Kaj &#349;i alportis ion tiaspecan, brilantan, e&#265; pli grandan kaj
+      pli belan. Sed Auli, en la profundo de sia koro, ne sentis sin
+      kontentigita, ke li ne ricevis <i>&#285;uste tion</i>, kion li deziris. La
+      &#265;agrenon forigis nek ora birdo, nek ar&#285;enta &#349;ipo, nek vitraj
+      globetoj kun belegaj diverskoloraj florornama&#309;oj.</p>
+
+    <p>&raquo;Baptopatrino, kial vi alportis tiom multe, forportu, mi ne volas
+      tiom multe,&laquo; diris Auli malgaje. &#264;iuj &#265;i ja estis objektoj, kiuj
+      neniam povis fari&#285;i lia plena poseda&#309;o. Oni formetos ilin kaj li
+      povos rigardi ilin maloftege, gardante penege, kvaza&#365; sian beatecon,
+      &#265;ar frakasi&#285;o kostus multe da larmoj. La baptopatrino ne komprenis
+      sian favoraton. &#348;i ekkoleretis kaj diris ofendite:</p>
+
+    <p>&raquo;Se vi ne volas, mi donacos ilin al H&#228;ilu.&laquo;</p>
+
+    <p>&raquo;Baptopatrino, mi ja volas, sed ...&laquo;, ekplendis Auli. Kiel
+      komprenigi, kial li estas tiel mal&#285;entila kaj nek &#285;ojas, nek
+      jodlas, kiel oni atendis de li.</p>
+
+    <p>&raquo;Panjo metos en &#349;rankon,&laquo; li diris fine.</p>
+
+    <p>&raquo;&#348;i ne metos en &#349;rankon. Ili tutplene apartenas al vi: vi povos
+      ludadi kun ili, kiam nur al vi pla&#265;os, vi povos ilin disrompi,
+      fordonaci, perdi, neniu rajtos vin ripro&#265;i pro ili,&laquo; trankviligis
+      la baptopatrino.</p>
+
+    <p>&raquo;Ha,&laquo; kaj la pimpa vosto do ora birdo per unu ektiro for&#349;iri&#285;is.</p>
+
+    <p>&raquo;Kial vi disrompadas,&laquo; koleretis la patrino. Sed<!-- p.38 --> Auli ekridis kaj
+      anka&#365; la aliajn ridigis: certe, kial &#285;i tie penda&#265;as kvaza&#365; &#285;i
+      prezentus Dio scias kian grava&#309;on.</p>
+
+    <p>Anka&#365; H&#228;ilu havis siajn montrinda&#309;ojn. Iom post iom oni kutimi&#285;is
+      al la objektoj kaj ekkonversaciis. La baptopatrino pli konversaciadis
+      kun la patrino, H&#228;ilu kun Auli. Auli volis a&#365;di pri la hejmo,
+      H&#228;ilu parolemis pri l' voja&#285;o, pri l' urbo, pri kale&#349;oj veturantaj
+      sen &#265;evaloj, pri vendejoj kaj pri belaj objektoj, kiujn oni vendadas
+      en ili.</p>
+
+    <p>La vizito de baptopatrino kaj de H&#228;ilu servis kiel &#285;ojiga distro:
+      distri&#285;is Auli &#265;e sia enuiga ku&#349;ado en la lito kaj ricevis iom da
+      helpo la patrino &#265;e sia flegado-gardado. La disi&#285;o de la vizitantoj
+      ne estis tre mal&#285;ojiga. Auli sciis nun, ke li devas resti en la urbo
+      nur dum kelke da tagoj. &raquo;Mi estas jam plejparte sana,&laquo; li diris &#265;e
+      adia&#365;o, &raquo;kaj ne frakasi&#285;as, e&#265; kiam mi pa&#349;adas.&laquo; Kun tiu &#265;i
+      &#285;ojiga informo H&#228;ilu kaj la baptopatrino reveturis hejmen.</p>
+
+    <p>La resani&#285;o progresis kaj Auli iom post iom rericevis sian anta&#365;an
+      formon. Nur lia pensado i&#285;is ia miksa&#309;o de fragmentaj imaga&#309;oj.
+      La pensoj elhejmaj ne kura&#285;is kunveni, la novaj, &#265;itieaj, ie en la
+      mallumo &#265;irka&#365;vagadis kaj ne kura&#285;is alproksimi&#285;i, samkiel la
+      bestoj kaj birdoj malsova&#285;i&#285;intaj ofte estas tre malkonfidemaj al
+      la fremduloj kaj spite &#265;iujn invitojn kaj logojn evitadas ilin dum
+      longa tempo, &#285;is fine, post pli longa konati&#285;o, ili alkutimi&#285;as
+      kaj hejmeci&#285;as. Inter pure-hejmaj pensoj trovi&#285;is anka&#365; tiaspecaj,
+      kiuj &#265;ie estas enhejme: ili postvenis anka&#365; &#265;i tien, kaj kiam la
+      malsano pli malforti&#285;is, revivi&#285;is kelkaj iamaj suspektoj. &raquo;Kiam
+      oni malsani&#285;as, oni mortas; kiam oni resani&#285;as, oni edzi&#285;as,&laquo;
+      staris kvaza&#365; surskribo<!-- orig: surkribo --> sur<!-- p.39 --> la disvoj-montrilo. Li ne mortis, do
+      &#265;u li devas resani&#285;i &#285;uste por tiaspeca freneza&#309;o? La onklino,
+      kiu iam malpermesis doni akvon al Auli, &#265;iutage proponas sin por
+      edzino kaj nomas la patrinon bopatrino, malfacile estos liberi&#285;i de
+      &#349;i.</p>
+
+    <p>La vorto &raquo;edzino&laquo; en la imago de Auli havis malklaran, samtempe
+      malsimpatian signifon. La malklarecon malpliigis, sed la alian
+      pliprofundigis la sekva cirkonstanco. En la malsanulejo mortis
+      infano. Alvenis, por lastfoje rigardi la lokon, kie la etulo estis
+      ku&#349;inta, la geedzoj, liaj gepatroj. La viro kun afable ridantaj
+      okuloj tiom pla&#265;is al Auli, ke li nerimarkeble proksimi&#285;is al li
+      iom post iom kaj fine staris anta&#365; la geedzoj.</p>
+
+    <p>Subite la virino ekrigardis pike kaj malamike.</p>
+
+    <p>&raquo;Kion vi okula&#265;as, rana&#265;o! Prefere vi estus mortinta ol mia eta
+      Vello.&laquo;</p>
+
+    <p>&raquo;Ne estu maljusta, Lemnik,&laquo; admonis la edzo. Auli sentis sin
+      ofendita &#285;is la korfundo; li rapidis al la patrino kaj demandis
+      montrante fingre al la edzino:</p>
+
+    <p>&raquo;&#264;u &#349;i estas edzino, panjo?&laquo;</p>
+
+    <p>&raquo;Ne montru per fingro, tio ne decas.&laquo;</p>
+
+    <p>&raquo;&#264;u &#349;i estas edzino,&laquo; insistis Auli.</p>
+
+    <p>&raquo;&#348;i ja estas,&laquo; respondis la patrino.</p>
+
+    <p>&raquo;Tiam&mdash;mi&mdash;neniam&mdash;edzi&#285;os.&laquo;</p>
+
+    <p>&raquo;Vi edzi&#285;os, kiam vi maturi&#285;os.&laquo;</p>
+
+    <p>&raquo;Tiam&mdash;mi&mdash;ne volas&mdash;maturi&#285;i.&laquo;</p>
+
+    <p>La patrino klarigis: premega funebro igas la homojn esti maljustaj;
+      ili &#349;ajnas tiam pli malbonaj ol ili efektive estas. Auli intencis
+      konsoli la funebrantojn, donacante al ili &#265;iujn siajn belegajn
+      ludilojn, sed la patrino malaprobis la intencon: maturaj homoj ne
+      bezonas ludilojn; tiuj por ili havas nenian valoron.</p><!-- p.40 -->
+
+    <p>La sinjoro kun afabla rideto ekskuzadis sian edzinon: &#349;in treege
+      &#265;agrenas la perdo de la sola infano, tial &#349;i parolis tiel
+      malafable, sed alie &#349;i ... kaj li proponis al Auli franda&#309;ojn. Auli
+      demandis okule la patrinon.</p>
+
+    <p>&raquo;Akceptu, akceptu!&laquo;</p>
+
+    <p>Auli akceptis.</p>
+
+    <p>Auli iom post iom konati&#285;is kun la homoj de tute nova flanko ol
+      &#285;is nun. Hejme li estis interrilatanta kun du specoj da homoj:
+      la unuj estis al li bonaj sen ia hipokriteco, kiel liaj hejmanoj
+      kaj la baptopatrino, la aliaj&mdash;kiel Petsu-knabo kaj entute &#265;iuj
+      Petsu-anoj&mdash;estis al li malbonaj, sed plejparte anka&#365; tute sincere.
+      &#264;i tie oni rilatis al li la&#365;&#349;ajne bone, sed Auli sentis, ke al tiu
+      boneco mankas io, kio igus lin perfekta.</p>
+
+    <p>Fremda &#349;ajnis al Auli la nova medio dekomence, pli fremda &#285;i
+      fari&#285;is nun. Hejmsopiro lin kaptis per potenco de naturfortoj
+      kvaza&#365; inter la muroj de malliberejo. La tiea vasteco estis tre
+      malvasta; &#265;iujn &#265;irka&#365;is nevidebla kovra&#309;o, kiu malhelpis la
+      liberan agadon, la liberan paroladon, e&#265; la liberan pensadon.
+      Anka&#365; post tiuj &#265;i muroj, sur la stratoj, la homoj estis kovritaj
+      per tiu kovra&#309;o. Auli povis eliri kelkajn fojojn kaj sufi&#265;e bone
+      observadis per siaj klarvidaj okuloj. Li sciis, kial la domoj
+      havis elpenda&#309;ojn kun surskriboj. Sed e&#265; tie, kie ili mankis, la
+      elpenda&#309;oj halucini&#285;is. E&#265; la homoj &#349;ajnis havi surskribojn
+      sur la fruntoj. Ili estis ne simple homoj, kiel Auli kutimis vidi
+      hejme, sed sinjoroj, laboristoj, komercistoj, bazarvendistinoj,
+      veturigistoj, policistoj, militistoj, lernantoj, almozpetantoj,
+      kanajloj, stratobuboj, malpura&#309;istoj,<!-- p.41 --> drinkuloj kaj amasego da
+      aliaj, &#265;iu en sia &#349;elo, kiu malhelpis lin esti simple homo. &#348;ajnis
+      al Auli, kvaza&#365; li mem ricevus ian krustan &#349;elon: li ne estis plu
+      Auli, sed iu &raquo;malsanulo&laquo; kaj panjo ne estis plu panjo, sed &raquo;la
+      patrino de eta paciento.&laquo; A&#365;di tion &#265;i efikis same, kiel tu&#349;i ion
+      abomenan a&#365; e&#265; preni &#285;in al la lango. De tio oni volus la&#365;eble
+      plej frue liberi&#285;i. Kaj al Auli &#349;ajnis, kvaza&#365; li neniam povus de
+      tie foriri.</p>
+
+    <p>&raquo;Panjo, kiam ni foriros?&laquo;</p>
+
+    <p>&raquo;Balda&#365;, balda&#365;, post kelke da tagoj.&laquo;</p>
+
+    <p>&raquo;Post kiom kelke da tagoj?&laquo;</p>
+
+    <p>&raquo;Kvar-kvin a&#365; tiel.&laquo;</p>
+
+    <p>&raquo;Sed kiel ni hejmenvenos?&laquo;</p>
+
+    <p>&raquo;Pa&#265;jo alveturos por nin hejmenporti.&laquo;</p>
+
+    <p>&raquo;Sed se li ne alveturos?&laquo;</p>
+
+    <p>&raquo;Certe li alveturos.&laquo;</p>
+
+    <p>Auli treege timis, ke eble la patro tute ne venos kaj tiam ili
+      devos por &#265;iam resti en la urbo. Tio estis la plej malbona el
+      &#265;io povanta okazi en la mondo. Kompare al tio, al Auli &#265;iuj liaj
+      anta&#365;aj timoj &#349;ajnis ridinde bagatelaj. Prefere povu fari&#285;i
+      &#265;io: la &#264;iela Patro lin mortbatu, fantomo forman&#285;u, li mem i&#285;u
+      knabino a&#365; la kuracistoj lin &#265;i tie pulvorigu; sed ke li plu ne
+      povos hejmenveturi, tio estas la plej malbona el &#265;iuj malbona&#309;oj.
+      Tiun &#265;i timon ne povis forgesigi e&#265; tio, ke Aulin, por lin distri,
+      oni kondukis en kinon kaj mena&#285;erion kaj ke la patrino penis lin
+      &#265;iamaniere kura&#285;igi; la knabeto &#265;iam demandadis, kiam la patro
+      alvenos, kiam li alvenos. Se oni a&#365;dis ion veni. Auli tuj ekkuris
+      por vidi, &#265;u ne pa&#265;jo estas; e&#265; nokte li desaltis de la ku&#349;ejo
+      kun ekkrio &raquo;Pa&#265;jo venis!&laquo; kaj kuris renkonte al la patro, kiu
+      tamen ne venis. E&#265; la patrino ekmurmuris: &raquo;Kion li tie atendas, ke
+      li jam ne<!-- p.42 --> venas; &#265;u li ne scias, kiom kare li devas pagi pro &#265;iu
+      tago.&laquo;</p>
+
+    <p>Nu, fine tamen, por la pleja &#285;ojo de Auli kaj de la patrino,
+      alveturis la patro. Al la aliaj li aperis kvaza&#365; savan&#285;elo, sed
+      mem li estis plena de la plej amara malbonhumoro: imagu nur, la
+      baptopatrino igis lin veturi per trajno, per la sama stulta trajno,
+      pri kiu oni neniam estas sa&#285;a, kiam &#285;i alvenas a&#365; kiam &#285;i
+      forveturas, kiam oni devas ascendi a&#365; kiam descendi. Anka&#365; reveturi
+      oni devis per trajno kaj jam tiu &#265;i cirkonstanco sufi&#265;e malpliigis
+      anka&#365; la &#285;ojon de Auli kaj de la patrino.</p>
+
+    <p>La patro, kiel pli sperta en la trajnoaferoj, tuj rapidigis la
+      aliajn: &raquo;Movi&#285;u, movi&#285;u pli vigle, alie ni ne trafos la trajnon
+      (kvankam &#285;is la trajn-ekiro estis plenaj du horoj), ni jam ekiru!&laquo;
+      Li mem sufi&#265;e rapide aran&#285;is siajn aferojn &#265;e la &raquo;superuloj&laquo; kaj
+      &#265;ar anka&#365; la patrino kaj Auli ne devis kunpreni la trezorejon de l'
+      Rusa imperio, oni balda&#365; povis ekmar&#349;i al la stacidomo.</p>
+
+    <p>Ili devis sufi&#265;e longe atendi la trajnon. En la vagono kompreneble
+      ne sidlokojn ili ricevis, sed staradis kun la porta&#309;oj enmane
+      kvaza&#365; friponoj anta&#365; ju&#285;otablo; ili ne scipovis a&#365; ne kura&#285;is
+      formeti la porta&#309;ojn. Dio scias, &#265;u oni povas. Eble ia fripono
+      for&#349;telos.</p>
+
+    <p>La patrino tuj ekripro&#265;is la patron.</p>
+
+    <p>&raquo;Vidu, kiom ni atendas; eblus a&#265;eti ion-alian en la urbo, nun
+      staradu kaj gapadu.&laquo;</p>
+
+    <p>&raquo;Kuru a&#265;etadi, ne estas malpermesite!&laquo;</p>
+
+    <p>&raquo;Jes, kuru a&#265;etadi, sed se la trajno tuj ekveturos kaj min
+      postlasos.&laquo;</p>
+
+    <p>&raquo;Eble oni prokrastos pro vi la forveturon. La<!-- p.43 --> konduktoro frunte
+      starados man&#265;eorele, &#285;is kiam vi revenos el la urbo.&laquo;</p>
+
+    <p>Dum gepatroj kvereletis, Auli observadis virinegon, kiu simile al
+      karnamasego ku&#349;a&#265;is surbenke kaj terure ronkadis, kun mu&#349;aro &#265;e
+      la malfermegita bu&#349;o.</p>
+
+    <p>&raquo;Panjo, vidu: la virino kaptadas per la bu&#349;o la mu&#349;ojn.&laquo;</p>
+
+    <p>Subite la mano de la virino ekkaptis la jaketon de Auli, la bu&#349;o
+      ek&#349;macis: &raquo;Njam, njam.&laquo; Auli ekkriegis:</p>
+
+    <p>&raquo;Panjo-o, la sor&#265;istino min forman&#285;os.&laquo;</p>
+
+    <p>&raquo;Certe la sor&#265;istino forman&#285;os vin. &#264;u vi refoje diros, ke la
+      virino kaptadas per la bu&#349;o la mu&#349;ojn?&laquo;</p>
+
+    <p>Auli rifu&#285;is sub la flugilo de la patrino kaj time observadis de
+      tie la kruelan virinon, kiu, krom mu&#349;oj, e&#265; lin ne rifuzus uzi por
+      tagman&#285;o.</p>
+
+    <p>&raquo;Panjo, la virino ja ne forman&#285;os min, &#265;u ne?&laquo;</p>
+
+    <p>&raquo;Nepre mi forman&#285;os; mi ne indulgos alie, nur se vi min
+      edzinigos.&laquo;</p>
+
+    <p>&raquo;Panjo, ni foriru de tie &#265;i&laquo; ekpetegis Auli kaj tiris kun si
+      la patrinon al alia flanko, mem akre atentante la virinon, kiu
+      postkriis: &raquo;kapti, kapti, kapti.&laquo;</p>
+
+    <p>En iu stacio ascendis la baptopatrino (&#265;u alie la patro estus
+      veturinta pertrajne) kaj forigis &#265;iujn maloportuna&#309;ojn.</p>
+
+    <p>Tute aliaj fari&#285;is la homoj: trovi&#285;is loko por sidi, tablo por
+      man&#285;i, bu&#349;o por paroli.</p>
+
+    <p>Anka&#365; la humoro de Auli pliboni&#285;is. Li forgesis balda&#365; la fremdan
+      malican urbon kaj klinikon, de kie li venis, kaj pensis nur pri tio,
+      kiel li alvenos hejmen. La hejmon li atingis balda&#365; kaj tie ni lin
+      lasos&mdash;al favoro de &#265;iuj penatoj.</p>
+
+
+  </section>
+  <section id="2">
+
+    <h2>II.</h2>
+
+
+    <p>Auli revenis el la urbo, kie al li estis farita apendic-eltran&#265;o.</p>
+
+    <p>Kiam malplii&#285;is la &#285;ojo pro hejmenreveno, kiam la festotaga
+      soleneco &#349;an&#285;i&#285;is en labortagan ordinarecon, Aulin komencis
+      maltrankviligi ia interna malbonsento: li plu ne estis la anta&#365;a,
+      li ne estis homo en la <i>plena senco</i> de la vorto, al li mankis io,
+      io &#265;e li estis ne <i>la&#365;anta&#365;e</i> sendifekta. Sekrete li malkovris la
+      cikatron kaj observadis. Jen &#285;i estis&mdash;kvaza&#365; sanganta &#349;vela&#309;o
+      &#265;e la ingveno; la morto estis lin ekfrapinta per sia fal&#265;ilo kaj
+      neniu povis forigi la spuron. Auli rigardis sin&mdash;la&#365; diroj, a&#365;ditaj
+      de aliuloj&mdash;homo difektita, kaj insiste li petegis en sia dumvespera
+      pre&#285;o: &raquo;Patro &#264;iela, forigu la cikatron, faru mian ha&#365;ton ree
+      pura,&laquo; sed kun &#265;iama trompi&#285;o li devis konstati, ke la pre&#285;o ne
+      havis la deziritan efikon: la cikatro persistis sen&#349;an&#285;e sur sia
+      loko; kiel sangsu&#265;inta serpento &#285;i &#349;veladis kaj jukadis kvaza&#365;
+      dum ha&#365;tdeskvamado.</p>
+
+    <p>&raquo;Panjo, &#265;u &#285;i &#265;iam restos tia,&laquo; demandis Auli jam cent kaj unuan
+      fojon kaj &#265;iam kun la timetema espero, ke eble &#349;i diros: ne; sed
+      &#265;iam la patrino respondis same: evidente &#285;i restos.</p>
+
+    <p>&raquo;Diru, ke ne restos,&laquo; petis Auli kelkafoje.</p><!-- p.46 -->
+
+    <p>&raquo;Kial mi diru?&laquo;</p>
+
+    <p>&raquo;Eble tiam &#285;i ne restos.&laquo;</p>
+
+    <p>&raquo;Malsa&#285;uleto, &#265;u tio helpas.&laquo;</p>
+
+    <p>Sed Auli estis konvinki&#285;inta, ke se la patrino dirus la&#365; lia
+      deziro, nepre fari&#285;us tiel. A&#365;, se &#349;i alblovus a&#365; alkra&#265;us,
+      eble dirus sian &raquo;keermus-kaarmus&laquo;, a&#365; ion alian. Sed la patrino
+      ne volas. Auli ne scias kial. Malbona &#349;i ne estas, alie &#349;i ne
+      estus fleginta Aulin, anka&#365; klopodojn &#349;i ne evitadas, kial &#349;i do
+      rifuzas?</p>
+
+    <p>&raquo;Panjo, kial vi ne volas?&laquo; &mdash; &raquo;Kion, karuleto?&laquo; &mdash; &raquo;Ke la
+      cikatro fori&#285;u.&laquo; &mdash; &raquo;Mi ja volas, kial mi ne volus.&laquo; &mdash; &raquo;Do
+      diru a&#365; faru ion.&laquo; &mdash; &raquo;Kion mi devas fari?&laquo; &mdash; &raquo;Kiel vi forigas
+      doloron a&#365; tiel.&laquo; &mdash; &raquo;Sed tio ja ne ...&laquo;</p>
+
+    <p>Kaj la patrino klarigas, ke &#349;iaj scioj ne &#265;iam sufi&#265;as. Jen
+      ekzemple la malsano, pro kiu ili devis veturi en la urbon. Auli
+      a&#365;skultas kaj lin ekregas timo: do ekzistas malfacila&#309;oj, kiuj
+      superas e&#265; la kapablojn de panjo.</p>
+
+    <p>&raquo;Sed anka&#365; vi veturis en la urbon,&laquo; li diras post longeta
+      meditado.</p>
+
+    <p>&raquo;Vere mi veturis.&laquo; &mdash; &raquo;Por flegadi min, &#265;u ne?&laquo; &mdash; &raquo;Certe por
+      flegadi vin.&laquo; &mdash; &raquo;Kaj vi resanigis min.&laquo; &mdash; &raquo;Ne mi sola ...&laquo;</p>
+
+    <p>&raquo;Sed tamen vi pleje el &#265;iuj aliaj, mi scias,&laquo; finas Auli kun plena
+      certeco pri la scioj kaj povoj de panjo, kiuj superas tiujn de &#265;iuj
+      aliaj, &#265;ar &#349;i estas ja panjo. Se jam panjo nenion povas fari, la
+      afero estas tute senespera kaj ne valoras pri &#285;i pli longe meditadi.</p>
+
+    <p>&raquo;Do &#285;i estu,&laquo; ek&#285;emetis Auli.</p>
+
+    <p>&raquo;Kio?&laquo; &mdash; &raquo;La cikatro.&laquo; &mdash; &raquo;Eble &#285;i poste malaperos.&laquo;</p>
+    <!-- p.47 -->
+
+    <p>&raquo;Do malaperos,&laquo; li e&#293;adas &#285;ojkrie. &mdash; &raquo;Povas esti.&laquo;</p>
+
+    <p>Tiu &raquo;povas esti&laquo; de la patrino valoras kelkajn &raquo;estas&laquo; de aliaj.
+      Panjo kredas, ke la cikatro malaperos. Ni &#285;oju! Auli ekkuras per
+      la tuta forto de siaj piedoj (ne atentante e&#265; la malpermeson pri
+      kurado) en la pa&#349;tejon al H&#228;ilu.</p>
+
+    <p>&raquo;H&#228;ilu, H&#228;ilu&laquo;, li ektrumpetas tiel forte, ke la fratino
+      saltlevi&#285;as pro ektimo.</p>
+
+    <p>&raquo;Fi, fi, fi, kial vi kria&#265;as, korvido!&laquo;</p>
+
+    <p>&raquo;Mi scias, la cikatro malaperos, panjo mem diris.&laquo;</p>
+
+    <p>&raquo;Do la cikatro malaperos,&laquo; rikanas de post arbusto Tilma de Petsu.</p>
+
+    <p>&raquo;Certe la cikatro malaperos. Mi demandis de panjo, &#265;u malaperos,
+      kaj panjo diris, ke povas esti.&laquo;</p>
+
+    <p>&raquo;Do povas esti. Sed povas anka&#365; ne esti? &#264;u ne povas? &#264;u?&laquo;</p>
+
+    <p>&raquo;Ne povas.&laquo; &mdash; &raquo;Kial?&laquo; &mdash; &raquo;Se panjo mem diris.&laquo;</p>
+
+    <p>Tion Tilma certe komprenas. &#348;i e&#265; ne disputus, sed en &#349;i lo&#285;adas
+      tia tentema diableto, kiu &#349;in igas. Tilma havus multe por diri
+      rilate al tiu &#265;i &raquo;povas esti&laquo;, sed en tiu momento &#349;iaj interesoj
+      direkti&#285;as aliloken.</p>
+
+    <p>&raquo;Kie trovi&#285;as la cikatro,&laquo; &#349;i demandas Aulin.</p>
+
+    <p>&raquo;Tie &#265;i,&laquo; montras Auli la lokon sur la vestaro.</p>
+
+    <p>&raquo;Montru pli precize, nudigu la lokon.&laquo;</p>
+
+    <p>&raquo;Ne montru,&laquo; malpermesas H&#228;ilu.</p>
+
+    <p>&raquo;Kio <i>al vi</i> fari&#285;is, ke vi kria&#265;as,&laquo; koleretas Tilma.</p>
+
+    <p>&raquo;Kial li &#285;in montru.&laquo;</p>
+
+    <p>&raquo;&#264;u vi &#309;aluzas? Rigardu anka&#365; vi, se pla&#265;as, mi ne
+      malpermesos.&laquo;</p><!-- p.48 -->
+
+    <p>&raquo;&#264;u vi ne hontas, granda knabino, kion vi volas tie vidi!&laquo;</p>
+
+    <p>&raquo;Tion, kion vi ne havas por montri.&laquo;</p>
+
+    <p>&raquo;Bridu iom vian langon!&laquo;</p>
+
+    <p>&raquo;Certe tian cikatron vi ne havas.&laquo;</p>
+
+    <p>&#264;ar la interrilatoj tre akri&#285;is, Tilma ne povas kontentigi sian
+      scivolemon, kompreneble por &#349;ia plej granda malplezuro. Por ven&#285;i,
+      malproksimi&#285;inte &#349;i ekkantas parte de aliaj a&#365;ditan, parte
+      memfaritan mokokanton pri H&#228;ilu (memfaritaj estis &#265;efe la &#349;an&#285;oj
+      de propraj nomoj):</p>
+
+    <div class="poezio">
+      <div class="strofo">
+        <span class="i0">&raquo;Fama H&#228;ilu de Mar&#265;rando,</span><br />
+        <span class="i0">iras &#265;irka&#365; vi mar&#265;ando ktp.&laquo;</span>
+      </div>
+    </div>
+
+    <p>Kvankam la kanto estis pri iu Mardu Maali, por Tilma tio ne multe
+      gravis: &#285;i estu, H&#228;ilu tamen pro &#285;i koleras. Kaj &#349;i koleris.</p>
+
+    <p>&raquo;Kial vi venis tien &#265;i,&laquo; &#349;i ekripro&#265;is Aulin.</p>
+
+    <p>Auli e&#265; la bu&#349;on malfermis pro miro: &#265;u li jam ne diris, ke ... ke
+      ...</p>
+
+    <p>&raquo;Sed tio estus direbla anka&#365; poste.&laquo;</p>
+
+    <p>&raquo;Kiam poste?&laquo; &mdash; &raquo;Kiam mi hejmenvenos.&laquo;</p>
+
+    <p>Nekomprenebla i&#285;is subite la mondo por Auli: li &#265;iam estis la homo
+      de momento, kiu estis okupata per ununura ideo kaj &#285;in li devis
+      tuj malka&#349;i al iu, sed nun H&#228;ilu diras, ke ... &#264;u eblas tiel
+      &#265;irka&#365;vagadi kun sia ideo kaj atendadi?</p>
+
+    <p>&raquo;&#264;u vi povas tiel?&laquo; &mdash; &raquo;Kiel?&laquo; &mdash; &raquo;Ke vi ne tuj ekparolas.&laquo;
+      &mdash;
+      &raquo;Pri kio?&laquo; &mdash; &raquo;Se vi ion scias a&#365; meditadas en vi mem.&laquo; &mdash; &raquo;Mi
+      povas, kial ne.&laquo; &mdash; &raquo;Sed mi ne povas.&laquo;</p><!-- p.49 -->
+
+    <p>Auli rigardis H&#228;ilun kun respektego: jen kia &#349;i estas, preska&#365;
+      kiel panjo, multe pli sa&#285;a ol Auli.</p>
+
+    <p>&raquo;Ekiru nun hejmen;&laquo; ordonas H&#228;ilu. &mdash; &raquo;Mi ne volus.&laquo; &mdash; &raquo;Se
+      vi ne iros, vi malvarmumos kaj ree malsani&#285;os.&laquo; &mdash;<!-- orig: --> &raquo;Mi ne
+      malsani&#285;os.&laquo; &mdash; &raquo;Iru, iru!&laquo;</p>
+
+    <p>Obee ekiris Auli, malrapidege, kvaza&#365; hundo, kiun oni irigas al
+      pa&#349;tejo. Balda&#365; ka&#349;is la arbustoj H&#228;ilun kaj tiam plirapidi&#285;is
+      la pa&#349;ado de Auli.</p>
+
+    <p>&raquo;Kien vi tiel rapidadas?&laquo;</p>
+
+    <p>Aj, estis Tilma, kiu subite aperis de post arbustaro.</p>
+
+    <p>&raquo;Mi&mdash;hejmen ...,&laquo; balbutadis Auli.</p>
+
+    <p>&raquo;Hejmeniro ne ur&#285;as. Hejmo ne estas rano, kiu forsaltas. &#264;u al vi
+      ne pla&#265;as en arbaro?&laquo;</p>
+
+    <p>&raquo;H&#228;ilu ordonis, ke mi iru hejmen.&laquo;</p>
+
+    <p>&raquo;Kion &#349;i komprenas. Venu al mi, mi vin ne pelos hejmen.&laquo;</p>
+
+    <p>&raquo;Sed H&#228;ilu, sed patrino ...,&laquo; hezitas Auli.</p>
+
+    <p>&raquo;H&#228;ilu, patrino! Kia viro vi estas, se vi timas virinojn!&laquo;</p>
+
+    <p>&raquo;Ili ne estas virinoj.&laquo; &mdash; &raquo;Kiuj do ili estas, &#265;u viroj?&laquo;</p>
+
+    <p>Por viroj Auli ilin ne konsideris. &raquo;Sed la patro,&laquo; Auli penis kapti
+      dronante la lastan pajleron.</p>
+
+    <p>&raquo;Vi ne pasigos &#265;i tie jaron. Poste vi iros. Vi diros, ke vi
+      laci&#285;is kaj sidante iom ripozis.&laquo;</p>
+
+    <p>Kaj jam la tentantino kaptis la manon de sia viktimo kaj trenis lin
+      en sian ka&#349;ejon.</p>
+
+    <p>&#284;i estis kabana&#265;o, plektita el bran&#265;oj (hereda&#309;o de l' frato),
+      kun ku&#349;ejo el muskoj kaj herboj, kun fajrujo el granito, e&#265; kun
+      tablo kaj benko, fiksitaj al palisetoj kojnitaj en la planko. Plena
+      luksa&#309;o siaspeca, de Auli pli frue ne vidita kaj entuziasmiga.<!-- p.50 -->
+      Kvankam Auli estas granda amiko de Petsu-knabo, tamen &#265;i lasta
+      neniam montris al li tiom da fido, ke li estus montrinta al la amiko
+      sian bienon. Sed Tilma, jen, kiel bona &#349;i estas: nenion ka&#349;as de
+      Auli. Tian konfidon Auli kapablas la&#365;valore taksi.</p>
+
+    <p>&raquo;Montru nun al mi la cikatron!&laquo;</p>
+
+    <p>Auli hezitas: &#349;ajnas hontige nudigi sin en &#265;eesto de fremda
+      knabino.</p>
+
+    <p>&raquo;Kia knabo vi estas, ke vi timas.&laquo;</p>
+
+    <p>E&#265; tia ofendo de vira indeco ne povas venki la hontemon de Auli.</p>
+
+    <p>Tilma ne paciencis por plu atendi. Rapide &#349;i nudigas la koncernan
+      lokon kaj ekridetas:</p>
+
+    <p>&raquo;Oj, oj, kiom oni tran&#265;is. &#284;i ja devis esti dolorega.&laquo;</p>
+
+    <p>&raquo;Sufi&#265;as. Nun vi vidis,&laquo; maltrankvili&#285;as Auli kaj penas sin
+      rekovri.</p>
+
+    <p>&raquo;He&mdash;vi ja ne malvarmumos. Mi povas stari nude, kiom oni nur
+      volas,&laquo; &#349;i diras kaj observas plu brilokule kaj brulvange. &raquo;Ho, vi
+      mizerulo, kiel ili vin tran&#265;is, kiel ili vin ja tran&#265;is.&laquo;</p>
+
+    <p>&raquo;Aj, ne ...&laquo; &mdash; &raquo;Nu-nu-nu, kio estas al vi?&laquo; &mdash; &raquo;Lasu min!&laquo;
+      &mdash; &raquo;Do &#265;esu! &#264;u oni a&#365;dis, ke knabo kriadas kaplite de knabino;
+      oftege male okazas.&laquo;</p>
+
+    <p>La malfeli&#265;a H&#228;ilu e&#265; son&#285;e ne povis anta&#365;vidi, kia surprizo
+      &#349;in hejme atendos.</p>
+
+    <p>&raquo;Kie estas la infano,&laquo; koleris la patrino kaj &#349;ajnis preta kapti
+      H&#228;ilun &#265;e harligo.</p>
+
+    <p>&raquo;Bonan vesperon, &#265;u mi devas scii, kie li estas,&laquo; ekprotestis
+      H&#228;ilu.</p>
+
+    <p>&raquo;Li ja iris al vi.&laquo; &mdash; &raquo;Mi lin ne vidis.&laquo; &mdash; &raquo;Ne mensogu!&laquo; &mdash;
+      &raquo;Do mi mensogas, se oni al mi ne kredas.&laquo; &mdash; &raquo;Vi&mdash;gardu vin ...&laquo;
+      &mdash; Fine panjo<!-- p.51 --> tamen iom plikvieti&#285;is. &raquo;Nu, kie li tiam ...,&laquo; &#349;i
+      parolis en si mem. &mdash; &raquo;Eble li iris al Tilma de Petsu.&laquo; &mdash; &raquo;Kia
+      diablo portis lin tien?&laquo;</p>
+
+    <p>H&#228;ilu certe sciis la ka&#365;zon, sed ne kura&#285;is diri: eble panjo
+      la&#365; la dira&#309;o ricevos tiel klaran imagon pri &#265;io okazinta sur la
+      pa&#349;tejo, kiel Cuvier la&#365; la ostopeco pri anta&#365;diluva esta&#309;o,
+      kaj tiam la kara H&#228;ilu respondecu: kie &#349;i estis, ke &#349;i permesis
+      forkonduki la infanon. &#348;i devis esti tre singardema kaj diplomatia.</p>
+
+    <p>&raquo;Mi iros lin ser&#265;i,&laquo; &#349;i proponis.</p>
+
+    <p>Panjo prefere mem irus, sed mankas la tempo: la mastrumado ur&#285;as.
+      &raquo;Iru do,&laquo; &#349;i diris, &raquo;mi balda&#365; vin sekvos.&laquo;</p>
+
+    <p>H&#228;ilu insistege pre&#285;adis, ke &#349;i trovu Aulin, anta&#365; ol venos la
+      patrino. Kaj jen, &#349;i havis bon&#349;ancon: &#349;i renkontis inter la plej
+      proksimaj arbustoj Aulin, kiu &#349;anceli&#285;adis simile al marmalsanulo
+      sur ferdeko.</p>
+
+    <p>&raquo;Ne, mi ne volas,&laquo; li petis H&#228;ilun, kiu volis lin albrakumi por
+      portadi.</p>
+
+    <p>&raquo;Kial,&laquo; &#349;i konsterni&#285;is. &mdash; &raquo;Mi volas mem iri.&laquo; &mdash; &raquo;Vi ja ne
+      povas.&laquo; &mdash; &raquo;Sufi&#265;e bone mi povas,&laquo; asertis la etulo kura&#285;e. &mdash;
+      &raquo;Eble panjo min insultos.&laquo; &mdash; &raquo;Tie, proksime al la domo, vi min
+      portos.&laquo;</p>
+
+    <p>Dum kelke da tempo amba&#365; silentis.</p>
+
+    <p>&raquo;Ne diru al panjo,&laquo; a&#365;di&#285;is samtempe.</p>
+
+    <p>La koro de H&#228;ilu malpezi&#285;is: &raquo;Mi klarigos &#265;ion la&#365; la plej bona
+      maniero.&laquo;</p>
+
+    <p>&#348;i diris hejme, ke Auli volis iri al &#349;i, sed devoji&#285;is kaj la
+      tutan tempon &#265;irka&#365;vagadis en la arbaro.</p>
+
+    <p>&raquo;&#264;u vi ne povis kriadi, malsa&#285;uleto,&laquo; ripro&#265;etis la patrino.</p>
+
+    <p>&raquo;Ne venis al mi en la kapon,&laquo; diris Auli kaj miris mem, kiel facile
+      estas mensogi.</p><!-- p.52 -->
+
+    <p>&raquo;Nu, ne malsani&#285;u refoje!&laquo; &mdash; &raquo;Mi ne malsani&#285;os.&laquo;</p>
+
+    <p>Tio estis facile dirita, sed ne tiel facile farita. Ne unu tagon
+      Auli devis ku&#349;adi en la lito kaj ree meditadi, kial la Patro &#264;iela
+      sendis al li novajn suferojn aldone al la malnovaj, malgra&#365;, ke li
+      petis &#265;esigi la suferadon.</p>
+
+    <p>Kiam li denove povis elliti&#285;i kaj iris eksteren por sin distri, li
+      renkontis Petsu-knabon, kiu venis por viziti la gepatrojn.</p>
+
+    <p>&raquo;Bonan tagon, bofrateto,&laquo; li salutis.</p>
+
+    <p>&raquo;Kia bofrateto?&laquo;</p>
+
+    <p>&raquo;Sendube bofrateto, la afero estas neevitebla. Tilma mem al mi
+      konfesis kaj anka&#365; nia maljunulo scias.&laquo;</p>
+
+    <p>&raquo;Sed mi nenion scias.&laquo;</p>
+
+    <p>&raquo;Jen, kiel, vi volas malkonfesi. Ne helpas. Mi jam verseton
+      tiurilate faris:</p>
+
+    <div class="poezio">
+      <div class="strofo">
+        <span class="i0">&raquo;Ho vi Auli el Mar&#265;rando,</span><br />
+        <span class="i0">de nia Tilma la trompanto ktp.&laquo;</span>
+      </div>
+    </div>
+
+    <p>Sed tion mi ne diras sincere. Bravulo vi estas! Nur Tilman vi devos
+      edzinigi.&laquo; &mdash; &raquo;Mi &#349;in ne volas.&laquo; &mdash; &raquo;Jen kiel. Kial do ne?&laquo;
+      &mdash; &raquo;Nigrulino &#349;i estas, simile al ...&laquo; &mdash; &raquo;Kia<!-- orig: Kia --> grava&#309;o, ke
+      nigrulino. Kiel diris la mortinta Kustas el K&#246;rveserva? Kvankam la
+      blankulino estas bela kiel an&#285;elo, tamen la nigrulino, diablino, al
+      mi pli pla&#265;as.&laquo; &mdash; &raquo;Li diru, sed mi &#349;in ne toleras.&laquo; &mdash; &raquo;Tiel,
+      vi ne toleras,&laquo; malfermegis Petsu-knabo la okulojn. &raquo;Nu, do venos
+      polico, ju&#285;ejo.&laquo; &mdash; &raquo;Kia &#285;i estas?&laquo; &mdash; &raquo;Tiaspeca &#285;i estas, ke
+      kiam vi eniros, vi pro timo plenigos viajn pantalonojn kaj kiam<!-- p.53 --> vi
+      eliros&mdash;se oni vin entute permesos eliri tiam ...&laquo;</p>
+
+    <p>Petsu-knabo rompis la frazon, &#309;etis &#349;toneton al birdo, turni&#285;ante
+      sur unu piedo.</p>
+
+    <p>&raquo;Kio estos tiam,&laquo; demandis Auli stre&#265;atente.</p>
+
+    <p>&raquo;Tiam vi malbonodoros la tutan vivon.&laquo;</p>
+
+    <p>&raquo;Tiam mi tien ne iros.&laquo; &mdash; &raquo;Do<!-- orig: Do --> vi edzinigos Tilman.&laquo; &mdash;
+      &raquo;E&#265;
+      enpense mi ne havas.&laquo; &mdash; &raquo;Tiam venos kaj forkondukos vin la re&#285;a
+      &#285;endarmo en ru&#285;aj pantalonoj kaj kun ora sabro.&laquo; &mdash; &raquo;Kien?&laquo; &mdash;
+      &raquo;En malliberejon. Mi diras al vi, knabo, tie la vivo ne konsistas el
+      mielo-lekado. Mi sciigus al vi &#265;ion pli detale, sed maljunulina&#265;o
+      hejme ekgrumblos, se mi revenos tro malfrue. Konsideru la aferon! Mi
+      e&#265; ne parolus, nur &#265;ar mi estas via bona amiko ...&laquo;</p>
+
+    <p>&raquo;Sed mi opiniis, ke vi klopodadas por Tilma.&laquo;</p>
+
+    <p>&raquo;Kiom gravas por mi Tilma. &#348;iaka&#365;ze mi e&#265; orelon ne movetus. Nur
+      viaka&#365;ze mi ekparolis.&laquo;</p>
+
+    <p>&raquo;Sed kiamaniere mi &#349;in edzinigu,&laquo; demandis timigite Auli.</p>
+
+    <p>Petsu-knabo premis fingron al la nazo, &#349;ovis poleksungon inter la
+      dentojn, &#349;ajnigis sin pensanta.</p>
+
+    <p>&raquo;Hjes, mi ne bone konas la aferon, neniam mi &#285;is nun edzi&#285;is.
+      Demandu Tilman mem, verdire la afero &#349;in pleje koncernas.&laquo;</p>
+
+    <p>Tiel dirinte li foriris kaj lasis Aulin en pensoj zorgoplenaj, kies
+      rezulto estis vizito de Auli al Tilma.</p>
+
+    <p>&raquo;A&#365;du,&laquo; li ekparolis hezite. &mdash; &raquo;Mi a&#365;das.&laquo; &mdash; &raquo;Li&mdash;via
+      knabo&mdash;diris ...&laquo; &mdash; &raquo;Ne mirige, ke li diris. Kiam li ne diras.&laquo;
+      &mdash; &raquo;Tion, ke ...,&laquo; Auli ekser&#265;is la vortojn. &mdash; &raquo;Kian tion?&laquo; &mdash;
+      &raquo;Ke ...&laquo; La vorto konvena ne trovi&#285;is. Anka&#365; Tilma neniel penis
+      al li helpi.</p><!-- p.54 -->
+
+    <p>&raquo;Do mi devas vin edzinigi,&laquo; rekte elpafis Auli.</p>
+
+    <p>Tilma malfermegis la okulojn.</p>
+
+    <p>Kaj nun rakontis Auli la tutan historion kun &#265;iuj ju&#285;adoj kaj
+      malliberigoj.</p>
+
+    <p>&raquo;A&#293;, jes, tute vere,&laquo; vervege asertis nun anka&#365; Tilma. &raquo;Ne
+      alie, vi min delogis kaj devas anka&#365; edzinigi.&laquo; &mdash; &raquo;Se mi devas,
+      mi edzinigos,&laquo; konsentis Auli. &mdash; &raquo;Sed la afero havas hokon. Ni
+      devas havi poseda&#309;on por vivi.&laquo; &mdash; &raquo;Poseda&#309;on. &#264;u vi ne havas?&laquo;
+      &mdash; &raquo;Anka&#365; vi devas havi.&laquo; &mdash; &raquo;Mi ne havas. Kie mi estus &#285;in
+      ricevinta?&laquo; &mdash; &raquo;Nu, vi do devos havigi.&laquo;</p>
+
+    <p>Kaj nun sekvis instrukcioj, <i>kiel</i>. Forpreni el la hejmo &#265;ion pli
+      malpli bonan kaj alporti al &#349;i, Tilma, por la estonta kunvivo. Tilma
+      tiel bone scipovis aran&#285;i la aferon, ke Auli fari&#285;is &#349;ia obeema,
+      senvola sklavo. Kvankam komence estis malagrable &#349;teladi; malagrable
+      &#265;eesti, kiam hejme oni ser&#265;adis ion perditan, a&#365; &#265;e kunhelpi &#265;e
+      senutila ser&#265;ado kaj a&#365;skulti la insultadon de la aliaj, tamen &#265;io
+      &#265;i ne povis efiki tiom, ke Auli povus forlasi la malvirton, kiu
+      &#265;iam pli kaj pli enradiki&#285;is en la animo. Ne helpis la donitaj al
+      si mem &#265;iufojaj promesoj: &raquo;&#284;i estis <i>lastfoje</i>, plu mi ne faros
+      tiel,&laquo; &#265;ar Tilma turnis la aferon tiel lerte, ke Auli ne la&#365; &#349;ia
+      ordono, sed e&#265; spite &#265;iujn &#349;iajn malpermesojn &#349;teladis elhejme
+      kaj portis al &#349;i la &#349;tela&#309;ojn.</p>
+
+    <p>&raquo;Kion vi alportos,&laquo; demandis Tilma de malproksimete. &mdash; &raquo;Nenion
+      mi povis ricevi.&laquo; &mdash; &raquo;Bravulo. Mi e&#265; ne volas, ke vi alportu
+      ion. Kaj kion vi, almozula&#265;oj, havas por alporti.&laquo; &mdash; &raquo;Sed mi ja
+      alportis.&laquo; &mdash; &raquo;Kiajn valora&#309;ojn. &#264;e ni oni tia&#309;ojn e&#265; ne levas
+      de la tero.&laquo; &mdash; &raquo;Vidu, la brilanta globeto, &#285;i ja estis a&#309;o.&laquo;
+      &mdash;<!-- orig: -->
+      &raquo;&#284;i ja estis? &#264;u estis, diru!&laquo; &mdash; Tilma ne konsideris la demandon
+      respondinda.</p><!-- p.55 -->
+
+    <p>&raquo;Kaj, vidu, tiu teujo kaj sukerujo kaj, vidu, tiu malnova
+      po&#349;horlo&#285;o de pa&#265;jo kaj, vidu ...&laquo;</p>
+
+    <p>&raquo;Kaj vidu, kaj vidu, kaj vidu. Nenion mi vidas. Kion vi vidigas, se
+      vi havas nenion por vidigi.&laquo;</p>
+
+    <p>&raquo;&#264;iujn mi alportis al vi. La teujo apartenis al H&#228;ilu, mi alportis
+      &#285;in kun la tuta enhavo. Kiel H&#228;ilu ser&#265;adis kaj ploris.&laquo;</p>
+
+    <p>&raquo;Estis plorinda&#309;o. Mi &#285;in tute ne volis.&laquo;</p>
+
+    <p>&raquo;Do redonu, mi &#285;in reportos.&laquo;</p>
+
+    <p>&raquo;Mi plu ne memoras, kien mi &#309;etis la for&#309;etinda&#309;ojn. Mi ja ne
+      povis scii, ke iuj ilin tiel &#349;atas.&laquo;</p>
+
+    <p>&raquo;Nun mi alportos a&#309;ojn pli bonajn.&laquo;</p>
+
+    <p>&raquo;Ektrovi&#285;is portanto de pliaj bona&#309;oj. Demandu prefere, &#265;u vi
+      havas ion pli bonan.&laquo;</p>
+
+    <p>&raquo;Ni havas.&laquo; Auli faris gravan mienon.</p>
+
+    <p>&raquo;Nekredeble,&laquo; &#349;ajnigis Tilma dubon.</p>
+
+    <p>&raquo;Kredu ja. Kredu, se mi diras.&laquo;</p>
+
+    <p>&raquo;Mi ne kredas anta&#365; ol mi vidos.&laquo;</p>
+
+    <p>&raquo;Tuj mi iros, alportos.&laquo;</p>
+
+    <p>&raquo;Iru, se vi volas, sed alporti vi ne devas.&laquo;</p>
+
+    <p>&raquo;Tuj mi revenos.&laquo; &mdash; &raquo;Ne venu! Entute ne venu plu!&laquo; &mdash; &raquo;Permesu
+      do!&laquo; &mdash; &raquo;Mi ne permesas.&laquo;</p>
+
+    <p>Post longa insistado, Tilma permesis.</p>
+
+    <p>Auli kun vervego ekkuris hejmen, por plenumi sian decidon, sed
+      hodia&#365; &#285;i &#349;ajnis ne tute facila: &#265;iuj kvaza&#365; interkonsentis
+      malhelpi Aulin en la realigo de sia intenco, &#265;iam iu kroma
+      trovi&#285;adis en la &#265;ambro. Jen la patrino, kombanta sian jukantan
+      kapon, jen la avino, reveninta hejmen kaj sciiganta siajn
+      eksterhejmajn nova&#309;ojn, jen la patro a&#365; H&#228;ilu enirantaj tute
+      senatende pro nesciataj kialoj. Kvaza&#365; gardostarantoj ili alternis
+      la&#365;vice, tiel ke Auli preska&#365; malesperis: kiel ili ne komprenas
+      kaj ne lasas lin por unu<!-- p.56 --> momento sola! Tiel ja neniam oni povos ion
+      forporti de tie &#265;i. Fine alvenis delonge atendita momento. Auli
+      kunser&#265;is la necesajn objektojn kaj ka&#349;is ilin &#265;ebruste. &#284;uste li
+      volis eliri, kiam li rekte sur la sojlo renkontis la patron.</p>
+
+    <p>&raquo;Kien vi ree kuradas, se vi hejme ne restadas,&laquo; koleretis la patro
+      kaj reirigis Aulin en la &#265;ambron.</p>
+
+    <p>Tuj la patro ekser&#265;is ege grumblante.</p>
+
+    <p>&raquo;Mi ne komprenas, kien la a&#309;oj perdi&#285;as.&laquo;</p>
+
+    <p>&raquo;Kio al vi mankas,&laquo; demandis la patrino.</p>
+
+    <p>&raquo;Nun perdi&#285;is mia porcelankapa pipo. Bubo, meleagro, &#265;u vi ne
+      vidis?&laquo;</p>
+
+    <p>&raquo;Kiel li &#285;in povis vidi. Ser&#265;u ja, kie vi mem &#285;in metis.&laquo;</p>
+
+    <p>&raquo;Mirinda&#309;o,&laquo; murmuris la patro, prenis anstata&#365;e alian pipon kaj
+      eliris kra&#265;ante.</p>
+
+    <p>Auli ne sentis sin tre agrable dum la lasta sceno: la ser&#265;ita a&#309;o
+      trovi&#285;is &#265;e lia brusto kaj &#285;ia porcelankapo, tu&#349;ante la nudan
+      korpon, estigis senton abomenan. Krom tio, la timo&mdash;la patro povas
+      &#265;iumomente rimarki, ke pri la &#265;ebrusto de Auli ne &#265;io estas en
+      ordo&mdash;kaj la beda&#365;ro, ke &#285;uste li, Auli ka&#365;zis la &#265;agrenon de
+      patro, tre malplialtigis la humoron. &#348;atis ja la patro treege la
+      pipon, kiu estis donaco de lia frato&mdash;la onklo de Auli&mdash;, kara
+      memora&#309;o, &#265;ar la donacinto mem jam mortis. Aulin interesis la
+      pipo kiel objekto bela, &#265;ar sur &#285;ia blanka kapo estis pentritaj
+      ru&#285;aj floroj kaj tre diverskoloraj ekzotikaj birdoj. Tiaaspekta
+      a&#309;o ver&#349;ajne pla&#265;os anka&#365; al Tilma kaj eble &#285;i estas iel necesa
+      anka&#365; por la kunvivado estonta.</p>
+
+    <p>Kiam la patro eliris, anka&#365; Auli volis forkuri por viziti Tilman.</p><!-- p.57 -->
+
+    <p>&raquo;Kion vi ka&#349;as &#265;ebruste,&laquo; demandis la avino.</p>
+
+    <p>&raquo;N-nenion.&laquo; &mdash; &raquo;Montru al mi.&laquo; &mdash; &raquo;Estas la &#265;apo, nu,&laquo;
+      mensogis Auli, kaj evitante la avinon, kiu videble havis la intencon
+      palpi lian &#265;ebruston, li eliris tra la pordo kaj&mdash;jam estis
+      malaperinta.</p>
+
+    <p>&raquo;Kie vi estis tiel longe,&laquo; koleretis Tilma. &mdash; &raquo;Ne eblis pli
+      frue.&laquo; &mdash; &raquo;Bone, bone, montru viajn trezorojn!&laquo;</p>
+
+    <p>&#264;ifoje Tilma estis plene kontentigita, sed Auli ne sentis sin
+      tre oportune: lia konscienco ege lin ripro&#265;adis pro la faritaj
+      malbona&#309;oj.</p>
+
+    <p>Neniu el amba&#365; infanoj rimarkis, ke tre proksime al ili trovi&#285;is
+      iu, kiu fervore observis, atente a&#365;skultis kaj &#265;izis profunde en
+      sian memoron &#265;ion viditan kaj a&#365;ditan.</p>
+
+    <p>La boonklino de Altpere neniam venis kun bonaj informoj. La plejan
+      malbonon anta&#365;signis tio, kiam &#349;i venis en la plej bona humoro:
+      tiam &#349;i certe havis en rezervo ion precipe kruelan, per kio &#349;i
+      povis trafi la alian rekte en la centron de la koro. &#348;i ne tuj
+      eksplodigis sian bombon: alrulis &#285;in malrapide simile al tio, kiel
+      lerta piedpilkludanto proksimigas la pilkon al la pozicio de la
+      kontra&#365;a partio&mdash;malrapide kaj singarde, nerekte kaj ne senpere,
+      &#285;is kiam li atingas la distancon konvenan, de kie estas piedbatebla
+      golo sendisputa kaj certa, neevitebla kaj nekontra&#365;starebla.</p>
+
+    <p>La patrino eksentis doloran premon &#265;e la koro, kiam &#349;i vidis
+      la boonklinon venantan tre mieldol&#265;a, kun brilanta ridego sur
+      la grasmalseka brikeru&#285;a viza&#285;o. Certe kunhavis la gastino ion
+      ekstreme malbonan, kio estis ka&#349;ita en la plej sekreta angulo de
+      &#349;ia nova&#309;sako. Se oni almena&#365; povus diveni, de kia flanko &#349;i
+      ekbatos, sed ne tiel facile &#349;i elludos sian atuton: komence &#349;i<!-- p.58 -->
+      disvolvas vian tutan animon, poste revolvas en bulon, oleas, kaj kiam
+      vi malpleje atendas, trapikas per stango kaj ekbruligas.</p>
+
+    <p>&raquo;Bonan tagon, Mar&#265;randa parencino,&laquo; kriis la boonklino de Altpere
+      jam de malproksimete, &raquo;kiel vi fartas, jam delonge mi vin ne
+      vidis.&laquo;</p>
+
+    <p>&raquo;Certe delonge,&laquo; konsentis la patrino.</p>
+
+    <p>&raquo;He, fiera&#265;ulino, vi min ne vizitas, &#265;iam <i>mi</i> devas veni al vi,
+      kvankam mankas al mi tempo.&laquo;</p>
+
+    <p>&raquo;Anka&#365; mi ne havas multe da &#285;i.&laquo;</p>
+
+    <p>&raquo;Ne tiajn zorgojn vi havas, kiajn mi. &#264;e vi &#265;io, &#265;io plie
+      prosperas. Mi ne komprenas, kiel vi tion scipovas aran&#285;i.&laquo;</p>
+
+    <p>Nun la patrino estis certa, ke Alpere venis kun ia Hiobsciigo, sed la
+      diroj havis sencon tiom &#285;eneralan, ke la&#365; &#285;i oni ne povis diveni
+      la karakteron de la sciigo. Post kiam ili iomtempe &#265;irka&#365;vagadis,
+      tion-alian inspektis, bagatela&#309;ojn parolis, la patrino invitis la
+      gastinon en la &#265;ambron.</p>
+
+    <p>&raquo;Kion mi tie? Pli bone estas ku&#349;i sur la herba&#309;o, varmigi
+      la orelojn kaj babiladi. Auli-knabo, &#265;u vi ne venas saluti la
+      boonklinon? Jen kiel, e&#265; rekoni min li ne volas! Nu, kiel vi fartas?
+      Nia Lullu jam delonge atendas vian viziton: anka&#365; nun &#349;i diris, ke
+      mi demandu, kiam vi venos.&laquo;</p>
+
+    <p>Auli sentis sin kvaza&#365; sur karboj ardantaj. Prefere li estus &#349;tele
+      fu&#285;inta sed la boonklino malhelpis la intencon.</p>
+
+    <p>&raquo;Venu &#265;i tien, fileto, mi frakasos sur via verto kelkajn
+      pedikovojn.&laquo;</p>
+
+    <p>&#348;i tiris Aulin al si, metis lian kapon en sian sinon kaj ek&#265;asis
+      en la hararo. Panjo ka&#365;ris apude kaj<!-- p.59 --> prenadis el la silikvoj la
+      fre&#349;ajn pizograjnojn por poste kuiri al tagman&#285;o.</p>
+
+    <p>&raquo;Lullu certe atendas vian viziton,&laquo; ripetis Altpere simile, kiel se
+      bona vinkonanto &#285;uadas la guston de vino per sia lango en la bu&#349;o.
+      &raquo;Espereble anka&#365; por &#349;i vi alportis el la urbo belegan donacon,
+      e&#265; pli belan ol por Tilma de Petsu.&laquo;</p>
+
+    <p>&raquo;Kio!&laquo; saltlevi&#285;is la patrino; la argila ujo frakasi&#285;is,
+      pizograjnoj disruli&#285;is sur la herba&#309;o. &raquo;Donaco por Tilma de Petsu.
+      Kian putraborta&#309;on vi eligas.&laquo;</p>
+
+    <p>&raquo;Oj, oj, parencino, kial vi tiel koleras. Se mi tion scius, nenion
+      mi estus dirinta.&laquo;</p>
+
+    <p>&raquo;Kie li, rana&#265;o, havigis la donacon kaj precipe por Tilma de
+      Petsu.&laquo;</p>
+
+    <p>&raquo;Nu, mi opiniis, ke vi fari&#285;is milionuloj kaj nun fordonacas &#265;iujn
+      malnovajn a&#309;a&#265;ojn, por vi superfluajn.&laquo;</p>
+
+    <p>&raquo;Nur parola&#265;u!&laquo;</p>
+
+    <p>&raquo;Vere kaj sincere mi diras. Mi opiniis, ke se vi ja fordonacas, do
+      prefere al viaj parencoj, kial vi devas doni &#265;ion nepre al Petsu-oj;
+      anka&#365; inter la propra parencaro trovi&#285;as multe da mizeruloj.&laquo;</p>
+
+    <p>&raquo;A&#365;du, kion tia parolo signifas?&laquo;</p>
+
+    <p>&raquo;Kion alian &#285;i signifus, kiam Petsu-maljunulo ja havas en la po&#349;o
+      la horlo&#285;on de via patro, en la bu&#349;o lian pipon, la maljunulino
+      portas vian flavan kaptukon kaj strian anta&#365;tukon. Tilma&mdash;&#349;i havas
+      a&#309;ojn sepcent, mi ne havis tempon por pli detale inspekti, mi
+      kuris&mdash;kuretis, trot-trot, &#265;i tien, ke eble anka&#365; mi ricevos ion,
+      anta&#365; ol &#265;io estas fordonacita.&laquo;</p>
+
+    <p>&raquo;Kiel ili povis ricevi,&laquo; ekdiskutis panjo senkonsile.</p>
+
+    <p>&raquo;&#264;u <i>mi</i> scias,&laquo; estis la venenoza respondo de<!-- p.60 --> Altpere, &raquo;kion
+      mi, malsa&#285;ulino, povas scii. Mem vi ja estas superflue sa&#285;a, viaj
+      infanoj des pli. Kunmetu la kapojn, eble elser&#265;i&#285;os la vero.&laquo;</p>
+
+    <p>&#348;i diris, levi&#285;is, ekiris, svingante saluton per la jupovosto.</p>
+
+    <p>&raquo;Auli!&laquo;</p>
+
+    <p>La genuoj de Auli ektremis, &#349;ajnis rompi&#285;i pro malforto.</p>
+
+    <p>&raquo;He! Kial vi faris tion!&laquo;</p>
+
+    <p>Auli eksentis en la gor&#285;o sufokan premon. Li atendis: nun okazos io
+      terura, sed nenio okazis. Panjo turni&#285;is kaj iris en la &#265;ambron.
+      Auli faris kelkajn pa&#349;ojn direkte al la pa&#349;tejo, sed haltigis
+      sin: kial tien? Kaj kien entute? Senhelpe, malkura&#285;i&#285;inte pro la
+      trafinta lin katastrofo, li sin trenis anta&#365;en sencele, sendezire,
+      kun sola sia kunulo&mdash;la malespero. Kaj ree, kvaza&#365; tirite de ia
+      mistera forto, la piedoj portis lin al la picebran&#265;a kabana&#265;o en la
+      arbustaro sur la pa&#349;tejo de Petsu. Li eniris, ku&#349;i&#285;is al la muska
+      ku&#349;ejo, fermis la okulojn kaj deziris forgesi pri &#265;iuj kaj pri
+      &#265;io.</p>
+
+    <p>Subite ekfrapis lian konscion lar&#285;a lumstrio, kvaza&#365; oni malfermus
+      pordon el helega &#265;ambro en malluman nokton. Tio estis <i>tio &#265;i</i>.
+      La son&#285;o dum la nokto de fulmotondro. La fulmo &#309;us frapis en la
+      domon kaj trafis lin. &#264;u ne efikis la sciigo de boonklino de Altpere
+      simile al fulmofrapo kaj &#265;u ne ku&#349;is li, Auli, tie &#265;i surtere?
+      Kaj la Patro &#264;iela sciis jam tiam, sed faris nenion por forigi la
+      katastrofon. A&#365; eble li faris, sed Auli ne sufi&#265;e kontra&#365;staris
+      al la malbono? Sed kion povas iu simila al Auli kontra&#365; fulmo a&#365;
+      tondro, kion li povas fari al ili?</p>
+
+    <p>Tagbruo zumadis ekstere. Mil oraj radioj, bluaj<!-- p.61 --> &#265;ielstrioj
+      kaj brilaj makuloj penetris tra la bran&#265;oj en la kabana&#265;on.
+      &#264;irka&#365;promenis malforta venteto, sunorumitaj polveroj fajreris
+      kaj dancis, sonoj kaj odoroj vetkuris, sur la lango amaris la gusto
+      de kumeno kaj dol&#265;etis tiu de kamomilo. Estu ja e&#265; &#265;io finita,
+      &#309;etita e&#265; la lasta &#309;etkubeto, al tia sor&#265;forto oni tamen ne povas
+      kontra&#365;stari: &#285;i trapenetras la tutan esta&#309;on, trasorbigas la
+      homon de verto &#285;is plando. Unue fordegelas la stultiga malespero,
+      poste pliklari&#285;as la penso, pliakri&#285;as la doloro, naski&#285;as
+      beda&#365;ro kaj deziro, ke &#265;io &#265;i tute ne estus okazinta; fine la
+      espero, ke ne &#265;io estas perdita, trovi&#285;os eble ia elirvojo. Iom
+      post iom la suferoj plimildi&#285;as, alvenas dormo, forgeso, ripozo&mdash;por
+      kolekti novajn fortojn.</p>
+
+    <p>Aj, kiel bone estas! Estas printempo; da ne&#285;o nur kelkaj makuletoj,
+      juna sekalo verdas, &#265;ielbluo floradas en blankaj nubofloroj;
+      malsupre en valeto, sur frakseno gaje fajfadas sturnoj. Auli volas
+      kuri eksteren por ilin a&#365;skulti, sed panjo ne permesas. Tamen, foje
+      li povas ka&#349;ire transi&#285;i la sojlon.</p>
+
+    <p>&raquo;Panjo, Auli jam eliris,&laquo; sciigas H&#228;ilu.</p>
+
+    <p>&raquo;Do li jam eliris. Rapide en la &#265;ambron, kial vi tie frostetas!&laquo;
+      &mdash; &raquo;Mi ne frostetas.&laquo; &mdash; &raquo;Tuj eniru!&laquo;</p>
+
+    <p>Auli venas. &raquo;Panjo, &#265;u vi scias, kiel la sturnoj kantis.&laquo; Kaj
+      <i>kiel</i> ili kantis. Tute en homa lingvo. Jen kiel!
+    </p>
+
+    <p>&raquo;Venu-prenu, venu-prenu,&laquo; invitis la sturnopatrino la idojn por
+      ilin man&#285;igi. &mdash; &raquo;Panmola&#309;o, panmola&#309;o,&laquo; &#349;i diris disdonante
+      la man&#285;a&#309;on. &mdash; &raquo;Stulte-multe, stulte-multe,&laquo; &#349;i ripro&#265;is
+      avidulojn.</p>
+
+    <p>&raquo;Ej, vi petolulo,&laquo; ridas panjo.</p>
+
+    <p>Auli opinias tiun bonhumore diritan &raquo;petolulo&laquo; ia la&#365;dego kaj
+      &#285;ojegas.</p><!-- p.62 -->
+
+    <p>&raquo;Petolulo, mi estas petolulo,&laquo; li cikonidancas sur unu piedo.
+      &raquo;H&#228;ilu, mi estas petolulo, avino, mi estas petolulo.&laquo;</p>
+
+    <p>Sed neniu koleretas: Auli ja estas tiel eta, ke li e&#265; ne scias, kion
+      signifas petolulo. Ravege esti tiel eta, ke oni e&#265; ne bezonas tion
+      scii.</p>
+
+    <p>Kaj Auli &#285;ojas kaj &#265;irka&#365;saltadas, kiom li nur volas. Ripetadas
+      sen&#265;ese: &raquo;Petolulo, mi estas petolulo.&laquo;</p>
+
+    <p>&raquo;Certe vi estas petolulo, maljuna Aula&#265;o,&laquo; koleretas H&#228;ilu
+      volvanta fadenon, &raquo;vidu, en fadena&#309;on vi vin volvis.&laquo;</p>
+
+    <p>&raquo;Forprenu la fadenon,&laquo; ordonas panjo.</p>
+
+    <p>H&#228;ilu forprenas, pa&#349;adas kun fadenbulo &#265;irka&#365; Auli, sed &#265;iam pli
+      kaj pli envolvas Aulin.</p>
+
+    <p>&raquo;Kion vi nun,&laquo; eklamentas Auli, &raquo;vi ja &#265;irka&#365;volvas al mi &#265;iam
+      pli da fadeno.&laquo;</p>
+
+    <p>&raquo;Jes mi &#265;irka&#365;volvas, vi&mdash;petolulo,&laquo; koleretas H&#228;ilu, &raquo;mi<!-- orig: mi -->
+      volas
+      vin tute en fadena&#309;on, ke vi neniam plu povos eli&#285;i.&laquo;</p>
+
+    <p>Aj-aj, kion nun fari? Auli ek&#349;iras la fadena&#309;on, sed H&#228;ilu
+      &#265;irka&#365;volvas al li &#265;iam pli kaj pli novajn ringojn.</p>
+
+    <p>&raquo;Panjo, rigardu, kion faras H&#228;ilu!&laquo;</p>
+
+    <p>&raquo;Jes, rigardu, kion faras H&#228;ilu! Kion &#349;i do faras?! Kaj kie &#349;i
+      estas, via panjo?!&laquo;</p>
+
+    <p>Kaj vere: panjo ne &#265;eestas. Anka&#365; H&#228;ilu estas ne H&#228;ilu, sed
+      Tilma.</p>
+
+    <p>&raquo;A&#365;du, Tilma, ne &#265;irka&#365;volvu min per fadeno, mi ne plu povos
+      eli&#285;i.</p>
+
+    <p>&raquo;Necesas al vi eli&#285;i,&laquo; murmuras Tilma kaj &#265;irka&#365;volvas al li la
+      korpon, la brakojn, la gambojn, fine lin tutan, ke li e&#265; hareton ne
+      povos moveti.</p>
+
+    <p>&raquo;Nun vi vidos, kion mi al vi faros,&laquo; &#349;i minacas.</p><!-- p.63 -->
+
+    <p>Aj, kia terura granda nigra araneo envolvis Aulin, kiel malgrandan
+      mu&#349;eton, en sian aranea&#309;on kaj volas lin ekman&#285;i, sed jen&mdash;tie
+      etendi&#285;as fingroj blankaj, silke-molaj kaj &#349;tale-tenecaj. Ili
+      kaptas la monstron, &#309;etas teren sub la piedojn, kie &#285;i estas
+      tretfrakasita. Nun disvolvas la fingroj la aranea&#309;on, fadenon post
+      fadeno, kaj liberigas la kaptiton, kiu perdis jam &#265;ian esperon.</p>
+
+    <p>Iom post iom, kvaza&#365; tra nebulo, penetras la konscio. Ombroj
+      vesperaj descendas, ventoblovoj kvieti&#285;as, la okcidento estas plena
+      de flavaj floroj kaj rozetaj trembriloj. Auli ektimas la solecon, la
+      malsato lin ekadmonas. Fari&#285;u kio ajn, tie &#265;i resti li ne povas,
+      li devas hejmeniri, ili traktu lin la&#365;pla&#265;e. Li ekiras, komence
+      malrapide poste &#265;iam pli rapide, &#285;is fine li kuregas kun freneza
+      hastego. Sed ju pli proksimi&#285;as la domo, des pli malrapidi&#285;as la
+      hasto. Fine la piedoj malforti&#285;as, li haltas. Ne, li ne kura&#285;as:
+      nun ili hejme scias &#265;ion, kun kia viza&#285;o li aperu sub krucfajro
+      de kondamnantaj rigardoj, kiel li akceptu la vicbastonadon de
+      severegaj vortoj. &#284;i doloras pli ol la ordinara insultado a&#365; la
+      plej forta vergado, kiu atakas, tordas, mordas, doloras, sed kiam
+      &#285;i &#265;esas, ree &#265;io estas bona: kaj la suno brilas kaj birdoj
+      trilas, kaj la okulo ridas kaj koro subridas. Sed &#265;iokaze tiaspeca
+      rapida aerventolado ne estas e&#265; imagebla. Auli penas imagi al si la
+      hejmon kun la hejmanoj. Tio, kion li supozas tie vidi, estas tiel
+      malesperiga, ke Auli tuj sin turnas kaj ekiras kontra&#365;direkte,
+      nudpiede tra malvarma roso; kvankam timeteme, sed tamen iras. Jam
+      vidi&#285;as la kabana&#265;o tra krepusko. Tie&mdash;a&#365;skultu, &#265;u oni ne
+      parolas? Jes, sendube. Auli rekonas e&#265; la vo&#265;ojn: tiu de Tilma kaj
+      de iu fremda, evidente de pa&#349;tisto el K&#246;rveserva.</p><!-- p.64 -->
+
+    <p>&raquo;Do vi forkuris elhejme?&laquo; &mdash; &raquo;'Es,&laquo; respondas Tilma, ver&#349;ajne
+      frotante per fingro la palaton. &mdash; &raquo;Sed kial?&laquo; &mdash; &raquo;Kun &#349;i ne
+      eblas &#349;erci &#349;ercojn, &#349;i ne similas al la homoj &#265;itieaj. Panjo
+      diris, ke e&#265; la intestojn &#349;i travidas.&laquo;</p>
+
+    <p>&raquo;Pri kiu &#349;i parolas,&laquo; demandis Auli en si mem.</p>
+
+    <p>&raquo;Sendube &#349;i forprenos la a&#309;ojn,&laquo; diskutas la pa&#349;tisto el
+      K&#246;rveserva. &mdash; &raquo;&#348;i prenu, se nur min oni ne kaptas.&laquo; &mdash; &raquo;Eble
+      poste anka&#365; vin oni &#285;enos.&laquo; &mdash;<!-- orig: --> &raquo;Ili nur provu! &#264;u Tilma de
+      Petsu kulpi&#285;as pro tio, ke Auli de Mar&#265;rando &#349;teladas? &#264;iam oni
+      kria&#265;is, ke Petsuoj &#349;teladas, nun oni rigardu, kie nestadas la
+      &#265;ef&#349;telistoj.&laquo;</p>
+
+    <p>Auli miras, ke &#285;uste Tilma povas paroli tia&#309;ojn.</p>
+
+    <p>&raquo;Sed kiel li&mdash;,&laquo; ekparolis K&#246;rveserva.</p>
+
+    <p>&raquo;... tia muknazulo, tion kapablis? Nu, &#265;ar nia knabo lin
+      &#349;erctrompis.&laquo;</p>
+
+    <p>Jen kiel! Do Petsu-knabo lin &#349;erctrompis?</p>
+
+    <p>Do tiaj estis la aferoj.</p>
+
+    <p>&raquo;Kaj kie li mem nun trovi&#285;as?&laquo; &mdash; &raquo;La Mar&#265;randanoj eble ankora&#365;
+      ser&#265;as lin en la arbaro.&laquo; &mdash; &raquo;Dio scias, kion tiu frenezulo faris
+      a&#365; kien li iris. Eble li falis en &#349;limejon.&laquo; &mdash; &raquo;La&#365; mi li falu
+      e&#265; en dek &#349;limejojn samtempe, min la afero ne koncernas. Prefere
+      mortu tia a&#265;ulo!&laquo;</p>
+
+    <p>Auli sufi&#265;e a&#365;dis. Nun rapide hejmen, anta&#365; ol revenos la
+      ser&#265;antoj. Poste fari&#285;u kio ajn.</p>
+
+    <p>Hejme trovi&#285;is nur H&#228;ilu. &#348;i akceptis la reveninton ne tre afable.</p>
+
+    <p>&raquo;Jen vi revenis, &#265;ifonisto! &#264;u &#265;e Petsuoj ne sufi&#265;e bone vi
+      fartis? A&#365; vi venis por ion &#349;teli?!&laquo;</p>
+
+    <p>&raquo;Ne koleru, kara franjo!&laquo; &mdash; &raquo;Mi ne estas plu via franjo.&laquo;
+      &mdash; &raquo;Kio vi estas do?&laquo; &mdash; &raquo;Mi estu kio<!-- p.65 --> ajn, nur ne fratino
+      de &#349;telisto.&laquo; &mdash; &raquo;Pardonu, kara fr&mdash;&laquo; &mdash; &raquo;Ne diru plu la
+      vorton! Mi ne volas, ke vi min tiel nomu.&laquo; &mdash; &raquo;Sed kiel alie?&laquo;
+      &mdash; &raquo;Neniel. Por vi nomon mi ne havas.&laquo; &mdash; &raquo;H&#228;ilu!&laquo; &mdash;
+      &raquo;Nu?&laquo;
+      &mdash; &raquo;A&#365;du!&laquo; &mdash; &raquo;Mi a&#365;das.&laquo; &mdash; &raquo;Se mi nun promesos, ke
+      neniam,
+      neniam plu mi faros ion malbonan, &#265;u e&#265; tiam vi ne &mdash;?&laquo; &mdash; &raquo;Ne.&laquo;
+      &mdash; &raquo;H&#228;ilu.&laquo; &mdash; &raquo;Jen mi estas.&laquo; &mdash;<!-- orig: --> &raquo;&#264;u vi
+      sincere &mdash;?&laquo; &mdash;
+      &raquo;Sincerege.&laquo; &mdash; &raquo;Mi ne povas tiel.&laquo; &mdash; &raquo;Mi bonege povas.&laquo;</p>
+
+    <p>Auli ekploris.</p>
+
+    <p>&raquo;Nu, nu, kio nun fari&#285;as?! Ne&#285;o degelas, de tegmentrandoj
+      gutadas.&laquo;</p>
+
+    <p>Auli e&#265; plie plori&#285;is.</p>
+
+    <p>&raquo;Silentu jam, ne artifiku!&laquo;</p>
+
+    <p>Iom post iom ekdegelis la glacio.</p>
+
+    <p>&raquo;Do bone, &#265;ifoje mi pardonas.&laquo;</p>
+
+    <p>&raquo;Jes?&laquo; En la demando a&#365;di&#285;is gaja ekscito.</p>
+
+    <p>&raquo;Jes, sed bonege memoru, lastfoje tio estas, neniam plu mi pardonos
+      poste.&laquo;</p>
+
+    <p>&raquo;Estu lastfoje. Neniam plu mi faros ion malbonan.&laquo;</p>
+
+    <p>Necesis revoki hejmen la aliajn, kiuj ankora&#365; &#265;irka&#365;vagadis en
+      la arbaro ser&#265;ante Aulin. Auli kaj H&#228;ilu eliris. La nokto estis
+      malhela kaj la krepusko plena de roseroj kvaza&#365; steloj, kaj de
+      steloj kvaza&#365; roseroj. Tre malfrui&#285;inta radio ku&#349;is brilante
+      la&#365;longe de la &#265;ielo kvaza&#365; fajra glavo de kerubo. De tempo al
+      tempo ekbriletis la grenfulmoj, pro tio la rozkolora nebulo pali&#285;is
+      kaj la silike-griza surfaco de la lageto eligis fajrerojn. Malfortaj
+      ventoblovoj &#349;teliradis tra arbustoj, impliki&#285;inte en la densa
+      foliaro.</p>
+
+    <p>H&#228;ilu ekhuis: &raquo;Uu!&laquo;</p>
+
+    <p>Uu-uu-uu-uu-uu-uu, e&#293;adis en arbaroj kaj boskoj;<!-- p.66 --> komence, en
+      la pli proksimaj, pli la&#365;te, kaj pli klare poste, en &#265;iam pli
+      malproksimaj, &#265;iam pli malla&#365;te kaj pli obtuze, &#285;is fine la voko,
+      ie en senlimo, eksilentis kaj mortis.</p>
+
+    <p>&raquo;Revenu!&laquo; vokis H&#228;ilu.</p>
+
+    <p>Venu-venu-venu-venu-venu-venu, admonis la e&#293;o.</p>
+
+    <p>&raquo;Auli estas hejme.&laquo;</p>
+
+    <p>Hejme-hejme-hejme-hejme-hejme-hejme, moke ripetadis la arbaroj kaj
+      boskoj.</p>
+
+    <p>Pasis kelka tempo, &#285;is kiam a&#365;digis respondo:</p>
+
+    <p>&raquo;Ni a&#365;das-a&#365;das-a&#365;das-a&#365;das-a&#365;das-a&#365;...das.&laquo;</p>
+
+    <p>Kaj post momento:</p>
+
+    <p>&raquo;Ni venos-venos-venos-venos-venos-ve...nos.&laquo;</p>
+
+    <p>Kontentigitaj per la respondo, la infanoj eniris la domon.</p>
+
+    <p>La pordanso klaketis. Auli timtremetis: jam ...</p>
+
+    <p>La alveninto, stari&#285;inte malanta&#365; Auli kovris liajn okulojn per la
+      manoj.</p>
+
+    <p>&raquo;Kiu?&laquo;</p>
+
+    <p>Auli primeditis. &raquo;Mi ne scias,&laquo; li diris.</p>
+
+    <p>&raquo;Kiu?&laquo;</p>
+
+    <p>&raquo;Nu, divenu,&laquo; instigis lin H&#228;ilu.</p>
+
+    <p>Auli tamen ne ekkonis, li palpadis la manojn, manikojn.</p>
+
+    <p>&raquo;Kiu?&laquo;</p>
+
+    <p>&raquo;Baptopatrino, vi,&laquo; li ekjubilis subite.</p>
+
+    <p>&raquo;Kiu do alia, vi, malbona knabo.&laquo;</p>
+
+    <p>&#348;i eksidis, prenis Aulin al la genuoj kaj ekpin&#265;is lian nazeton:
+      &raquo;Kiun vi amas?&laquo; &mdash; &raquo;Vin.&laquo; &mdash; &raquo;Kiun ankora&#365;?&laquo; &mdash;
+      &raquo;Panjon.&laquo;
+      &mdash; &raquo;Kiun ankora&#365;?&laquo; &mdash; &raquo;Pa&#265;jon.&laquo; &mdash; &raquo;Ankora&#365;?&laquo;
+      &mdash; &raquo;H&#228;ilun,
+      avinon.&laquo; &mdash; &raquo;Ankora&#365;?&laquo; &mdash; &raquo;Neniun plu.&laquo;<!-- orig: plu. --> &mdash;
+      &raquo;Diru, kiun ankora&#365;?&laquo;
+      &mdash; &raquo;Kiel mi diru, se neniu plu ekzistas.&laquo; &mdash; &raquo;Diru!&laquo; &mdash;<!-- p.67 -->
+      &raquo;Diru:
+      nazon!&laquo; subdiris H&#228;ilu. &mdash; &raquo;Nazon.&laquo; &mdash; &raquo;Sed ne Tilman?&laquo; &mdash;
+      &raquo;Plu ne.&laquo; &mdash; Nur nun liberi&#285;is la malfeli&#265;a nazo.</p>
+
+    <p>&raquo;Atentu, malbona knabo! Kiom mi por vi klopodadis: &#265;ion forportitan
+      al Petsuoj mi reportigis.&laquo; &mdash; &raquo;&#264;ion reen?&laquo; &mdash; &raquo;Kiom nur estis
+      forportita.&laquo;</p>
+
+    <p>&raquo;Ho, baptopatrino!&laquo; Auli plu ne sciis, kion diri. Do pri &#349;i Tilma
+      de Petsu parolis. Se Auli divenus tion, li jam tiam ne estus plu
+      zorginta. Jen kia feli&#265;a fino al tiel malfeli&#265;a tago, al la tuta
+      malfeli&#265;a afero. La baptopatrino nun aran&#285;u &#265;ion, Auli ne bezonas
+      stari vid-al-vide kun siaj rigoraj akuzantoj.</p>
+
+    <p>&raquo;Mi volas dormi,&laquo; li subite diris.</p>
+
+    <p>&raquo;Sed vi ja ne man&#285;is.&laquo;</p>
+
+    <p>&raquo;Ne, ne,&laquo; li asertis vervege, &raquo;mi ne volas man&#285;i.&laquo;</p>
+
+    <p>Fori&#285;i kiel eble plej rapide, anta&#365; ol la aliaj revenos. Fori&#285;i
+      de la plej unua ekscititeco, de ripro&#265;oj, insultoj, admonoj, de
+      demandoj kaj insistoj.</p>
+
+    <p>La baptopatrino &#349;ajnis kompreni kaj kunsenti. La vireto balda&#365;
+      trovi&#285;is sub la litkovrilo kaj simulis tujan ekdormon. Sed
+      tamen li maldormis, en &#265;iu nervo febra ekscito, en &#265;iu &#265;elo
+      maltrankvila atendo: kiel &#265;io &#265;i fini&#285;os. Malgra&#365; la &#265;eesto de
+      la baptopatrino li ne povis subpremi la timon, ke ili tamen ne lasos
+      lin trankvila, sed lin demandesploros.</p>
+
+    <p>Tie&mdash;atentu&mdash;&#265;u ne a&#365;di&#285;as plila&#365;ti&#285;anta parolbruo, &#265;u ne
+      tondretas alproksimi&#285;anta pa&#349;ado: la patro eble kondukas hejmen
+      anka&#365; &#265;evalon; kiu alia pa&#349;adus ja tiel bruege?</p>
+
+    <p>La pordo malfermi&#285;is. &raquo;Kie li estas,&laquo; oni demandas trans la sojlo.</p>
+
+    <p>&raquo;St,&laquo; avertas la baptopatrino kaj eliras tirante kun si la
+      demandinton. Auli pintigas la orelojn, sed<!-- p.68 --> a&#365;di&#285;as nenio krom
+      flustrado, kiu &#349;ajnas e&#293;adi de &#265;ie; de tempo al tempo a&#365;di&#285;is
+      duonla&#365;te dirita vorto a&#365; fragmento de frazo, ne sufi&#265;a por plena
+      kompreno.</p>
+
+    <p>&raquo;Kiel vi eksciis pri la afero,&laquo; demandas iu la&#365;tvo&#265;e kvaza&#365;
+      forgesinte sian rolon.</p>
+
+    <p>El la duonvo&#265;e dirita respondo de l' baptopatrino a&#365;di&#285;as klare:
+      &raquo;Onklino de M&#228;eltpere.&laquo;</p>
+
+    <p>Poste oni denove flustradas kaj duonvo&#265;e murmuradas. Malgra&#365; &#265;iuj
+      penoj de Auli, li nenion plu povas kompreni. La vana atentostre&#265;o
+      lacigas, la langvoro pli kaj pli ekregas la etulon, &#285;is fine li
+      ekdormas, laste pensinte: &raquo;Kiel beno, ke la onklino de M&#228;eltpere
+      sciigis al la baptopatrino! Kiel bone, ke la baptopatrino venis!&laquo;</p>
+
+    <p>La tagi&#285;o estis tia, kvaza&#365; ia subakvi&#285;inta mondoparto levi&#285;us
+      malrapide al la akvosurfaco. Kvaza&#365; tra nemezureblaj akvotavoloj
+      trasorbi&#285;is komence malforta lumeto, en kiu &#265;iuj objektoj &#349;ajnis
+      malklaraj, strangaj, groteskaj. Ruinigitaj estis la formoj kaj
+      koloroj, nur stre&#265;inte, vipinte la memorkapablon oni povis ilin
+      diveni. Iom post iom plisereni&#285;is, la konturoj fari&#285;is pli
+      fiksliniaj, la koloroj pli naturaj, aperis detaloj, nuancoj. &#284;i
+      estis transiro, de infanaj desegnadekzercoj al vera arto. &#264;iam
+      pli heli&#285;as, pli lumi&#285;is, pli sereni&#285;is, &#265;iam pli la&#365;te kaj
+      kompreneble a&#365;di&#285;is la vo&#265;oj kaj sonoj, &#285;is fine eli&#285;is el
+      akvo la okuloj kaj oreloj kaj vi trovis, ke vi alvenis en grandan
+      &#285;ojplenan festotagon.</p>
+
+    <p>&raquo;Auli, &#265;u vi ne veki&#285;as?&laquo;</p>
+
+    <p>Ha, estis la baptopatrino. Sed Auli ne volis elliti&#285;i. Kvaza&#365; li
+      ree estus malsana. Jam la duan fojon &#265;i-somere. Kaj kiom komunan
+      &#349;ajnis havi amba&#365; okazoj. Amba&#365;foje oni lin allogis, trompis kaj
+      amba&#365;foje ka&#365;zis la malfeli&#265;on knabinoj. Unuafoje lia propra
+      fratino, aliafoje Tilma de Petsu, fiulino, kiun pli frue li<!-- p.69 --> entute
+      ne toleris. Unuafoje oni lin resanigis en la urbo, sed nun&mdash;? Al Auli
+      &#349;ajnis, kvaza&#365; li nun bezonus pli zorgeman kuracadon; kvankam li
+      sentis nenie doloron, tamen li supozis la malsanon tiom malica, ke
+      sen doloro &#285;i lin ekregis, lian tutan korpon uzurpis. Li sciis, ke
+      li anka&#365; estontece ne povos kontra&#365;stari, se Tilma igos lin fari
+      e&#265; pli malbonan ol &#285;is nun.</p>
+
+    <p>&raquo;Baptopatrino!&laquo; &mdash; &raquo;Jes.&laquo; &mdash; &raquo;Mi ne povos, se Tilma ...&laquo;</p>
+
+    <p>&raquo;Vi nun venos al mi. Tilma ne povos tien&mdash;&laquo; &mdash; &raquo;Aj, kiel bone!
+      Sed&mdash;&laquo; &mdash; &raquo;Nu, kio estas?&laquo; &mdash; &raquo;Sed kie restos H&#228;ilu? kaj panjo?
+      kaj pa&#265;jo? kaj avino?&laquo; &mdash; &raquo;Vi ofte ilin gastados. Ne en la fino de
+      la mondo ni lo&#285;as.&laquo;</p>
+
+    <p>Sed &#265;io &#265;i malmulte konsolis. Ree foriri el la hejmo, disi&#285;i de
+      parencoj, konato, amato ...</p>
+
+    <p>&raquo;Mi ne povas.&laquo; &mdash; &raquo;Estas ja malfacile. Konsideru!&laquo;</p>
+
+    <p>Auli elliti&#285;is, sin vestis, sed la tutan tempon li konsideradis.
+      Jes, sed kio fari&#285;us sen baptopatrino? kaj kio okazos, kiam &#349;i ree
+      foriros? Estis malfacilege decidi. Rememori&#285;is &#265;iuj mizeroj de
+      la lasta tempo. Se Auli restos tie &#265;i, certe ili ne &#265;esos: Tilma
+      sendube lin iel delogos.</p>
+
+    <p>&raquo;Nu kiel estas la afero,&laquo; demandis la patro, kiam oni sidis &#265;e
+      matenman&#285;o. &mdash; &raquo;Mi ne scias certe,&laquo; diris la baptopatrino, &raquo;Auli
+      ver&#349;ajne ne volas.&laquo; &mdash; &raquo;Do li ne volas.&laquo; La patro &#349;ajnis
+      ekscitita. &raquo;Kion li, porkido, volas. Iu alia kisus la manon, sed
+      li ne volas.&laquo; &mdash; &raquo;Kion vi nun&mdash;?!&laquo; &mdash; Panjo &#265;esis e&#265; man&#285;i.
+      &raquo;Kvaza&#365; lupo por sia propra infano.&laquo; &mdash; &raquo;Tia infano! Prefere li
+      ne ekzistu plu!&laquo;</p>
+
+    <p>Auli pali&#285;is kaj ekskui&#285;is. La man&#285;opeco haltis en<!-- p.70 --> la gor&#285;o.
+      Tiam li ekstaris, iris al la baptopatrino, &#265;irka&#365;prenis &#349;ian kolon
+      kaj flustris en la orelon: &raquo;Baptopatrino, mi konsentas.&laquo;</p>
+
+    <p>&#264;iuj penege glutadis, kvaza&#365; iu estis &#265;irka&#365;irinta la tablon kaj
+      ilin la&#365;vice premsufokanta.</p>
+
+    <p>Post la man&#285;ado Auli inspektis en sia hejmo &#265;iujn lokojn, kvaza&#365;
+      li volus ilin enigi en siajn okulojn, en sian koron. Jen &#285;i estas,
+      la malnova griza domo el nerabotitaj traboj, kun muskokovrita
+      tegmento, sur kies e&#285;o ekkreskis atriploj. La gazono plena de
+      kamomiloj, plantagoj, akileoj, &#265;e barilbrando urtikoj, post la
+      grenejo grandfoliaj lapoj. Kiel dekorarboj la sorpujoj, kelkaj
+      berarbustoj; inter betoj&mdash;karotoj, brasikoj&mdash;napoj la heliantoj,
+      dalioj, sur terpombedoj la multkoloraj papavoj kun aroj da blankaj
+      papilioj kaj zumantaj vespoj&mdash;abeloj. Meze de la korto la puto kun
+      kadra&#309;o, stango kaj sitelo; apude plenaj de akvo trogo kaj tino.
+      Dekan fojon demandas Auli sin mem, kiel li povas estadi sen &#265;io
+      &#265;i, kio estis por li &#285;is nun <i>la hejmo</i>, sed tuj prezenti&#285;as al
+      li la rigora mieno de la patro, e&#293;adas en la oreloj liaj malmildaj
+      senkompataj vortoj kaj li ek&#285;emetas: <i>li devas</i>.</p>
+
+    <p>Apud la pordo jam &#349;nufegas la &#265;evalo jungita.</p>
+
+    <p>Necesas iri, adia&#365;diri al H&#228;ilu, al la avino, al Maasik; la
+      baptopatrino volas ekveturi.</p>
+
+    <p>H&#228;ilu venis lin akompani.</p>
+
+    <p>&raquo;Vi nun foriras de ni.&laquo; &mdash; &raquo;Jes. Vi&mdash;min&mdash;plu ne volas.&laquo;</p>
+
+    <p>H&#228;ilu ekploras.</p>
+
+    <p>&raquo;Mi al vi diris ja nenion malbonan.&laquo; &mdash; &raquo;Ne, <i>vi</i> ne diris.&laquo;</p>
+
+    <p>Kaj nun rakontas Auli pri la patro, kiel li koleris kaj kion li
+      diris.</p><!-- p.71 -->
+
+    <p>&raquo;Al vi tie estas multe pli bone,&laquo; suspiris H&#228;ilu, &raquo;nur ke vi
+      ne apartenas plu al ni.&laquo; &mdash; &raquo;Kiel mi ne apartenas? Al kiu do mi
+      apartenas?&laquo; &mdash; &raquo;Mi a&#365;dis, kiam ili hiera&#365; vespere diskutis. La
+      baptopatrino adoptas vin&mdash;ili mem ne havas infanojn&mdash;kaj vi i&#285;os
+      ilia heredanto.&laquo; &mdash; &raquo;Kion tio signifas?&laquo; &mdash; &raquo;Vi ricevos &#265;ion,
+      kion ili havas: kaj domon kaj monon kaj ... Kaj &#265;ion, &#265;ion, &#265;ion,
+      kion ili havas.&laquo; &mdash; &raquo;Sed &#265;u mi ne povas aparteni samtempe kaj
+      al &#349;i kaj al vi?&laquo; &mdash; &raquo;Vi estos tiam ri&#265;ulo, mal&#349;atos nin,
+      malri&#265;ulojn.&laquo; &mdash; &raquo;Ho ne,&laquo; mansvingas Auli, &raquo;mi &#265;iam preferos
+      vin al &#265;iuj ri&#265;uloj. Ne pro ri&#265;eco mi foriros, sed ...&laquo;</p>
+
+    <p>Al H&#228;ilu fari&#285;is multe pli facile &#265;e la koro.</p>
+
+    <p>La disi&#285;o ne pasis sen scenoj emociaj. Auli, la&#365; la instigo de
+      la baptopatrino iris de unu al alia, donis la manon kaj ripetadis:
+      &raquo;Pardonu, estu sana!&laquo;</p>
+
+    <p>Nenion diris la patro severa, mallerte donis la manon H&#228;ilu
+      balbutante ion, kion &#349;i mem ne komprenis, sed panjo kaptis Aulin en
+      la sinon kaj ne volis plu liberigi.</p>
+
+    <p>&raquo;Nun vi, infaneto mia, foriros,&laquo; &#349;i lamentis tra larmoj. &raquo;Peco
+      da karno de mia propra karno, peco de mia propra koro. Mem ni
+      fortran&#265;as, mem ni for&#309;etas, elhejme malproksimen ni sendas, for
+      de la patrina bu&#349;o, for de la patrina koro, for de la patrina
+      amprizorgo al fremduloj ni vin donas ...&laquo;</p>
+
+    <p>Longe-longe lamentis la patrino kaj ne povis &#265;esi. Anka&#365; la okuloj
+      de la patro malseki&#285;is. Li venis de alia flanko kaj brakumis Aulin.</p>
+
+    <p>&raquo;Ne ripro&#265;u, fileto, se mi estis al vi eble tre severa. Vi,
+      infaneto, ja ne sciis, kion vi faris.&laquo;</p>
+
+    <p>Anka&#365; H&#228;ilu trovis nun pli konvenajn vortojn.</p>
+
+    <p>&raquo;Restu &#265;iam mia bona frateto,&laquo; &#349;i diris, &raquo;ne forgesu<!-- p.72 --> nin,
+      kvankam vi fartos tie Dio scias kiel bone.&laquo;</p>
+
+    <p>Tiel oni super&#349;utadis Aulin per karesoj, ke ili fari&#285;is sufokaj.</p>
+
+    <p>Fine la baptopatrino intermetis la manon kaj disigis sian &#349;afidon de
+      la aliaj.</p>
+
+    <p>&raquo;Nun vi sufi&#265;e penadis per malgaja disi&#285;o. Ni restigu iom por
+      &#285;ojplena revido.&laquo;</p>
+
+    <p>Oni ekveturis. H&#228;ilu sur la veturilposta&#309;o, &#265;ar la vojo kondukis
+      tra la pa&#349;tejo. Auli refoje vidis la avinon kaj Maasikon. Maasik
+      leke karesis la manon per sia raspa lango, la avino karesis la kapon
+      kaj diris:</p>
+
+    <p>&raquo;Estu &#265;iam bona infano, kaj Dio vin benos.&laquo;</p>
+
+    <p>&raquo;H&#228;ilu, kantu tiun kanton tre, tre longe, &#285;is kiam mi povos
+      a&#365;di,&laquo; petis Auli laste.</p>
+
+    <p>H&#228;ilu jam sciis, kian kanton la frateto pensis.</p>
+
+    <div class="poezio">
+      <div class="strofo">
+        <span class="i0">&raquo;Kiam karan patrodomon</span><br />
+        <span class="i0">plore adia&#365;is mi,&laquo;</span>
+      </div>
+    </div>
+
+    <p>&#349;i postkantis al la frateto. La veturilo pluruli&#285;is, pli kaj pli
+      malproksimi&#285;is la sonoj, kaj kiam ili tute eksilentis, ekregis Aulin
+      nevenkeble dolora hejmsopiro, sed li subpremis &#285;in vire, dirante al
+      si: &raquo;Vi devas.&laquo;</p>
+
+    <p>Anka&#365; la patro kaj patrino hejme a&#365;dis la kantadon de H&#228;ilu. La
+      koroj sangis, kiel la arboj, de kiuj ventego de&#349;iris dum printempa
+      sukcirkulado bran&#265;egon kun peco da trunkokarno.</p>
+
+    <p>&raquo;E&#293;&laquo;, &#285;emadis la patro pendkape &#265;irka&#365;pa&#349;adante, &raquo;ni estus
+      povintaj lin restigi hejme, ne fordoni al aliaj.&laquo;</p>
+
+    <p>La patrino e&#265; vorton ne eligis. &raquo;Se &#349;i almena&#365; dirus ion, se &#349;i
+      e&#265; ripro&#265;us, sed tia silentado,&laquo; pensis la patro kaj sentis sin
+      kulpega.</p>
+
+    <p>La najbaroj maltrankviladis pro la &raquo;feli&#265;o&laquo; de l'<!-- p.73 --> Mar&#265;randanoj,
+      ardante en si de envio, e&#265; de kolero: Jen kiaj mirinda&#309;oj okazas,
+      Mari de sakristiano adoptas Aulin de Mar&#265;rando. Pleje sonoris la
+      boonklino de Altpere:</p>
+
+    <p>&raquo;Jen kiaj maljusta&#309;oj okazas en la mondo. Frenezuleto kaj &#349;telisto
+      i&#285;as adoptito de ri&#265;eguloj. Mia Lullu estas bela kiel an&#285;elo,
+      sa&#285;a kiel Salamono, prudenta kiel Pa&#365;lo, sed nenia diablo &#349;in
+      volas.&laquo;</p>
+
+    <p>Kiom ajn granda estis la envio de &#265;iuj, tamen tiaspeca lamentado
+      ridigus e&#265; mortintojn.</p>
+
+    <p>&raquo;Ha-ha-ha,&laquo; amuzi&#285;is la homoj pri la lamentado de la enviulino,
+      &raquo;la an&#285;elo, kiun e&#265; diablo ne volas.&laquo;</p>
+
+    <p>En la nova hejmo regadis tia afablo kaj koreco, ke plimildi&#285;is
+      balda&#365; la atakoj de hejmsopiro, forgesi&#285;is la pasintaj turmentoj
+      kaj akcidentoj. Estas vere: kelkafoje, e&#265; en la plej gaja momento,
+      alflugetis penseto, pri la hejmo, pri la parencoj kaj deziro ilin
+      vidi, kun ili paroli, sed tuj sekvis la scio: estas neeble kaj
+      rezigno por la neevitebla. Oni devis esti dankema pro &#265;io, kion oni
+      donis kaj tio ne estis malmulta.</p>
+
+    <p>Plej unue la hejmo nova&mdash;malnova sakristianejo kun kompare vastaj
+      &#265;ambroj, kie al Auli estis permesite &#265;ie libere &#265;irka&#365;kuri.
+      Precipe pla&#265;is al li la vastega konfirmaciejo, kiu plejparte
+      estis plena de malpleno kaj kies muroj tiel mistere resonadis
+      pa&#349;on a&#365; ajn alian sonon. La katedro, benkoj, fenestrobretoj,
+      malnovaj kiel la gento de Noao kaj la Babela turo, sur- kaj enhavis
+      skribitajn, gratitajn, skraptitajn kaj tran&#265;itajn desegna&#309;ojn kaj
+      skriba&#309;ojn. Samspecaj skriba&#309;oj kaj desegna&#309;oj ornamadis anka&#365;
+      la murojn interne kaj ekstere. La arkaika polv-odoro kaj la odoro
+      de ligno vermoborita ne senti&#285;is malpla&#265;a. Nur vespere estis
+      tie<!-- p.74 --> &#265;i mallume kaj timige, tiam Auli ne volus resti sola en la
+      konfirmaciejo. Pla&#265;is al li anka&#365; en la kuirejo kun &#265;io vaporanta,
+      boletanta, boleganta kaj kraketanta, kun kupro kaj latuno brilanta,
+      kun blua kaj blanka emajlo, kun flameganta kuirforno kaj arderu&#285;a
+      kuiristino. Sed anka&#365; en la aliaj &#265;ambroj estis sufi&#265;e da hejmeco
+      kaj oportuneco: tapi&#349;oj, mebloj, bildoj, floroj, tukoj, kurtenoj,
+      ornama&#309;oj kaj necesa&#309;oj, libroj, gazetoj kaj multaj, multaj aliaj
+      katenis la atenton de Auli. &#264;ie regis pla&#265;a ordo kaj pureco, unu el
+      la plej &#265;efaj simptomoj de kvieta kaj egalpeza vivado.</p>
+
+    <p>Sama ordo kaj pureco sterni&#285;is anka&#365; al la korto kaj bone
+      prizorgata frukto- kaj legom&#285;ardeno. Gruzekovritaj vojetoj kun
+      blanke kalkumitaj &#349;tonoj &#265;erande, sidbenkoj, siringola&#365;bo,
+      rektvice starantaj arboj kaj arbustoj, gazono kun tondita herbo,
+      bedoj kun amasego da diverskoloraj floroj, aliaj kun legomoj, kie la
+      brasikoj krevis por fierego kaj la rapojn necesis eltiri per&#265;evale
+      el la tero,&mdash;&#265;iuj &#265;i atestis pri la mano lerta kaj zorgema, samkiel
+      la densa egale tondita picea he&#285;o, &#265;irka&#365;anta la &#285;ardenon.
+      &#264;io estis tie &#265;i kvieta kaj egalmezura,&mdash;e&#265; la grasaj bovinoj,
+      rema&#265;adantaj en la brutejo, e&#265; la pezaspikaj grajnori&#265;aj grenoj
+      kreskantaj sur la bonesterkitaj kampoj. La nura disonanco en tiu &#265;i
+      harmonia, egalmezura kaj kvieta domo estis la konfirmaciejo, odoranta
+      je malproksima estinteco kaj je mortintaj tempoj, homoj kaj pensoj,
+      kaj kvaza&#365; ne apartenanta al la vivo de la homoj &#265;itieaj.</p>
+
+    <p>Aliflanke de la korto verda deklivo de monteto descendis &#285;is la
+      gaje pla&#365;danta rivereto, post kiu komenci&#285;is alta picearo. &#264;ie
+      aliloke &#265;irka&#365;staris nur kampoj kaj kampoj, kvaza&#365; teksa&#309;oj
+      diverskoloraj: la orkolora cejanoza sekalo, la verdaj somergrenoj,
+      la<!-- p.75 --> ru&#285;a trifolio, la rozete blanka poligono &#265;iam pli grasi&#285;is kaj
+      saturis la venton per &#265;armaj odoroj, tiel ke &#285;i fine maldiligentis
+      blovadi kaj langvore ekdormetis.</p>
+
+    <p>Tiun &#265;i hejmon kreis la homoj vivantaj en &#285;i la&#365; sia propra
+      aspekto, tial ni konati&#285;u anka&#365; kun ili. La animo de &#265;iuj kaj
+      &#265;io tie &#265;i estis la baptopatrino mem, agema, fervora, purema,
+      ordema, sed tre afabla kaj koreca. &#348;ia edzo estis iom pli cedema,
+      emis ofte ka&#349;i&#285;i sub la pantofloj de la edzino, sed esence tio ne
+      malutilis: en la domo regis kortu&#349;a paco kaj konkordo, &#265;io funkciis
+      senbrue kvaza&#365; ma&#349;ino lubrikita. Anka&#365; la servistaro&mdash;servisto,
+      servistino, kuiristino, pa&#349;tistino&mdash;scipovis trafi en unisono la
+      &#285;eneralan harmonion de la domo, tial anka&#365; ilia vivo fluis same
+      trankvile, kiel sub la monteto &#265;e arbara rando la zumpla&#365;danta
+      rivereto. En tiu &#265;i domo, inter tiuj &#265;i homoj, estis kvaza&#365;
+      sanatorio por animo malsana, &#285;ian sanigan efikon Auli balda&#365;
+      eksentis.</p>
+
+    <p>Perfekta i&#285;is la nova hejmo &#285;uste tial, ke &#285;i malgra&#365; sia tuta
+      pureco kaj ordo tamen neniel estis tute pedanta: trovi&#285;is lokoj,
+      kiuj restis ne prizorgataj, kiel la konfirmaciejo en la domo, la
+      sova&#285;a montetdeklivo descendanta &#285;is la rivereto, la lageto en la
+      &#285;ardeno. Ili estis kvaza&#365; ventoliloj, tra kiuj eni&#285;is fre&#349;a aero;
+      kvaza&#365; rifu&#285;ejo, kie oni povis ripozi; de &#265;io limigita, mezurita,
+      pritondita, farbita.</p>
+
+    <p>Dum tutaj tagoj Auli havis multe da kurado kaj klopodado en la domo,
+      en la &#285;ardeno, &#265;e la rivereto, sur pa&#349;tejo, en arbaro, sur kampo.
+      &#264;ien li deziris atingi, &#265;ie &#265;eesti. Dum &#265;iu havis sur sia loko
+      sian okupon, Auli devis siakomprene &#265;ion partopreni&mdash;observante.
+      Kelkfoje li e&#265; kunhelpis la&#365;pove, sed helpopropono oftege fini&#285;is
+      per rifuzo.</p><!-- p.76 -->
+
+    <p>&raquo;Permesu anka&#365; al mi sen&#349;eligi terpomojn,&laquo; ekzemple li proponis
+      en la kuirejo.</p>
+
+    <p>&raquo;Nu provu, oni permesis afable.&laquo;</p>
+
+    <p>Sed balda&#365; la permeso estis nuligita: la laboro toleris nenian
+      kritikon, la &#349;eloj i&#285;is dikegaj kiel elefantha&#365;to, restis
+      &raquo;okuletoj&laquo; neeligitaj, la sen&#349;eliganto mem malpurigis sin, fine li
+      tran&#265;is en la fingron kaj ekploris.</p>
+
+    <p>&raquo;Nu jen,&laquo; koleretis la kuiristino kaj ne permesis alifoje. &raquo;Ne
+      vira okupo, esti terpommurdanto; &#285;i decas nur por kuiristino.&laquo;</p>
+
+    <p>Auli interesi&#285;is pri &#265;iaspeca laboro. &raquo;Permesu, ke mi&laquo;, estis lia
+      &#265;iama frazo. &raquo;Permesu ke mi fal&#265;u, permesu ke mi rastu, permesu ke
+      mi fosu, permesu ke mi akvumu, permesu ke mi pa&#349;tu&laquo;, eka&#365;di&#285;is
+      subite lia vo&#265;eto &#265;eflanke de laboranto. Oni permesis kelkafoje:
+      &#265;iujn ege amuzis la verva partopreno de &raquo;sinjorido&laquo; en ilia agado;
+      plie amuzis ilin rigardi, kiel li tion faris, kiel li eksciti&#285;is,
+      kiam la fal&#265;ilpinto eni&#285;is teren, la rastilo kro&#265;i&#285;is al io, la
+      fosilo pu&#349;i&#285;is al &#349;tono, la akvo el la akvumilo &#349;prucis al li mem
+      a&#365; la brutaro ne obeis al li. Ili &#265;iuj amis tiun &#265;i etan sinceran
+      kaj afablan knabeton.</p>
+
+    <p>&raquo;Laboreganto,&laquo; ili la&#365;dis bonkore, &raquo;ni &#265;iuj plenumas nur nian
+      taskon, sed Auli okupas sin per &#265;io.&laquo;</p>
+
+    <p>La&#365; la kompreno de Auli devis tiel esti, li kiel viro devis labori
+      vire. Viro devis sin okupi per &#265;io. Neniu surprizi&#285;us, se Auli
+      en iu bela tago dirus: &raquo;Permesu, ke mi konstruu pre&#285;ejon, a&#365;,
+      permesu, ke mi &#265;arpentu la &#349;tuparon Jakoban, por ke an&#285;eloj povu
+      alteri&#285;i kaj reiri en la &#265;ielon.&laquo;</p>
+
+    <p>O&#265;jo&mdash;tiel nomis Auli sian adoptan patron&mdash;estis &#265;iaflanke
+      atentinda persono: bonulo, sa&#285;ulo, ri&#265;ulo, popularulo kaj
+      gajvivulo. Kie li trovi&#285;is, tie &#265;iam<!-- p.77 --> e&#293;adis&mdash;&#265;u kanto, &#265;u
+      ludo, &#265;u amba&#365; kunkune. Se li iris en la kampon, balda&#365; e&#293;is
+      melodio post melodio, se li ne povis. Kelkafoje li kondukis Aulin en
+      la pre&#285;ejon, kie la infano a&#365;dis la potencajn tonojn de orgeno,
+      en kiuj kuni&#285;is ventegmu&#285;ado kaj tondregado, &#285;emoj kaj aklamoj
+      de popolamasoj, furiozado de mallumaj potencoj, triumfa kanto de
+      lumspiritoj kaj glorkantado de beatuloj al &#348;afido kaj Fian&#265;ino.
+      Fininte la orgenludadon ili ascendis en la sonoril-turon, de kie
+      videblis malproksimaj vida&#309;oj de &#265;irka&#365;a&#309;o. Kampoj, herbejoj,
+      boskoj &#349;ajnis nur diverskoloraj makuloj, muelejoj kaj kampardomoj
+      similis al kartonaj infanludiloj, homo estis ne pli granda ol ranido.
+      Al Auli precipe pla&#265;is stari pli alte ol &#265;iuj aliaj kaj vidi la
+      homojn tie malsupre tiel malgrandaj kaj senhelpaj, ke li opiniis ilin
+      frakaseblaj per fingroungo.</p>
+
+    <p>&raquo;&#264;u vi scias, kie trovi&#285;as via patrodomo?&laquo;</p>
+
+    <p>Kaj li montris la lokon.</p>
+
+    <p>&raquo;Aj, kiel proksime,&laquo; miris Auli.</p>
+
+    <p>&raquo;Nu, ne tiel proksime, kiel &#285;i &#349;ajnas esti,&laquo; ridis la onklo.</p>
+
+    <p>Vere estis tiel: samkiel la hejmo malsupre &#349;ajnis ridinde malgranda,
+      tiel malplii&#285;intaj &#349;ajnis anka&#365; la tie travivitaj &#285;ojoj kaj
+      mal&#285;ojoj, kvankam iam ili estis tiel grandaj kaj potencegaj, ke ili
+      kuntronis simile al ventoturni&#285;o, levante pli alten ol nuboj kaj
+      flugigante en mallumajn abismojn.</p>
+
+    <p>&raquo;O&#265;jo, &#265;u la Patro &#264;iela trovigas pli alte?&laquo; &mdash; &raquo;Oni diras.&laquo;
+      &mdash; &raquo;&#264;u multe, multe pli alte?&laquo; &mdash; &raquo;Evidente.&laquo; &mdash; &raquo;Do la
+      Patro &#264;iela ne vidas nin.&laquo; &mdash; &raquo;Ver&#349;ajne li vidas.&laquo; &mdash; &raquo;&#264;u
+      min anka&#365;?&laquo; &mdash; &raquo;Kial &#285;uste ne vin?&laquo; &mdash; &raquo;Mi estas ja tiel
+      malgranda.&laquo;</p><!-- p.78 -->
+
+    <p>Kaj Auli trovis la ka&#365;zon, kial la Patro &#264;iela tiel malmulte
+      atentas liajn suferojn: en tiom granda distanco li eble ne vidas
+      Aulin. Samkiel Auli mem vidas el la sonoril-turo nur la hejmon, sed
+      neniun el la hejmanoj. Tiam la onklo<!-- orig: onko --> surprizis lin: metis anta&#365; liaj
+      okuloj ian instrumenton, kiun li portis per rimeno &#265;e la kolo.</p>
+
+    <p>&raquo;Rigardu nun!&laquo;</p>
+
+    <p>Fine Auli adapti&#285;is al la instrumento.</p>
+
+    <p>&raquo;Oj, vidu: panjo!&laquo;</p>
+
+    <p>&#264;u estis &#349;i, a&#365; Auli nur imagis tion, sed lia &#285;ojo estis senlima:
+      panjo, panjo estis videbla de tie &#265;i. Kaj la hejmo. Kaj la arboj.
+      Kaj Maasik. Kaj Dio scias kio ankora&#365;. Maasik trinkas el la apudputa
+      trogo. Kaj H&#228;ilu jen staras apude kun vergo en la mano. Kaj jen
+      panjo mangestas. Kaj H&#228;ilu pelas Maasikon en la brutejon. Imagu do,
+      kiel &#285;oja estis Auli! &raquo;Panjo, H&#228;ilu&laquo;, li vokadis kaj preska&#365;
+      elsaltis el la pantalono.</p>
+
+    <p>&raquo;Ili ne a&#365;das.&laquo; &mdash; &raquo;Kial ne?&laquo; &mdash; &raquo;Malproksime.&laquo;</p>
+
+    <p>&raquo;Ne tre malproksime. Panjo certe a&#365;das.&laquo; &mdash; &mdash;</p>
+
+    <p>&raquo;Jen, panjo rigardas tien &#265;i. Jen H&#228;ilu aliras al &#349;i. Amba&#365;
+      rigardas. Panjo etendas la manon niadirekte.&laquo; &mdash; &mdash; &mdash;</p>
+
+    <p>&raquo;Panjo do a&#365;dis, jes &#349;i a&#365;dis, a&#365;dis,&laquo; jodlis Auli tiel ravite,
+      ke anka&#365; la onklo doma&#285;is lin seniluziigi.</p>
+
+    <p>Pasis kelke da tempo &#285;is kiam Auli povis &#265;esigi la rigardadon kaj
+      descendi el la sonoril-turo. &raquo;O&#265;jo, ni balda&#365; revenos,&laquo; li diris
+      petege.</p>
+
+    <p>&raquo;Certe ni revenos.&laquo; &mdash; &raquo;Sed se la Patro &#264;iela havas tiaspecan
+      ...&laquo; &mdash; &raquo;Kion?&laquo; &mdash; &raquo;Tiaspecan tubon por rigardado, li certe ja
+      vidas min.&laquo;</p>
+
+    <p>Auli ne komprenis, kial la onklo subite tiel<!-- p.79 --> gaji&#285;is. &raquo;Ho jes,
+      tion ni devas diri al onklo-pastoro, li zorgu pri tio.&laquo;</p>
+
+    <p>Li diris kaj kondukis Aulin en la pastorejon.</p>
+
+    <p>La pastoro kaj lia edzino estis tre korecaj kaj afablaj. Auli tute
+      ne timis ilin, grimpis al ili en la sinon, preska&#365; en la bu&#349;on.
+      Ili siaflanke dorlotis Aulin same kiel sian Lolin; kelkaj opiniis:
+      e&#265; plie. Loli estis proksimume sama&#285;ulino de Auli, blankakapa,
+      facilpieda, samtempe hidrargo, fajrero, pinglo kaj turbo. Auli havis
+      penegon kunagadi &#265;e &#265;iaj &#349;iaj iniciatoj. Anka&#365; nun &#349;i volis tuj
+      ricevi Aulin al sia dispono, sed la onklo retenis Aulin, rakontante
+      al la pastoro, kiel Auli volis provizi la Patron &#264;ielan per lorno,
+      por ke tiu lin pli bone<!-- orig: bon --> evidu. Amba&#365; ridegis &#285;is larmoj.</p>
+
+    <p>&raquo;Do vi, eta vireto, dezirus por la Patro &#264;iela lornon?&laquo;</p>
+
+    <p>&raquo;Jes,&laquo; asertis Auli, &raquo;mi dezirus.&laquo;</p>
+
+    <p>&raquo;Auli, venu jam,&laquo; malpaciencis Loli.</p>
+
+    <p>&raquo;Do iru, iru al via kunulino!&laquo;</p>
+
+    <p>Loli havis ne malgravan planon. A&#365;dinte pri la ideo de Auli, &#349;i
+      tuj volis &#285;in efektivigi,&mdash;alporti al la Patro &#264;iela la lornon.
+      Teknikaj malfacila&#309;oj &#349;in ne timigas, iel ja &#265;io aran&#285;i&#285;os. Kiom
+      ajn Auli malaprobis la iniciaton, kiaj ajn argumentojn li trovadis
+      kontra&#365; &#285;i, Loli ne cedis: malgra&#365; &#265;io oni devos plenumi la
+      intencon.</p>
+
+    <p>&raquo;Se vi ne kunvenos, mi iros sola,&laquo; &#349;i decidis fine.</p>
+
+    <p>Al tio Auli ne konsentis: se la afero estis neevitebla, Auli volis
+      almena&#365; kunhelpi el sia tuta koro, animo, menso, senso kaj povo,
+      kvankam li ne sciis, kiel tion fari. Loli jam anta&#365;zorgis &#265;ion
+      necesan, tiel ke ili povis tuj ekiri.</p>
+
+    <p>&raquo;Sed ni ne scias la lo&#285;ejon de la Patro &#264;iela.&laquo;<!-- p.80 --> &mdash;
+      &raquo;Stultulo,&laquo;
+      koleretis Loli, &raquo;la Patro &#264;iela lo&#285;as en la &#265;ielo.&laquo; &mdash; &raquo;Sed
+      kiel ni atingos la &#265;ielon?&laquo; &mdash; &raquo;&#264;u vi vidas tiujn altajn
+      pinojn?&laquo; &mdash; &raquo;Jes.&laquo; &mdash; &raquo;&#264;u vi vidas super ili tiun kuprokoloran
+      nubon?&laquo; &mdash; &raquo;Anka&#365; la nubon mi vidas.&laquo; &mdash; &raquo;Do a&#365;du! Plej unue
+      oni devas grimpi al la supro de la plej alta pino. De tie oni facile
+      saltas al la nubo kaj de sur la nubo kondukas ora &#349;tuparo rekte en
+      la &#264;ielon.&laquo; &mdash; &raquo;Ho,&laquo; entuziasmi&#285;is Auli, &raquo;&#265;u de tie? Sed,&laquo;
+      li dubetis, &raquo;mi ne vidas la &#349;tuparon.&laquo; &mdash; &raquo;Supre vi jam vidos.
+      Malsupre &#285;i entute ne estas videbla.&laquo; &mdash; &raquo;Kial do ne?&laquo; &mdash; &raquo;&#264;ar
+      tiel ja &#265;iu povus iri en la &#265;ielon. Sed &#285;i eblas nur al tiu, kiu
+      kredas, ke tie estas &#349;tuparo.&laquo; &mdash; &raquo;Mi kredas,&laquo; asertis Auli kun
+      plena konvinko.</p>
+
+    <p>Ili jam atingis la pinojn kaj rigardis supren bu&#349;malferme kaj
+      kurbkole, kvaza&#365; du birdidoj dum man&#285;oatendo.</p>
+
+    <p>&raquo;Necesus grimpi tien supren,&laquo; komencis Loli. &mdash;<!-- orig: &mdash; &mdash; --> &raquo;Certe
+      necesus,&laquo;
+      konsentis Auli. &mdash; &raquo;&#264;u vi ne grimpus?&laquo; &mdash; &raquo;Mi ne scipovas.&laquo; &mdash;
+      &raquo;Provu tamen!&laquo; &mdash; La provo malsukcesis.</p>
+
+    <p>&raquo;Vi ne scipovas,&laquo; koleretis Loli. &mdash; &raquo;Sed vi?&laquo; &mdash; &raquo;Mi? Knabinoj
+      ne grimpas.&laquo; &mdash; &raquo;Anka&#365; mi neniam grimpis.&laquo;</p>
+
+    <p>Ili estis tute senkonsilaj. Pro eta ka&#365;zo la granda afero &#349;ajnis
+      malsukcesi.</p>
+
+    <p>&raquo;Kian miraklon vi tie atendas,&laquo;<!-- orig: atendas,&raquo; --> demandis subite de postdorse ies
+      vo&#265;o, &raquo;kial vi rigardadas tien supren?&laquo;</p>
+
+    <p>Aj! Kiu do estis? Petsu-knabo.</p>
+
+    <p>&raquo;De kie vi venis,&laquo; demandis Auli konsterni&#285;inte.</p>
+
+    <p>&raquo;Mi ja pa&#349;tadas en la tria-kvara bieneto.&laquo;</p>
+
+    <p>&raquo;Kaj kiu vi estas,&laquo; interesi&#285;is Loli.</p><!-- p.81 -->
+
+    <p>&raquo;Tiu&mdash;Petsu-knabo,&laquo; balbutis Auli.</p>
+
+    <p>&raquo;Pardonu, sinjoro Pets!&laquo;</p>
+
+    <p>&raquo;Kia Pets! Oni nomas min Johannes Tilmann.&laquo;</p>
+
+    <p>&raquo;Vidu,&laquo; mokis Loli, &raquo;do Johannes Tilmann. Kaj kial vi estas <i>tie
+        &#265;i</i>?&laquo;</p>
+
+    <p>Al Petsu-knabo ne pla&#265;is la superema tono de Loli.</p>
+
+    <p>&raquo;Kiu estas tiu &#265;i fiera&#265;a knabino apud vi,&laquo; li demandis Aulin.</p>
+
+    <p>&raquo;Kia knabino, kia knabino, fra&#365;lino Loreida Kuldao, vi devas
+      diri, ne knabino,&laquo; atakis Loli ekscitite Petsu-knabon, tiel ke tiu
+      kura&#285;ulo ektimis kaj sin retiris.</p>
+
+    <p>Auli ne fidis al la propraj okuloj.</p>
+
+    <p>&raquo;Hej, bofrateto, vi ja ricevis varon!&laquo; diris Petsu-knabo al Auli,
+      &raquo;&#349;i ja pli kverelemas ol Tilma.&laquo;</p>
+
+    <p>&raquo;Kia bofrateto? Kia Tilma?&laquo; &mdash; Loli sufi&#265;ete malproksimi&#285;is de
+      Auli.</p>
+
+    <p>&raquo;Sendube bofrato. Li estas la edzo de nia Tilma kaj Tilma estas mia
+      fratino.&laquo;</p>
+
+    <p>Auli subteri&#285;us pro honto, sed Loli sentis sin plena mastrino de la
+      situacio.</p>
+
+    <p>&raquo;&#264;u vere,&laquo; &#349;i demandis.<!-- orig: demandis.&laquo; --> &raquo;Kaj vi opinias, ke mi al vi
+      kredas? Ke
+      mi ne scias, kiom a&#285;aj povas geedzi&#285;i.&laquo;</p>
+
+    <p>Petsu-knabo tuj decidis enpense, ke &raquo;la knabino ne lasas plenigi
+      sian kapon per mu&#349;oj&laquo; kaj cedis:</p>
+
+    <p>&raquo;Verdire, bofrato li jam ne estas, sed li devos nian Tilman
+      edzinigi.&laquo;</p>
+
+    <p>&raquo;Ha,&laquo; Loli plie malproksimi&#285;is de Auli. &raquo;Kaj, se oni rajtas
+      demandi, kial?&laquo;</p>
+
+    <p>&raquo;&#264;ar&mdash;&#265;ar&mdash;,&laquo; Petsu-knabo trovis unuafoje en la vivo, ke al li
+      mankas la vortoj.</p><!-- p.82 -->
+
+    <p>&raquo;Da&#365;rigu, da&#365;rigu,&laquo; instigis lin Loli.</p>
+
+    <p>&raquo;Mi ne povas.&laquo;</p>
+
+    <p>&raquo;Ha, vi ne povas? Eble pluon vi ne havas? Eble &#265;io estas nur
+      mensogo?&laquo; &mdash; Loli iomete proksimi&#285;is al Auli.</p>
+
+    <p>&raquo;Certe mensogo,&laquo; eli&#285;is fine de Auli.</p>
+
+    <p>&raquo;&#264;u mensogo,&laquo; ekkriis Petsu-knabo, &raquo;&#265;u nur mensogo?! &#264;u mensogo
+      estas, ke vi kun Tilma nestis en mia picebran&#265;a kabano? &#264;u mensogo,
+      ke vi kun &#349;i tie dormis? &#264;u mensogo, ke vi elhejme &#265;ion &#349;telis
+      kaj al Tilma portadis? &#264;u mensogo, ke vin pro tio oni sendis &#265;i
+      tien elhejme? Do &#265;io estas mensogo! Malkonfesu &#265;ion kaj diru, ke
+      &#265;io &#265;i estas mensogo!&laquo;</p>
+
+    <p>&raquo;Diru al li, ke li mensogas,&laquo; ordonis Loli.</p>
+
+    <p>Sed Auli staris pendkape: kiel li povus konfesi &#265;ion al Loli. Tio
+      superis liajn kapablojn.</p>
+
+    <p>&raquo;Do tiel,&laquo; diris Loli malvarme, &raquo;tia do estas la afero. Tiaokaze
+      iru, mi vin ne bezonas plu.&laquo;</p>
+
+    <p>Kaj &#349;i turnis sin al Petsu-knabo, por malka&#349;i al li la ka&#365;zon de
+      ilia ekskurseto. Kompreneble tiel, ke ne necesis mencii Aulin, kiu de
+      nun estis por &#349;i absoluta nenia&#309;o.</p>
+
+    <p>Petsu-knabo aprobis la intencon. Vere, vere, anka&#365; li a&#365;dis, ke
+      tiamaniere oni atingas la &#265;ielon. La fra&#365;lino nur donu al li la
+      lornon, li jam liveros &#285;in al tiu, al kiu necesas.</p>
+
+    <p>&raquo;Ne donu,&laquo; diris Auli plore. &mdash; &raquo;Ne via afero,&laquo; respondis Loli
+      ekscitite. &mdash; &raquo;Tiu&mdash;Petsu-knabo&mdash;li &#285;in ne ...&laquo; &mdash; &raquo;&#264;u la lorno
+      apartenas al vi a&#365; mi estas via subulino, ke vi al mi malpermesas.&laquo;<!-- orig: malpermesas. -->
+      &mdash; &raquo;Tiel, tiel,&laquo; aprobis Petsu-knabo. Auli eksilentis.</p>
+
+    <p>Petsu-knabo ricevis la lornon, diris ankora&#365; kelkajn flata&#309;ojn al
+      Loli kaj ekiris.</p><!-- p.83 -->
+
+    <p>&raquo;Sed a&#365;du ...&laquo; maltrankvilis Loli. &mdash; &raquo;Mi a&#365;das.&laquo; &mdash; &raquo;Kien
+      vi iras?&laquo; &mdash; Petsu-knabo ne respondis. &raquo;Vi devas iri al la Patro
+      &#264;iela.&laquo; &mdash; &raquo;Ta&#365;gas por mi mem la a&#309;eto. Adia&#365;, muknaza
+      re&#285;idino,&laquo; mokis Petsu-knabo kaj ekkuris.</p>
+
+    <p>Loli eksidis kaj ekploris.</p>
+
+    <p>&raquo;Iru, iru for,&laquo; &#349;i pelis Aulin, alirantan, &raquo;vi estas ...&laquo;</p>
+
+    <p>Sed Auli ne foriris. Li klarige parolis kaj parole klarigis, &#285;is
+      kiam la viza&#285;o de Loli pli heli&#285;is.</p>
+
+    <p>&raquo;Do tiel,&laquo; &#349;i diris, &raquo;sed kial vi anta&#365;e silentis pri &#265;io
+      &#265;i?&laquo;</p>
+
+    <p>&raquo;Mi hontis,&laquo; konfesis Auli sincere.</p>
+
+    <p>Tion Loli komprenis kaj pardonis.</p>
+
+    <p>Sed nun la hejmeniro kaj &#265;io cetera multe ilin embarasis. Loli ja ne
+      havis intencon fordonaci la lornon de pa&#265;jo, &#349;i volis nur konatigi
+      la Patron &#264;ielan kun la instrumento, sed nun tiu estis for kaj, krom
+      tio, en malbonaj manoj. Nenion bonan oni povis atendi. Sed Loli ne
+      estis tia, kiu perdas la kapon a&#365; ser&#265;as flankvojojn.</p>
+
+    <p>&raquo;Ni iru,&laquo;<!-- orig: iru,&#309;&laquo; --> &#349;i diris levinte alten la kapon.</p>
+
+    <p>Anka&#365; Auli infekti&#285;is de &#349;ia kura&#285;o kaj sentime li sekvis Lolin,
+      &#285;is la ejo, kie la onklo kaj pastoro Kuldao ankora&#365; konversaciis.
+      &#264;i tie Auli unuafoje ekkonis la diplomation kaj &#285;ian utilon. Loli
+      grimpis al la genuoj de la patro kaj demandis:</p>
+
+    <p>&raquo;Pa&#265;jo, &#265;u vi amas min?&laquo; &mdash; &raquo;Kial vi tion demandas,&laquo; diris
+      la pastoro karesante la hararon de sia filineto. &mdash; &raquo;Diru do!&laquo;
+      &mdash; &raquo;Certe mi vin amas.&laquo; &mdash; &raquo;Pli ol &#265;iujn viajn objektojn?&laquo; &mdash;
+      &raquo;Sendube.&laquo; &mdash; &raquo;Prefere ilin &#265;iujn vi fordonus ol lasi min senti
+      doloron?&laquo; &mdash; &raquo;Senhezite.&laquo;</p><!-- p.84 -->
+
+    <p>Loli momenteton konsideris.</p>
+
+    <p>&raquo;Donacu al mi vian lornon!&laquo; &mdash; &raquo;&#264;u &#285;i vin doloras?&laquo; &mdash;
+      &raquo;Mi<!-- orig: Mi -->
+      petas, donacu!&laquo; &mdash; &raquo;Por kio vi &#285;in bezonas?&laquo; &mdash; &raquo;Por nenio.
+      Donacu!&laquo; &mdash; &raquo;Sed vi permesos al mi &#285;in uzi, &#265;u ne?&laquo; &mdash; &raquo;Ne,
+      a&#265;etu al vi novan, donacu &#285;in <i>tute</i> al mi!&laquo;</p>
+
+    <p>La sakristiano ekridis: &raquo;Tre eksterordinara deziro en tia a&#285;o.&laquo;</p>
+
+    <p>&raquo;Sed mi deziras,&laquo; insistis Loli.</p>
+
+    <p>La pastoro skuis la kapon: &raquo;Mi ne komprenas. Diru al mi anta&#365;e,
+      Loli, por kio vi &#285;in bezonas.&laquo;</p>
+
+    <p>&raquo;Por nenio. Mi &#285;in perdis.&laquo;</p>
+
+    <p>Kaj bone utiligante la momenton de konsterni&#285;o &#349;i rakontis per unu
+      ekspiro &#265;ion okazintan, ellasinte kompreneble kelkajn pure personajn
+      detalojn.</p>
+
+    <p>&raquo;Do tiel,&laquo; pin&#265;etis la pastoro la orelon de Loli simile al
+      pulo-piko, &raquo;do tial. Sed ne, vi tute ne evitos la punon, alie vi
+      elportos &#265;ion el la domo.</p>
+
+    <p>&raquo;Sed ja mi estas kulpa,&laquo; eligis Auli kontra&#365;vole.</p>
+
+    <p>La onklo malfermegis la okulojn.</p>
+
+    <p>&raquo;Mi prenis la lornon, volis &#285;in alporti al la Patro &#264;iela.&laquo;</p>
+
+    <p>Sed Loli ne akceptis la sinoferon de Auli.</p>
+
+    <p>&raquo;Ne mensogu,&laquo; &#349;i admonis, &raquo;kiu mensogas, tiu pekas.&laquo;</p>
+
+    <p>&raquo;Mi ne mensogas, vere mi prenis.&laquo; &mdash; &raquo;Vi e&#265; ne scias, kie &#285;i
+      trovi&#285;is.&laquo; &mdash; &raquo;Mi scias.&laquo; &mdash; &raquo;Do diru.&laquo;</p>
+
+    <p>Nun la onklo ridis al si en la barbon: li bone priatentis, ke Loli,
+      jam invitante Aulin, portis ion envolvitan sub sia brako. La pastoro
+      miris a&#365;skultante la disputadon de Auli kaj Loli, alterne rigardante
+      unu kaj la alian.</p><!-- p.85 -->
+
+    <p>&raquo;Mirinda&#309;o,&laquo; li diris fine, &raquo;ordinare la infanoj akuzas unu la
+      alian, sed tie &#265;i ...&laquo;</p>
+
+    <p>Kaj disetendis senkonsile la manojn.</p>
+
+    <p>&raquo;Nu, ordonu, ke li diru,&laquo; insistis Loli.</p>
+
+    <p>&raquo;Diru, Auli,&laquo; ordonis la onklo.</p>
+
+    <p>&raquo;&#284;i estis tie, de kie vi&mdash;mi &#285;in prenis.&laquo;</p>
+
+    <p>&raquo;De kie vi &#285;in prenis?&laquo;</p>
+
+    <p>Auli plu ne sciis, kion diri. Sed Loli tuj sciigis, de kie <i>&#349;i</i>
+      prenis.</p>
+
+    <p>&raquo;&#284;uste de tie mi &#285;in prenis,&laquo; asertis nun anka&#365; Auli.</p>
+
+    <p>Sed malfrue, al li oni ne kredis.</p>
+
+    <p>&raquo;Estu tiel,&laquo; decidis la pastoro, &raquo;&#265;ar vi, Loli, havas tiel bonan
+      advokaton, mi devas vin &#265;i foje lasi ne punita. Iru kaj da&#365;rigu
+      vian ludadon, sed gardu vin disdonadi nian hava&#309;on al friponoj.&laquo;</p>
+
+    <p>Kiuj estis nun pli &#285;ojaj ol Loli kaj kune kun &#349;i anka&#365; Auli.
+      Manenmane eliris la infanoj el la &#265;ambro en la &#285;ardenon. La du
+      a&#285;uloj, starante sur la balkono, ilin postrigardis.</p>
+
+    <p>&raquo;Tiu &#265;i knabo,&laquo; komencis la pastoro, &raquo;kio li povus fari&#285;i. Kia
+      maltrankvila, esplorema spirito, kia nobla kavalireco trovi&#285;as en
+      tiu &#265;i hometo.&laquo;</p>
+
+    <p>&raquo;Povas esti,&laquo; diris la sakristiano, &raquo;sed kelkafoje li &#349;ajnas al
+      mi iomete stulta.&laquo;</p>
+
+    <p>&raquo;Ho, ne diru,&laquo; kontestis la pastoro flami&#285;eme, &raquo;ne stulta,
+      sed naive-sincere verama. Gardu nin la &#265;ielo de frumaturaj junaj
+      maljunuloj, de denaskaj sa&#285;uloj kaj spertuloj. Ili i&#285;os la plej
+      sekegaj, superecaj, senkoraj kaj senanimaj.&laquo;</p>
+
+    <p>&raquo;O&#265;jo, pa&#265;jo de Loli,&laquo; kuregis Auli al la balkono,
+      &raquo;baptopatrino<!-- orig: baptopatrino -->
+      reportis la lornon.&laquo;</p>
+
+    <p>&raquo;Kiel,&laquo; demandis la alparolitoj samtempe.</p><!-- p.86 -->
+
+    <p>&raquo;Baptopatrino forprenis la lornon de Petsu-knabo kaj &#285;in
+      reportis.&laquo;</p>
+
+    <p>&raquo;Kie &#349;i estas,&laquo; demandis la onklo.</p>
+
+    <p>&raquo;&#348;i venas tie &#265;i. Kun panjo kaj H&#228;ilu, kiuj venis min viziti.&laquo;</p>
+
+    <p>Li diris kaj forkuris renkonte al la venantoj, lasinte la
+      balkonpordon malfermegita.</p>
+
+    <p>El arbustaro alkuris Loli, kuntrenante la rezistadantan H&#228;ilun.</p>
+
+    <p>&raquo;Pa&#265;jo, o&#265;jo, jen la fratino de Auli kaj jen venas lia panjo. Mi
+      tuj diros al mia panjo.&laquo;</p>
+
+    <p>&#348;i lasis H&#228;ilun simila al salkolono meze de la vojo, mem kuregis
+      kvaza&#365; lavango, brufermadante la pordojn, en &#265;ambrojn; a&#365;di&#285;is
+      nur piedfrapado.</p>
+
+    <p>&raquo;Ventokapulino,&laquo; koleretis la pastoro.</p>
+
+    <p>La&#365; la sablokovrita vojeto proksimi&#285;is promenante Auli kune kun
+      siaj du patrinoj.</p>
+
+    <p>H&#228;ilu duonturni&#285;is al ili, kiel homo, kiu scias nek tien, nek reen.</p>
+
+    <p>Tiam &#349;i levis la viza&#285;on kaj jen ili staris sub la brila suno
+      viza&#285;-al-viza&#285;e kaj ridetis unu al la alia kiel koramikoj, kiuj
+      senvorte divenas, kion la alia volas diri.</p><!-- p. sennombra -->
+
+    <p class="centro" style="margin-top:3em;">
+      &#264;i tiu<br />
+      libro estas la kvar-<br />
+      deka, eldonita de Literatura<br />
+      Mondo kaj la sesa libro de AELA 1934.</p>
+
+    </section>
+    
+    <section/>
+
+</body>
+
+</html>

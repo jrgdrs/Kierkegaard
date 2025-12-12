@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+
+        <style>
+                @font-face {
+                        font-family: TESTFONT;
+                        src: url("*");
+                }
+
+                @page {
+                        size: 210mm 297mm;
+                        margin: 15mm;
+                }
+
+                body {
+                        margin: 0;
+                }
+
+                p,
+                body {
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                }
+
+                .section {
+                        page-break-before: always;
+                }
+
+                .fullbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .fullbox>* {
+                        margin-left: 5mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        text-align: left;
+                }
+
+                .halfbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .halfbox>* {
+                        flex: 0 0 100mm;
+                        margin-left: 5mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        border-top: 1pt solid black;
+                        text-align: left;
+                        __overflow: hidden;
+                }
+
+                .thirdbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .thirdbox>* {
+                        flex: 0 0 65mm;
+                        margin-left: 5mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        border-top: 1pt solid black;
+                        text-align: left;
+                        __overflow: hidden;
+                }
+
+                p.info {
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-size: 8pt;
+                        line-height: 10pt;
+                        margin-top: 3pt;
+                        margin-bottom: 10pt;
+                        font-variation-settings: 'wght' 300;
+                        letter-spacing: 0;
+                        word-spacing: 0;
+                        color: brown;
+                }
+
+
+                .test {
+                        font-family: 'TESTFONT';
+                        font-size: 24pt;
+                        line-height: 32pt;
+                        _font-variation-settings: 'wght' 300;
+                        letter-spacing: 0;
+                        word-spacing: 0;
+                        color: black;
+                }
+        </style>
+</head>
+
+<body>
+
+        <div class="fullbox section">
+                <div class="block">
+                        <div class="test" lang="de">
+                                <p>
+                                        ooooooo nonoonn OoOooOO HoHooHH
+                                        ononnoo nnnnnnn OnOnnOO HnHnnHH
+                                        oHoHHoo nHnHHnn OHOHHOO HHHHHHH
+                                        oOoOOoo nOnOOnn OOOOOOO HOHOOHH
+                                        <br />-<br />
+                                        oHoHHoo nHnHHnn OoOOoo HoHHoo
+                                        oOoOOoo nOnOOnn OnOOnn HnHHnn
+                                        oaoaaoo nanaann OaOaaOO HaHaaHH
+                                        obobboo nbnbbnn ObObbOO HbHbbHH
+                                        ococcoo ncnccnn OcOccOO HcHccHH
+                                        ododdoo ndnddnn OdOddOO HdHddHH
+                                        oeoeeoo neneenn OeOeeOO HeHeeHH
+                                        ofoffoo nfnffnn OfOffOO HfHffHH
+                                        ogoggoo ngnggnn OgOggOO HgHggHH
+                                        ohohhoo nhnhhnn OhOhhOO HhHhhHH
+                                        oioiioo niniinn OiOiiOO HiHiiHH
+                                        ojojjoo njnjjnn OjOjjOO HjHjjHH
+                                        okokkoo nknkknn OkOkkOO HkHkkHH
+                                        ololloo nlnllnn OlOllOO HlHllHH
+                                        omommoo nmnmmnn OmOmmOO HmHmmHH
+                                        ononnoo nnnnnnn OnOnnOO HnHnnHH
+                                        ooooooo nonoonn OoOooOO HoHooHH
+                                        opoppoo npnppnn OpOppOO HpHppHH
+                                        oqoqqoo nqnqqnn OqOqqOO HqHqqHH
+                                        ororroo nrnrrnn OrOrrOO HrHrrHH
+                                        osossoo nsnssnn OsOssOO HsHssHH
+                                        otottoo ntnttnn OtOttOO HtHttHH
+                                        ououuoo nunuunn OuOuuOO HuHuuHH
+                                        ovovvoo nvnvvnn OvOvvOO HvHvvHH
+                                        owowwoo nwnwwnn OwOwwOO HwHwwHH
+                                        oxoxxoo nxnxxnn OxOxxOO HxHxxHH
+                                        oyoyyoo nynyynn OyOyyOO HyHyyHH
+                                        ozozzoo nznzznn OzOzzOO HzHzzHH
+                                        oäoääoo nänäänn OäOääOO HäHääHH
+                                        oöoööoo nönöönn OöOööOO HöHööHH
+                                        oüoüüoo nünüünn OüOüüOO HüHüüHH
+                                        oßoßßoo nßnßßnn OßOßßOO HßHßßHH
+                                        oAoAAoo nAnAAnn OAOAAOO HAHAAHH
+                                        oBoBBoo nBnBBnn OBOBBOO HBHBBHH
+                                        oCoCCoo nCnCCnn OCOCCOO HCHCCHH
+                                        oDoDDoo nDnDDnn ODODDOO HDHDDHH
+                                        oEoEEoo nEnEEnn OEOEEOO HEHEEHH
+                                        oFoFFoo nFnFFnn OFOFFOO HFHFFHH
+                                        oGoGGoo nGnGGnn OGOGGOO HGHGGHH
+                                        oHoHHoo nHnHHnn OHOHHOO HHHHHHH
+                                        oIoIIoo nInIInn OIOIIOO HIHIIHH
+                                        oJoJJoo nJnJJnn OJOJJOO HJHJJHH
+                                        oKoKKoo nKnKKnn OKOKKOO HKHKKHH
+                                        oLoLLoo nLnLLnn OLOLLOO HLHLLHH
+                                        oMoMMoo nMnMMnn OMOMMOO HMHMMHH
+                                        oNoNNoo nNnNNnn ONONNOO HNHNNHH
+                                        oOoOOoo nOnOOnn OOOOOOO HOHOOHH
+                                        oPoPPoo nPnPPnn OPOPPOO HPHPPHH
+                                        oQoQQoo nQnQQnn OQOQQOO HQHQQHH
+                                        oRoRRoo nRnRRnn ORORROO HRHRRHH
+                                        oSoSSoo nSnSSnn OSOSSOO HSHSSHH
+                                        oToTToo nTnTTnn OTOTTOO HTHTTHH
+                                        oUoUUoo nUnUUnn OUOUUOO HUHUUHH
+                                        oVoVVoo nVnVVnn OVOVVOO HVHVVHH
+                                        oWoWWoo nWnWWnn OWOWWOO HWHWWHH
+                                        oXoXXoo nXnXXnn OXOXXOO HXHXXHH
+                                        oYoYYoo nYnYYnn OYOYYOO HYHYYHH
+                                        oZoZZoo nZnZZnn OZOZZOO HZHZZHH
+                                        oÄoÄÄoo nÄnÄÄnn OÄOÄÄOO HÄHÄÄHH
+                                        oÖoÖÖoo nÖnÖÖnn OÖOÖÖOO HÖHÖÖHH
+                                        oÜoÜÜoo nÜnÜÜnn OÜOÜÜOO HÜHÜÜHH
+                                        o&o&&oo n&n&&nn O&O&&OO H&H&&HH
+                                        o1o11oo n1n11nn O1O11OO H1H11HH
+                                        o2o22oo n2n22nn O2O22OO H2H22HH
+                                        o3o33oo n3n33nn O3O33OO H3H33HH
+                                        o4o44oo n4n44nn O4O44OO H4H44HH
+                                        o5o55oo n5n55nn O5O55OO H5H55HH
+                                        o6o66oo n6n66nn O6O66OO H6H66HH
+                                        o7o77oo n7n77nn O7O77OO H7H77HH
+                                        o8o88oo n8n88nn O8O88OO H8H88HH
+                                        o9o99oo n9n99nn O9O99OO H9H99HH
+                                        o0o00oo n0n00nn O0O00OO H0H00HH
+                                </p>
+                        </div>
+                </div>
+        </div>
+
+</body>
+
+</html>

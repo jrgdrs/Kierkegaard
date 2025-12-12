@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Font-Tester mit Toggle</title>
+<style>
+/* -------------------- Fonts -------------------- */
+@font-face { font-family: Kierkegaard-Regular; src: url("../fonts/ttf/Kierkegaard-Regular.ttf"); }
+@font-face { font-family: Kierkegaard-Italic; src: url("../fonts/ttf/Kierkegaard-Italic.ttf"); }
+@font-face { font-family: Kierkegaard-SemiBold; src: url("../fonts/ttf/Kierkegaard-SemiBold.ttf"); }
+@font-face { font-family: Kierkegaard-SemiBoldItalic; src: url("../fonts/ttf/Kierkegaard-SemiBoldItalic.ttf"); }
+@font-face { font-family: Kierkegaard-ExtraBold; src: url("../fonts/ttf/Kierkegaard-ExtraBold.ttf"); }
+@font-face { font-family: Kierkegaard-ExtraBoldItalic; src: url("../fonts/ttf/Kierkegaard-ExtraBoldItalic.ttf"); }
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* -------------------- Styling -------------------- */
+.font-tester {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    background: #fff;
+}
+.font-tester .header {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: #f0f0f0;
+    cursor: pointer;
+    user-select: none;
+}
+.font-tester .header .title {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.font-tester .header .subtitle {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+    margin-left: 10px;
+}
+
+.font-tester .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+    transition: height 0.2s, opacity 0.2s;
+}
+.font-tester .controls.hidden {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.font-tester .controls > div {
+    margin: 0;
+}
+.font-tester .controls label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #888;
+}
+.font-tester .controls select,
+.font-tester .controls input[type="range"] {
+    width: 120px;
+}
+
+.font-tester .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.font-tester .features label {
+    font-size: 12px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.font-tester .font-edit-container {
+    background: #fff;
+    padding: 15px;
+    _min-height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+.font-tester .font-edit-container[contenteditable="true"] {
+    _outline: 2px dashed #ccc;
+    cursor: text;
+}
+
+/* Slider Styling */
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #666;
+    border-radius: 50%;
+    cursor: pointer;
+}
+</style>
+<script src="./fontTester.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="tester1"></div>
+        <div id="tester2"></div>
+        <div id="tester3"></div>
+    </div>
+<script>
+
+// ----- Beispiel -----
+createFontTester({
+    container: document.getElementById('tester1'),
+    fonts: ['Kierkegaard-Regular','Kierkegaard-Italic','Kierkegaard-SemiBold','Kierkegaard-SemiBoldItalic'],
+    initialFont: 'Kierkegaard-Regular',
+    initialSize: 48,
+    initialLineHeight: 1,
+    features: ['liga','dlig','smcp','calt','onum','lnum'],
+    initialFeatures: ['liga','smcp'],
+    sampleText: 'Dies ist der erste Beispieltext.'
+});
+
+createFontTester({
+    container: document.getElementById('tester2'),
+    fonts: ['Kierkegaard-ExtraBold','Kierkegaard-ExtraBoldItalic','Kierkegaard-Regular'],
+    initialFont: 'Kierkegaard-ExtraBold',
+    initialSize: 28,
+    initialLineHeight: 1,
+    features: ['liga','dlig','smcp','calt'],
+    initialFeatures: ['calt'],
+    sampleText: 'Zweiter Testtext mit anderem Font.'
+});
+createFontTester({
+    container: document.getElementById('tester3'),
+    fonts: ['Kierkegaard-ExtraBold','Kierkegaard-ExtraBoldItalic','Kierkegaard-Regular'],
+    initialFont: 'Kierkegaard-ExtraBold',
+    initialSize: 48,
+    initialLineHeight: 1,
+    features: ['liga','dlig','smcp','calt'],
+    initialFeatures: ['calt'],
+    sampleText: 'Und die nummer Drei.'
+});
+</script>
+
+</body>
+</html>

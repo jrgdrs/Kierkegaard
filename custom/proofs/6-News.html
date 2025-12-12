@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+
+        <style>
+                @font-face {
+                        font-family: TESTFONT;
+                        src: url("*");
+                }
+
+                @page {
+                        size: 210mm 297mm;
+                        margin: 15mm;
+                }
+
+                body {
+                        margin: 0;
+                }
+
+                p, body {
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: left;
+                }
+
+                .section {
+                        page-break-before: always;
+                }
+
+                                .fullbox {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        page-break-before: always;
+                                }
+
+                                .fullbox>* {
+                                        margin-left: 5mm;
+                                        margin-bottom: 10mm;
+                                        page-break-inside: avoid;
+                                        text-align: left;
+                                }
+
+                                .halfbox {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        page-break-before: always;
+                                }
+
+                                .halfbox>* {
+                                        flex: 0 0 100mm;
+                                        margin-left: 5mm;
+                                        margin-bottom: 10mm;
+                                        page-break-inside: avoid;
+                                        border-top: 1pt solid black;
+                                        text-align: left;
+                                        __overflow: hidden;
+                                }
+
+                                .thirdbox {
+                                        display: flex;
+                                        _flex-wrap: wrap;
+                                        flex-flow: column nowrap;
+                                        page-break-before: always;
+                                        height: 100%;
+                                }  
+
+                                .thirdbox>* {
+                                        _width: 45mm;
+                                        flex: 0 0 auto;
+                                        _margin-left: 5mm;
+                                        _margin-bottom: 10mm;
+                                        page-break-inside: avoid;
+                                        _border-top: 1pt solid black;
+                                        text-align: left;
+                                        __overflow: hidden;
+                                }
+
+                                p.info {
+                                        font-family: Georgia, 'Times New Roman', Times, serif;
+                                        font-size: 8pt;
+                                        line-height: 10pt;
+                                        margin-top: 3pt;
+                                        margin-bottom: 10pt;
+                                        font-variation-settings: 'wght' 300;
+                                        letter-spacing: 0;
+                                        word-spacing: 0;
+                                        color: brown;
+                                }
+
+
+                                .test {
+                                        font-family: 'TESTFONT';
+                                        font-size: 32pt;
+                                        line-height: 32pt;
+                                        _font-variation-settings: 'wght' 300;
+                                        letter-spacing: 0;
+                                        word-spacing: 0;
+                                        color: black;
+                                        text-align: left;
+                                } 
+
+                .textflow {
+                column-count: 3;
+                column-gap: 12pt;
+                width: 180mm;
+                }
+
+                .sizelabel {}
+                .block {
+                    break-before: auto;
+                }
+        </style>
+</head>
+<body>
+    <div class="test section">
+       
+        <p>OEFENMATCHEN. KV Mechelen klopt Genk, zuinige zege voor Standard</p>
+        <p>&nbsp;</p>
+        <p>Rays Center Fielder No. 941 in Draft, No. 1 in Defense</p>
+        <p>&nbsp;</p>
+        <p>ANALYSE. Iedereen kijkt naar Sagan (behalve zijn eigen team)</p>
+        <p>&nbsp;</p>
+        <p>Mendes vs. McGregor: UFC 189 Main Event Odds, Predictions and Tale of the Tape</p>
+        <p>&nbsp;</p>
+        <p>National reaction to Greg Hardy's reduced suspension: 'I'm going to throw up in my mouth' </p>
+        <p>&nbsp;</p>
+        <p>“No hay que volverse locos”, dice Nervo, consciente de que deben sumar para alejarse del fondo.</p>
+        <p>&nbsp;</p>	
+        <p>Video: What It’s Like to Face a 150 M.P.H. Tennis Serve</p>
+        <p>&nbsp;</p>
+        <p>Giants’ Jason Pierre-Paul Should Be Able to Overcome Loss of Finger, Former Players Say</p>
+        <p>&nbsp;</p>
+        <p>Orienteering’s Key to Winning: Not Getting Lost</p>
+        <p>&nbsp;</p>
+        <p>Boston’s 2024 Olympic Bid Faces Skepticism Despite New Proposal, Poll Finds</p>
+        <p>&nbsp;</p>
+        <p>McGinley doesn't rate Spieth's Open chances</p>
+        <p>&nbsp;</p>
+        <p>St. Andrews sparks memories of Woods' imperious peak</p>
+        <p>&nbsp;</p>
+        <p>Caps’ ‘commitment’ to Ovi</p>
+        <p>&nbsp;</p>
+        <p>A hectic, exciting, ‘little awkward’ start to Capitals tenure for T.J. Oshie</p>
+        <p>&nbsp;</p>
+        <p>NBA’s future matches up in summer league, and a big crowd descends </p>
+        <p>&nbsp;</p>
+        <p>U.S. women’s soccer team parades down ‘Canyon of Heroes’</p>
+        <p>&nbsp;</p>
+        <p>ESPN’s Chris Broussard apologizes for reporting errors in tweets about Mark Cuban</p>
+        <p>&nbsp;</p>
+        <p>The summer's top 25 transfers targets</p>
+        <p>&nbsp;</p>
+        <p>British Grand Prix: Formula 1's great British heroes</p>
+        <p>&nbsp;</p>
+        <p>'Racing &amp; rain - F1 needed this'</p>
+        <p>&nbsp;</p>
+        <p>RAAM: Shusanah Pillinger 'saw goblins' during 3,004-mile race</p>
+        <p>&nbsp;</p>
+        <p>What makes the 'perfect golf swing'?</p>
+        <p>&nbsp;</p>
+        <p>Bastian Schweinsteiger dejó Bayern Munich para jugar en Manchester United</p>
+        <p>&nbsp;</p>
+        <p>Richard Gasquet derrotó a Stanislas Wawrinka por 6-4, 4-6, 3-6, 6-4 y 11-9 y avanzó a las semifinales de Wimbledon, donde se medirá ante Novak Djokovic.</p>
+        <p>&nbsp;</p>
+        <p>La crise de l'élevage s'invite dans la caravane du Tour de France</p>
+        <p>&nbsp;</p>
+        <p>21 Grands Prix de F1 en 2016, et l'Azerbaïdjan au programme</p>
+        <p>&nbsp;</p>
+        <p>Bekijk hier hoe Vuillermoz alle grote namen verrast op Mûr de Bretagne</p>
+        <p>&nbsp;</p>
+        <p>Blatter se défend d'être responsable de tout</p>
+        <p>&nbsp;</p>
+        <p>Newcastle United: Georginio Wijnaldum seals £14.5m move</p>
+        <p>&nbsp;</p>
+        <p>Serena Williams: «Le Grand Chelem? Un truc énorme!»</p>
+        <p>&nbsp;</p>
+        <p>Athlétisme: la hurdleuse bernoise Noemi Zbären sur le toit de l'Europe</p>
+        <p>&nbsp;</p>
+        <p>KRAJSKÝ AKTIV: Penalty pronikly také do středočeských soutěží</p>
+        <p>&nbsp;</p>
+        <p>Překvapení? Nizozemský sniper van Persie přestoupil do Fenerbahce</p>
+        <p>&nbsp;</p>	
+        <p>Bleus : N'Golo Kanté, l'éveil tardif d'un milieu "box to box" à l'anglaise</p>
+        <p>&nbsp;</p>	
+        <p>« La révolution sera numérique » : le manifeste de John Doe, le lanceur d’alerte des « Panama papers »</p>
+        <p>&nbsp;</p>	
+        <p>En Turquie, Erdogan plaide l’« urgence » d’un référendum pour un régime présidentiel à sa mesure</p>
+        <p>&nbsp;</p>	
+        <p>Des centaines de femmes dans les rues d'Alger pour une course solidaire inédite</p>
+        <p>&nbsp;</p>
+        <p>Kießling bewahrt Leverkusen vor Pleite bei Viertligisten</p>
+        <p>&nbsp;</p>	
+        <p>Serena Williams ganó su sexto Wimbledon y se acerca al Grand Slam</p>	
+        <p>&nbsp;</p>
+        <p>Daniel Orsanic: "Ahora, la serie está en un 50 por ciento para cada uno"</p>
+
+    </div>
+                        
+</body>
+</html>

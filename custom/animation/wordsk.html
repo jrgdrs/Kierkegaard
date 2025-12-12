@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kierkegaard Wortanimation</title>
+  <style>
+    
+    @font-face { font-family: Regular; src: url("../fonts/ttf/Kierkegaard-Regular.ttf"); }
+    @font-face { font-family: Italic; src: url("../fonts/ttf/Kierkegaard-Italic.ttf"); }
+    @font-face { font-family: SemiBold; src: url("../fonts/ttf/Kierkegaard-SemiBold.ttf"); }
+    @font-face { font-family: SemiBoldItalic; src: url("../fonts/ttf/Kierkegaard-SemiBoldItalic.ttf"); }
+    @font-face { font-family: ExtraBold; src: url("../fonts/ttf/Kierkegaard-ExtraBold.ttf"); }
+    @font-face { font-family: ExtraBoldItalic; src: url("../fonts/ttf/Kierkegaard-ExtraBoldItalic.ttf"); }
+
+    body {
+      margin:0;
+      background:#222;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    #wordContainer {
+      width: 100%;
+      height:544px;
+      margin:0 auto;
+      position:relative;
+      overflow:hidden;
+      background:#2f2f2f;
+    }
+
+    .word{
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      white-space:nowrap;
+      pointer-events:none;
+      user-select:none;
+      padding:0.3em 0.4em;
+      transition:opacity 4.16s ease, filter 4.16s ease, transform 3.2s ease;
+      will-change:opacity,filter,transform;
+      text-rendering:optimizeLegibility;
+    }
+
+    .caption {
+      margin-top:10px;
+      font-size:16px;
+      color:#666;
+    }
+  </style>
+</head>
+<body>
+  <div id="wordContainer"></div>
+  <div class="caption">Kierkegaard font created by Jörg Drees in 2025</div>
+
+  <script>
+  const words = [
+    'dream','light','time','space','future','mind','truth','fire','stone','river','wind','shadow','echo','path','voice','heart','storm','memory','wave','field', 'Kierkegaard',
+    'sky','seed','thought','ocean','spark','dreamer','moment','vision','silence','forest','sound','cloud','mountain','dust','feather','flame','story','dreams','hope', 'Kierkegaard',
+    'soul','energy','mirror','night','day','world','circle','magic','shape','flow', 'Kierkegaard'
+  ];
+
+  // Einfacher RNG für Effizienz
+  const _rng = { random: () => Math.random() };
+  function gaussian(mean=0, sd=1){
+    let u=0,v=0,s=0;
+    if (typeof gaussian.spare !== 'undefined') { const val=gaussian.spare; delete gaussian.spare; return mean+sd*val; }
+    do { u=Math.random()*2-1; v=Math.random()*2-1; s=u*u+v*v; } while(s===0||s>=1);
+    const mul=Math.sqrt(-2*Math.log(s)/s); gaussian.spare=v*mul; return mean+sd*(u*mul);
+  }
+
+  const stage=document.getElementById('wordContainer');
+  const maxVisible=6;
+  const addInterval=900;
+  let visibleWords=[]; let zIndex=1;
+  const fontVariants=['Regular','Italic','SemiBold','SemiBoldItalic','ExtraBold','ExtraBoldItalic'];
+
+  function pickRandom(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+  function randomTertiaryColor(){
+    const hue=Math.floor(Math.random()*360);
+    const saturation=30+Math.random()*60;
+    const lightness=45+Math.random()*40;
+    return `hsl(${hue} ${saturation}% ${lightness}%)`;
+  }
+
+  function createWordElementOnlyFillingWithoutContour(text){
+    const el=document.createElement('div');
+    el.className='word';
+    el.textContent=text;
+    el.style.fontFamily=pickRandom(fontVariants);
+    el.style.fontSize=(20+Math.floor(Math.random()*(stage.clientWidth/3.5)))+'pt'; /// 
+    el.style.color=randomTertiaryColor();
+
+    const vw=stage.clientWidth, vh=stage.clientHeight;
+    const centerX=vw/2, centerY=vh/2 + vh*0.2;
+    const sigmaX=vw*0.45, sigmaY=vh*0.3;
+    let x=gaussian(centerX,sigmaX), y=gaussian(centerY,sigmaY);
+    if(x<0)x=-Math.random()*50; if(y<0)y=-Math.random()*50;
+
+    el.style.left=x+'px'; el.style.top=y+'px'; el.style.zIndex=(++zIndex).toString();
+    el.dataset.targetOpacity=0.3+Math.random()*0.5;
+    el.dataset.startBlur=8+Math.floor(Math.random()*24);
+    el.style.opacity='0'; el.style.filter=`blur(${el.dataset.startBlur}px)`;
+    stage.appendChild(el);
+
+    const rect=el.getBoundingClientRect();
+    const marginX = vw*0.1, marginY = vh*0.1;
+    if(x-rect.width/2 < -marginX) x=-marginX+rect.width/2;
+    if(x+rect.width/2 > vw+marginX) x=vw+marginX-rect.width/2;
+    if(y-rect.height/2 < -marginY) y=-marginY+rect.height/2;
+    if(y+rect.height/2 > vh+marginY) y=vh+marginY-rect.height/2;
+    el.style.left=x+'px'; el.style.top=y+'px';
+
+    return el;
+  }
+
+  function createWordElement(text) {
+  const el = document.createElement('div');
+  el.className = 'word';
+  el.textContent = text;
+  el.style.fontFamily = pickRandom(fontVariants);
+  el.style.fontSize = (20 + Math.floor(Math.random() * (stage.clientWidth / 3.5))) + 'pt';
+
+  // Zufällige Entscheidung: transparente Füllung oder normale Farbe
+  const transparentFill = Math.random() < 0.33; // 40% Wahrscheinlichkeit
+
+  if (transparentFill) {
+    el.style.color = 'transparent'; // Füllung komplett durchsichtig
+
+    // Zufällige Konturfarbe und -stärke
+    const strokeColor = randomTertiaryColor();
+    const strokeWidth = ( parseInt(el.style.fontSize) / 200 ).toFixed(1); // Stärke der Kontur
+
+    // Outline mit text-stroke (unterstützt in modernen Browsern)
+    el.style.webkitTextStroke = `${strokeWidth}px ${strokeColor}`;
+    el.style.textStroke = `${strokeWidth}px ${strokeColor}`; // für zukünftige Browser
+  } else {
+    el.style.color = randomTertiaryColor();
+    el.style.webkitTextStroke = '0px transparent'; // keine Kontur
+  }
+
+  const vw = stage.clientWidth, vh = stage.clientHeight;
+  const centerX = vw / 2, centerY = vh / 2 + vh * 0.2;
+  const sigmaX = vw * 0.45, sigmaY = vh * 0.3;
+  let x = gaussian(centerX, sigmaX), y = gaussian(centerY, sigmaY);
+  if (x < 0) x = -Math.random() * 50;
+  if (y < 0) y = -Math.random() * 50;
+
+  el.style.left = x + 'px';
+  el.style.top = y + 'px';
+  el.style.zIndex = (++zIndex).toString();
+  el.dataset.targetOpacity = 0.3 + Math.random() * 0.5;
+  el.dataset.startBlur = 8 + Math.floor(Math.random() * 24);
+  el.style.opacity = '0';
+  el.style.filter = `blur(${el.dataset.startBlur}px)`;
+  stage.appendChild(el);
+
+  const rect = el.getBoundingClientRect();
+  const marginX = vw * 0.1, marginY = vh * 0.1;
+  if (x - rect.width / 2 < -marginX) x = -marginX + rect.width / 2;
+  if (x + rect.width / 2 > vw + marginX) x = vw + marginX - rect.width / 2;
+  if (y - rect.height / 2 < -marginY) y = -marginY + rect.height / 2;
+  if (y + rect.height / 2 > vh + marginY) y = vh + marginY - rect.height / 2;
+  el.style.left = x + 'px';
+  el.style.top = y + 'px';
+
+  return el;
+}
+
+
+  function showWord(){
+    const el=createWordElement(pickRandom(words));
+    visibleWords.push(el);
+    requestAnimationFrame(()=>{
+      el.style.opacity=el.dataset.targetOpacity;
+      el.style.filter='blur(0px)';
+      el.style.transform=`translate(-50%,-50%) scale(${0.92+Math.random()*0.36})`;
+    });
+    if(visibleWords.length>maxVisible){ fadeOutAndRemove(visibleWords.shift()); }
+  }
+
+  function fadeOutAndRemove(el){
+    el.style.opacity='0';
+    el.style.filter=`blur(${el.dataset.startBlur}px)`;
+    el.addEventListener('transitionend',()=>{ if(el.parentElement) el.parentElement.removeChild(el); });
+  }
+
+  setInterval(showWord, addInterval);
+  showWord();
+  </script>
+</body>
+</html>

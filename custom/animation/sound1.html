@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="de">
+    <!--
+        Anpassungen:
+        HOLD_SECONDS = 29 (wie gewünscht). CROSSFADE_SECONDS kannst du erhöhen/verringern für längere/kurzere Überblendungen.
+        BASE_OCTAVE bestimmt Register; Werte 110..440 verschieben die Stimmung nach unten/oben.
+        Für „hellere“ Hall-Charakteristik die Delay-Tap-Frequenzen bzw. fb.gain-Werte im Reverb anpassen.
+    -->
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Leise sphärische Hintergrundklänge (Mixolydisch / Dorisch)</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#0f1720; color:#e6eef8; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; }
+  .panel { background: rgba(255,255,255,0.03); padding:20px; border-radius:12px; box-shadow: 0 8px 30px rgba(2,6,23,0.7); width:420px; max-width:95%; }
+  h1{ margin:0 0 12px 0; font-size:18px; }
+  label{ display:block; margin-top:10px; font-size:13px; color:#bcd3ef; }
+  input[type="range"]{ width:100%; }
+  button{ margin-top:12px; padding:8px 12px; border-radius:8px; border: none; background:#2b7cff; color:white; cursor:pointer; font-weight:600; }
+  .muted { background:#6b7280; }
+  .info{ font-size:12px; color:#9fb8da; margin-top:10px; }
+</style>
+</head>
+<body>
+  <div class="panel" role="application" aria-label="Sphärische Hintergrundklänge">
+    <h1>Sphärische Hintergrundklänge — Mixolydisch & Dorisch</h1>
+
+    <label>Master-Lautstärke
+      <input id="masterGain" type="range" min="0" max="1" step="0.01" value="0.55">
+    </label>
+
+    <label>Click-Lautstärke
+      <input id="clickGain" type="range" min="0" max="1" step="0.01" value="0.08">
+    </label>
+
+    <label>Murmeln (Rauschen) Lautstärke
+      <input id="murmurGain" type="range" min="0" max="1" step="0.01" value="0.06">
+    </label>
+
+    <div style="display:flex; gap:8px;">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" class="muted" disabled>Stop</button>
+    </div>
+
+    <div class="info">
+      Hinweis: Interaktion nötig (Browser Autoplay). Harmonien werden im 29-Sekunden-Rhythmus gehalten und gleitend überblendet.
+    </div>
+  </div>
+
+<script>
+/*
+  Ambient engine
+  - 29s Holds, gleitender Crossfade
+  - Mixolydische und Dorische Skalen
+  - Klicks: Holz/Metall kurz (Noise + bandpass/filters)
+  - Murmeln: gefiltertes, moduliertes Rauschen (Formantähnlich)
+  - Reverb: einfacher Hall über mehrere Allpass/Feedback-Delays + Lowpass
+*/
+
+(() => {
+  // ----- Setup -----
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  let ctx = null;
+
+  // UI
+  const startBtn = document.getElementById('startBtn');
+  const stopBtn  = document.getElementById('stopBtn');
+  const masterGainSlider = document.getElementById('masterGain');
+  const clickGainSlider = document.getElementById('clickGain');
+  const murmurGainSlider = document.getElementById('murmurGain');
+
+  // parameters
+  const HOLD_SECONDS = 8;
+  const CROSSFADE_SECONDS = 6; // wie lange das Überblenden dauert
+  const VOICES = 4; // wieviele Obertöne/Mehrklänge pro Harmoniegruppe
+  const BASE_OCTAVE = 220; // Grundton-Bereich (Hz)
+
+  // state
+  let running = false;
+  let schedulerId = null;
+  let master, reverb, clickGainNode, murmurGainNode;
+  let currentHarmonyGroup = 0;
+  let harmonyNodes = [];
+  let murmurNodes = [];
+  let clickTimer = null;
+
+  // Hilfsfunktionen
+  function now() { return ctx.currentTime; }
+
+  // Erzeugt eine sinusähnliche Stimme mit leichtem detune-Cluster (für Schwebung)
+  function createPadVoice(freq) {
+    const osc1 = ctx.createOscillator();
+    const osc2 = ctx.createOscillator();
+    const g = ctx.createGain();
+    const pan = ctx.createStereoPanner();
+
+    osc1.type = 'sine';
+    osc2.type = 'sine';
+
+    osc1.frequency.value = freq;
+    osc2.frequency.value = freq * (1 + (Math.random() * 0.002 - 0.001)); // leichte Schwebung
+
+    // Subtiles FM / harmonic richness via low-gain oscillator als modulator
+    const mod = ctx.createOscillator();
+    const modGain = ctx.createGain();
+    mod.frequency.value = 0.1 + Math.random() * 0.5;
+    modGain.gain.value = 2 + Math.random() * 3; // kleine frequenzmodulation in cents (Hz)
+    mod.connect(modGain);
+    modGain.connect(osc1.frequency);
+    modGain.connect(osc2.frequency);
+    mod.start();
+
+    g.gain.value = 0.0;
+
+    // weiche Stereo-Verteilung
+    pan.pan.value = Math.random() * 1.6 - 0.8;
+
+    osc1.connect(g);
+    osc2.connect(g);
+    g.connect(pan);
+    pan.connect(reverb.input);
+
+    osc1.start();
+    osc2.start();
+
+    return { osc1, osc2, gain: g, pan, mod, modGain };
+  }
+
+  // Skalen (als Halbtöne relativ zur Grundtonstufe)
+  const SCALES = {
+    dorian: [0, 2, 3, 5, 7, 9, 10],       // Dorian
+    mixolydian: [0, 2, 4, 5, 7, 9, 10]   // Mixolydian
+  };
+
+  // Wählt zufällig N Noten aus einer Tonleiter nahe einer Basisnote (Intervalle in Halbtönen)
+  function chooseChord(rootFreq, scale, size=3) {
+    // rootFreq in Hz
+    // konvertiere rootFreq -> MIDI-artige Basisschritt? Wir arbeiten direkt mit Halbtonschritten:
+    const rootMidi = 69 + 12 * (Math.log2(rootFreq / 440)); // nicht integer nötig
+    // wähle scale-Stufen (mit Oktavverschiebungen)
+    const chord = [];
+    for(let i=0;i<size;i++){
+      const step = scale[Math.floor(Math.random() * scale.length)];
+      const octaveShift = (-1 + Math.floor(Math.random() * 3)); // -1,0,1
+      const midi = Math.round(rootMidi) + step + octaveShift*12 + (i*2); // leichte Verbreiterung
+      const freq = 440 * Math.pow(2, (midi - 69) / 12);
+      chord.push(freq);
+    }
+    return chord;
+  }
+
+  // einfacher multi-tap "Hall"-Approximation (Pseudo-Faltung)
+  function createReverbNode() {
+    // wir erstellen einen simplen Objekt mit input + output, intern mehrere delays und feedback
+    const input = ctx.createGain();
+    const output = ctx.createGain();
+
+    // mehrere taps mit verschiedenen delays und Feedback -> großer Raum
+    const taps = [0.03, 0.06, 0.11, 0.19, 0.29, 0.43]; // in Sekunden
+    const sum = ctx.createGain();
+    sum.gain.value = 0.9;
+
+    taps.forEach((t, i) => {
+      const delay = ctx.createDelay();
+      delay.delayTime.value = t + Math.random()*0.02;
+      const fb = ctx.createGain();
+      fb.gain.value = 0.35 - i*0.04; // spätere taps weniger Feedback
+
+      const low = ctx.createBiquadFilter();
+      low.type = 'lowpass';
+      low.frequency.value = 6000 - i*800;
+
+      input.connect(delay);
+      delay.connect(low);
+      low.connect(fb);
+      fb.connect(delay); // feedback
+      low.connect(sum);
+    });
+
+    // finaler Dämpfungsfilter + stereo spread
+    const damp = ctx.createBiquadFilter();
+    damp.type = 'lowpass';
+    damp.frequency.value = 5000;
+
+    sum.connect(damp);
+    damp.connect(output);
+
+    return { input, output, connect(node){ this.output.connect(node); }, disconnect(){ this.output.disconnect(); } };
+  }
+
+  // Klick-Generator: kurzer Klick aus Noise, Holz/Metall durch Filterwahl
+  function triggerClick(time, kind = 'wood') {
+    // kind: 'wood' oder 'metal'
+    // Erzeugt ein sehr kurzes, perkussives Rausch-Impuls gefiltert und abgeschnitten
+    const bufferSize = 2048;
+    const noise = ctx.createBufferSource();
+    const b = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+    const data = b.getChannelData(0);
+    for(let i=0;i<bufferSize;i++){
+      data[i] = (Math.random()*2-1) * Math.exp(-i/200); // schneller Abfall
+    }
+    noise.buffer = b;
+    noise.loop = false;
+
+    const filt = ctx.createBiquadFilter();
+    if (kind === 'wood') {
+      filt.type = 'bandpass';
+      filt.frequency.value = 1700 + Math.random()*600;
+      filt.Q.value = 0.9 + Math.random()*0.8;
+    } else {
+      filt.type = 'highpass';
+      filt.frequency.value = 2500 + Math.random()*2000;
+      filt.Q.value = 0.5;
+    }
+
+    const clickGain = ctx.createGain();
+    clickGain.gain.value = 1.0;
+
+    noise.connect(filt);
+    filt.connect(clickGain);
+    clickGain.connect(clickGainNode);
+
+    noise.start(time);
+    noise.stop(time + 0.08 + Math.random()*0.06);
+  }
+
+  // Murmeln: gefiltertes Rauschen mit langsamer Modulation der Bandfilter (formant-ähnlich)
+  function createMurmur() {
+    const noise = ctx.createBufferSource();
+    // generiere längeres Pink-ähnliches Rauschen
+    const len = ctx.sampleRate * 4;
+    const buf = ctx.createBuffer(1, len, ctx.sampleRate);
+    const data = buf.getChannelData(0);
+    for(let i=0;i<len;i++){
+      // einfacher pink-ish via 1/f weighting approximation
+      data[i] = (Math.random()*2-1) * (1 / (1 + (i/len)));
+    }
+    noise.buffer = buf;
+    noise.loop = true;
+
+    // mehrere Formanten / Bandpässe
+    const band1 = ctx.createBiquadFilter(); band1.type = 'bandpass'; band1.frequency.value = 600; band1.Q.value = 1.2;
+    const band2 = ctx.createBiquadFilter(); band2.type = 'bandpass'; band2.frequency.value = 1200; band2.Q.value = 1.3;
+    const band3 = ctx.createBiquadFilter(); band3.type = 'bandpass'; band3.frequency.value = 2400; band3.Q.value = 0.9;
+
+    const gain = ctx.createGain(); gain.gain.value = 0.2;
+
+    noise.connect(band1);
+    band1.connect(band2);
+    band2.connect(band3);
+    band3.connect(gain);
+    gain.connect(murmurGainNode);
+
+    // LFOs, sehr langsam, um Formanten zu bewegen
+    const lfo1 = ctx.createOscillator(); const lfoGain1 = ctx.createGain();
+    lfo1.type = 'sine'; lfo1.frequency.value = 0.03 + Math.random()*0.06; lfoGain1.gain.value = 100;
+    lfo1.connect(lfoGain1);
+    lfoGain1.connect(band1.frequency);
+
+    const lfo2 = ctx.createOscillator(); const lfoGain2 = ctx.createGain();
+    lfo2.type = 'sine'; lfo2.frequency.value = 0.02 + Math.random()*0.04; lfoGain2.gain.value = 200;
+    lfo2.connect(lfoGain2);
+    lfoGain2.connect(band2.frequency);
+
+    lfo1.start(); lfo2.start();
+    noise.start();
+
+    return { noise, band1, band2, band3, gain, lfo1, lfo2 };
+  }
+
+  // Erzeuge neue Harmony-Gruppe (Pad-Cluster) und starte sanft (fade in)
+  function spawnHarmony(rootFreq, scaleName) {
+    const scale = SCALES[scaleName];
+    const chord = chooseChord(rootFreq, scale, VOICES);
+    const nodes = chord.map(freq => createPadVoice(freq));
+    // setze anfängliche Gain und plane Attack
+    nodes.forEach((n, i) => {
+      const g = n.gain.gain;
+      const start = now() + 0.02;
+      g.cancelScheduledValues(0);
+      g.setValueAtTime(0, start);
+      // schnellerer Anstieg für ein sphärisches Pad
+      g.linearRampToValueAtTime(0.14 / (i+1) + 0.02, start + 6 + Math.random()*4);
+    });
+    return { nodes, chord, rootFreq, scaleName, created: now() };
+  }
+
+  // Stoppe und fade out Harmony-Gruppe
+  function killHarmony(harmony, fadeTime = CROSSFADE_SECONDS) {
+    harmony.nodes.forEach(n => {
+      const gnode = n.gain.gain;
+      const t0 = now();
+      gnode.cancelScheduledValues(t0);
+      gnode.setValueAtTime(gnode.value || 0, t0);
+      gnode.linearRampToValueAtTime(0.0, t0 + fadeTime + Math.random()*0.8);
+      // stoppe oscillator nach fade
+      setTimeout(() => {
+        try {
+          n.osc1.stop();
+          n.osc2.stop();
+        } catch(e){}
+      }, (fadeTime + 2) * 1000);
+    });
+  }
+
+  // Scheduler: plant harmonien alle HOLD_SECONDS mit CROSSFADE
+  function startScheduler() {
+    // initiale Basisfrequenz leicht variieren
+    let baseFreq = BASE_OCTAVE * (1 + (Math.random()*0.25 - 0.12));
+    currentHarmonyGroup = 0;
+
+    // Erstelle initiale Harmony
+    let active = [];
+    function scheduleNext() {
+      if (!running) return;
+
+      // wähle Mode abwechselnd dorian/mixolydian
+      const mode = (currentHarmonyGroup % 2 === 0) ? 'dorian' : 'mixolydian';
+      // leichte Randomisierung der Basisfrequenz
+      baseFreq = baseFreq * Math.pow(2, (Math.random()*6-3)/120); // kleine cent-shift
+      const harmony = spawnHarmony(baseFreq, mode);
+      active.push(harmony);
+
+      // fade out alte Harmony nach HOLD_SECONDS (mit CROSSFADE)
+      setTimeout(() => {
+        if (active.length > 0) {
+          const old = active.shift();
+          killHarmony(old, CROSSFADE_SECONDS);
+        }
+      }, HOLD_SECONDS * 1000);
+
+      currentHarmonyGroup++;
+      // plane nächsten Aufruf
+      schedulerId = setTimeout(scheduleNext, HOLD_SECONDS * 1000);
+    }
+
+    // zusätzlichen Murmeln erzeugen (2-3 Layer)
+    for (let i=0;i<2;i++){
+      murmurNodes.push(createMurmur());
+    }
+
+    scheduleNext();
+  }
+
+  // Klick-Metronom: leichte clicks auf beat, minimal variabel
+  function startClicks() {
+    if (clickTimer) return;
+    const bpm = 40 + Math.random()*10; // sehr langsam
+    const beatInterval = 60 / bpm;
+    function tick() {
+      if (!running) return;
+      // variety: mehr oder weniger betonte Klicks in einem 4/4 Pattern
+      const t = now();
+      // entscheide holz oder metall zufällig
+      const kind = (Math.random() > 0.8) ? 'metal' : 'wood';
+      triggerClick(t + 0.02, kind);
+      // zufälliges zusätzliches ghost-click
+      if (Math.random() > 0.75) triggerClick(t + 0.02 + beatInterval * (0.4 + Math.random()*0.2), 'wood');
+      clickTimer = setTimeout(tick, beatInterval * 1000);
+    }
+    tick();
+  }
+
+  function stopClicks() {
+    if (clickTimer) {
+      clearTimeout(clickTimer);
+      clickTimer = null;
+    }
+  }
+
+  // Setup Audio Graph
+  function setupAudio() {
+    ctx = new AudioContextClass();
+
+    // Master
+    master = ctx.createGain();
+    master.gain.value = parseFloat(masterGainSlider.value || 0.55);
+    master.connect(ctx.destination);
+
+    // Reverb
+    reverb = createReverbNode();
+    reverb.input.connect(reverb.output); // in-place (intern schon verbunden)
+    // create node wrapper with input and output
+    reverb.input = reverb.input;
+    reverb.output = reverb.output;
+    reverb.output.connect(master);
+
+    // Click gain
+    clickGainNode = ctx.createGain();
+    clickGainNode.gain.value = parseFloat(clickGainSlider.value || 0.08);
+    clickGainNode.connect(reverb.input);
+
+    // Murmur gain
+    murmurGainNode = ctx.createGain();
+    murmurGainNode.gain.value = parseFloat(murmurGainSlider.value || 0.06);
+    murmurGainNode.connect(reverb.input);
+
+    // UI listeners
+    masterGainSlider.addEventListener('input', () => {
+      if (master) master.gain.linearRampToValueAtTime(parseFloat(masterGainSlider.value), now()+0.1);
+    });
+    clickGainSlider.addEventListener('input', () => {
+      if (clickGainNode) clickGainNode.gain.linearRampToValueAtTime(parseFloat(clickGainSlider.value), now()+0.05);
+    });
+    murmurGainSlider.addEventListener('input', () => {
+      if (murmurGainNode) murmurGainNode.gain.linearRampToValueAtTime(parseFloat(murmurGainSlider.value), now()+0.05);
+    });
+  }
+
+  // Start / Stop Kontrolllogik
+  startBtn.addEventListener('click', async () => {
+    if (running) return;
+    if (!ctx) setupAudio();
+    // Resume context if suspended (browser).
+    await ctx.resume();
+    running = true;
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
+    startScheduler();
+    startClicks();
+  });
+
+  stopBtn.addEventListener('click', () => {
+    if (!running) return;
+    running = false;
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
+    // clear scheduler
+    if (schedulerId) {
+      clearTimeout(schedulerId);
+      schedulerId = null;
+    }
+    // stop clicks
+    stopClicks();
+    // fade out all active nodes gracefully
+    if (harmonyNodes && harmonyNodes.length) {
+      harmonyNodes.forEach(h => killHarmony(h, 2.0));
+    }
+    murmurNodes.forEach(m => {
+      try{
+        m.gain.gain.linearRampToValueAtTime(0, now()+2.0);
+        m.noise.stop(now()+2.2);
+        m.lfo1.stop(now()+2.2); m.lfo2.stop(now()+2.2);
+      }catch(e){}
+    });
+    // close audio context after small timeout to allow fadeout
+    setTimeout(() => {
+      try { ctx.close(); } catch(e){}
+      ctx = null;
+      reverb = null;
+      master = null;
+      murmurNodes = [];
+    }, 2800);
+  });
+
+  // Expose nothing globally; all controlled via UI
+})();
+</script>
+</body>
+</html>

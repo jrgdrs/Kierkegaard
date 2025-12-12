@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Font Tester</title>
+<style>
+/* -------------------- Fonts -------------------- */
+@font-face { font-family: Regular; src: url("../fonts/ttf/Kierkegaard-Regular.ttf"); }
+@font-face { font-family: Italic; src: url("../fonts/ttf/Kierkegaard-Italic.ttf"); }
+@font-face { font-family: SemiBold; src: url("../fonts/ttf/Kierkegaard-SemiBold.ttf"); }
+@font-face { font-family: SemiBoldItalic; src: url("../fonts/ttf/Kierkegaard-SemiBoldItalic.ttf"); }
+@font-face { font-family: ExtraBold; src: url("../fonts/ttf/Kierkegaard-ExtraBold.ttf"); }
+@font-face { font-family: ExtraBoldItalic; src: url("../fonts/ttf/Kierkegaard-ExtraBoldItalic.ttf"); }
+
+/* -------------------- Grundlayout -------------------- */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px; /* leicht abgerundet */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* leichter Schlagschatten */
+}
+.controls > div {
+    margin: 0; /* keine extra Ränder */
+}
+.controls label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #888; /* leichte graue Schrift */
+}
+.controls select, .controls input[type="range"] {
+    width: 150px;
+}
+
+/* Features als Checkboxen */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.features label {
+    font-weight: normal;
+    font-size: 12px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+/* Editable Text */
+.font-edit-container {
+    background: #fff;
+    padding: 20px;
+    min-height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* leichter Schlagschatten */
+    overflow-y: auto;
+}
+.font-edit-container[contenteditable="true"] {
+    _outline: 1px solid darkorange;
+    cursor: text;
+}
+
+/* Slider Styling */
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #666;
+    border-radius: 50%;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="controls">
+        <!-- Font Family -->
+        <div>
+            <label for="fontFamily">Font Family</label>
+            <select id="fontFamily">
+                <option value="Regular">Regular</option>
+                <option value="Italic">Italic</option>
+                <option value="SemiBold">SemiBold</option>
+                <option value="SemiBoldItalic">SemiBoldItalic</option>
+                <option value="ExtraBold">ExtraBold</option>
+                <option value="ExtraBoldItalic">ExtraBoldItalic</option>
+            </select>
+        </div>
+
+        <!-- Font Size -->
+        <div>
+            <label for="fontSize">Font Size (<span id="fontSizeVal">60</span>px)</label>
+            <input type="range" id="fontSize" min="8" max="144" value="60">
+        </div>
+
+        <!-- Line Height -->
+        <div>
+            <label for="lineHeight">Line Height (<span id="lineHeightVal">1</span>)</label>
+            <input type="range" id="lineHeight" min=".5" max="1.5" step="0.1" value="1">
+        </div>
+
+        <!-- OpenType Features als Checkboxes -->
+        <div>
+            <label>OpenType Features</label>
+            <div class="features" id="featuresContainer">
+                <!-- Dynamisch gefüllt -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Editable Text -->
+    <div class="font-edit-container" contenteditable="true" spellcheck="false">
+        Dies ist ein editierbarer Beispieltext. Ändere die Schriftart, Größe, Zeilenhöhe und OpenType-Features über die Einstellungen oben.
+    </div>
+
+</div>
+
+<script>
+// -------------------- Elemente --------------------
+const fontContainer = document.querySelector('.font-edit-container');
+const fontFamilySelect = document.getElementById('fontFamily');
+const fontSizeSlider = document.getElementById('fontSize');
+const fontSizeVal = document.getElementById('fontSizeVal');
+const lineHeightSlider = document.getElementById('lineHeight');
+const lineHeightVal = document.getElementById('lineHeightVal');
+const featuresContainer = document.getElementById('featuresContainer');
+
+// -------------------- OpenType Features Liste --------------------
+const opentypeFeatures = [
+    'liga', 'dlig', 'smcp', 'calt', 'onum', 'lnum', 'tnum', 'pnum',
+    'swsh', 'hist', 'salt', 'titl', 'frac', 'ss01', 'ss02', 'ss03', 'ss04'
+];
+
+// Dynamisch Checkboxen hinzufügen
+opentypeFeatures.forEach(f => {
+    const label = document.createElement('label');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.value = f;
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(f));
+    featuresContainer.appendChild(label);
+
+    // Eventlistener für Feature-Änderung
+    checkbox.addEventListener('change', updateFeatures);
+});
+
+// -------------------- Event Listeners --------------------
+// Font Family
+fontFamilySelect.addEventListener('change', () => {
+    fontContainer.style.fontFamily = fontFamilySelect.value;
+});
+
+// Font Size
+fontSizeSlider.addEventListener('input', () => {
+    fontContainer.style.fontSize = fontSizeSlider.value + 'px';
+    fontSizeVal.textContent = fontSizeSlider.value;
+});
+
+// Line Height
+lineHeightSlider.addEventListener('input', () => {
+    fontContainer.style.lineHeight = lineHeightSlider.value;
+    lineHeightVal.textContent = lineHeightSlider.value;
+});
+
+// OpenType Features Funktion
+function updateFeatures() {
+    const selected = Array.from(featuresContainer.querySelectorAll('input:checked'))
+        .map(cb => `"${cb.value}" 1`);
+    fontContainer.style.fontFeatureSettings = selected.join(', ') || 'normal';
+}
+
+// -------------------- Initial Werte --------------------
+fontContainer.style.fontFamily = fontFamilySelect.value;
+fontContainer.style.fontSize = fontSizeSlider.value + 'px';
+fontContainer.style.lineHeight = lineHeightSlider.value;
+fontContainer.style.fontFeatureSettings = 'normal';
+</script>
+
+</body>
+</html>

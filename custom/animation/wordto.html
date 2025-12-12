@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kierkegaard Preview</title>
+    <script src="./fontTester.js"></script>
+    <style>
+        @font-face { font-family: Kierkegaard-Regular; src: url("../fonts/ttf/Kierkegaard-Regular.ttf"); }
+        @font-face { font-family: Kierkegaard-Italic; src: url("../fonts/ttf/Kierkegaard-Italic.ttf"); }
+        @font-face { font-family: Kierkegaard-Medium; src: url("../fonts/ttf/Kierkegaard-Medium.ttf"); }
+        @font-face { font-family: Kierkegaard-MediumItalic; src: url("../fonts/ttf/Kierkegaard-MediumItalic.ttf"); }
+        @font-face { font-family: Kierkegaard-SemiBold; src: url("../fonts/ttf/Kierkegaard-SemiBold.ttf"); }
+        @font-face { font-family: Kierkegaard-SemiBoldItalic; src: url("../fonts/ttf/Kierkegaard-SemiBoldItalic.ttf"); }
+        @font-face { font-family: Kierkegaard-Bold; src: url("../fonts/ttf/Kierkegaard-Bold.ttf"); }
+        @font-face { font-family: Kierkegaard-BoldItalic; src: url("../fonts/ttf/Kierkegaard-BoldItalic.ttf"); }
+        @font-face { font-family: Kierkegaard-ExtraBold; src: url("../fonts/ttf/Kierkegaard-ExtraBold.ttf"); }
+        @font-face { font-family: Kierkegaard-ExtraBoldItalic; src: url("../fonts/ttf/Kierkegaard-ExtraBoldItalic.ttf"); }
+
+        body {
+            margin: 0;
+            background-color: #2f2f2f;
+            font-family: sans-serif;
+            __text-align: center;
+            padding-top: 24px;
+            ___color: #ccc;
+            font-feature-settings: "dlig", "clig";
+        }
+
+        a { color:#aaa}
+
+        /* ==== Fonttester ==== */
+
+        .testContainer {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            top: -100px;
+            z-index: 999;
+        }
+
+        /* -------------------- Styling -------------------- */
+        .font-tester {
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            background: #fff;
+        }
+        .font-tester .header {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            background: #f0f0f0;
+            cursor: pointer;
+            user-select: none;
+        }
+        .font-tester .header .title {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .font-tester .header .subtitle {
+            font-size: 12px;
+            font-weight: normal;
+            color: #666;
+            margin-left: 10px;
+        }
+
+        .font-tester .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 10px;
+            transition: height 0.2s, opacity 0.2s;
+        }
+        .font-tester .controls.hidden {
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            padding: 0 10px;
+        }
+
+        .font-tester .controls > div {
+            margin: 0;
+        }
+        .font-tester .controls label {
+            display: block;
+            margin-bottom: 3px;
+            font-weight: normal;
+            font-size: 12px;
+            color: #888;
+        }
+        .font-tester .controls select,
+        .font-tester .controls input[type="range"] {
+            width: 120px;
+        }
+
+        .font-tester .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .font-tester .features label {
+            font-size: 12px;
+            color: #888;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .font-tester .font-edit-container {
+            background: #fff;
+            padding: 15px;
+            _min-height: 150px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow-y: auto;
+        }
+        .font-tester .font-edit-container[contenteditable="true"] {
+            _outline: 2px dashed #ccc;
+            cursor: text;
+        }
+
+        /* Slider Styling */
+        input[type="range"] {
+            -webkit-appearance: none;
+            height: 5px;
+            background: #ddd;
+            border-radius: 5px;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background: #666;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* ==== Animation ==== */
+
+        #animationContainer {
+            width: 100%;
+            height: 480px;
+            margin: 0 auto;
+            position: relative;
+            top:0;
+            overflow: hidden;
+            background: #2f2f2f;
+        }
+
+        .word {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            pointer-events: none;
+            user-select: none;
+            padding: 0.3em 0.4em;
+            transition: opacity 4.16s ease, filter 4.16s ease, transform 3.2s ease;
+            will-change: opacity, filter, transform;
+            text-rendering: optimizeLegibility;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .animationControls {
+            __margin-top: 12px;
+            display: flex; 
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            height:50px;
+            background-color: #222;
+        }
+
+        .animationControls label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            color: #999;
+
+        }
+
+        input[type="range"] {
+            width: 200px;
+            accent-color:red;
+            margin:6px;
+
+        }
+
+        /* --- Slider --- */
+        input[type="range"]::-webkit-slider-runnable-track {
+            background: #999;
+            height: 0.5rem;
+        }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+            background: #999;
+            height: 0.1rem;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Override default look */
+            appearance: none;
+            margin-top: -6px; /* Centers thumb on the track */
+            background-color: limegreen;
+            height: 12px;
+            width: 12px;    
+        }
+
+        /* Download Button */
+        .downloadBtn {
+            background-color: limegreen;
+            border: 2pt solid white;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+            width: 15em;
+            border-radius: 32px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .downloadBtn:hover {
+            background-color: lime;
+        }
+
+        .footer {
+            align-items: center;
+            text-align:center;
+            margin-bottom: 50px;
+            display: flex; 
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="animationControls">
+        <label>faster
+            <input type="range" id="speedSlider" min="0.2" max="2.0" step="0.1" value="1.5">
+        </label>
+        <label>bigger
+            <input type="range" id="sizeSlider" min="0.25" max="2" step="0.1" value="0.8">
+        </label>
+        <label>contours
+            <input type="range" id="contourSlider" min="0" max="1" step="0.05" value="0.3">
+        </label>
+    </div>
+
+    <div id="animationContainer"></div>
+    <!--div class="caption">Kierkegaard font created by Jörg Drees in 2025</div-->
+
+  <div class="testContainer">
+        <div id="tester1"></div>
+        <div id="tester2"></div>
+        <div id="tester3"></div>
+    </div>
+
+    <div class="footer">
+            <a href="https://github.com/jrgdrs/Kierkegaard/releases/latest/download/Kierkegaard-1.008.zip"><div class="downloadBtn">Download Kierkegaard Font</div></a>
+            <div class="caption">Kierkegaard font is created by Jörg Drees in 2025</div>
+    </div>
+
+    
+    
+    <script>
+
+    createFontTester({
+        container: document.getElementById('tester1'),
+        fonts: ['Kierkegaard-Regular','Kierkegaard-Italic','Kierkegaard-Medium','Kierkegaard-MediumItalic','Kierkegaard-SemiBold','Kierkegaard-SemiBoldItalic','Kierkegaard-Bold','Kierkegaard-BoldItalic','Kierkegaard-ExtraBold','Kierkegaard-ExtraBoldItalic'],
+        initialFont: 'Kierkegaard-ExtraBold',
+        initialSize: 96,
+        initialLineHeight: .8,
+        features: ['liga','dlig','smcp','c2sc','onum'],
+        initialFeatures: ['liga','onum'],
+        sampleText: 'This area is editable'
+    });
+
+
+    createFontTester({
+        container: document.getElementById('tester2'),
+        fonts: ['Kierkegaard-Regular','Kierkegaard-Italic','Kierkegaard-Medium','Kierkegaard-MediumItalic','Kierkegaard-SemiBold','Kierkegaard-SemiBoldItalic','Kierkegaard-Bold','Kierkegaard-BoldItalic','Kierkegaard-ExtraBold','Kierkegaard-ExtraBoldItalic'],
+        initialFont: 'Kierkegaard-MediumItalic',
+        initialSize: 48,
+        initialLineHeight: .9,
+        features: ['liga','dlig','smcp','c2sc','onum'],
+        initialFeatures: ['liga','onum'],
+        sampleText: 'Click onto the type name above and you select font style or change the settings'
+    });
+    createFontTester({
+        container: document.getElementById('tester3'),
+        fonts: ['Kierkegaard-Regular','Kierkegaard-Italic','Kierkegaard-Medium','Kierkegaard-MediumItalic','Kierkegaard-SemiBold','Kierkegaard-SemiBoldItalic','Kierkegaard-Bold','Kierkegaard-BoldItalic','Kierkegaard-ExtraBold','Kierkegaard-ExtraBoldItalic'],
+        initialFont: 'Kierkegaard-Regular',
+        initialSize: 24,
+        initialLineHeight: 1.1,
+        features: ['liga','dlig','smcp','c2sc','onum'],
+        initialFeatures: ['liga','onum'],
+        sampleText: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 12 commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla 1357 consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis 89 pretium. Integer tincidunt. Cras dapibus. Vivamus 67 elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper 1495 ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam 1521 sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. '
+    });
+    </script>   
+
+    <script src="./fontAnimator.js"></script>
+
+</body>
+</html>

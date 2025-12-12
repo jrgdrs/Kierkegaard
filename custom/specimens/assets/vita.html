@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeitungskolumne – Beispiel</title>
+<style>
+    @font-face { font-family: Kierkegaard-Regular; src: url("../fonts/ttf/Kierkegaard-Regular.ttf"); }
+    @font-face { font-family: Kierkegaard-MediumItalic; src: url("../fonts/ttf/Kierkegaard-MediumItalic.ttf"); }
+    @font-face { font-family: Kierkegaard-Bold; src: url("../fonts/ttf/Kierkegaard-Bold.ttf"); }
+
+@page {
+    size: A4 portrait;
+    margin-top: 15mm;
+    margin-left: 35mm;
+    margin-bottom: 0;
+    vertical-align: center;
+    background-color: linen;
+  }
+
+  body {
+    font-family: Kierkegaard-Regular, serif;
+    line-height: 1;
+    text-align: justify;
+    margin: 0;
+  }
+
+  .container {
+    width: 72mm;
+    background-color:floralwhite;
+    padding: 3mm;
+    box-shadow: 10px 10px 7px 0px hsla(0,0%,0%,0.2);
+  }
+
+  h1 {
+    font-size:32 pt;
+    line-height: 0.9;
+    font-family: Kierkegaard-Bold, serif;
+    font-weight: normal;
+    text-align: left;
+    margin-top:2mm;
+    padding-top:0;
+  }
+
+  .column {
+    display: block;
+    hyphens: auto;
+    hyphenate-limit-chars: 5,3,3;
+    margin: 0;
+    font-feature-settings: "onum";
+  }
+
+  .portrait {
+    float: left;
+    width: 40%;
+    margin: 0 1em 0.5em 0;
+  }
+
+  .portrait img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .caption {
+    __font-size: 9pt;
+    font-family: Kierkegaard-MediumItalic, serif;
+    text-align: left;
+    margin: 0.3em 0 0 0;
+  }
+
+  p {
+    margin: 0;
+    text-indent: 1em;
+    text-align: justify;
+    hyphens: auto;
+  }
+  p:has(catch){
+    text-indent: 0;
+  }
+  catch{
+    font-family: Kierkegaard-Bold, serif;
+        text-indent: 0;
+
+  }
+
+
+  @media print {
+    body {
+      color: black;
+    }
+  }
+</style>
+</head>
+<body lang="en">
+  <div class="container">
+    <h1>
+Balance of classical proportion and modern restraint    </h1>
+
+    <div class="column">
+      <div class="portrait">
+        <img src="jrgdrs.jpg" alt="Jörg Drees">
+        <div class="caption">Jörg Drees</div>
+      </div>
+
+      <p>
+        <catch>Kierkegaard</catch>
+is a mod&shy;ern serif type&shy;face in re&shy;nais&shy;sance style that merges his&shy;tor&shy;i&shy;cal grace with con&shy;tem&shy;po&shy;rary pre&shy;ci&shy;sion. Draw&shy;ing in&shy;spi&shy;ra&shy;tion from the philo&shy;soph&shy;i&shy;cal spir&shy;it of Søren Aabye Kierke&shy;gaard (1813–1855), this type fam&shy;i&shy;ly cel&shy;e&shy;brat&shy;es the cre&shy;a&shy;tive po&shy;ten&shy;tial born from con&shy;straint — ech&shy;o&shy;ing Kierke&shy;gaard’s in&shy;sight that “The more one lim&shy;its one&shy;self, the more re&shy;source&shy;ful one be&shy;comes.”
+</p>
+
+<p>
+At its core, Kierke&shy;gaard em&shy;bod&shy;ies this prin&shy;ci&shy;ple through re&shy;straint and re&shy;fine&shy;ment. The de&shy;sign bal&shy;ances the or&shy;gan&shy;ic flow of broad-nib cal&shy;lig&shy;ra&shy;phy with the struc&shy;tur&shy;al clar&shy;i&shy;ty of mod&shy;ern ty&shy;pog&shy;ra&shy;phy. Each let&shy;ter&shy;form is care&shy;ful&shy;ly mod&shy;eled with sub&shy;tly curved stems, al&shy;low&shy;ing the font to con&shy;vey warmth and hu&shy;man&shy;i&shy;ty with&shy;in a ra&shy;tion&shy;al, ty&shy;pog&shy;ra&shy;phic frame&shy;work. The re&shy;sult is a type&shy;face that feels both time&shy;less and a&shy;live — root&shy;ed in the her&shy;i&shy;tage of Re&shy;nais&shy;sance ser&shy;ifs yet adapt&shy;a&shy;ble for con&shy;tem&shy;po&shy;rary de&shy;sign needs. From ed&shy;i&shy;to&shy;ri&shy;al lay&shy;outs to brand&shy;ing, long-form text, and dig&shy;i&shy;tal in&shy;ter&shy;faces, Kierke&shy;gaard lends a thought&shy;ful and in&shy;tel&shy;lec&shy;tu&shy;al tone with&shy;out los&shy;ing ap&shy;proach&shy;a&shy;bil&shy;i&shy;ty.
+</p>
+
+<p>
+Kierke&shy;gaard’s an&shy;a&shy;to&shy;my re&shy;flects a di&shy;a&shy;logue be&shy;tween phi&shy;los&shy;o&shy;phy and form. The slight&shy;ly curved stems in&shy;ter&shy;pret the mo&shy;tion of nat&shy;u&shy;ral hand&shy;writ&shy;ing, sug&shy;gest&shy;ing the trace of a broad nib. This ap&shy;proach cre&shy;ates a dy&shy;nam&shy;ic rhyth&shy;m across lines of text, of&shy;fer&shy;ing an el&shy;e&shy;gant read&shy;ing ex&shy;pe&shy;ri&shy;ence. The com&shy;plete fam&shy;i&shy;ly con&shy;tains 20 mem&shy;bers in five weights, each paired with a match&shy;ing ital&shy;ic. Ad&shy;di&shy;tion&shy;al fea&shy;tures in&shy;clude old-style fig&shy;ures, small cap&shy;i&shy;tals, and re&shy;fined char&shy;ac&shy;ter de&shy;tail&shy;ing for pro&shy;fes&shy;sion&shy;al ty&shy;pog&shy;ra&shy;phic ver&shy;sa&shy;til&shy;i&shy;ty.
+</p>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
