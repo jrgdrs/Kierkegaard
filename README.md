@@ -163,7 +163,7 @@ Kierkegaard is available under the <a href="https://scripts.sil.org/OFL" target=
 [Test the typeface online](https://jrgdrs.github.io/Kierkegaard/)
 
 
-![Sample Image](documentation/promotions/ClassicPoster.png)
+![Sample Image](documentation/images/cid-KierkegaardSC-Medium.png)
 
 ## Issue Support
 

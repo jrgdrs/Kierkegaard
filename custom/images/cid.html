@@ -1,0 +1,57 @@
+<style>
+    @font-face {
+        font-family: TESTFONT;
+        src: url("*");
+    }
+
+    @media print {}
+
+    @page {
+        size: 2048px 1024px;
+        margin: 0px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 2048px;
+        height: 1024px;
+    }
+
+    img {
+        position: absolute;
+        width: 2048px;
+    }
+
+    .poster {
+        position: absolute;
+        top: 180px;
+        left: 720px;
+        width: 540px;
+        height: 660px;
+        border: 8pt solid transparent;
+        font-family: TESTFONT;
+        color: rgba(19, 18, 18, 0.736);
+        text-align: center;
+    }
+
+    .txt {
+        font-size: 32pt;
+        line-height: 1em;
+        margin-top: 60pt;
+        padding: 0;
+    }
+
+    .rubi {
+        color: rgba(139, 0, 0, 0.754);
+    }
+</style>
+
+<body>
+    <img src="assets/cid.png">
+    <div class="poster">
+        <p class="txt"> Arrowroot Barley <br />Chervil Dumpling <br />Endive Flaxseed <br />Garbanzo Hijiki Ishtu
+            <br />Jicama <span class="rubi">Kierkegaard</span> <br />Lychee Marjoram <br />Nectarine Oxtail <br />Pizza
+            Quinoa <br />Roquefort Squash <br />Tofu Uppuma Vanilla <br />Wheat Xergis Yogurt <br />Zwieback</p>
+    </div>
+</body>
