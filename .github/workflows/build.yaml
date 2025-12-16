@@ -1,6 +1,7 @@
 name: Build font and specimen
 
 on: [push, pull_request, workflow_dispatch]
+permissions: write-all
 
 jobs:
   build:
@@ -54,7 +55,7 @@ jobs:
     - name: Generate proofs
       run: make proof
     - name: Set up test result site
-      run:  cp -a pages/* out
+      run: cp scripts/index.html out/index.html
     - name: Collect deployment assets
       if: ${{ github.ref == 'refs/heads/main' }}
       uses: actions/upload-pages-artifact@v3
@@ -107,8 +108,6 @@ jobs:
         with:
           name: ${{ env.ZIP_NAME }}
           path: ${{ env.ZIP_NAME }}
-      - name: Copy DESCRIPTION.en_us.html to release directory
-        run: cp documentation/DESCRIPTION.en_us.html ${{ env.ZIP_NAME }}/DESCRIPTION.en_us.html
       - name: Copy ARTICLE.en_us.html to release directory
         run: cp documentation/ARTICLE.en_us.html ${{ env.ZIP_NAME }}/ARTICLE.en_us.html
         continue-on-error: true

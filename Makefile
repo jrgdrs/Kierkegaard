@@ -87,4 +87,3 @@ update: venv
 
 	git commit -m "Update requirements" requirements.txt
 	git push
-
