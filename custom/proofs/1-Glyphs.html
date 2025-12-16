@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+
+        <style>
+                @font-face {
+                        font-family: TESTFONT;
+                        src: url("*");
+                }
+
+                @page {
+                        size: 210mm 297mm;
+                        margin: 15mm;
+                }
+
+                body {
+                        margin: 0;
+                }
+
+                p,
+                body {
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                }
+
+                .section {
+                        page-break-before: always;
+                }
+
+                .fullbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .fullbox>* {
+                        margin-left: 10mm;
+                        margin-right: 10mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        text-align: center;
+                }
+
+                .halfbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .halfbox>* {
+                        flex: 0 0 100mm;
+                        margin-left: 5mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        border-top: 1pt solid black;
+                        text-align: left;
+                        __overflow: hidden;
+                }
+
+                .thirdbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .thirdbox>* {
+                        flex: 0 0 65mm;
+                        margin-left: 5mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        border-top: 1pt solid black;
+                        text-align: left;
+                        __overflow: hidden;
+                }
+
+                p.info {
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-size: 8pt;
+                        line-height: 10pt;
+                        margin-top: 3pt;
+                        margin-bottom: 10pt;
+                        font-variation-settings: 'wght' 300;
+                        letter-spacing: 0;
+                        word-spacing: 0;
+                        color: brown;
+                }
+
+                .test {
+                        font-family: 'TESTFONT';
+                        font-size: 144pt;
+                        line-height: 176pt;
+                        _font-variation-settings: 'wght' 300;
+                        letter-spacing: 0;
+                        word-spacing: -.2em;
+                        color: black;
+                }
+
+                .test_XL {
+                        font-family: 'TESTFONT';
+                        font-size: 400pt;
+                        line-height: 600pt;
+                        _font-variation-settings: 'wght' 300;
+                        letter-spacing: 0;
+                        word-spacing: 2em;
+                        color: black;
+                }
+        </style>
+</head>
+
+<body>
+
+        <div class="fullbox section">
+                <div class="block">
+                        <div class="test" lang="de">
+                                <p>a b c d e f g h i j k l m n o p q r s t u v w x y z ä ö ü ß A B C D E F G H I J K L M
+                                        N O P Q R S T U V W X Y Z Ä Ö Ü & 1 2 3 4 5 6 7 8 9 0 </p>
+                        </div>
+                </div>
+        </div>
+
+</body>
+
+</html>

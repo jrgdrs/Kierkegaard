@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+
+        <style>
+                @font-face {
+                        font-family: TESTFONT;
+                        src: url("*");
+                }
+
+                @page {
+                        size: 210mm 297mm;
+                        margin: 15mm;
+                }
+
+                body {
+                        margin: 0;
+                }
+
+                p
+                body {
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                }
+
+                .section {
+                        page-break-before: always;
+                }
+
+                .fullbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .fullbox>* {
+                        margin-left: 5mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        text-align: left;
+                }
+
+                .halfbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .halfbox>* {
+                        flex: 0 0 100mm;
+                        margin-left: 5mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        border-top: 1pt solid black;
+                        text-align: left;
+                        __overflow: hidden;
+                }
+
+                .thirdbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        page-break-before: always;
+                }
+
+                .thirdbox>* {
+                        flex: 0 0 65mm;
+                        margin-left: 5mm;
+                        margin-bottom: 10mm;
+                        page-break-inside: avoid;
+                        border-top: 1pt solid black;
+                        text-align: left;
+                        __overflow: hidden;
+                }
+
+                p.info {
+                        font-family: Georgia 'Times New Roman' Times serif;
+                        font-size: 8pt;
+                        line-height: 10pt;
+                        margin-top: 3pt;
+                        margin-bottom: 10pt;
+                        font-variation-settings: 'wght' 300;
+                        letter-spacing: 0;
+                        word-spacing: 0;
+                        color: brown;
+                }
+
+
+                .test {
+                        font-family: 'TESTFONT';
+                        font-size: 12pt;
+                        line-height: 16pt;
+                        _font-variation-settings: 'wght' 300;
+                        letter-spacing: 0;
+                        word-spacing: 0;
+                        color: black;
+                }
+        </style>
+</head>
+<body>
+
+    <div class="fullbox section">
+        <div class="block">
+                <p class="test" lang="de">
+                        ab abend Abend aber Aber acht AG Aktien alle Alle allein allen aller allerdings Allerdings alles als Als also alt alte alten am Am amerikanische amerikanischen Amt an An andere anderen anderer anderes ändern anders Anfang Angaben Angebot angesichts Angst Ansicht Anteil April Arbeit arbeiten Arbeitsplätze Art auch Auch auf Auf Aufgabe aufgrund Auftrag Augen August aus Aus Ausland Außerdem außerdem Ausstellung Auto 
+                        bald Bank Banken Bau Bayern bedeutet Bedeutung begann Beginn beginnt Behörden bei Bei beide beiden beim Beim Beispiel beispielsweise bekannt bekommen Bereich bereit bereits Bericht berichtet berichtete Berlin Berliner besonders besser besteht besten Besucher betonte Bevölkerung bevor bezeichnet bieten bietet Bild Bilder bin bis Bis bisher bislang bleiben bleibt Blick blieb Boden Bonn Bonner Börse braucht Bremen bringen bringt Buch Bühne Bundesregierung Bundesrepublik Bürger Bürgermeister bzw
+                        CDU Chance Chancen Chef China CSU 
+                        da Da dabei Dabei dadurch dafür dagegen daher damals damit Damit danach dann Dann daran darauf darf darin darüber darum darunter das Das daß dass Daß Daten davon dazu Dazu DDR dem Dem den Den denen denn Denn dennoch der Der deren derzeit des deshalb Deshalb dessen deutlich deutsche Deutsche deutschen Deutschen Deutschland Dezember die Die Dienstag dies Dies diese Diese diesem diesen dieser Dieser dieses Dieses direkt Diskussion DM doch Doch Dollar Donnerstag dort Dort dpa Dr. drei Drittel dritten Druck du durch Durch durchaus dürfen dürfte 
+                        eben ebenfalls ebenso ehemalige ehemaligen eher eigene eigenen eigentlich ein Ein eine Eine einem einen Einen einer eines einfach einige einigen einmal Einsatz einst einzelnen einzige Eltern Ende endlich entscheiden Entscheidung entschieden entwickelt Entwicklung er Er Erfolg Ergebnis erhalten erklärt erklärte erneut erreichen erreicht erst Erst erste ersten erstmals erwarten erwartet erzählt es Es etwa etwas EU Euro Europa europäischen Experten 
+                        Fall fällt Familie fand fast FDP Februar Feld fest Film finden findet Firma Firmen Folge Folgen fordert forderte Form Frage Fragen Frankfurt Frankfurter Frankreich französischen Frau Frauen frei freilich Freitag früher früheren führen führt Führung fünf Funktion für Für 
+                        gab ganz ganze ganzen gar gebe geben gebracht Gefahr geführt gefunden gegeben gegen gegenüber gehen gehören gehört geht gekommen Geld gelten gemacht gemeinsam genannt genau genommen genug geplant geplanten gerade Gericht gesagt gesamte gesamten Geschäft Geschichte gesehen Gesellschaft Gesetz gesetzt Gespräch gestellt gestern Gewalt gewesen gewinnen geworden gibt gilt ging gleich gleichen gleichzeitig GmbH groß große großen großer größte größten Grund Grünen Gruppe gut gute guten 
+                        habe haben Hälfte hält halten Hamburg Hamburger Hand Handel handelt hat hatte hätte hatten hätten häufig Hauptstadt Haus Hause heißt helfen her heraus Herr heute Heute heutigen hier Hier hieß Hilfe hin hinaus hingegen hinter hoch hohe Höhe hohen 
+                        ich Ich Idee ihm ihn ihnen ihr Ihr ihre Ihre ihrem ihren ihrer ihres im Im immer immer wieder immerhin in In indem Industrie Informationen innerhalb ins insbesondere insgesamt Interesse internationalen Internet inzwischen ist Ist Italien 
+                        ja Jahr Jahre Jahren Jahres jährlich Januar Japan je jede jedem jeden jedenfalls jeder jedes jedoch jetzt Jetzt jeweils Juli junge jungen Juni 
+                        kam kamen Kampf kann kaum kein keine keinen keiner Kilometer Kind Kinder Kindern Kirche klar kleine kleinen knapp Koalition Kollegen Köln kommen kommenden kommt könne können konnte könnte konnten könnten Konzept Kopf Kosten Kreis Krieg Kritik Kultur Kunden künftig Kunst kurz 
+                        lag Lage Land Länder Ländern Landes lang lange langen längst lassen läßt läuft laut Leben leben lediglich leicht Leiter letzte letzten Leute Liebe liegen liegt ließ London Lösung Luft 
+                        machen macht Macht machte Mädchen mag Mai mal Mal man Man Mann Männer Mannschaft Mark Markt März Medien mehr Mehr mehrere Mehrheit meine meint meinte Meinung meist meisten Mensch Menschen Meter mich Milliarden Millionen mindestens Minister Ministerpräsident Minuten Mio mir mit Mit Mitarbeiter Mitglieder Mitte Mittel mittlerweile Mittwoch möchte möglich Möglichkeit Monate Monaten Montag Moskau Mrd München Münchner Musik muß müsse müssen mußte mußten müßten Mutter 
+                        nach Nach nachdem nächsten Nacht Nähe nahm Namen nämlich natürlich neben Neben nehmen neu neue neuen neuer neues neun New York nicht Nicht nicht nur nichts nie niemand nimmt noch Noch November nun Nun nur Nur 
+                        ob Ob oben obwohl oder offen offenbar öffentlichen Öffentlichkeit oft ohne ohnehin Oktober Opfer Ort Osten 
+                        paar Paris Parlament Partei Parteien per Personen Peter Platz Politik Politiker politische politischen Polizei Position Präsident Präsidenten Preis pro Problem Probleme Produktion Programm Projekt Prozent Publikum Punkte 
+                        Rahmen Raum rechnen recht Recht Rede Regierung Region Reihe Richter richtig Richtung Rolle Roman rund russischen Rußland 
+                        Sache sagen sagt sagte sah Saison Samstag schaffen scheint schließlich Schließlich schnell schon Schon Schritt Schule Schüler schwer sechs sehen sehr sei seien sein Sein seine Seine seinem seinen seiner seines seit Seit Seite Seiten selbst Selbst September setzen setzt sich sicher Sicherheit Sicht sie Sie sieben Sieg sieht sind Situation so So sofort sogar sogenannten Sohn solche solchen Soldaten soll solle sollen sollte sollten Sommer sondern Sonntag sonst sowie sowohl später SPD Spiel spielen Spieler spielt sprach Sprache sprechen Sprecher spricht Staat Staaten Stadt stand stark stärker statt stehen steht Stelle stellen Stellen stellt stellte stets Stimmen Straße Streit Stück Studenten Stunde Stunden Stuttgart Stuttgarter suchen System 
+                        Tag Tage Tagen tatsächlich Teil teilte Theater Thema Titel Tochter Tod tragen Trainer trotz Trotz tun 
+                        über Über überhaupt übernehmen Uhr um Um Umsatz und Und Universität uns unsere unserer unter Unter unter anderem Unternehmen Unterstützung Urteil USA 
+                        Vater Verein Verfahren Verfügung vergangenen Vergangenheit Vergleich Verhandlungen verhindern verkauft verlassen verletzt verloren verschiedenen versucht Vertreter verwendet viel viele Viele vielen vielleicht vier völlig vom von Von vor Vor vor allem Vor allem vorbei Vorjahr Vorsitzende 
+                        Wahl wählen während Während war wäre waren wären warum was Was Wasser weder Weg wegen weil weiß Weise weit weiter weitere weiteren weiterhin welche Welt WELT weltweit wenig wenige wenigen weniger wenn Wenn Wer wer werde werden Werk Wert Westen wichtig wie Wie wieder will wir Wir wird wirklich Wirtschaft wissen wo Woche Wochen Wochenende wohl wolle wollen wollte wollten worden Wort wurde würde wurden würden 
+                        z.B. Zahl Zahlen zehn zeigen zeigt zeigte Zeit Zeiten ziehen Ziel zu Zu zudem zufolge zugleich Zukunft zuletzt zum Zum zum Beispiel zumindest zunächst zur Zur zurück zusammen Zusammenarbeit Zusammenhang Zuschauer zuvor zwar Zwar zwei Zwei zweite zweiten zwischen zwölf 
+                </p>
+        </div>
+</div>
+
+<div class="fullbox section">
+        <div class="block">
+                <p class="test" lang="de">
+                        a A ability able about above access according account across action added addition additional address administration after After again against agency ago agreed agreement air Air all All allow allows almost along already also Although although always America American among amount an An analysis analyst analysts and And announced annual another any Apple application applications approach April are area areas around as As asked assets Association at At AT August authorities available average away 
+                        back Bank bank banks base based basis be became because become been before began begin behind being believe below best better between bid big bill billion black board Board bond bonds book both Both British budget building built Bush business businesses but But buy buying by By 
+                        C Calif California call called calls came campaign can can't cannot capabilities capital car card cars case cases cash cent central cents certain chairman change changes charge charges chief children city City claims clear close closed Co code color come comes command comment commercial Commission committee Committee common communications companies company company's compared complete complex computer Computer computers concern conditions conference Congress considered continue continued contract control Corp corporate cost costs could countries country course court Court create created credit current currently customers cut 
+                        D data Data database date David day days deal death debt December decided decision declined defense demand Democratic Department department described design designed develop developed development did didn't died different difficult directly director discussed disk display distribution do document does doesn't doing dollar Dollars don't done DOS down drive drives drug due during 
+                        each earlier early earnings East easy economic economy effect effort efforts eight either employees end ended energy enough environment equipment especially estimated Europe European even Even ever every example Exchange exchange executive existing expect expected expects 
+                        face fact fall family far feature features federal Federal fell few field figures file filed files final financial find fire firm firms first First fiscal five following food for For force forces foreign form former found four free French Friday from full function functions funds further future futures 
+                        gain gas gave general General German Germany get getting give given go going good got government graphics great group Group groups growing growth 
+                        had half hand hard hardware has have having he He head health held help her here high higher him his His hit hold home hours House house how however However 
+                        I I'm IBM if If II image important in In Inc include included includes including income increase increased index industrial industry inflation information insurance interest interface International international into investigation investment investors involved is isn't issue issues it It it's It's its itself 
+                        J James January Japan Japanese job jobs John July June just 
+                        keep key killed kind know known LAN language large largest last Last late later latest law lead leader leaders leading least led left less let level levels life light like likely limited line lines list little local London long longer look looking Los loss losses lost lot low lower 
+                        Mac machine machines Macintosh made main major make makes making man management manager Manager managers many Many March market marketing markets may May me means meet meeting member members memory men method Microsoft might miles military million model models Monday money month months more most Most move Mr Mr. Mrs. Ms. much multiple must my 
+                        N name named nation's National national near nearly necessary need needed needs net network networks never new New news next night no No North not November now Now nuclear number numbers 
+                        October of off offer offered offering offers office Office officer official officials often oil old on On once one One only open operating operation operations options or order OS other Other others our out output outside over own 
+                        P package paid paper part particularly parts party Party past pay PC people per percent performance period personal place plan planned plans plant play point points police policy political position possible potential Pounds power present presented president President press pressure previous price priced prices printer private probably problem problems process processing processor produce product production products profit profits program programming programs project proposal proposed provide provided provides public purchase put quality quarter question 
+                        R RAM range rate rates rather reached read Reagan real really reason received recent recently record reduce release released remain report reported reports require required requirements requires research response result results return revenue review right rights rise Robert role rose rule rules run running runs 
+                        S said sale sales same San Saturday say saying says scheduled school screen second securities security see seems seen sell selling Senate senior sent separate September series server service Service services set seven several share shares she She short should show showed shown shows side significant similar simple since Since single six size small so So software Software sold some Some something soon source sources South Soviet space special specific speed spending spokesman staff standard standards start started state State statement States states still stock Stock stocks storage strategy Street strong structure students study such Sunday supply support supports system System systems Systems 
+                        T take taken takes taking talks tax team technical technology telephone television terms test tests Texas text than that That the The their them then there There these These they They thing things think third this This those though thought three through Thursday time times to To today together told too took tools top total toward trade trading training trial troops try trying Tuesday turn turned two Two type 
+                        U UK under Union union unit United units University Unix until up us US use used user users uses using value various vendors version very via vice video view volume vote want wanted wants war was Washington water way we We Wednesday week weeks well went were West what What when When where whether which while While White who whose why will Windows with With within without women won won't word work workers working works world World would X year years yen yesterday yet York you You your 
+                </p>
+        </div>
+</div>
+
+<div class="fullbox section">
+        <div class="block">
+                <p class="test" lang="de">
+                        a A accord acheter actifs action actionnaires actions activité activités actuel actuelle actuellement affaires affiche afin ailleurs ainsi Ainsi ait Allemagne alors Alors américain américaine an analystes année années ans appel assez atteindre atteint au Au aucun aucune aujourd'hui Aujourd'hui aura aurait aussi autant autorités autour autre Autre autres aux Aux avaient avait avant avec Avec avoir avons avril ayant 
+                        B baisse banque Banque banques bas base BBL beaucoup BEF Belgacom belge Belge belges Belgique belle bénéfice bénéfices bénéficiaire besoin bien Bien biens blanc bois bon bonne bonnes bons Bourse bout Bruxelles budget bureau but 
+                        C C'est c'est cadre call campagne capacité capital car Car carte cas cause ce Ce Ceci cela Cela celle celle-ci celles celui celui-ci centrale centre cependant certain certaine certaines certains Certains ces Ces cet Cet cette Cette ceux chacun change changement chaque Chaque charge chef cher chez Chez chiffre chiffres choix chose choses chute cinq clair classique client clients coeur collection comme Comme Comment comment commerce commercial Commission communication compagnie compris compte comptes concerne concurrence condition conditions confiance connu conseil conserver consommation constitue construction continue contraire contrat contre corps couleur couleurs coup coupon courant cours court création Crédit crédit créer crise croissance culture 
+                        d D d'abord d'achat d'actions d'affaires d'ailleurs d'autant d'autres d'avoir d'entre d'entreprise d'un d'une dans Dans date davantage de De début décembre décidé décision DEM demande départ depuis Depuis dernier derniers des Des désormais deux Deux devant développement développer devenir devenu devient devra devraient devrait différence différentes différents difficile dire directement directeur direction dispose distribution dit divers diverses dividende division dix doit doivent dollar dollars domaine donc donne donné données donner dont dossier double doute droit droits du Du durant durée 
+                        E économique économiques effet également électronique éléments élevé elle Elle elles Elles en En encore enfants Enfin enfin ensemble ensuite Ensuite entendu entre entreprise entreprises environ essentiellement est estime et Et étaient était étant Etats-Unis etc été étrangers études eu euro Europe européen européenne européennes européens eux évidemment éviter exemple existe explique Express 
+                        F face faible faire fait famille faudra faut fax FB femme femmes février fil filiale film fin finalement financier financiers firme fiscale Flandre fois fonction fond fonds font force formation forme formule fort forte fortement frais franc France francs fut 
+                        gamme garantie général Générale générale généralement genre gens gestion gouvernement grand grande grandes grands gros groupe groupes guerre 
+                        h hausse haut haute heures homme hommes hors ici il Il ils Ils important importante informations informatique international internationale Internet investissement investissements investisseurs J j'ai J'ai Jacques jamais janvier Japon je Je Jean jeu jeune jeunes joue jouer jour jours juge juillet juin jusqu jusqu'au juste justice 
+                        l L l'a l'achat l'action l'aide l'an l'année l'argent l'art l'autre l'avenir l'eau l'économie l'emploi l'ensemble l'entreprise l'époque l'Etat l'étranger l'Europe l'évolution l'exercice l'heure l'homme l'image l'indice l'industrie l'investisseur l'objet l'occasion l'on l'ordre l'un l'une l'Union la La lancé lancer laquelle large largement le Le lequel les Les leur leurs lieu ligne lire liste livre logiciel loi loin Londres long longtemps longue lors lorsque Lorsque lui Luxembourg 
+                        M ma mai main maintenant mais Mais maison majorité mal malgré Malgré management manque marché marchés marketing marque mars matériel maximum me meilleur meilleure membres mémoire mes mesure mesures met mettre Michel Microsoft mieux milieu milliard milliards millions minimum ministre mis mise mode moi moindre moins mois moitié moment mon monde mondial mondiale monétaire monnaie montant montre mort mouvement moyen moyenne moyens musique 
+                        n n'a n'en n'est n'était n'ont n'y nature ne néanmoins nécessaire net nettement New ni niveau NLG noir nom nombre nombreuses nombreux non nos notamment notre Notre nous Nous nouveau nouveaux nouvel nouvelle nouvelles novembre numéro objectif obligations octobre oeuvre of offre on On ont opération opérations Or ou outre 
+                        P page pages papier par Par parce parents parfaitement parfois Paris parle parler parmi Parmi part partenaires parti participation particulier partie partir pas Pas passage passe passé passer patron payer pays Pays-Bas PC peine pendant pense perdu performances période permet permettent permettre permis personne personnel personnes perspectives perte petit petite petites petits peu peut peuvent Philippe pied Pierre place placement plan plein plupart plus Plus plusieurs PME poids point points politique politiques population porte portefeuille position possibilité possibilités possible potentiel pour Pour pourquoi pourra pourraient pourrait pourtant Pourtant pouvoir pratique précise premier premiers prend prendre présence présent présente président presque presse pression preuve prévisions prévoit prévu prime principal principe pris prise prix processus prochain proche production produit produits professionnels programme programmes progression projet projets propos propose propre propres protection pu public publicité publics publique puis puisque put 
+                        qu qu'elle qu'elles qu'en qu'il qu'ils qu'on qu'un qu'une qualité quand Quand Quant quant quatre que Que quel quelque quelques question questions qui quoi raison raisons rapide rapidement rapport réalisé réaliser réalité récemment recherche réduction réduire référence régime région Région relativement rendement rendre représente reprise réseau réseaux responsable responsables reste restent rester résultat résultats retour retrouve revanche revenu revenus revient rien risque risques rouge route rue 
+                        s S s'agit s'en s'est s'il s'y sa Sa sait salle sans Sans santé savoir se second seconde secteur secteurs sécurité sein selon Selon semaine semaines semble semestre sens septembre sera serait série seront service services ses seul seule seulement si Si signifie simple simplement site situation situe six social sociale société sociétés soient soit solution somme sommes son Son sont sorte sous souvent stratégie structure style suffit suis suite suivre sujet supérieur sur Sur surtout 
+                        table tableau taille tandis tant tard taux technique techniques technologie tel Tél tél téléphone telle tels temps tendance tenir tenu terme termes terrain terre texte tient tiers titre titres total totalement toujours tour tous Tous tout Tout toute toutefois toutes train traitement travail travailler travailleurs travaux travers trimestre trois trop trouve trouver type 
+                        un Un une Une unique uniquement USD va valeur valeurs Van vaut vendre venir vente ventes véritable vers version veut via vie viennent vient ville vin vins vite vitesse voie voir voire voit voiture voitures volume vont vos votre vous Vous vrai vraiment vu vue Wallonie wallonne Windows y yeux York 
+                </p>
+        </div>
+</div>
+
+<div class="fullbox section">
+        <div class="block">
+                <p class="test" lang="de">
+                        a A aan Aan aanbod aandacht aandeel aandelen aantal acht achter actief activiteiten advies af afgelopen akkoord al Al aldus algemeen algemene alle Alle alleen Alleen allemaal allerlei alles als Als altijd Amerika Amerikaanse amper Amsterdam and ander andere anderen anders Antwerpen Antwerpse antwoord april augustus auto 
+                        Bank bank banken basis bedraagt bedrag bedrijf bedrijven beeld beelden beetje BEF begin beginnen begint begon begonnen beide bekend belang belangrijk belangrijke belangrijkste beleggers beleid Belgische ben bent bepaald bepaalde beperkt beroep best bestaan bestaande bestaat beste bestuur betaalt betalen betekent beter betere betreft betrokken beurs bevolking bezig bezit bezoek bieden biedt bij Bij bijna bijvoorbeeld bijzonder binnen bleef bleek blijft blijkt blijven boek boeken bouwen boven Bovendien bovendien bracht brengen brengt Britse Brussel Brusselse buiten buitenland buitenlandse buurt 
+                        centrale centrum China cijfers concurrentie contract controle crisis cultuur CVP d 
+                        D daar Daar daarbij daarmee daarna Daarnaast Daarom daarom daarvan daarvoor dag dagen dan Dan dat Dat de De DE december deed deel den denk denken denkt der derde dergelijke dertig des deze Deze dezelfde die Die dienst diensten dingen directeur dit Dit diverse doel doen doet dollar dood door Door drie druk du duidelijk Duitse Duitsland dus duur 
+                        echt echte echter economie economische een Een Eén één eens eerder eerst eerste eeuw eigen eigenlijk eind einde elk elkaar elke en En én ene enige enkel enkele enorme er Er erg erin erop ervan ervaring eten Europa Europees Europese even eveneens evolutie extra 
+                        familie februari feit film fr frank Frankrijk Franse functie 
+                        gaan gaat gaf gang gebeuren gebeurt gebied gebouw gebracht gebruik gebruiken gebruikt gedaan geeft geen Geen gegeven gegevens gehad geheel gehouden gekomen geld geldt geleden gelijk gemaakt gemeente gemeenten gemiddeld gemiddelde Generale genoeg genoemd genomen Gent geschiedenis geschreven gesteld geval gevallen geven gevoel gevolg gevolgen gevonden geweest gewone gewoon geworden gezegd gezet gezien ging gingen gisteren goed goede graag gratis groei groep grond groot grootste grote groter grotere gulden 
+                        haalt haar had hadden halen half hand handen hard heb hebben hebt heeft heel heet hele helemaal helft helpen hem hen het Het hetzelfde hier Hier hij Hij hoe Hoe hoeft Hoewel hoge hoger hogere honderd hoofd hoofdstad hoog hoop horen houden houdt huidige huis hulp hun Hun 
+                        idee ieder iedereen iemand iets ik Ik immers in In inderdaad Info informatie inmiddels internationale Internet investeringen invloed Irak is Is Italiaanse 
+                        J jaar Jan januari Japan Japanse jaren je Je John jonge jongeren jongste juist juiste juli juni 
+                        kader Kamer kan kans kant kapitaal keer kennen kennis kent keuze kiezen kijken kilometer kind kinderen klaar klant klanten klassieke klein kleine koers komen komende komt kon konden kopen kort korte kost kosten kracht kreeg kregen krijgen krijgt kunnen kunst kunt kwaliteit kwam kwamen 
+                        l la La laag laat laatste lage lager land landen lang lange langer langs laten later Le leden leger leggen legt leiden leidt leren les leven leveren levert lezen licht liet liever liggen ligt lijken lijkt lijn lokale Londen loopt lopen Luc 
+                        maakt maakte maand maanden maar Maar maart Maastricht maatregelen macht mag maken man manier mannen Marc markt me mee meer Meer meerderheid meest meestal meeste mei men Men mens mensen merk merken met Met meteen meter middelen mij mijn Mijn miljard miljoen minder minister minstens minuten misschien Misschien moderne moeder moeilijk moest moesten moet moeten mogelijk mogelijke mogelijkheden mogelijkheid mogen moment momenteel mooi mooie morgen muziek
+                        na Na naam naar naast nam namelijk namen nationale natuurlijk nauwelijks Nederland Nederlands Nederlandse neemt nemen net Net New niemand niet Niet niets nieuw nieuwe nieuws niveau NLG nodig noemen nog Nog nogal nooit november NRC nu Nu nummer 
+                        of Of ogen ogenblik oktober om Om omdat Omdat omgeving omzet onder Onder onderneming ondernemingen onderwijs onderzoek ongeveer onlangs ons ontstaan ontwikkeling onze Onze oog ooit ook Ook oorlog op Op opdracht open opleiding oplossing opnieuw organisatie oud oude ouders over Over overal overheid overigens 
+                        paar Parijs parlement partij partijen pas Paul per periode personeel Peter plaats plaatsen plan plannen politie politiek politieke portefeuille positie positief praktijk praten precies premier president prijs prijzen proberen probleem problemen procent product producten productie programma project publiek punten 
+                        raad recente recht reden reeds reeks regering rekening rendement rente rest resultaat resultaten richting risico rol rond ruim ruimte Russische 
+                        s samen samenwerking school schreef schrijven sector september sinds Sinds situatie slecht slechts smaak snel sociale sommige soms soort speciale speelt spelen sprake spreken staan staat stad stap start Staten steeds steeg stellen stelt sterk sterke steun stijging stijl stond strijd studenten studie stuk stukken succes systeem 
+                        t taal tafel te tegelijk tegen tegenover tekst tel Tel telkens telt ten tentoonstelling ter terecht termijn terug terwijl Terwijl the The thuis tien tijd tijdens Tijdens to toch Toch toe toekomst toen Toen ton toont top tot Tot totaal totale traditionele trekken trouwens tussen twee Twee tweede Tweede twintig 
+                        u U uit Uit uiteindelijk uiteraard Unie USD uur uw 
+                        vaak vader vallen valt van Van vanaf vandaag Vandaag vanuit vast vaste veel Veel vele ver veranderen verband verder Verenigde verhaal verkiezingen verkocht verkoop verkopen verleden verlies verloren verschil verschillende vertelt vertrouwen verwacht verwachten via vier vijf vind vinden vindt Vlaams Vlaamse Vlaanderen vlak vliegje voelen voeren vol voldoende volgen volgend volgende Volgens volgens volgt volledig volledige vond voor Voor vooral Vooral voorbeeld voorbije voordeel voorlopig voorzien voorzitter vorig vorige vorm vormen vraag vraagt vragen vrij vrije vroeg vroeger vrouw vrouwen VS 
+                        waar waarbij waarde waardoor waarin waarmee waarom Waarom waarop waarschijnlijk waarvan wachten wanneer Wanneer want Want waren was wat Wat water we We week weer weet weg weinig weken wel welke wellicht werd werden wereld werk werken werknemers werkt wet weten wie Wie wij Wij wijn wijze wil wilde willen winst wist witte woord woorden worden wordt 
+                        York z'n zaak zag zaken zal zat ze Ze zeer zeggen zegt zei zeker zelf zelfs Zelfs zes zet zetten zeven zich zichzelf zie zien ziet zij Zij zijn Zijn zin zit zitten zo Zo zo'n zoals Zoals zodat zoek zoeken zogenaamde zomer zonder zorgen zorgt zou zouden zoveel zowat zowel zullen zwaar zware zwarte 
+                </p>
+        </div>
+</div>
+           
+<div class="fullbox section">
+        <div class="block">
+                <p class="test" lang="de">
+                        a acción actividades acuerdo adelante además adiós ahora algo alguien allá allí alto aunque año así asunto
+                        bajo banco bien blanco bonito buscar
+                        cada cambio casa casi cierto ciudad claro cómo cosas cosa creo cuenta cuando cuánto cuál cuáles cuántos comunidad compañeros compañía común comprender contigo comenzar cambios carrera
+                        dar datos debe decir decisión demás dentro día días dice dinero donde dos durante
+                        educación él ella ellas ellos embargo empezar en enero entonces entre era eres ese eso esta estaba están está este estos esto estudiantes estudio ellos ejemplo esfuerzo español estación escribir escuchar especialmente
+                        familia favor fácil forma fuerzas fuera fuerte función futuro
+                        ganar gracias gran grupo guerra gobierno
+                        haber habla hablar hacer hasta hay hecho hermano hermanos hijo historia hora hoy hombre
+                        idea igual importante imposible incluir información inglés interés interesante ir
+                        jamás joven jóvenes jueves juego juntos julio junio jefe
+                        lado leer lejos le gusta lengua ley libro lugar luego lunes
+                        madre manera mano más mayor mejor mientras mismo momento mucho muchas mundo mujeres martes mañana
+                        nada nadie nación necesario necesidad nosotros noche nombre nueva nuevo nunca número niños niña nivel nacional normalmente
+                        mañana niño niña niñez año señor señora España
+                        o obra ocho otra otras otro otros octubre ocasión organización opción opinión
+                        órdenes órgano óptimo operación opción óptica
+                        padre país palabra palabras para parecer parte pasar pequeño persona poco poder política por porque posibilidad poco pregunta primero problema proceso producto pronto pueblo punto puede pueden público
+                        que qué quien quién quienes quiero quiso quizás
+                        realidad realmente razón recibir respecto resultado regresar reunión
+                        saber sacar salir semana siempre ser sería sí sistema situación sobre sociedad sólo solución soy su sus según señor señora sistema situación
+                        tal también tanto tarde te tener tenía tenemos tengo tiempo tiene tienen ti tipo todavía todos todo todas tomar trabajo trabajador trabajadores tú
+                        último una unas uno unos unidad único universidad uso usar útil
+                        vale valor vamos van ver verdad viernes vida viejo viene voz voy
+                        ya yo
+                </p>
+        </div>
+</div>
+
+
+</body>
+</html>
