@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Font Overlay — Drop OTF/TTF</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+<style>
+  body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; padding: 20px; color: #111 }
+  h1 { font-size: 18px; margin: 0 0 8px }
+  .wrap { display:flex; gap:20px; align-items:flex-start }
+  .left { width: 360px }
+  .dropzone { border: 2px dashed #bbb; padding: 18px; border-radius: 8px; text-align:center; background:#fafafa; }
+  .dropzone.dragover { border-color:#4488ff; background:#f0f8ff }
+  .controls { margin-top:12px }
+  input[type="text"] { width:100%; padding:8px; font-size:16px }
+  .list { margin-top:12px; max-height: 48vh; overflow:auto; border:1px solid #eee; padding:8px; border-radius:6px }
+  .entry { display:flex; gap:8px; align-items:center; padding:6px 0; border-bottom:1px solid #f3f3f3 }
+  .entry:last-child { border-bottom:none }
+  .legend { margin-top:12px; font-size:13px }
+  .legend button { margin-left:8px }
+  .canvas { flex:1; min-width:320px; border:1px solid #eee; border-radius:8px; padding:8px; background:#fff }
+  .svgwrap { width:100%; height:72vh; display:flex; align-items:center; justify-content:center; overflow:auto }
+  .svgwrap svg { height:100%; width:auto; max-width:100%; display:block }
+  .toolbar { display:flex; gap:8px; margin-top:8px; align-items:center }
+  .muted { color:#666; font-size:13px }
+  .small { font-size:13px }
+  .msg { margin-top:8px; color:#c33 }
+  .color-picker-pop { font-family: inherit; font-size:13px }
+  .color-picker-pop input[type="text"] { padding:6px; border:1px solid #ddd; border-radius:4px }
+  .color-picker-pop button { padding:6px 8px; margin-left:6px }
+</style>
+</head>
+<body>
+  <h1>Font Overlay Viewer — drop OTF/TTF files</h1>
+  <div class="wrap">
+    <div class="left">
+      <div id="drop" class="dropzone">Drop OTF/TTF files here (multiple drops allowed) or <button id="pick">Choose files</button></div>
+      <div class="controls">
+        <label>Text to render: <input id="text" type="text" value="g" /></label>
+        <div class="toolbar">
+          <label class="small">Stroke width: <input id="strokeWidth" type="number" value="1" min="0" step="0.25" style="width:72px"/></label>
+          <label class="small">Opacity: <input id="opacity" type="number" value="0.6" min="0" max="1" step="0.05" style="width:72px"/></label>
+          <button id="clear">Clear</button>
+          <button id="download">Download SVG</button>
+        </div>
+        <div class="features small" style="margin-top:8px">
+          <div style="margin-bottom:6px">OpenType features (applied to all fonts):</div>
+          <label style="margin-right:6px"><input type="checkbox" data-feature="liga" checked> liga</label>
+          <label style="margin-right:6px"><input type="checkbox" data-feature="dlig"> dlig</label>
+          <label style="margin-right:6px"><input type="checkbox" data-feature="smcp"> smcp</label>
+          <label style="margin-right:6px"><input type="checkbox" data-feature="c2sc"> c2sc</label>
+          <label style="margin-right:6px"><input type="checkbox" data-feature="onum"> onum</label>
+        </div>
+      </div>
+
+      <div class="list" id="files"></div>
+      <div class="legend muted">Drop fonts progressively — they will be appended and rendered. Baseline = y=0; scaling uses character bbox height and horizontal centering.</div>
+      <div id="featuresActive" class="muted small" style="margin-top:6px">Features: liga, kern, calt</div>
+      <div id="msg" class="msg"></div>
+    </div>
+
+    <div class="canvas">
+      <div class="svgwrap" id="svgwrap">
+        <!-- svg will be injected here -->
+      </div>
+    </div>
+  </div>
+
+<script src="https://unpkg.com/opentype.js@1.3.4/dist/opentype.min.js"></script>
+<script>
+(() => {
+  const drop = document.getElementById('drop')
+  const pick = document.getElementById('pick')
+  const filesEl = document.getElementById('files')
+  const textEl = document.getElementById('text')
+  const svgwrap = document.getElementById('svgwrap')
+  const clearBtn = document.getElementById('clear')
+  const downloadBtn = document.getElementById('download')
+  const strokeWidthEl = document.getElementById('strokeWidth')
+  const opacityEl = document.getElementById('opacity')
+  const msg = document.getElementById('msg')
+
+  let entries = [] // {name, font, label, unitsPerEm, ascender, color, visible}
+
+  function hsla(h,s,l,a){ return `hsla(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l)}%, ${a})` }
+
+  function computePathBounds(path) {
+    let minX=Infinity, minY=Infinity, maxX=-Infinity, maxY=-Infinity
+    const cmds = path.commands
+    for (let cmd of cmds) {
+      if (cmd.x != null && !Number.isNaN(cmd.x)) { minX = Math.min(minX, cmd.x); maxX = Math.max(maxX, cmd.x) }
+      if (cmd.x1 != null && !Number.isNaN(cmd.x1)) { minX = Math.min(minX, cmd.x1); maxX = Math.max(maxX, cmd.x1) }
+      if (cmd.x2 != null && !Number.isNaN(cmd.x2)) { minX = Math.min(minX, cmd.x2); maxX = Math.max(maxX, cmd.x2) }
+      if (cmd.y != null && !Number.isNaN(cmd.y)) { minY = Math.min(minY, cmd.y); maxY = Math.max(maxY, cmd.y) }
+      if (cmd.y1 != null && !Number.isNaN(cmd.y1)) { minY = Math.min(minY, cmd.y1); maxY = Math.max(maxY, cmd.y1) }
+      if (cmd.y2 != null && !Number.isNaN(cmd.y2)) { minY = Math.min(minY, cmd.y2); maxY = Math.max(maxY, cmd.y2) }
+    }
+    if (!isFinite(minX)) return null
+    return {minX, minY, maxX, maxY}
+  }
+
+  function pathToD(path) {
+    let d = ''
+    for (let c of path.commands) {
+      if (c.type === 'M') d += `M ${c.x} ${c.y} `
+      else if (c.type === 'L') d += `L ${c.x} ${c.y} `
+      else if (c.type === 'C') d += `C ${c.x1} ${c.y1} ${c.x2} ${c.y2} ${c.x} ${c.y} `
+      else if (c.type === 'Q') d += `Q ${c.x1} ${c.y1} ${c.x} ${c.y} `
+      else if (c.type === 'Z') d += 'Z '
+    }
+    return d.trim()
+  }
+
+  function addFilesList() {
+    filesEl.innerHTML = ''
+    entries.forEach((e, i) => {
+      const div = document.createElement('div')
+      div.className = 'entry'
+      div.innerHTML = `<input type="checkbox" ${e.visible ? 'checked' : ''} data-i="${i}"> <div style="flex:1"><strong title="${e.versionRaw ? e.versionRaw.replace(/"/g,'&quot;') : ''}">${e.name}${e.version ? ' — v'+e.version : ''}</strong><div class="muted">${e.label || ''}${e.versionRaw ? ' • name.version: ' + e.versionRaw : ''}</div></div> <div class="swatch" data-i="${i}" style="width:18px;height:12px;background:${e.color};border:1px solid #000;cursor:pointer" title="Click to change color"></div>`
+      filesEl.appendChild(div)
+      // attach click handler for color editing
+      const sw = div.querySelector('.swatch')
+      if (sw) sw.addEventListener('click', ()=> openColorPicker(i, sw))
+    })
+    filesEl.querySelectorAll('input[type=checkbox]').forEach(cb => cb.addEventListener('change', e=>{
+      const i = Number(cb.dataset.i)
+      entries[i].visible = cb.checked
+      render()
+    }))
+
+  }
+
+  function rgbToHex(rgb) {
+    if (!rgb) return null
+    const m = rgb.match(/rgba?\((\d+)\s*,\s*(\d+)\s*,\s*(\d+)/i)
+    if (!m) return null
+    const r = Number(m[1]).toString(16).padStart(2,'0')
+    const g = Number(m[2]).toString(16).padStart(2,'0')
+    const b = Number(m[3]).toString(16).padStart(2,'0')
+    return `#${r}${g}${b}`
+  }
+
+  function normalizeVersion(v) {
+    if (!v) return null
+    let s = String(v).trim()
+    // strip leading 'Version' or 'version'
+    const mVer = s.match(/version\s*(.+)/i)
+    if (mVer) s = mVer[1].trim()
+    // try to extract first numeric sequence like 1.234 or 1.0
+    const m = s.match(/[0-9]+(?:\.[0-9]+)*/)
+    if (m) return m[0]
+    // fallback to trimmed string (shortened)
+    return s.split(/;|\s/)[0]
+  }
+
+  function closeColorPickers() {
+    document.querySelectorAll('.color-picker-pop').forEach(p => p.remove())
+    document.removeEventListener('click', window._colorPickerDocHandler)
+    window._colorPickerDocHandler = null
+  }
+
+  function openColorPicker(i, anchorEl) {
+    closeColorPickers()
+    const e = entries[i]
+    const rect = anchorEl.getBoundingClientRect()
+    const popup = document.createElement('div')
+    popup.className = 'color-picker-pop'
+    popup.style.position = 'absolute'
+    popup.style.left = (rect.right + window.scrollX + 8) + 'px'
+    popup.style.top = (rect.top + window.scrollY) + 'px'
+    popup.style.padding = '8px'
+    popup.style.background = '#fff'
+    popup.style.border = '1px solid #ccc'
+    popup.style.borderRadius = '6px'
+    popup.style.boxShadow = '0 2px 10px rgba(0,0,0,0.15)'
+    popup.style.zIndex = 9999
+    popup.innerHTML = `<div style="display:flex;gap:8px;align-items:center"><input id="colpick" type="color" value="#000000"/><input id="coltext" type="text" style="width:180px" value="" placeholder="CSS color value (e.g. #abc, rgba(...), hsla(...))" /></div><div style="margin-top:8px;text-align:right"><button id="colapply">Apply</button> <button id="colcancel">Cancel</button></div><div id="colerr" style="color:#c33;margin-top:6px"></div>`
+    document.body.appendChild(popup)
+    const colInput = popup.querySelector('#colpick')
+    const textInput = popup.querySelector('#coltext')
+    const errEl = popup.querySelector('#colerr')
+    // derive a hex value for the color input when possible
+    const computed = window.getComputedStyle(anchorEl).backgroundColor
+    const hex = rgbToHex(computed) || '#000000'
+    colInput.value = hex
+    textInput.value = e.color
+    colInput.addEventListener('input', ()=> textInput.value = colInput.value)
+
+    function apply() {
+      const val = textInput.value.trim()
+      // test validity by assigning to a temp element
+      const test = document.createElement('div')
+      test.style.color = ''
+      test.style.color = val
+      document.body.appendChild(test)
+      const ok = !!window.getComputedStyle(test).color
+      test.remove()
+      if (!ok) { errEl.textContent = 'Invalid CSS color'; return }
+      e.color = val
+      // update UI
+      addFilesList()
+      render()
+      popup.remove()
+    }
+    popup.querySelector('#colapply').addEventListener('click', apply)
+    popup.querySelector('#colcancel').addEventListener('click', ()=> popup.remove())
+
+    // close on outside click
+    window._colorPickerDocHandler = function(ev){ if (!popup.contains(ev.target) && ev.target !== anchorEl) popup.remove() }
+    setTimeout(()=> document.addEventListener('click', window._colorPickerDocHandler), 0)
+  }
+
+  // OpenType feature controls
+  const featureCheckboxEls = Array.from(document.querySelectorAll('.features input[type=checkbox]'))
+  function getFeaturesObj() {
+    const obj = {}
+    featureCheckboxEls.forEach(cb => {
+      const feat = cb.dataset.feature
+      if (!feat) return
+      obj[feat] = !!cb.checked
+    })
+    return obj
+  }
+  const featuresActiveEl = document.getElementById('featuresActive')
+  featureCheckboxEls.forEach(cb => cb.addEventListener('change', ()=>{ if (featuresActiveEl) featuresActiveEl.textContent = 'Features: ' + Object.keys(getFeaturesObj()).filter(k=>getFeaturesObj()[k]).join(', '); render() }))
+  if (featuresActiveEl) featuresActiveEl.textContent = 'Features: ' + Object.keys(getFeaturesObj()).filter(k=>getFeaturesObj()[k]).join(', ')
+
+
+  function render() {
+    msg.textContent = ''
+    const text = textEl.value || 'g'
+    if (!text) return
+
+    // prepare paths for each visible entry
+    const prepared = []
+    for (let e of entries) {
+      if (!e.visible) continue
+      try {
+        // draw native with baseline at y=0 and fontSize = unitsPerEm
+        const featuresObj = getFeaturesObj()
+        const path = e.font.getPath(text, 0, 0, e.unitsPerEm, { features: featuresObj })
+        const b = computePathBounds(path)
+        if (!b) { console.warn('empty bounds for', e.name); continue }
+        const nativeHeight = b.maxY - b.minY
+        prepared.push({e, path, bounds: b, nativeHeight})
+      } catch (err) {
+        console.warn('error for ', e.name, err)
+      }
+    }
+    if (prepared.length === 0) {
+      svgwrap.innerHTML = '<div class="muted">No visible fonts with glyphs.</div>'
+      return
+    }
+    const maxH = Math.max(...prepared.map(p => p.nativeHeight))
+    // scale and center each path horizontally, baseline remains y=0
+    const scaled = []
+    prepared.forEach((p, idx) => {
+      const scale = maxH / p.nativeHeight
+      const path = p.path
+      // apply scaling
+      for (let cmd of path.commands) {
+        if (cmd.x != null) cmd.x *= scale
+        if (cmd.x1 != null) cmd.x1 *= scale
+        if (cmd.x2 != null) cmd.x2 *= scale
+        if (cmd.y != null) cmd.y *= scale
+        if (cmd.y1 != null) cmd.y1 *= scale
+        if (cmd.y2 != null) cmd.y2 *= scale
+      }
+      // recompute bounds
+      const b = computePathBounds(path)
+      if (!b) return
+      // center horizontally: move so centerX == 0
+      const cx = (b.minX + b.maxX)/2
+      for (let cmd of path.commands) {
+        if (cmd.x != null) cmd.x -= cx
+        if (cmd.x1 != null) cmd.x1 -= cx
+        if (cmd.x2 != null) cmd.x2 -= cx
+      }
+      const b2 = computePathBounds(path)
+      scaled.push({e: p.e, path, bounds: b2})
+    })
+    // union bounds to compute viewbox
+    let u = {minX: Infinity, minY: Infinity, maxX: -Infinity, maxY: -Infinity}
+    for (let s of scaled) {
+      if (!s.bounds) continue
+      u.minX = Math.min(u.minX, s.bounds.minX)
+      u.minY = Math.min(u.minY, s.bounds.minY)
+      u.maxX = Math.max(u.maxX, s.bounds.maxX)
+      u.maxY = Math.max(u.maxY, s.bounds.maxY)
+    }
+    if (!isFinite(u.minX)) {
+      svgwrap.innerHTML = '<div class="muted">Nothing to render</div>'
+      return
+    }
+    const pad = Math.max((u.maxX - u.minX), (u.maxY - u.minY)) * 0.05 + 10
+    const viewMinX = Math.floor(u.minX - pad)
+    const viewMinY = Math.floor(u.minY - pad)
+    const viewW = Math.ceil(u.maxX - u.minX + pad * 2)
+    const viewH = Math.ceil(u.maxY - u.minY + pad * 2)
+
+    const strokeW = Number(strokeWidthEl.value) || 1
+    const opacity = Number(opacityEl.value) || 0.6
+
+    // build svg
+    const svgParts = []
+    svgParts.push(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewMinX} ${viewMinY} ${viewW} ${viewH}" preserveAspectRatio="xMidYMid meet" style="height:100%; width:auto; max-width:100%;">`)
+    svgParts.push(`<rect x="${viewMinX}" y="${viewMinY}" width="${viewW}" height="${viewH}" fill="#fff"/>`)
+    // baseline
+    svgParts.push(`<line x1="${viewMinX}" y1="0" x2="${viewMinX + viewW}" y2="0" stroke="#000" stroke-width="0.7" opacity="0.8" />`)
+
+    scaled.forEach((s, idx) => {
+      const d = pathToD(s.path)
+      const color = s.e.color
+      svgParts.push(`<path d="${d}" fill="none" stroke="${color}" stroke-width="${strokeW}px" stroke-linejoin="round" stroke-linecap="round" opacity="${opacity}"/>`)
+    })
+
+    svgParts.push('</svg>')
+
+    svgwrap.innerHTML = svgParts.join('\n')
+  }
+
+  function handleFiles(flist) {
+    msg.textContent = ''
+    const arr = Array.from(flist).filter(f => /\.(otf|ttf)$/i.test(f.name))
+    if (arr.length === 0) { msg.textContent = 'No OTF/TTF files found in drop.'; return }
+    let nextColorSeed = entries.length ? (entries.length * 35) % 360 : 0
+    arr.forEach((file, idx) => {
+      const reader = new FileReader()
+      reader.onload = function(ev) {
+        try {
+          const ab = ev.target.result
+          const font = opentype.parse(ab)
+          const name = (font.names && (font.names.fullName && (font.names.fullName.en || Object.values(font.names.fullName)[0]))) || file.name
+          const label = file.name
+          const versionRaw = (font.names && font.names.version && (font.names.version.en || Object.values(font.names.version)[0])) || (font.tables && font.tables.head && font.tables.head.fontRevision ? String(font.tables.head.fontRevision) : null)
+          const version = normalizeVersion(versionRaw)
+          const color = hsla((nextColorSeed + idx*30) % 360, 70, 40, 0.9)
+          entries.push({name, label, versionRaw, version, font, unitsPerEm: font.unitsPerEm || 1000, ascender: font.ascender || Math.round((font.unitsPerEm||1000)*0.8), color, visible:true})
+          addFilesList()
+          render()
+        } catch (err) {
+          console.error('failed parse', file.name, err)
+          msg.textContent = 'Failed to parse one or more font files. See console.'
+        }
+      }
+      reader.onerror = function() { msg.textContent = 'Failed to read '+file.name }
+      reader.readAsArrayBuffer(file)
+    })
+  }
+
+  ;[ 'dragenter','dragover','dragleave','drop' ].forEach(ev => drop.addEventListener(ev, e=>e.preventDefault()))
+  drop.addEventListener('dragover', ()=> drop.classList.add('dragover'))
+  drop.addEventListener('dragleave', ()=> drop.classList.remove('dragover'))
+  drop.addEventListener('drop', (ev) => {
+    drop.classList.remove('dragover')
+    handleFiles(ev.dataTransfer.files)
+  })
+
+  pick.addEventListener('click', () => {
+    const ip = document.createElement('input')
+    ip.type='file'
+    ip.multiple = true
+    ip.accept = '.otf,.ttf'
+    ip.onchange = ()=>handleFiles(ip.files)
+    ip.click()
+  })
+
+  textEl.addEventListener('input', () => render())
+  strokeWidthEl.addEventListener('input', () => render())
+  opacityEl.addEventListener('input', () => render())
+
+  clearBtn.addEventListener('click', ()=>{ entries = []; addFilesList(); render(); msg.textContent=''; })
+
+  downloadBtn.addEventListener('click', ()=>{
+    const svgEl = svgwrap.querySelector('svg')
+    if (!svgEl) { msg.textContent='No SVG to download'; return }
+    const s = new XMLSerializer().serializeToString(svgEl)
+    const blob = new Blob([s], {type:'image/svg+xml'})
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = (document.getElementById('text').value || 'glyph') + '-overlay.svg'
+    document.body.appendChild(a); a.click(); a.remove()
+    URL.revokeObjectURL(url)
+  })
+
+  // small initial help sample: load bundled Kierkegaard-Italic if present
+  // noop
+
+})()
+</script>
+</body>
+</html>
