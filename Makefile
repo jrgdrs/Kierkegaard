@@ -87,3 +87,6 @@ update: venv
 
 	git commit -m "Update requirements" requirements.txt
 	git push
+
+open:
+	open -n "/Applications/Glyphs 3.app" --args /Users/jdrees/github/Kierkegaard/sources/Kierkegaard.glyphs
