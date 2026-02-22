@@ -13,7 +13,7 @@
         }
 
         const stage = document.getElementById('animationContainer');
-        const fontVariants = ['Kierkegaard-Regular', 'Kierkegaard-Italic', 'Kierkegaard-SemiBold', 'Kierkegaard-SemiBoldItalic', 'Kierkegaard-ExtraBold', 'Kierkegaard-ExtraBoldItalic'];
+        const fontVariants = ['KierkegaardSerifDisplay-Regular','KierkegaardSerifDisplay-Italic','KierkegaardSerifDisplay-Medium','KierkegaardSerifDisplay-MediumItalic','KierkegaardSerifDisplay-SemiBold','KierkegaardSerifDisplay-SemiBoldItalic','KierkegaardSerifDisplay-Bold','KierkegaardSerifDisplay-BoldItalic','KierkegaardSerifDisplay-ExtraBold','KierkegaardSerifDisplay-ExtraBoldItalic'];
         function pickRandom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
         function randomTertiaryColor() {
             const hue = Math.floor(Math.random() * 360);

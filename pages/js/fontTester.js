@@ -112,9 +112,13 @@ function createFontTester(options) {
     //     toggleBtn.textContent = visible ? '▾' : '▸';
     // });
 
-    let visible = false; // Controls starten ausgeblendet
-    controls.classList.add('hidden'); // verstecken
-    toggleBtn.textContent = '▸'; // Pfeil für versteckt
+    //let visible = false; // Controls starten ausgeblendet
+    //controls.classList.add('hidden'); // verstecken
+    //toggleBtn.textContent = '▸'; // Pfeil für versteckt
+
+    let visible = true; // Controls starten eingeblendet
+    controls.classList.add('visible'); // nicht verstecken
+    toggleBtn.textContent = '▾'; // Pfeil für da
 
     header.addEventListener('click', ()=>{
         visible = !visible;
