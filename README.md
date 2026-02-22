@@ -52,86 +52,81 @@ Kierkegaard is available under the <a href="https://scripts.sil.org/OFL" target=
 
 ### 400 Regular
 
-![Sample Image](documentation/images/Image-Kierkegaard-Regular.png)
-![Sample Image](documentation/images/Image-KierkegaardSC-Regular.png)
-![Sample Image](documentation/images/Image-Kierkegaard-Italic.png)
-![Sample Image](documentation/images/Image-KierkegaardSC-Italic.png)
+![Sample Image](documentation/images/Image-KierkegaardSerifText-Regular.png)
+![Sample Image](documentation/images/Image-KierkegaardSerifDisplay-Regular.png)
+
+![Sample Image](documentation/images/Image-KierkegaardSerifTextSC-Regular.png)
+![Sample Image](documentation/images/Image-KierkegaardSerifDisplaySC-Regular.png)
+
+![Sample Image](documentation/images/Image-KierkegaardSerifText-Italic.png)
+![Sample Image](documentation/images/Image-KierkegaardSerifDisplay-Italic.png)
+
+![Sample Image](documentation/images/Image-KierkegaardSerifTextSC-Italic.png)
+![Sample Image](documentation/images/Image-KierkegaardSerifDisplaySC-Italic.png)
 
 ### 500 Medium
 
-![Sample Image](documentation/images/Image-Kierkegaard-Medium.png)
-![Sample Image](documentation/images/Image-KierkegaardSC-Medium.png)
-![Sample Image](documentation/images/Image-Kierkegaard-MediumItalic.png)
-![Sample Image](documentation/images/Image-KierkegaardSC-MediumItalic.png)
+![Sample Image](documentation/images/Image-KierkegaardSerifText-Medium.png)
 
 ### 600 Semibold
 
-![Sample Image](documentation/images/Image-Kierkegaard-SemiBold.png)
-![Sample Image](documentation/images/Image-KierkegaardSC-SemiBold.png)
-![Sample Image](documentation/images/Image-Kierkegaard-SemiBoldItalic.png)
-![Sample Image](documentation/images/Image-KierkegaardSC-SemiBoldItalic.png)
+![Sample Image](documentation/images/Image-KierkegaardSerifText-SemiBold.png)
 
 ### 700 Bold
 
-![Sample Image](documentation/images/Image-Kierkegaard-Bold.png)
-![Sample Image](documentation/images/Image-KierkegaardSC-Bold.png)
-![Sample Image](documentation/images/Image-Kierkegaard-BoldItalic.png)
-![Sample Image](documentation/images/Image-KierkegaardSC-BoldItalic.png)
+![Sample Image](documentation/images/Image-KierkegaardSerifText-Bold.png)
 
 ### 800 Extrabold
 
-![Sample Image](documentation/images/Image-Kierkegaard-ExtraBold.png)
-![Sample Image](documentation/images/Image-KierkegaardSC-ExtraBold.png)
-![Sample Image](documentation/images/Image-Kierkegaard-ExtraBoldItalic.png)
-![Sample Image](documentation/images/Image-KierkegaardSC-ExtraBoldItalic.png)
+![Sample Image](documentation/images/Image-KierkegaardSerifText-ExtraBold.png)
 
 
 ## Proof Sheets
 
-![Sample Image](documentation/images/Imperial-Kierkegaard-Regular.png)
+![Sample Image](documentation/images/Imperial-KierkegaardSerifText-Regular.png)
 
 ### Regular
 
-- [Kierkegaard-Regular - Kerning](documentation/proofs/3-Kerning-Kierkegaard-Regular.pdf)
-- [Kierkegaard-Regular - Frequency](documentation/proofs/4-Frequency-Kierkegaard-Regular.pdf)
-- [Kierkegaard-Regular - Diacritics](documentation/proofs/7-Diacritics-Kierkegaard-Regular.pdf)
+- [Kierkegaard-Regular - Kerning](documentation/proofs/3-Kerning-KierkegaardSerifText-Regular.pdf)
+- [Kierkegaard-Regular - Frequency](documentation/proofs/4-Frequency-KierkegaardSerifText-Regular.pdf)
+- [Kierkegaard-Regular - Diacritics](documentation/proofs/7-Diacritics-KierkegaardSerifText-Regular.pdf)
 
 
-![Sample Image](documentation/images/Imperial-Kierkegaard-Italic.png)
+![Sample Image](documentation/images/Imperial-KierkegaardSerifText-Italic.png)
 
 ### Italic
 
-- [Kierkegaard-Italic - Kerning](documentation/proofs/3-Kerning-Kierkegaard-Italic.pdf)
-- [Kierkegaard-Italic - Frequency](documentation/proofs/4-Frequency-Kierkegaard-Italic.pdf)
-- [Kierkegaard-Italic - Diacritics](documentation/proofs/7-Diacritics-Kierkegaard-Italic.pdf)
+- [Kierkegaard-Italic - Kerning](documentation/proofs/3-Kerning-KierkegaardSerifText-Italic.pdf)
+- [Kierkegaard-Italic - Frequency](documentation/proofs/4-Frequency-KierkegaardSerifText-Italic.pdf)
+- [Kierkegaard-Italic - Diacritics](documentation/proofs/7-Diacritics-KierkegaardSerifText-Italic.pdf)
 
 
-![Sample Image](documentation/images/Imperial-Kierkegaard-ExtraBold.png)
+![Sample Image](documentation/images/Imperial-KierkegaardSerifText-ExtraBold.png)
 
 ### Extrabold
 
 
-- [Kierkegaard-Extrabold - Kerning](documentation/proofs/3-Kerning-Kierkegaard-ExtraBold.pdf)
-- [Kierkegaard-Extrabold - Frequency](documentation/proofs/4-Frequency-Kierkegaard-ExtraBold.pdf)
-- [Kierkegaard-Extrabold - Diacritics](documentation/proofs/7-Diacritics-Kierkegaard-ExtraBold.pdf)
+- [Kierkegaard-Extrabold - Kerning](documentation/proofs/3-Kerning-KierkegaardSerifText-ExtraBold.pdf)
+- [Kierkegaard-Extrabold - Frequency](documentation/proofs/4-Frequency-KierkegaardSerifText-ExtraBold.pdf)
+- [Kierkegaard-Extrabold - Diacritics](documentation/proofs/7-Diacritics-KierkegaardSerifText-ExtraBold.pdf)
 
 
 
-![Sample Image](documentation/images/Imperial-Kierkegaard-ExtraBoldItalic.png)
+![Sample Image](documentation/images/Imperial-KierkegaardSerifText-ExtraBoldItalic.png)
 
 ### Extrabold Italic
 
-- [Kierkegaard-Extrabold Italic - Kerning](documentation/proofs/3-Kerning-Kierkegaard-ExtraBoldItalic.pdf)
-- [Kierkegaard-Extrabold Italic - Frequency](documentation/proofs/4-Frequency-Kierkegaard-ExtraBoldItalic.pdf)
-- [Kierkegaard-Extrabold Italic - Diacritics](documentation/proofs/7-Diacritics-Kierkegaard-ExtraBoldItalic.pdf)
+- [Kierkegaard-Extrabold Italic - Kerning](documentation/proofs/3-Kerning-KierkegaardSerifText-ExtraBoldItalic.pdf)
+- [Kierkegaard-Extrabold Italic - Frequency](documentation/proofs/4-Frequency-KierkegaardSerifText-ExtraBoldItalic.pdf)
+- [Kierkegaard-Extrabold Italic - Diacritics](documentation/proofs/7-Diacritics-KierkegaardSerifText-ExtraBoldItalic.pdf)
 
 
 ![Sample Image](documentation/promotions/charmap.png)
 
 ## Character Maps
 
-- [Character set](documentation/maps/charset-Kierkegaard-Regular.html.pdf)
-- [Construction plans](documentation/maps/atlas-Kierkegaard-Regular.html.pdf)
+- [Character set](documentation/maps/charset-KierkegaardSerifText-Regular.html.pdf)
+- [Construction plans](documentation/maps/atlas-KierkegaardSerifText-Regular.html.pdf)
 
 ![Sample Image](documentation/promotions/fontspecimen.png)
 
@@ -147,13 +142,9 @@ Kierkegaard is available under the <a href="https://scripts.sil.org/OFL" target=
 - [Crops (English)](documentation/specimens/Crops.pdf)
 - [Dumas (French)](documentation/specimens/Dumas.pdf)
 - [Enrödi (Hungarian)](documentation/specimens/Endrődi.pdf)
-- [Etik (Danish)](documentation/specimens/Etik.pdf)
 - [Heisenberg (Vietnamese)](documentation/specimens/Heisenberg.pdf)
 - [Martens (Dutch)](documentation/specimens/Martens.pdf)
-- [Parisii (French)](documentation/specimens/Parisii.pdf)
 - [Picon (Spanish)](documentation/specimens/Picon.pdf)
-- [Schiller (English)](documentation/specimens/Schiller.pdf)
-- [Woolf (English)](documentation/specimens/Woolf.pdf)
 
 
 ![Sample Image](documentation/promotions/pages.png)
@@ -163,7 +154,7 @@ Kierkegaard is available under the <a href="https://scripts.sil.org/OFL" target=
 [Test the typeface online](https://jrgdrs.github.io/Kierkegaard/)
 
 
-![Sample Image](documentation/images/cid-KierkegaardSC-Medium.png)
+![Sample Image](documentation/images/Imperial-KierkegaardSerifTextSC-Bold.png)
 
 ## Issue Support
 
