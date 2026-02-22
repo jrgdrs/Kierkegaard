@@ -25,6 +25,8 @@ Every glyph in Kierkegaard has been designed to support thoughtful expression. T
 ![Sample Image](documentation/promotions/Kierkegaard_Page_03.png)
 Weight range overview — from Light to Bold, including italics — illustrating contrast and balance.
 
+### v1.036 also contains two optical sizes with Text and Display variants,
+
 
 ## Philosophy and Inspiration
 
