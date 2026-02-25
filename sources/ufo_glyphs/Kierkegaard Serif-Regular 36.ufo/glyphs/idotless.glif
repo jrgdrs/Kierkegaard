@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotless" format="2">
+  <advance width="242"/>
+  <unicode hex="0131"/>
+  <anchor x="110" y="0" name="bottom"/>
+  <anchor x="220" y="-14" name="ogonek"/>
+  <anchor x="110" y="500" name="top"/>
+  <outline>
+    <contour>
+      <point x="8" y="-5" type="line"/>
+      <point x="83" y="1"/>
+      <point x="159" y="1"/>
+      <point x="233" y="-5" type="curve"/>
+      <point x="233" y="15" type="line"/>
+      <point x="189" y="21"/>
+      <point x="165" y="33"/>
+      <point x="164" y="70" type="curve" smooth="yes"/>
+      <point x="161" y="145"/>
+      <point x="165" y="408"/>
+      <point x="165" y="421" type="curve" smooth="yes"/>
+      <point x="165" y="468"/>
+      <point x="169" y="490"/>
+      <point x="171" y="523" type="curve"/>
+      <point x="120" y="499"/>
+      <point x="43" y="473"/>
+      <point x="8" y="460" type="curve"/>
+      <point x="8" y="443" type="line"/>
+      <point x="38" y="426"/>
+      <point x="74" y="393"/>
+      <point x="76" y="366" type="curve" smooth="yes"/>
+      <point x="79" y="329"/>
+      <point x="81" y="107"/>
+      <point x="78" y="52" type="curve" smooth="yes"/>
+      <point x="77" y="33"/>
+      <point x="43" y="21"/>
+      <point x="8" y="15" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:36 +0000</string>
+    </dict>
+  </lib>
+</glyph>

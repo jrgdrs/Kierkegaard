@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="nine.dnom" format="2">
+  <advance width="373"/>
+  <outline>
+    <contour>
+      <point x="41" y="-46" type="line"/>
+      <point x="203" y="-8"/>
+      <point x="343" y="130"/>
+      <point x="369" y="282" type="curve" smooth="yes"/>
+      <point x="390" y="405"/>
+      <point x="334" y="495"/>
+      <point x="238" y="495" type="curve" smooth="yes"/>
+      <point x="149" y="495"/>
+      <point x="71" y="426"/>
+      <point x="55" y="330" type="curve" smooth="yes"/>
+      <point x="37" y="232"/>
+      <point x="90" y="160"/>
+      <point x="179" y="160" type="curve" smooth="yes"/>
+      <point x="207" y="160"/>
+      <point x="244" y="176"/>
+      <point x="273" y="201" type="curve"/>
+      <point x="227" y="102"/>
+      <point x="129" y="17"/>
+      <point x="30" y="-9" type="curve"/>
+    </contour>
+    <contour>
+      <point x="179" y="210" type="curve" smooth="yes"/>
+      <point x="137" y="210"/>
+      <point x="116" y="260"/>
+      <point x="130" y="336" type="curve" smooth="yes"/>
+      <point x="141" y="407"/>
+      <point x="186" y="454"/>
+      <point x="239" y="454" type="curve" smooth="yes"/>
+      <point x="295" y="454"/>
+      <point x="319" y="381"/>
+      <point x="294" y="273" type="curve"/>
+      <point x="274" y="236"/>
+      <point x="227" y="210"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

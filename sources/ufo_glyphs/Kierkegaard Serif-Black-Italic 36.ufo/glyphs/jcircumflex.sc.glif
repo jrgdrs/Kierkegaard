@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="jcircumflex.sc" format="2">
+  <advance width="380"/>
+  <outline>
+    <component base="j.sc"/>
+    <component base="circumflexcomb" xOffset="-64" yOffset="51"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 11:51:30 +0000</string>
+    </dict>
+  </lib>
+</glyph>

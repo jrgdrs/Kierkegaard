@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lcaron.sc" format="2">
+  <advance width="620"/>
+  <outline>
+    <component base="l.sc"/>
+    <component base="caroncomb.alt" xOffset="209" yOffset="-181" identifier="8DFE51EE"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 20:28:59 +0000</string>
+      <key>public.objectLibs</key>
+      <dict>
+        <key>8DFE51EE</key>
+        <dict>
+          <key>com.schriftgestaltung.alignment</key>
+          <integer>-1</integer>
+        </dict>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

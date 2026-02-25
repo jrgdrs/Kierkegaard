@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="bitcoin" format="2">
+  <advance width="760"/>
+  <unicode hex="20BF"/>
+  <outline>
+    <component base="B"/>
+    <component base="dblverticalbar" yScale="0.1153" xOffset="115" yOffset="-63"/>
+    <component base="dblverticalbar" yScale="0.1153" xOffset="115" yOffset="750"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

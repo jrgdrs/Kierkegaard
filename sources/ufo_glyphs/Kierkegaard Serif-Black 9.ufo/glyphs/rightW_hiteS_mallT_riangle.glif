@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="rightWhiteSmallTriangle" format="2">
+  <advance width="1020"/>
+  <unicode hex="25B9"/>
+  <outline>
+    <contour>
+      <point x="220" y="630" type="line"/>
+      <point x="220" y="-40" type="line"/>
+      <point x="800" y="295" type="line"/>
+    </contour>
+    <contour>
+      <point x="280" y="526" type="line"/>
+      <point x="680" y="295" type="line"/>
+      <point x="280" y="64" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

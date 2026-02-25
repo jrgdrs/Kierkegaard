@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="acute.old" format="2">
+  <advance width="280"/>
+  <anchor x="98" y="500" name="_top"/>
+  <outline>
+    <contour>
+      <point x="67" y="561" type="line"/>
+      <point x="243" y="762" type="line"/>
+      <point x="172" y="805" type="line"/>
+      <point x="15" y="587" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

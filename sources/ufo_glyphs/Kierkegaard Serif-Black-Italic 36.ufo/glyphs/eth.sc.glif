@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="eth.sc" format="2">
+  <advance width="720"/>
+  <anchor x="271" y="0" name="bottom"/>
+  <anchor x="232" y="536" name="top"/>
+  <outline>
+    <contour>
+      <point x="42" y="259" type="line"/>
+      <point x="358" y="259" type="line"/>
+      <point x="374" y="326" type="line"/>
+      <point x="58" y="326" type="line"/>
+    </contour>
+    <component base="D" xScale="0.8502" yScale="0.7659" yxScale="-0.0202" xOffset="16"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

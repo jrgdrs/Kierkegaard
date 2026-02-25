@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="northWestArrow" format="2">
+  <advance width="1020"/>
+  <unicode hex="2196"/>
+  <outline>
+    <contour>
+      <point x="728" y="81" type="line"/>
+      <point x="782" y="135" type="line"/>
+      <point x="360" y="557" type="line"/>
+      <point x="653" y="550" type="line"/>
+      <point x="652" y="624" type="line"/>
+      <point x="238" y="624" type="line"/>
+      <point x="238" y="210" type="line"/>
+      <point x="311" y="208" type="line"/>
+      <point x="304" y="505" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

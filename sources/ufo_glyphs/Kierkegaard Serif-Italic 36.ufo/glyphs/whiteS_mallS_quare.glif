@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="whiteSmallSquare" format="2">
+  <advance width="980"/>
+  <unicode hex="25AB"/>
+  <outline>
+    <contour>
+      <point x="358" y="220" type="line"/>
+      <point x="622" y="220" type="line"/>
+      <point x="622" y="483" type="line"/>
+      <point x="358" y="483" type="line"/>
+    </contour>
+    <contour>
+      <point x="377" y="239" type="line"/>
+      <point x="377" y="464" type="line"/>
+      <point x="603" y="464" type="line"/>
+      <point x="603" y="239" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

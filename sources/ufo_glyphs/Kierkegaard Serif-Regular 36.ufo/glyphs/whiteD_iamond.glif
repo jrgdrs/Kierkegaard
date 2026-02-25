@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="whiteDiamond" format="2">
+  <advance width="978"/>
+  <unicode hex="25C7"/>
+  <outline>
+    <contour>
+      <point x="105" y="352" type="line"/>
+      <point x="490" y="-33" type="line"/>
+      <point x="873" y="351" type="line"/>
+      <point x="488" y="736" type="line"/>
+    </contour>
+    <contour>
+      <point x="160" y="352" type="line"/>
+      <point x="488" y="680" type="line"/>
+      <point x="818" y="351" type="line"/>
+      <point x="490" y="23" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

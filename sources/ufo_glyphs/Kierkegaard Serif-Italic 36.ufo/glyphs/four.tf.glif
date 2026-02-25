@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="four.tf" format="2">
+  <advance width="520"/>
+  <outline>
+    <contour>
+      <point x="244" y="-16" type="curve"/>
+      <point x="275" y="-21"/>
+      <point x="303" y="-15"/>
+      <point x="334" y="0" type="curve"/>
+      <point x="343" y="60"/>
+      <point x="353" y="123"/>
+      <point x="364" y="183" type="curve"/>
+      <point x="396" y="182"/>
+      <point x="462" y="181"/>
+      <point x="495" y="179" type="curve"/>
+      <point x="507" y="250" type="line"/>
+      <point x="475" y="248"/>
+      <point x="407" y="246"/>
+      <point x="374" y="245" type="curve"/>
+      <point x="400" y="403"/>
+      <point x="427" y="549"/>
+      <point x="457" y="707" type="curve"/>
+      <point x="367" y="707" type="line"/>
+      <point x="12" y="245" type="line"/>
+      <point x="1" y="184" type="line"/>
+      <point x="83" y="185"/>
+      <point x="198" y="186"/>
+      <point x="280" y="184" type="curve"/>
+      <point x="269" y="124"/>
+      <point x="255" y="45"/>
+    </contour>
+    <contour>
+      <point x="76" y="245" type="curve"/>
+      <point x="358" y="627" type="line"/>
+      <point x="337" y="494"/>
+      <point x="314" y="373"/>
+      <point x="291" y="243" type="curve"/>
+      <point x="222" y="242"/>
+      <point x="144" y="243"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

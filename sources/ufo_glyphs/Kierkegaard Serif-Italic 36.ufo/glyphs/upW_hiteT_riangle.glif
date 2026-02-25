@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="upWhiteTriangle" format="2">
+  <advance width="980"/>
+  <unicode hex="25B3"/>
+  <outline>
+    <contour>
+      <point x="155" y="0" type="line"/>
+      <point x="825" y="0" type="line"/>
+      <point x="490" y="688" type="line"/>
+    </contour>
+    <contour>
+      <point x="203" y="29" type="line"/>
+      <point x="490" y="619" type="line"/>
+      <point x="777" y="29" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="quoteright" format="2">
+  <advance width="220"/>
+  <unicode hex="2019"/>
+  <outline>
+    <contour>
+      <point x="84" y="739" type="curve" smooth="yes"/>
+      <point x="125" y="739"/>
+      <point x="158" y="767"/>
+      <point x="158" y="803" type="curve" smooth="yes"/>
+      <point x="158" y="838"/>
+      <point x="130" y="866"/>
+      <point x="94" y="866" type="curve" smooth="yes"/>
+      <point x="53" y="866"/>
+      <point x="21" y="838"/>
+      <point x="21" y="803" type="curve" smooth="yes"/>
+      <point x="21" y="767"/>
+      <point x="49" y="739"/>
+    </contour>
+    <contour>
+      <point x="41" y="574" type="line"/>
+      <point x="111" y="627"/>
+      <point x="163" y="728"/>
+      <point x="158" y="803" type="curve"/>
+      <point x="106" y="803" type="line"/>
+      <point x="99" y="723"/>
+      <point x="60" y="632"/>
+      <point x="12" y="583" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

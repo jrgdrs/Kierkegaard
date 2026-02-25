@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="four.dnom" format="2">
+  <advance width="395"/>
+  <outline>
+    <contour>
+      <point x="330" y="-14" type="curve"/>
+      <point x="358" y="-13"/>
+      <point x="399" y="-7"/>
+      <point x="428" y="2" type="curve"/>
+      <point x="426" y="62"/>
+      <point x="425" y="140"/>
+      <point x="425" y="200" type="curve"/>
+      <point x="460" y="200"/>
+      <point x="469" y="198"/>
+      <point x="505" y="196" type="curve"/>
+      <point x="505" y="266" type="line"/>
+      <point x="470" y="264"/>
+      <point x="460" y="262"/>
+      <point x="424" y="261" type="curve"/>
+      <point x="423" y="419"/>
+      <point x="426" y="542"/>
+      <point x="430" y="700" type="curve"/>
+      <point x="336" y="700" type="line"/>
+      <point x="20" y="261" type="line"/>
+      <point x="20" y="200" type="line"/>
+      <point x="108" y="200"/>
+      <point x="247" y="200"/>
+      <point x="335" y="200" type="curve"/>
+      <point x="335" y="140"/>
+      <point x="332" y="47"/>
+    </contour>
+    <contour>
+      <point x="73" y="261" type="curve"/>
+      <point x="336" y="620" type="line"/>
+      <point x="338" y="487"/>
+      <point x="336" y="389"/>
+      <point x="336" y="259" type="curve"/>
+      <point x="262" y="258"/>
+      <point x="147" y="259"/>
+    </contour>
+  </outline>
+</glyph>

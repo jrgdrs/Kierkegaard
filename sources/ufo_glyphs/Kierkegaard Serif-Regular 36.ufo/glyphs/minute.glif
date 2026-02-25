@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="minute" format="2">
+  <advance width="198"/>
+  <unicode hex="2032"/>
+  <outline>
+    <component base="quotesingle" xScale="0.9663" xyScale="-0.2572" yScale="0.9663" yxScale="0.2572" xOffset="-157" yOffset="75"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

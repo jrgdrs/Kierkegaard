@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hbar.sc" format="2">
+  <advance width="748"/>
+  <outline>
+    <contour>
+      <point x="39" y="391" type="line"/>
+      <point x="705" y="391" type="line"/>
+      <point x="705" y="422" type="line"/>
+      <point x="39" y="422" type="line"/>
+    </contour>
+    <component base="H" xScale="0.834" yScale="0.7658" xOffset="4"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

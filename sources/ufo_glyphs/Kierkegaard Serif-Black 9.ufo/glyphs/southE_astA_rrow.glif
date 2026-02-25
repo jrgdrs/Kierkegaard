@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="southEastArrow" format="2">
+  <advance width="1020"/>
+  <unicode hex="2198"/>
+  <outline>
+    <contour>
+      <point x="368" y="81" type="line"/>
+      <point x="782" y="81" type="line"/>
+      <point x="782" y="495" type="line"/>
+      <point x="709" y="497" type="line"/>
+      <point x="716" y="200" type="line"/>
+      <point x="292" y="624" type="line"/>
+      <point x="238" y="570" type="line"/>
+      <point x="660" y="148" type="line"/>
+      <point x="367" y="155" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

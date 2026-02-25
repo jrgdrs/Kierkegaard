@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="won" format="2">
+  <advance width="1034"/>
+  <unicode hex="20A9"/>
+  <outline>
+    <component base="W"/>
+    <contour>
+      <point x="10" y="324" type="line"/>
+      <point x="1023" y="324" type="line"/>
+      <point x="1023" y="369" type="line"/>
+      <point x="10" y="369" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

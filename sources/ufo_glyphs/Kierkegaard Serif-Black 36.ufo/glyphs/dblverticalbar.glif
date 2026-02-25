@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dblverticalbar" format="2">
+  <advance width="425"/>
+  <unicode hex="2016"/>
+  <outline>
+    <contour>
+      <point x="85" y="1000" type="line"/>
+      <point x="85" y="-300" type="line"/>
+      <point x="170" y="-300" type="line"/>
+      <point x="170" y="1000" type="line"/>
+    </contour>
+    <contour>
+      <point x="255" y="1000" type="line"/>
+      <point x="255" y="-300" type="line"/>
+      <point x="340" y="-300" type="line"/>
+      <point x="340" y="1000" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

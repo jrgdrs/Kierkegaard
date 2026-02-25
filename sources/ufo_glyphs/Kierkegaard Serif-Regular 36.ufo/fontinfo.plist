@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>ascender</key>
+    <integer>1000</integer>
+    <key>capHeight</key>
+    <integer>700</integer>
+    <key>copyright</key>
+    <string>Copyright 2025 The Kierkegaard Font Project Authors (https://github.com/jrgdrs/Kierkegaard)</string>
+    <key>descender</key>
+    <integer>-300</integer>
+    <key>familyName</key>
+    <string>Kierkegaard Serif</string>
+    <key>openTypeHeadCreated</key>
+    <string>2025/10/05 10:34:53</string>
+    <key>openTypeHheaAscender</key>
+    <integer>1124</integer>
+    <key>openTypeHheaDescender</key>
+    <integer>-500</integer>
+    <key>openTypeHheaLineGap</key>
+    <integer>0</integer>
+    <key>openTypeNameDesigner</key>
+    <string>Jörg Drees</string>
+    <key>openTypeNameDesignerURL</key>
+    <string>http://www.typobold.com</string>
+    <key>openTypeNameLicense</key>
+    <string>This Font Software is licensed under the SIL Open Font License, Version 1.1</string>
+    <key>openTypeNameLicenseURL</key>
+    <string>https://openfontlicense.org</string>
+    <key>openTypeNameManufacturer</key>
+    <string>Jörg Drees</string>
+    <key>openTypeNameManufacturerURL</key>
+    <string>http://www.typobold.com</string>
+    <key>openTypeOS2Selection</key>
+    <array>
+      <integer>7</integer>
+    </array>
+    <key>openTypeOS2Type</key>
+    <array/>
+    <key>openTypeOS2TypoAscender</key>
+    <integer>1124</integer>
+    <key>openTypeOS2TypoDescender</key>
+    <integer>-500</integer>
+    <key>openTypeOS2TypoLineGap</key>
+    <integer>0</integer>
+    <key>openTypeOS2VendorID</key>
+    <string>TBLD</string>
+    <key>openTypeOS2WeightClass</key>
+    <integer>400</integer>
+    <key>openTypeOS2WidthClass</key>
+    <integer>5</integer>
+    <key>openTypeOS2WinAscent</key>
+    <integer>1428</integer>
+    <key>openTypeOS2WinDescent</key>
+    <integer>500</integer>
+    <key>postscriptBlueValues</key>
+    <array>
+      <integer>-16</integer>
+      <integer>0</integer>
+      <integer>500</integer>
+      <integer>516</integer>
+      <integer>542</integer>
+      <integer>558</integer>
+      <integer>700</integer>
+      <integer>716</integer>
+      <integer>1000</integer>
+      <integer>1016</integer>
+    </array>
+    <key>postscriptFontName</key>
+    <string>KierkegaardSerifDisplay-Regular</string>
+    <key>postscriptOtherBlues</key>
+    <array>
+      <integer>-316</integer>
+      <integer>-300</integer>
+    </array>
+    <key>postscriptStemSnapH</key>
+    <array>
+      <integer>41</integer>
+    </array>
+    <key>postscriptStemSnapV</key>
+    <array>
+      <integer>105</integer>
+    </array>
+    <key>styleMapStyleName</key>
+    <string>regular</string>
+    <key>styleName</key>
+    <string>Regular</string>
+    <key>unitsPerEm</key>
+    <integer>1156</integer>
+    <key>versionMajor</key>
+    <integer>1</integer>
+    <key>versionMinor</key>
+    <integer>36</integer>
+    <key>xHeight</key>
+    <integer>500</integer>
+  </dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="kip" format="2">
+  <advance width="680"/>
+  <unicode hex="20AD"/>
+  <outline>
+    <component base="K"/>
+    <contour>
+      <point x="57" y="346" type="line"/>
+      <point x="601" y="346" type="line"/>
+      <point x="609" y="391" type="line"/>
+      <point x="67" y="391" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

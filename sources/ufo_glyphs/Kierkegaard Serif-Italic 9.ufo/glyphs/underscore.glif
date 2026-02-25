@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="underscore" format="2">
+  <advance width="540"/>
+  <unicode hex="005F"/>
+  <outline>
+    <contour>
+      <point x="-94" y="-200" type="line"/>
+      <point x="458" y="-200" type="line"/>
+      <point x="462" y="-175" type="line"/>
+      <point x="-90" y="-175" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

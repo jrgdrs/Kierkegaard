@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="bracketleft" format="2">
+  <advance width="453"/>
+  <unicode hex="005B"/>
+  <outline>
+    <contour>
+      <point x="109" y="-197" type="line"/>
+      <point x="186" y="-177"/>
+      <point x="324" y="-177"/>
+      <point x="401" y="-197" type="curve"/>
+      <point x="401" y="-142" type="line"/>
+      <point x="259" y="-142" type="line"/>
+      <point x="259" y="800" type="line"/>
+      <point x="401" y="800" type="line"/>
+      <point x="401" y="855" type="line"/>
+      <point x="324" y="835"/>
+      <point x="186" y="835"/>
+      <point x="109" y="855" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="downArrow" format="2">
+  <advance width="980"/>
+  <unicode hex="2193"/>
+  <outline>
+    <contour>
+      <point x="490" y="0" type="line"/>
+      <point x="783" y="293" type="line"/>
+      <point x="732" y="346" type="line"/>
+      <point x="527" y="132" type="line"/>
+      <point x="527" y="731" type="line"/>
+      <point x="451" y="731" type="line"/>
+      <point x="451" y="134" type="line"/>
+      <point x="248" y="346" type="line"/>
+      <point x="197" y="293" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

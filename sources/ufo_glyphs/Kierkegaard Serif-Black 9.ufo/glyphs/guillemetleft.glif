@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="guillemetleft" format="2">
+  <advance width="605"/>
+  <unicode hex="00AB"/>
+  <outline>
+    <contour>
+      <point x="487" y="43" type="line"/>
+      <point x="593" y="69" type="line"/>
+      <point x="420" y="276" type="line"/>
+      <point x="593" y="489" type="line"/>
+      <point x="487" y="509" type="line"/>
+      <point x="268" y="276" type="line"/>
+    </contour>
+    <contour>
+      <point x="256" y="55" type="line"/>
+      <point x="362" y="79" type="line"/>
+      <point x="189" y="276" type="line"/>
+      <point x="362" y="479" type="line"/>
+      <point x="256" y="509" type="line"/>
+      <point x="37" y="276" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:37 +0000</string>
+    </dict>
+  </lib>
+</glyph>

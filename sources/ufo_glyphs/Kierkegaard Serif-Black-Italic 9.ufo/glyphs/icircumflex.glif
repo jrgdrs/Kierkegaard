@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="icircumflex" format="2">
+  <advance width="320"/>
+  <unicode hex="00EE"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="circumflexcomb" xScale="0.7017" xOffset="-2" identifier="BB03C763"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2026-02-23 18:51:36 +0000</string>
+      <key>public.objectLibs</key>
+      <dict>
+        <key>BB03C763</key>
+        <dict>
+          <key>com.schriftgestaltung.alignment</key>
+          <integer>-1</integer>
+        </dict>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
