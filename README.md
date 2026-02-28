@@ -18,14 +18,12 @@ Sample set of uppercase and lowercase letters showing the characteristic curved 
 
 Kierkegaard’s anatomy reflects a dialogue between philosophy and form. The slightly curved stems interpret the motion of natural handwriting, suggesting the trace of a broad nib. This approach creates a dynamic rhythm across lines of text, offering an elegant reading experience.
 
-The complete family contains 20 members in five weights, each paired with a matching italic. Additional features include old-style figures, small capitals, and refined character detailing for professional typographic versatility.
+*The complete family contains 20 members in five weights, each paired with a matching italic. Additional features include old-style figures, small capitals, and refined character detailing for professional typographic versatility. Also a text and a display version are offerd.*
 
 Every glyph in Kierkegaard has been designed to support thoughtful expression. The balance of classical proportion and modern restraint makes it suitable for designers seeking harmony between intellectual depth and visual simplicity.
 
 ![Sample Image](documentation/promotions/Kierkegaard_Page_03.png)
 Weight range overview — from Light to Bold, including italics — illustrating contrast and balance.
-
-### v1.036 also contains two optical sizes with Text and Display variants,
 
 
 ## Philosophy and Inspiration

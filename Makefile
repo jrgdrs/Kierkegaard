@@ -33,6 +33,9 @@ cpages:
 cimages: 
 	custom/makeImages.sh
 
+cinsta: 
+	custom/makeInsta.sh
+
 cproofs: 
 	custom/makeProofs.sh
 

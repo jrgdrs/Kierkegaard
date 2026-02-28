@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        @font-face {
+            font-family: TESTFONT;
+            src: url("*");
+        }
+
+        @font-face {
+            font-family: LEERFONT;
+            src: url("assets/Empty-Regular.ttf");
+        }
+
+        @media print {}
+
+        @page {
+            size: 1080px 1440px;
+            margin: 0px;
+        }
+
+        body {}
+
+        p {}
+
+        .sheet {
+            background-color: #000f6f;
+            color: #ffffff;
+            size: 1080px 1440px;
+            margin: 0;
+            padding: 0;
+            padding-left: 22px;
+            padding-top: 22px;
+            border: 0;
+        }
+
+        .sample {
+            font-family: TESTFONT, LEERFONT;
+            font-size: 140px;
+            line-height: 140px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 1036px;
+            text-align: center;
+        }
+
+        .top {
+            font-family: Helvetica;
+            font-size: 40px;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            padding-bottom: 40px;
+            margin-bottom: 20px;
+            border-bottom: 4px solid rgb(80, 106, 255);
+            width: 952px;
+            text-align: center;
+            color: rgb(80, 106, 255);
+        }
+
+        .bottom {
+            font-family: Helvetica;
+            font-size: 40px;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            margin-top: 80px;
+            padding-top: 60px;
+            border-top: 6px solid rgb(255, 255, 255);
+            width: 100%;
+        }
+
+        .block {
+            padding: 40px;
+            width: 1036px;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .left {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body class="sheet">
+
+    <div class="block">
+        <p class="top">
+            <span class="left FONT_NAME"></span>
+        </p>
+    </div>
+
+    <p class="sample">
+        abcdefghijkl<br />mnopqrstu<br />
+        vwxyz,.;:<br />!-$*&@(){}[]<br />
+        ABCDEFGHI<br />JKLMNOPQ<br />
+        RSTUVWXYZ<br />0123456789<br />
+    </p>
+
+    <div class="block">
+        <p class="bottom">
+            <span class="left MY_URL"></span>
+        </p>
+    </div>
+
+</body>
+
+</html>
