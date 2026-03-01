@@ -3,6 +3,12 @@
 @font-face { font-family: Bold; src: url("../../fonts/ttf/KierkegaardSerifText-Bold.ttf");}
 @font-face { font-family: SC; src: url("../../fonts/ttf/KierkegaardSerifTextSC-Regular.ttf");}
 
+@font-face { font-family: DRegular; src: url("../../fonts/ttf/KierkegaardSerifDisplay-Regular.ttf");}
+@font-face { font-family: DItalic; src: url("../../fonts/ttf/KierkegaardSerifDisplay-Italic.ttf");}
+@font-face { font-family: DBold; src: url("../../fonts/ttf/KierkegaardSerifDisplay-Bold.ttf");}
+@font-face { font-family: DBoldItalic; src: url("../../fonts/ttf/KierkegaardSerifDisplay-BoldItalic.ttf");}
+@font-face { font-family: DSC; src: url("../../fonts/ttf/KierkegaardSerifDisplaySC-Regular.ttf");}
+
 
 
 @font-face { font-family: Kierkegaard-Regular; src: url("../../fonts/ttf/KierkegaardSerifText-Regular.ttf"); }
@@ -89,7 +95,7 @@
 
   .title {
     color: whitesmoke;
-    font-family: Bold;
+    font-family: DBold;
     font-size: 40pt;
     line-height: 40pt;
     margin-top: 0;
@@ -101,7 +107,7 @@
 
   h1 {
     padding-top: calc(1.25em * 3);
-    font-family: Regular;
+    font-family: DRegular;
     font-weight: normal;
     font-size: 15spt;
     line-height: 1.25em;
@@ -143,7 +149,7 @@
 
   .ini::first-letter,
   .first::first-letter {
-    font-family: Regular;
+    font-family: DRegular;
     -webkit-initial-letter: 3;
     initial-letter: 3;
     padding-right: 3pt;
