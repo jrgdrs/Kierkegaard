@@ -48,7 +48,7 @@ Kierkegaard is available under the <a href="https://scripts.sil.org/OFL" target=
 
 ## The members of the Kierkegaard family
 
-The Kierkegaard typeface family now comprises 40 styles.
+The Kierkegaard typeface family now comprises 40 styles, also available as variable fonts with 3 axis (opsz, wght, ital)
 
 ![Sample Image](documentation/promotions/styles.png)
 
@@ -78,11 +78,13 @@ Plus small capitals across all cuts
 ![Sample Image](documentation/promotions/styletsr.png)
 
 
-Each containing 865 Glyphs
 
-![Sample Image](documentation/promotions/charmap.png)
 
 ## Character Maps
+
+Each of them containing 865 Glyphs
+
+![Sample Image](documentation/promotions/charmap.png)
 
 The Character set
 
@@ -92,11 +94,13 @@ The construction plans of the glyphs
 
 - [Construction plans](documentation/maps/atlas-KierkegaardText-Regular.html.pdf)
 
+
+
+## Specimen Books
+
 Please also have a look at the specimen book
 
 ![Sample Image](documentation/promotions/fontspecimen.png)
-
-## Specimen Books
 
 180 pages full of different samples
 
@@ -119,24 +123,30 @@ But you can also read a sample text in one of the specimen books
 - [Woolf (English)](documentation/specimens/Woolf.pdf)
 
 
-![Sample Image](documentation/promotions/pages.png)
 
-But if you would like to have an digital interactive view and edit:
 
 ## Online Preview and Download 
+
+But if you would like to have an digital animated and interactive view and a font tester to have some custom edits:
+
+![Sample Image](documentation/promotions/pages.png)
 
 Give a try at the fonts landing page also with specimen and download 
 
 [Test the typeface online](https://jrgdrs.github.io/Kierkegaard/)
 
 
-If you have ideas or requests, please share it here
+
 
 ## Issue Support
+
+If you have ideas or requests, please share it here:
 
 The font project github ticket system to follow 
 
 [Ticket system](https://github.com/jrgdrs/Kierkegaard/issues)
 
  
- 
+## Versioning
+
+Latest Release Version 1.050 on March 29th, 2026 

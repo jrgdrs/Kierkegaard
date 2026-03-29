@@ -6,7 +6,7 @@
 @font-face { font-family: DRegular; src: url("../../fonts/ttf/KierkegaardDisplay-Regular.ttf");}
 @font-face { font-family: DItalic; src: url("../../fonts/ttf/KierkegaardDisplay-Italic.ttf");}
 @font-face { font-family: DBold; src: url("../../fonts/ttf/KierkegaardDisplay-Bold.ttf");}
-@font-face { font-family: DBoldItalic; src: url("../../fonts/ttf/KierkegaardDisplay-Bold-Italic.ttf");}
+@font-face { font-family: DBoldItalic; src: url("../../fonts/ttf/KierkegaardDisplay-BoldItalic.ttf");}
 @font-face { font-family: DSC; src: url("../../fonts/ttf/KierkegaardDisplaySC-Regular.ttf");}
 
 
@@ -24,16 +24,16 @@
 @font-face { font-family: KierkegaardSC-ExtraBold; src: url("../../fonts/ttf/KierkegaardTextSC-ExtraBold.ttf"); }
 
 @font-face { font-family: Kierkegaard-Italic; src: url("../../fonts/ttf/KierkegaardText-Italic.ttf"); }
-@font-face { font-family: Kierkegaard-MediumItalic; src: url("../../fonts/ttf/KierkegaardText-Medium.Italic.ttf"); }
-@font-face { font-family: Kierkegaard-SemiBoldItalic; src: url("../../fonts/ttf/KierkegaardText-SemiBold-Italic.ttf"); }
-@font-face { font-family: Kierkegaard-BoldItalic; src: url("../../fonts/ttf/KierkegaardText-Bold-Italic.ttf"); }
-@font-face { font-family: Kierkegaard-ExtraBoldItalic; src: url("../../fonts/ttf/KierkegaardText-ExtraBold-Italic.ttf"); }
+@font-face { font-family: Kierkegaard-MediumItalic; src: url("../../fonts/ttf/KierkegaardText-MediumItalic.ttf"); }
+@font-face { font-family: Kierkegaard-SemiBoldItalic; src: url("../../fonts/ttf/KierkegaardText-SemiBoldItalic.ttf"); }
+@font-face { font-family: Kierkegaard-BoldItalic; src: url("../../fonts/ttf/KierkegaardText-BoldItalic.ttf"); }
+@font-face { font-family: Kierkegaard-ExtraBoldItalic; src: url("../../fonts/ttf/KierkegaardText-ExtraBoldItalic.ttf"); }
 
 @font-face { font-family: KierkegaardSC-Italic; src: url("../../fonts/ttf/KierkegaardTextSC-Italic.ttf"); }
-@font-face { font-family: KierkegaardSC-MediumItalic; src: url("../../fonts/ttf/KierkegaardText-MediumSC-Italic.ttf"); }
-@font-face { font-family: KierkegaardSC-SemiBoldItalic; src: url("../../fonts/ttf/KierkegaardText-SemiBoldSC-Italic.ttf"); }
-@font-face { font-family: KierkegaardSC-BoldItalic; src: url("../../fonts/ttf/KierkegaardTextSC-BoldSC-Italic.ttf"); }
-@font-face { font-family: KierkegaardSC-ExtraBoldItalic; src: url("../../fonts/ttf/KierkegaardTextSC-ExtraBoldSC-Italic.ttf"); }
+@font-face { font-family: KierkegaardSC-MediumItalic; src: url("../../fonts/ttf/KierkegaardTextSC-MediumItalic.ttf"); }
+@font-face { font-family: KierkegaardSC-SemiBoldItalic; src: url("../../fonts/ttf/KierkegaardTextSC-SemiBoldItalic.ttf"); }
+@font-face { font-family: KierkegaardSC-BoldItalic; src: url("../../fonts/ttf/KierkegaardTextSC-BoldItalic.ttf"); }
+@font-face { font-family: KierkegaardSC-ExtraBoldItalic; src: url("../../fonts/ttf/KierkegaardTextSC-ExtraBoldItalic.ttf"); }
 
 
 
