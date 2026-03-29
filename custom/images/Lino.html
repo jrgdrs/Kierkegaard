@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        @font-face {
+            font-family: TESTFONT;
+            src: url("*");
+        }
+
+        @font-face {
+            font-family: LEERFONT;
+            src: url("assets/Empty-Regular.ttf");
+        }
+
+        @media print {}
+
+        @page {
+            size: 2048px 1024px;
+            margin: 0px;
+        }
+
+        body {}
+
+        p {}
+
+        .sheet {
+            background-color: #ffffff;
+            color: #000000;
+            size: 2048px 1024px;
+            margin: 0;
+            padding: 0;
+            padding-left: 60px;
+            padding-top: 40px;
+            border: 0;
+        }
+
+        .sample {
+            font-family: TESTFONT, LEERFONT;
+            font-size: 100px;
+            line-height: 120px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 3000px;
+        }
+
+        .sampletext {
+            font-family: TESTFONT, LEERFONT;
+            font-size: 64px;
+            line-height: 72px;
+            margin: 0;
+            padding-top: 36px;
+            border: 0;
+            width: 1800px;
+            height: 3lh;
+            overflow: hidden;
+        }
+
+        .top {
+            font-family: Helvetica;
+            font-size: 48px;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            padding-bottom: 24px;
+            _border-bottom: 4px solid white;
+            width: 100%;
+        }
+
+        .bottom {
+            font-family: Helvetica;
+            font-size: 48px;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            margin-top: 6px;
+            padding-top: 12px;
+            border-top: 4px solid white;
+            width: 100%;
+        }
+
+        .block {
+            padding: 8px;
+            width: 1808px;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+
+        }
+
+        .left {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
+
+        .right {
+            _display: inline-block;
+            _width: 100%;
+            _text-align: right;
+            _float: right;
+            _position: absolute;
+            _right: 0;
+            margin-left: 24px;
+        }
+
+    </style>
+</head>
+
+<body class="sheet">
+    <div class="block">
+        <p class="top">
+            <span class="left FONT_NAME"></span>
+            <span class="right FONT_VERSION"></span>
+        </p>
+    </div>
+
+    <p class="sample">abcdefghijklmnopqrstuvwxyz<br />
+        ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />
+        0123456789 .,:;&lsquo;&rsquo;&laquo;&raquo;ß&!?<br />
+        OHamburgefonstiv &aring;&ouml;&ucirc; 
+    </p>
+
+    <p class="sampletext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  
+    </p>
+
+    <div class="block">
+
+        <!--p class="bottom">
+            <span class="left MY_URL"></span>
+            <span class="right">OFL v1.1</span>
+        </p-->
+    </div>
+</body>
+
+</html>

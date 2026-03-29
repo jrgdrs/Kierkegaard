@@ -4,7 +4,7 @@ echo '-- link to fonts folder'
 ln -sfn ../fonts fonts
 
 # AMFF = all my font files
-AMFF=$(ls -1 fonts/ttf | sed 's/.ttf//g' | tr '\n' ' ')
+AMFF=$(ls -1 fonts/ttf | grep -E 'Text-Regular.|Text-Italic.|Text-Bold.ttf' | sed 's/.ttf//g' | tr '\n' ' ')
 
 # AMSF = all my map files
 AMMF=$(ls -1 maps | grep .js | sed 's/.js//g' | tr '\n' ' ')

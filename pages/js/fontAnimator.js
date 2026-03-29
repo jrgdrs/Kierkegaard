@@ -13,7 +13,7 @@
         }
 
         const stage = document.getElementById('animationContainer');
-        const fontVariants = ['KierkegaardSerifDisplay-Regular','KierkegaardSerifDisplay-Italic','KierkegaardSerifDisplay-Medium','KierkegaardSerifDisplay-MediumItalic','KierkegaardSerifDisplay-SemiBold','KierkegaardSerifDisplay-SemiBoldItalic','KierkegaardSerifDisplay-Bold','KierkegaardSerifDisplay-BoldItalic','KierkegaardSerifDisplay-ExtraBold','KierkegaardSerifDisplay-ExtraBoldItalic'];
+        const fontVariants = ['KierkegaardDisplay-Regular','KierkegaardDisplay-Italic','KierkegaardDisplay-Medium','KierkegaardDisplay-MediumItalic','KierkegaardDisplay-SemiBold','KierkegaardDisplay-SemiBoldItalic','KierkegaardDisplay-Bold','KierkegaardDisplay-BoldItalic','KierkegaardDisplay-ExtraBold','KierkegaardDisplay-ExtraBoldItalic'];
         function pickRandom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
         function randomTertiaryColor() {
             const hue = Math.floor(Math.random() * 360);

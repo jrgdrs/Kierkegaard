@@ -18,8 +18,6 @@ Sample set of uppercase and lowercase letters showing the characteristic curved 
 
 Kierkegaard’s anatomy reflects a dialogue between philosophy and form. The slightly curved stems interpret the motion of natural handwriting, suggesting the trace of a broad nib. This approach creates a dynamic rhythm across lines of text, offering an elegant reading experience.
 
-*The complete family contains 20 members in five weights, each paired with a matching italic. Additional features include old-style figures, small capitals, and refined character detailing for professional typographic versatility. Also a text and a display version are offerd.*
-
 Every glyph in Kierkegaard has been designed to support thoughtful expression. The balance of classical proportion and modern restraint makes it suitable for designers seeking harmony between intellectual depth and visual simplicity.
 
 ![Sample Image](documentation/promotions/Kierkegaard_Page_03.png)
@@ -50,89 +48,61 @@ Kierkegaard is available under the <a href="https://scripts.sil.org/OFL" target=
 
 ## The members of the Kierkegaard family
 
-### 400 Regular
+The Kierkegaard typeface family now comprises 40 styles.
 
-![Sample Image](documentation/images/Image-KierkegaardSerifText-Regular.png)
-![Sample Image](documentation/images/Image-KierkegaardSerifDisplay-Regular.png)
-
-![Sample Image](documentation/images/Image-KierkegaardSerifTextSC-Regular.png)
-![Sample Image](documentation/images/Image-KierkegaardSerifDisplaySC-Regular.png)
-
-![Sample Image](documentation/images/Image-KierkegaardSerifText-Italic.png)
-![Sample Image](documentation/images/Image-KierkegaardSerifDisplay-Italic.png)
-
-![Sample Image](documentation/images/Image-KierkegaardSerifTextSC-Italic.png)
-![Sample Image](documentation/images/Image-KierkegaardSerifDisplaySC-Italic.png)
-
-### 500 Medium
-
-![Sample Image](documentation/images/Image-KierkegaardSerifText-Medium.png)
-
-### 600 Semibold
-
-![Sample Image](documentation/images/Image-KierkegaardSerifText-SemiBold.png)
-
-### 700 Bold
-
-![Sample Image](documentation/images/Image-KierkegaardSerifText-Bold.png)
-
-### 800 Extrabold
-
-![Sample Image](documentation/images/Image-KierkegaardSerifText-ExtraBold.png)
+![Sample Image](documentation/promotions/styles.png)
 
 
-## Proof Sheets
+Now available: a new Display cut for Headlines
 
-![Sample Image](documentation/images/Imperial-KierkegaardSerifText-Regular.png)
+![Sample Image](documentation/promotions/styledr.png)
 
-### Regular
+Available in all weights: Regular, Medium, SemiBold, Bold, and Extrabold
 
-- [Kierkegaard-Regular - Kerning](documentation/proofs/3-Kerning-KierkegaardSerifText-Regular.pdf)
-- [Kierkegaard-Regular - Frequency](documentation/proofs/4-Frequency-KierkegaardSerifText-Regular.pdf)
-- [Kierkegaard-Regular - Diacritics](documentation/proofs/7-Diacritics-KierkegaardSerifText-Regular.pdf)
+![Sample Image](documentation/promotions/stylede.png)
 
+Complete with true italic typefaces
 
-![Sample Image](documentation/images/Imperial-KierkegaardSerifText-Italic.png)
+![Sample Image](documentation/promotions/styledb.png)
 
-### Italic
+Complementing the Text cuts for body copy
 
-- [Kierkegaard-Italic - Kerning](documentation/proofs/3-Kerning-KierkegaardSerifText-Italic.pdf)
-- [Kierkegaard-Italic - Frequency](documentation/proofs/4-Frequency-KierkegaardSerifText-Italic.pdf)
-- [Kierkegaard-Italic - Diacritics](documentation/proofs/7-Diacritics-KierkegaardSerifText-Italic.pdf)
+![Sample Image](documentation/promotions/styletr.png)
 
+Also featuring true italic letterforms
 
-![Sample Image](documentation/images/Imperial-KierkegaardSerifText-ExtraBold.png)
+![Sample Image](documentation/promotions/styleti.png)
 
-### Extrabold
+Plus small capitals across all cuts
 
-
-- [Kierkegaard-Extrabold - Kerning](documentation/proofs/3-Kerning-KierkegaardSerifText-ExtraBold.pdf)
-- [Kierkegaard-Extrabold - Frequency](documentation/proofs/4-Frequency-KierkegaardSerifText-ExtraBold.pdf)
-- [Kierkegaard-Extrabold - Diacritics](documentation/proofs/7-Diacritics-KierkegaardSerifText-ExtraBold.pdf)
+![Sample Image](documentation/promotions/styletsr.png)
 
 
-
-![Sample Image](documentation/images/Imperial-KierkegaardSerifText-ExtraBoldItalic.png)
-
-### Extrabold Italic
-
-- [Kierkegaard-Extrabold Italic - Kerning](documentation/proofs/3-Kerning-KierkegaardSerifText-ExtraBoldItalic.pdf)
-- [Kierkegaard-Extrabold Italic - Frequency](documentation/proofs/4-Frequency-KierkegaardSerifText-ExtraBoldItalic.pdf)
-- [Kierkegaard-Extrabold Italic - Diacritics](documentation/proofs/7-Diacritics-KierkegaardSerifText-ExtraBoldItalic.pdf)
-
+Each containing 865 Glyphs
 
 ![Sample Image](documentation/promotions/charmap.png)
 
 ## Character Maps
 
-- [Character set](documentation/maps/charset-KierkegaardSerifText-Regular.html.pdf)
-- [Construction plans](documentation/maps/atlas-KierkegaardSerifText-Regular.html.pdf)
+The Character set
+
+- [Character set](documentation/maps/charset-KierkegaardText-Regular.html.pdf)
+
+The construction plans of the glyphs
+
+- [Construction plans](documentation/maps/atlas-KierkegaardText-Regular.html.pdf)
+
+Please also have a look at the specimen book
 
 ![Sample Image](documentation/promotions/fontspecimen.png)
 
 ## Specimen Books
 
+180 pages full of different samples
+
 - [Font Specimen](documentation/specimens/SpecimenNL.pdf)
+
+But you can also read a sample text in one of the specimen books
 
 ![Sample Image](documentation/promotions/books.png)
 
@@ -142,21 +112,29 @@ Kierkegaard is available under the <a href="https://scripts.sil.org/OFL" target=
 - [Crops (English)](documentation/specimens/Crops.pdf)
 - [Dumas (French)](documentation/specimens/Dumas.pdf)
 - [Enrödi (Hungarian)](documentation/specimens/Endrődi.pdf)
+- [Etik (Danish)](documentation/specimens/Endrődi.pdf)
 - [Heisenberg (Vietnamese)](documentation/specimens/Heisenberg.pdf)
 - [Martens (Dutch)](documentation/specimens/Martens.pdf)
 - [Picon (Spanish)](documentation/specimens/Picon.pdf)
+- [Woolf (English)](documentation/specimens/Woolf.pdf)
 
 
 ![Sample Image](documentation/promotions/pages.png)
 
+But if you would like to have an digital interactive view and edit:
+
 ## Online Preview and Download 
+
+Give a try at the fonts landing page also with specimen and download 
 
 [Test the typeface online](https://jrgdrs.github.io/Kierkegaard/)
 
 
-![Sample Image](documentation/images/Imperial-KierkegaardSerifTextSC-Bold.png)
+If you have ideas or requests, please share it here
 
 ## Issue Support
+
+The font project github ticket system to follow 
 
 [Ticket system](https://github.com/jrgdrs/Kierkegaard/issues)
 

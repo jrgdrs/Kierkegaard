@@ -20,6 +20,9 @@ help:
 	@echo "  make call: Creates all custom documents"
 	@echo
 
+open: 
+	open ./sources/Kierkegaard.glyphs
+
 call:
 	custom/makeImages.sh
 	custom/makeProofs.sh
@@ -90,6 +93,3 @@ update: venv
 
 	git commit -m "Update requirements" requirements.txt
 	git push
-
-open:
-	open -n "/Applications/Glyphs 3.app" --args /Users/jdrees/github/Kierkegaard/sources/Kierkegaard.glyphs
