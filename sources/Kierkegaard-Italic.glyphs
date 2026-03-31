@@ -1,5 +1,5 @@
 {
-.appVersion = "3517";
+.appVersion = "3520";
 .formatVersion = 3;
 DisplayStrings = (
 "Kierkegaard 1.050 cleanup
@@ -88123,13 +88123,30 @@ unicode = 57;
 glyphname = zero.zero;
 kernLeft = zero;
 kernRight = zero;
-lastChange = "2026-03-28 07:13:01 +0000";
+lastChange = "2026-03-31 13:06:19 +0000";
 layers = (
 {
 layerId = "7AC17688-D084-48EF-8AFF-05483A60B77C";
 shapes = (
 {
 ref = zero;
+},
+{
+closed = 1;
+nodes = (
+(332,278,o),
+(347,307,o),
+(339,348,cs),
+(331,388,o),
+(304,416,o),
+(275,416,cs),
+(246,416,o),
+(232,388,o),
+(240,348,cs),
+(248,307,o),
+(274,278,o),
+(303,278,cs)
+);
 }
 );
 width = 540;
@@ -88139,6 +88156,23 @@ layerId = m004;
 shapes = (
 {
 ref = zero;
+},
+{
+closed = 1;
+nodes = (
+(401,288,o),
+(416,317,o),
+(408,358,cs),
+(400,398,o),
+(373,426,o),
+(344,426,cs),
+(315,426,o),
+(301,398,o),
+(309,358,cs),
+(317,317,o),
+(343,288,o),
+(372,288,cs)
+);
 }
 );
 width = 680;
@@ -88148,6 +88182,23 @@ layerId = m007;
 shapes = (
 {
 ref = zero;
+},
+{
+closed = 1;
+nodes = (
+(321,278,o),
+(336,307,o),
+(328,348,cs),
+(320,388,o),
+(293,416,o),
+(264,416,cs),
+(235,416,o),
+(221,388,o),
+(229,348,cs),
+(237,307,o),
+(263,278,o),
+(292,278,cs)
+);
 }
 );
 width = 520;
@@ -88157,6 +88208,23 @@ layerId = m008;
 shapes = (
 {
 ref = zero;
+},
+{
+closed = 1;
+nodes = (
+(381,288,o),
+(396,317,o),
+(388,358,cs),
+(380,398,o),
+(353,426,o),
+(324,426,cs),
+(295,426,o),
+(281,398,o),
+(289,358,cs),
+(297,317,o),
+(323,288,o),
+(352,288,cs)
+);
 }
 );
 width = 640;
@@ -252584,5 +252652,5 @@ tH = "48.65";
 "Letterink-StrokeType" = Brush;
 };
 versionMajor = 1;
-versionMinor = 50;
+versionMinor = 51;
 }
