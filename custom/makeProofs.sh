@@ -5,6 +5,8 @@ ln -sfn ../fonts fonts
 
 # AMFF = all my font files
 AMFF=$(ls -1 fonts/ttf | sed 's/.ttf//g' | tr '\n' ' ')
+AMFF=$(ls -1 fonts/ttf | grep -E 'Text-Regular.|TextSC-Regular.|Text-Italic.|Text-Bold.ttf' | sed 's/.ttf//g' | tr '\n' ' ')
+
 
 # AMPF = all my proof files
 AMPF=$(ls -1 proofs | grep .html | sed 's/.html//g' | tr '\n' ' ')
