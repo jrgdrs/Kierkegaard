@@ -2,10 +2,16 @@
 .appVersion = "3521";
 .formatVersion = 3;
 DisplayStrings = (
-"Kierkegaard 1.052 fig.sc
+"Kierkegaard 1.053 fig.sc.feat
 Jörg Drees 7.04.2026
 Regular Text Bold Text
-Regular Display Bold Display"
+Regular Display Bold Display
+
+HAMBURG0123456789
+Hamburg/zero.osf/one.osf/two.osf/three.osf/four.osf/five.osf/six.osf/seven.osf/eight.osf/nine.osf 
+H/a.sc/m.sc/b.sc/u.sc/r.sc/g.sc/zero.sc/one.sc/two.sc/three.sc/four.sc/five.sc/six.sc/seven.sc/eight.sc/nine.sc 
+
+"
 );
 axes = (
 {
@@ -549,6 +555,16 @@ sub Z by z.sc;
 sub Zacute by zacute.sc;
 sub Zcaron by zcaron.sc;
 sub Zdotaccent by zdotaccent.sc;
+sub zero by zero.sc;
+sub one by one.sc;
+sub two by two.sc;
+sub three by three.sc;
+sub four by four.sc;
+sub five by five.sc;
+sub six by six.sc;
+sub seven by seven.sc;
+sub eight by eight.sc;
+sub nine by nine.sc;
 sub literSign by literSign.sc;
 sub Ohm by Ohm.sc;
 sub micro by micro.sc;
@@ -729,6 +745,16 @@ sub zacute by zacute.sc;
 sub zcaron by zcaron.sc;
 sub zdotaccent by zdotaccent.sc;
 sub pi by pi.sc;
+sub zero by zero.sc;
+sub one by one.sc;
+sub two by two.sc;
+sub three by three.sc;
+sub four by four.sc;
+sub five by five.sc;
+sub six by six.sc;
+sub seven by seven.sc;
+sub eight by eight.sc;
+sub nine by nine.sc;
 sub literSign by literSign.sc;
 sub Ohm by Ohm.sc;
 sub micro by micro.sc;
@@ -805,6 +831,7 @@ tag = clig;
 {
 automatic = 1;
 code = "sub zero by zero.zero;
+sub zero.sc by zero.sc.zero;
 ";
 tag = zero;
 }
@@ -317019,5 +317046,5 @@ tH = "48.65";
 "Letterink-StrokeType" = Brush;
 };
 versionMajor = 1;
-versionMinor = 52;
+versionMinor = 53;
 }
