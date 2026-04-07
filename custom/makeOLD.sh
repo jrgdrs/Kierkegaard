@@ -14,7 +14,8 @@ git remote get-url origin
 git rev-parse --short HEAD
 
 
-ln -sfn ../GlobalVenv/venv venv
+#ln -sfn ../GlobalVenv/venv venv
+ln -sfn ../GlobalTypeEngine/venv venv
 #fontmake -i Kierkegaard SemiBold -o ufo -g Kierkegaard.glyphs --ufo-structure=json --instance-dir instance_ufos
 #FAILED: [code=1] instance_ufos/Kierkegaard-SemiBold.ufo.json 
 #/Users/jdrees/github/GlobalVenv/venv/bin/python3.12 -m gftools.builder.jobrunner fontmake -i "Kierkegaard SemiBold" -o ufo -g Kierkegaard.glyphs --ufo-structure=json --instance-dir instance_ufos 

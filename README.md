@@ -147,6 +147,3 @@ The font project github ticket system to follow
 [Ticket system](https://github.com/jrgdrs/Kierkegaard/issues)
 
  
-## Versioning
-
-Latest Release Version 1.050 on March 29th, 2026 
