@@ -110,6 +110,7 @@ But you can also read a sample text in one of the specimen books
 
 ![Sample Image](documentation/promotions/books.png)
 
+- [Adamson (Esperanto)](documentation/specimens/Adamson.pdf)
 - [Brentano (German)](documentation/specimens/Brentano.pdf)
 - [Cicero (Latin)](documentation/specimens/Cicero.pdf)
 - [Crops (English)](documentation/specimens/Crops.pdf)
