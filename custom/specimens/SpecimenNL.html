@@ -5,54 +5,206 @@
     <meta charset="utf-8">
 
     <style>
-        @font-face { font-family: Kierkegaard-Regular; src: url("../fonts/ttf/KierkegaardText-Regular.ttf"); }
-        @font-face { font-family: Kierkegaard-Medium; src: url("../fonts/ttf/KierkegaardText-Medium.ttf"); }
-        @font-face { font-family: Kierkegaard-Semi-Bold; src: url("../fonts/ttf/KierkegaardText-SemiBold.ttf"); }
-        @font-face { font-family: Kierkegaard-Bold; src: url("../fonts/ttf/KierkegaardText-Bold.ttf"); }
-        @font-face { font-family: Kierkegaard-Extra-Bold; src: url("../fonts/ttf/KierkegaardText-ExtraBold.ttf"); }
+        @font-face {
+            font-family: Kierkegaard-Regular;
+            src: url("../fonts/ttf/KierkegaardText-Regular.ttf");
+        }
 
-        @font-face { font-family: KierkegaardSC-Regular; src: url("../fonts/ttf/KierkegaardTextSC-Regular.ttf"); }
-        @font-face { font-family: KierkegaardSC-Medium; src: url("../fonts/ttf/KierkegaardTextSC-Medium.ttf"); }
-        @font-face { font-family: KierkegaardSC-Semi-Bold; src: url("../fonts/ttf/KierkegaardTextSC-SemiBold.ttf"); }
-        @font-face { font-family: KierkegaardSC-Bold; src: url("../fonts/ttf/KierkegaardTextSC-Bold.ttf"); }
-        @font-face { font-family: KierkegaardSC-Extra-Bold; src: url("../fonts/ttf/KierkegaardTextSC-ExtraBold.ttf"); }
+        @font-face {
+            font-family: Kierkegaard-Medium;
+            src: url("../fonts/ttf/KierkegaardText-Medium.ttf");
+        }
 
-        @font-face { font-family: Kierkegaard-Italic; src: url("../fonts/ttf/KierkegaardText-Italic.ttf"); }
-        @font-face { font-family: Kierkegaard-Medium-Italic; src: url("../fonts/ttf/KierkegaardText-MediumItalic.ttf"); }
-        @font-face { font-family: Kierkegaard-Semi-Bold-Italic; src: url("../fonts/ttf/KierkegaardText-SemiBoldItalic.ttf"); }
-        @font-face { font-family: Kierkegaard-Bold-Italic; src: url("../fonts/ttf/KierkegaardText-BoldItalic.ttf"); }
-        @font-face { font-family: Kierkegaard-Extra-Bold-Italic; src: url("../fonts/ttf/KierkegaardText-ExtraBoldItalic.ttf"); }
+        @font-face {
+            font-family: Kierkegaard-Semi-Bold;
+            src: url("../fonts/ttf/KierkegaardText-SemiBold.ttf");
+        }
 
-        @font-face { font-family: KierkegaardSC-Italic; src: url("../fonts/ttf/KierkegaardTextSC-Italic.ttf"); }
-        @font-face { font-family: KierkegaardSC-Medium-Italic; src: url("../fonts/ttf/KierkegaardTextSC-MediumItalic.ttf"); }
-        @font-face { font-family: KierkegaardSC-Semi-Bold-Italic; src: url("../fonts/ttf/KierkegaardTextSC-SemiBoldItalic.ttf"); }
-        @font-face { font-family: KierkegaardSC-Bold-Italic; src: url("../fonts/ttf/KierkegaardTextSC-BoldItalic.ttf"); }
-        @font-face { font-family: KierkegaardSC-Extra-Bold-Italic; src: url("../fonts/ttf/KierkegaardTextSC-ExtraBoldItalic.ttf"); }
+        @font-face {
+            font-family: Kierkegaard-Bold;
+            src: url("../fonts/ttf/KierkegaardText-Bold.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Extra-Bold;
+            src: url("../fonts/ttf/KierkegaardText-ExtraBold.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Regular;
+            src: url("../fonts/ttf/KierkegaardTextSC-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Medium;
+            src: url("../fonts/ttf/KierkegaardTextSC-Medium.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Semi-Bold;
+            src: url("../fonts/ttf/KierkegaardTextSC-SemiBold.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Bold;
+            src: url("../fonts/ttf/KierkegaardTextSC-Bold.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Extra-Bold;
+            src: url("../fonts/ttf/KierkegaardTextSC-ExtraBold.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Italic;
+            src: url("../fonts/ttf/KierkegaardText-Italic.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Medium-Italic;
+            src: url("../fonts/ttf/KierkegaardText-MediumItalic.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Semi-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardText-SemiBoldItalic.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardText-BoldItalic.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Extra-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardText-ExtraBoldItalic.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Italic;
+            src: url("../fonts/ttf/KierkegaardTextSC-Italic.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Medium-Italic;
+            src: url("../fonts/ttf/KierkegaardTextSC-MediumItalic.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Semi-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardTextSC-SemiBoldItalic.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardTextSC-BoldItalic.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Extra-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardTextSC-ExtraBoldItalic.ttf");
+        }
 
 
-        @font-face { font-family: Kierkegaard-Display-Regular; src: url("../fonts/ttf/KierkegaardDisplay-Regular.ttf"); }
-        @font-face { font-family: Kierkegaard-Display-Medium; src: url("../fonts/ttf/KierkegaardDisplay-Medium.ttf"); }
-        @font-face { font-family: Kierkegaard-Display-Semi-Bold; src: url("../fonts/ttf/KierkegaardDisplay-SemiBold.ttf"); }
-        @font-face { font-family: Kierkegaard-Display-Bold; src: url("../fonts/ttf/KierkegaardDisplay-Bold.ttf"); }
-        @font-face { font-family: Kierkegaard-Display-Extra-Bold; src: url("../fonts/ttf/KierkegaardDisplay-ExtraBold.ttf"); }
+        @font-face {
+            font-family: Kierkegaard-Display-Regular;
+            src: url("../fonts/ttf/KierkegaardDisplay-Regular.ttf");
+        }
 
-        @font-face { font-family: KierkegaardSC-Display-Regular; src: url("../fonts/ttf/KierkegaardDisplaySC-Regular.ttf"); }
-        @font-face { font-family: KierkegaardSC-Display-Medium; src: url("../fonts/ttf/KierkegaardDisplaySC-Medium.ttf"); }
-        @font-face { font-family: KierkegaardSC-Display-Semi-Bold; src: url("../fonts/ttf/KierkegaardDisplaySC-SemiBold.ttf"); }
-        @font-face { font-family: KierkegaardSC-Display-Bold; src: url("../fonts/ttf/KierkegaardDisplaySC-Bold.ttf"); }
-        @font-face { font-family: KierkegaardSC-Display-Extra-Bold; src: url("../fonts/ttf/KierkegaardDisplaySC-ExtraBold.ttf"); }
+        @font-face {
+            font-family: Kierkegaard-Display-Medium;
+            src: url("../fonts/ttf/KierkegaardDisplay-Medium.ttf");
+        }
 
-        @font-face { font-family: Kierkegaard-Display-Italic; src: url("../fonts/ttf/KierkegaardDisplay-Italic.ttf"); }
-        @font-face { font-family: Kierkegaard-Display-Medium-Italic; src: url("../fonts/ttf/KierkegaardDisplay-MediumItalic.ttf"); }
-        @font-face { font-family: Kierkegaard-Display-Semi-Bold-Italic; src: url("../fonts/ttf/KierkegaardDisplay-SemiBoldItalic.ttf"); }
-        @font-face { font-family: Kierkegaard-Display-Bold-Italic; src: url("../fonts/ttf/KierkegaardDisplay-BoldItalic.ttf"); }
-        @font-face { font-family: Kierkegaard-Display-Extra-Bold-Italic; src: url("../fonts/ttf/KierkegaardDisplay-ExtraBoldItalic.ttf"); }
+        @font-face {
+            font-family: Kierkegaard-Display-Semi-Bold;
+            src: url("../fonts/ttf/KierkegaardDisplay-SemiBold.ttf");
+        }
 
-        @font-face { font-family: KierkegaardSC-Display-Italic; src: url("../fonts/ttf/KierkegaardDisplaySC-Italic.ttf"); }
-        @font-face { font-family: KierkegaardSC-Display-Medium-Italic; src: url("../fonts/ttf/KierkegaardDisplaySC-MediumItalic.ttf"); }
-        @font-face { font-family: KierkegaardSC-Display-Semi-Bold-Italic; src: url("../fonts/ttf/KierkegaardDisplaySC-SemiBoldItalic.ttf"); }
-        @font-face { font-family: KierkegaardSC-Display-Bold-Italic; src: url("../fonts/ttf/KierkegaardDisplaySC-BoldItalic.ttf"); }
-        @font-face { font-family: KierkegaardSC-Display-Extra-Bold-Italic; src: url("../fonts/ttf/KierkegaardDisplaySC-ExtraBoldItalic.ttf"); }
+        @font-face {
+            font-family: Kierkegaard-Display-Bold;
+            src: url("../fonts/ttf/KierkegaardDisplay-Bold.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Display-Extra-Bold;
+            src: url("../fonts/ttf/KierkegaardDisplay-ExtraBold.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Display-Regular;
+            src: url("../fonts/ttf/KierkegaardDisplaySC-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Display-Medium;
+            src: url("../fonts/ttf/KierkegaardDisplaySC-Medium.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Display-Semi-Bold;
+            src: url("../fonts/ttf/KierkegaardDisplaySC-SemiBold.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Display-Bold;
+            src: url("../fonts/ttf/KierkegaardDisplaySC-Bold.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Display-Extra-Bold;
+            src: url("../fonts/ttf/KierkegaardDisplaySC-ExtraBold.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Display-Italic;
+            src: url("../fonts/ttf/KierkegaardDisplay-Italic.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Display-Medium-Italic;
+            src: url("../fonts/ttf/KierkegaardDisplay-MediumItalic.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Display-Semi-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardDisplay-SemiBoldItalic.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Display-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardDisplay-BoldItalic.ttf");
+        }
+
+        @font-face {
+            font-family: Kierkegaard-Display-Extra-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardDisplay-ExtraBoldItalic.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Display-Italic;
+            src: url("../fonts/ttf/KierkegaardDisplaySC-Italic.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Display-Medium-Italic;
+            src: url("../fonts/ttf/KierkegaardDisplaySC-MediumItalic.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Display-Semi-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardDisplaySC-SemiBoldItalic.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Display-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardDisplaySC-BoldItalic.ttf");
+        }
+
+        @font-face {
+            font-family: KierkegaardSC-Display-Extra-Bold-Italic;
+            src: url("../fonts/ttf/KierkegaardDisplaySC-ExtraBoldItalic.ttf");
+        }
 
         @page {
             __size: 210mm 297mm;
@@ -68,7 +220,8 @@
 
         .contentArea {
             position: relative;
-            text-align: center;;
+            text-align: center;
+            ;
             width: 165mm;
             height: 235mm;
             margin: 30mm 23mm;
@@ -79,10 +232,11 @@
             position: relative;
             width: 165mm;
             height: 235mm;
-            margin: 30mm 23mm;  padding-left: 4mm;
+            margin: 30mm 23mm;
+            padding-left: 4mm;
         }
 
-        
+
         .redBorder {
             border: 1pt solid var(--colorRed);
         }
@@ -165,17 +319,20 @@
             position: relative;
         }
 
-        .frontpage > .contentArea {
-                    border-left: 6mm solid transparent;
+        .frontpage>.contentArea {
+            border-left: 6mm solid transparent;
         }
-        .rightpage > .contentArea {
-                    border-left: 6mm solid transparent;
+
+        .rightpage>.contentArea {
+            border-left: 6mm solid transparent;
         }
-        .rightpage > .textArea {
-                    border-left: 6mm solid transparent;
+
+        .rightpage>.textArea {
+            border-left: 6mm solid transparent;
         }
-        .rightpage > .contentAreaDuo {
-                    border-left: 6mm solid transparent;
+
+        .rightpage>.contentAreaDuo {
+            border-left: 6mm solid transparent;
         }
 
         .charsetBox {
@@ -196,7 +353,7 @@
             width: 89mm;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 7pt;
-            color: var(--colorRed);            
+            color: var(--colorRed);
             text-transform: uppercase;
             letter-spacing: .1em;
             padding-top: 3mm;
@@ -257,6 +414,7 @@
             hyphens: auto;
             font-variant-numeric: oldstyle-nums;
         }
+
         .tenCaption {
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 9pt;
@@ -266,8 +424,8 @@
             top: 4mm;
             left: -8mm;
             width: 10mm;
-            transform:rotate(-90deg) translate(0px, 0px); 
-            text-align: right; 
+            transform: rotate(-90deg) translate(0px, 0px);
+            text-align: right;
         }
 
         .eightSample {
@@ -314,6 +472,7 @@
             hyphens: auto;
             font-variant-numeric: oldstyle-nums;
         }
+
         .nineCaption {
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 9pt;
@@ -348,6 +507,7 @@
             hyphens: auto;
             font-variant-numeric: oldstyle-nums;
         }
+
         .twelfeCaption {
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 9pt;
@@ -357,8 +517,8 @@
             top: 3mm;
             left: 159mm;
             width: 10mm;
-            transform:rotate(90deg) translate(0px, 0px); 
-            text-align: left; 
+            transform: rotate(90deg) translate(0px, 0px);
+            text-align: left;
         }
 
         .bottomRedRule {
@@ -384,6 +544,7 @@
             font-variant-numeric: oldstyle-nums;
             hyphenate-limit-chars: 7 3 3;
         }
+
         .fourteenCaption {
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 9pt;
@@ -393,8 +554,8 @@
             top: 188mm;
             left: -8mm;
             width: 10mm;
-            transform:rotate(-90deg) translate(0px, 0px); 
-            text-align: right; 
+            transform: rotate(-90deg) translate(0px, 0px);
+            text-align: right;
         }
 
         .eightteenSample {
@@ -422,28 +583,154 @@
             top: 187.25mm;
             left: 159mm;
             width: 10mm;
-            transform:rotate(90deg) translate(0px, 0px); 
-            text-align: left; 
+            transform: rotate(90deg) translate(0px, 0px);
+            text-align: left;
         }
 
-        .text288Sample{ height: 1.12lh; overflow: hidden; padding: 0mm 0mm; text-align: left; font-size: 288pt; line-height: 288pt; hyphens: auto; font-variant-numeric: oldstyle-nums; hyphenate-limit-chars: 7 3 3; text-align: center;}
-        .text72Sample{ height: 4lh; overflow: hidden; padding: 0mm 0mm; text-align: left; font-size: 72pt; line-height: 64pt; hyphens: auto; font-variant-numeric: oldstyle-nums; hyphenate-limit-chars: 10 5 5; letter-spacing: -.01em; text-align: center; padding-top:8pt;}
-        .text48Sample{ height: 13lh; overflow: hidden; padding: 0mm 0mm; text-align: left; font-size: 48pt; line-height: 48pt; hyphens: auto; font-variant-numeric: oldstyle-nums; hyphenate-limit-chars: 9 4 4; text-align: center;}
-        .text40Sample{ height: 3lh; overflow: hidden; padding: 0mm 0mm; text-align: left; font-size: 40pt; line-height: 42pt; hyphens: auto; font-variant-numeric: oldstyle-nums; hyphenate-limit-chars: 7 3 3; }
-        .text32Sample{ height: 4lh; overflow: hidden; padding: 0mm 0mm; text-align: left; font-size: 32pt; line-height: 34pt; hyphens: auto; font-variant-numeric: oldstyle-nums; hyphenate-limit-chars: 7 3 3; }
-        .text24Sample{ height: 5lh; overflow: hidden; padding: 0mm 0mm; text-align: left; font-size: 24pt; line-height: 26pt; hyphens: auto; font-variant-numeric: oldstyle-nums; hyphenate-limit-chars: 7 3 3; }
-        .text20Sample{ height: 6lh; overflow: hidden; padding: 0mm 0mm; text-align: left; font-size: 20pt; line-height: 22pt; hyphens: auto; font-variant-numeric: oldstyle-nums; hyphenate-limit-chars: 7 3 3; }
-        .text16Sample{ height: 7lh; overflow: hidden; padding: 0mm 0mm; text-align: left; font-size: 16pt; line-height: 18pt; hyphens: auto; font-variant-numeric: oldstyle-nums; hyphenate-limit-chars: 7 3 3; }
-        .text12Sample{ height: 10lh; overflow: hidden; padding: 0mm 0mm; text-align: left; font-size: 12pt; line-height: 14pt; hyphens: auto; font-variant-numeric: oldstyle-nums; hyphenate-limit-chars: 7 3 3; }
-        .text10Sample{ height: 10lh; overflow: hidden; padding: 0mm 0mm; text-align: left; font-size: 10pt; line-height: 12pt; hyphens: auto; font-variant-numeric: oldstyle-nums; hyphenate-limit-chars: 7 3 3; }
-        .text8Sample{ height: 14lh; overflow: hidden; padding: 0mm 0mm; text-align: left; font-size: 8pt; line-height: 10pt; hyphens: auto; font-variant-numeric: oldstyle-nums; hyphenate-limit-chars: 7 3 3; letter-spacing: .01em }
+        .text288Sample {
+            height: 1.12lh;
+            overflow: hidden;
+            padding: 0mm 0mm;
+            text-align: left;
+            font-size: 288pt;
+            line-height: 288pt;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            hyphenate-limit-chars: 7 3 3;
+            text-align: center;
+        }
+
+        .text72Sample {
+            height: 4lh;
+            overflow: hidden;
+            padding: 0mm 0mm;
+            text-align: left;
+            font-size: 72pt;
+            line-height: 64pt;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            hyphenate-limit-chars: 10 5 5;
+            letter-spacing: -.01em;
+            text-align: center;
+            padding-top: 8pt;
+        }
+
+        .text48Sample {
+            height: 13lh;
+            overflow: hidden;
+            padding: 0mm 0mm;
+            text-align: left;
+            font-size: 48pt;
+            line-height: 48pt;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            hyphenate-limit-chars: 9 4 4;
+            text-align: center;
+        }
+
+        .text40Sample {
+            height: 3lh;
+            overflow: hidden;
+            padding: 0mm 0mm;
+            text-align: left;
+            font-size: 40pt;
+            line-height: 42pt;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            hyphenate-limit-chars: 7 3 3;
+        }
+
+        .text32Sample {
+            height: 4lh;
+            overflow: hidden;
+            padding: 0mm 0mm;
+            text-align: left;
+            font-size: 32pt;
+            line-height: 34pt;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            hyphenate-limit-chars: 7 3 3;
+        }
+
+        .text24Sample {
+            height: 5lh;
+            overflow: hidden;
+            padding: 0mm 0mm;
+            text-align: left;
+            font-size: 24pt;
+            line-height: 26pt;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            hyphenate-limit-chars: 7 3 3;
+        }
+
+        .text20Sample {
+            height: 6lh;
+            overflow: hidden;
+            padding: 0mm 0mm;
+            text-align: left;
+            font-size: 20pt;
+            line-height: 22pt;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            hyphenate-limit-chars: 7 3 3;
+        }
+
+        .text16Sample {
+            height: 7lh;
+            overflow: hidden;
+            padding: 0mm 0mm;
+            text-align: left;
+            font-size: 16pt;
+            line-height: 18pt;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            hyphenate-limit-chars: 7 3 3;
+        }
+
+        .text12Sample {
+            height: 10lh;
+            overflow: hidden;
+            padding: 0mm 0mm;
+            text-align: left;
+            font-size: 12pt;
+            line-height: 14pt;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            hyphenate-limit-chars: 7 3 3;
+        }
+
+        .text10Sample {
+            height: 10lh;
+            overflow: hidden;
+            padding: 0mm 0mm;
+            text-align: left;
+            font-size: 10pt;
+            line-height: 12pt;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            hyphenate-limit-chars: 7 3 3;
+        }
+
+        .text8Sample {
+            height: 14lh;
+            overflow: hidden;
+            padding: 0mm 0mm;
+            text-align: left;
+            font-size: 8pt;
+            line-height: 10pt;
+            hyphens: auto;
+            font-variant-numeric: oldstyle-nums;
+            hyphenate-limit-chars: 7 3 3;
+            letter-spacing: .01em
+        }
 
         .textCaption {
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 8pt;
             line-height: 16pt;
             color: var(--colorRed);
-            text-align:left;
+            text-align: left;
             border-top: 1pt solid var(--colorRed);
             margin-top: 5mm;
             text-transform: uppercase;
@@ -513,70 +800,155 @@
 
 
 
-                .contentAreaDuo {
-                    position: relative;
-                    width: 165mm;
-                    __height: 235mm;
-                        /* Zweispaltiges Raster */
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        __grid-auto-rows: 45mm; /* ca. 2/3 der vorherigen Höhe */
-                        column-gap: 5mm;   /* kleiner Abstand */
-                        __row-gap: 0;      /* kleiner Abstand */
-                    margin: 30mm 23mm;
-                    text-align: left;
-                }   
+        .contentAreaDuo {
+            position: relative;
+            width: 165mm;
+            __height: 235mm;
+            /* Zweispaltiges Raster */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            __grid-auto-rows: 45mm;
+            /* ca. 2/3 der vorherigen Höhe */
+            column-gap: 5mm;
+            /* kleiner Abstand */
+            __row-gap: 0;
+            /* kleiner Abstand */
+            margin: 30mm 23mm;
+            text-align: left;
+        }
 
-                .block {
-                    background: transparent;
-                    border: none;
-                    padding: 0;
-                    display: flex;
-                    flex-direction: column;
-                                _____border-top: 1pt solid var(--colorRed);
+        .block {
+            background: transparent;
+            border: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            _____border-top: 1pt solid var(--colorRed);
 
-                }
+        }
 
-                .text {
-                    __text-align: justify;
-                    hyphens: auto;
-                    __font-family: "Kierkegaard-Regular";
-                    overflow: hidden;
-                    margin-top: 0;
-                }
+        .text {
+            __text-align: justify;
+            hyphens: auto;
+            __font-family: "Kierkegaard-Regular";
+            overflow: hidden;
+            margin-top: 0;
+        }
 
-                /* Schriftgrößen 2pt kleiner */
-                .text9-9 { font-size: 9pt; line-height: 9pt;    height:12lh;  }
-                .text9-10 { font-size: 9pt; line-height: 10pt;  height:11lh; }
-                .text9-11 { font-size: 9pt; line-height: 11pt;  height:10lh;}
-                .text9-12 { font-size: 9pt; line-height: 12pt;  height:9lh;}
+        /* Schriftgrößen 2pt kleiner */
+        .text9-9 {
+            font-size: 9pt;
+            line-height: 9pt;
+            height: 12lh;
+        }
 
-                .text14-14 { font-size: 14pt; line-height: 16pt;  height:5lh;}
+        .text9-10 {
+            font-size: 9pt;
+            line-height: 10pt;
+            height: 11lh;
+        }
 
-                .text11-11 { font-size: 11pt; line-height: 11pt;  height:11lh; }
-                .text11-12 { font-size: 11pt; line-height: 12pt;  height:10lh;}
-                .text11-13 { font-size: 11pt; line-height: 13pt;  height:9lh;}
-                .text11-14 { font-size: 11pt; line-height: 14pt;  height:8lh;}
+        .text9-11 {
+            font-size: 9pt;
+            line-height: 11pt;
+            height: 10lh;
+        }
 
-                .text13-13 { font-size: 13pt; line-height: 13pt;  height:9lh;  }
-                .text13-14 { font-size: 13pt; line-height: 14pt;  height:8lh; }
-                .text13-15 { font-size: 13pt; line-height: 15pt;  height:7lh;}
-                .text13-16 { font-size: 13pt; line-height: 16pt;  height:6lh;}
+        .text9-12 {
+            font-size: 9pt;
+            line-height: 12pt;
+            height: 9lh;
+        }
 
-                .text18-20 { font-size: 18pt; line-height: 20pt;  height:4lh;}
+        .text14-14 {
+            font-size: 14pt;
+            line-height: 16pt;
+            height: 5lh;
+        }
 
-                .text15-15 { font-size: 15pt; line-height: 15pt;  height:8lh; }
-                .text15-16 { font-size: 15pt; line-height: 16pt;  height:7lh;}
-                .text15-17 { font-size: 15pt; line-height: 17pt;  height:6lh;}
-                .text15-18 { font-size: 15pt; line-height: 18pt;  height:5lh;}
+        .text11-11 {
+            font-size: 11pt;
+            line-height: 11pt;
+            height: 11lh;
+        }
 
-                /* Für den kombinierten Block der dritten Reihe */
-                .combined-block {
-                    grid-column: span 2; /* Block spannt über beide Spalten */
-                }
+        .text11-12 {
+            font-size: 11pt;
+            line-height: 12pt;
+            height: 10lh;
+        }
 
+        .text11-13 {
+            font-size: 11pt;
+            line-height: 13pt;
+            height: 9lh;
+        }
 
+        .text11-14 {
+            font-size: 11pt;
+            line-height: 14pt;
+            height: 8lh;
+        }
 
+        .text13-13 {
+            font-size: 13pt;
+            line-height: 13pt;
+            height: 9lh;
+        }
+
+        .text13-14 {
+            font-size: 13pt;
+            line-height: 14pt;
+            height: 8lh;
+        }
+
+        .text13-15 {
+            font-size: 13pt;
+            line-height: 15pt;
+            height: 7lh;
+        }
+
+        .text13-16 {
+            font-size: 13pt;
+            line-height: 16pt;
+            height: 6lh;
+        }
+
+        .text18-20 {
+            font-size: 18pt;
+            line-height: 20pt;
+            height: 4lh;
+        }
+
+        .text15-15 {
+            font-size: 15pt;
+            line-height: 15pt;
+            height: 8lh;
+        }
+
+        .text15-16 {
+            font-size: 15pt;
+            line-height: 16pt;
+            height: 7lh;
+        }
+
+        .text15-17 {
+            font-size: 15pt;
+            line-height: 17pt;
+            height: 6lh;
+        }
+
+        .text15-18 {
+            font-size: 15pt;
+            line-height: 18pt;
+            height: 5lh;
+        }
+
+        /* Für den kombinierten Block der dritten Reihe */
+        .combined-block {
+            grid-column: span 2;
+            /* Block spannt über beide Spalten */
+        }
     </style>
 </head>
 
@@ -595,8 +967,8 @@
     <div class="leftpage">
         <div class="textArea" style="font-size:10pt;line-height:14pt;text-align:left;margin-bottom:6pt;">
             <p style="font-family:Kierkegaard-Regular;">Version 1.063 dated 14.05.2026</p>
-            <p style="font-family:Kierkegaard-Regular;">Preview at http://jrgdrs.github.io/Kierkegaard <br/>
-            Repository at https://github.com/jrgdrs/Kierkegaard</p>
+            <p style="font-family:Kierkegaard-Regular;">Preview at http://jrgdrs.github.io/Kierkegaard <br />
+                Repository at https://github.com/jrgdrs/Kierkegaard</p>
 
         </div>
         <!--div class="pageHead">Kierkegaard Font Specimen</div-->
@@ -616,7 +988,7 @@
             <p style="font-family:KierkegaardSC-Semi-Bold;">Kierkegaard Text SmallCaps Semibold</p> -->
             <p style="font-family:KierkegaardSC-Bold;">Kierkegaard Text SC Bold</p>
             <!-- <p style="font-family:KierkegaardSC-Extra-Bold;">Kierkegaard Text SmallCaps Extrabold</p> -->
-<p>&nbsp;</p>
+            <p>&nbsp;</p>
 
             <p style="font-family:Kierkegaard-Italic;">Kierkegaard Text Italic</p>
             <p style="font-family:Kierkegaard-Medium-Italic;">Kierkegaard Text Medium Italic</p>
@@ -628,8 +1000,8 @@
             <p style="font-family:KierkegaardSC-Semi-Bold-Italic;">Kierkegaard Text SmallCaps Semibold Italic</p> -->
             <p style="font-family:KierkegaardSC-Bold-Italic;">Kierkegaard Text SC Bold Italic</p>
             <!-- <p style="font-family:KierkegaardSC-Extra-Bold-Italic;">Kierkegaard Text SmallCaps Extrabold Italic</p> -->
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
 
             <p style="font-family:Kierkegaard-Display-Regular;">Kierkegaard Display Regular</p>
             <p style="font-family:Kierkegaard-Display-Medium;">Kierkegaard Display Medium</p>
@@ -641,7 +1013,7 @@
             <p style="font-family:KierkegaardSC-Display-Semi-Bold;">Kierkegaard Display SmallCaps Semibold</p> -->
             <p style="font-family:KierkegaardSC-Display-Bold;">Kierkegaard Display SC Bold</p>
             <!-- <p style="font-family:KierkegaardSC-Display-Extra-Bold;">Kierkegaard Display SmallCaps Extrabold</p> -->
-<p>&nbsp;</p>
+            <p>&nbsp;</p>
 
             <p style="font-family:Kierkegaard-Display-Italic;">Kierkegaard Display Italic</p>
             <p style="font-family:Kierkegaard-Display-Medium-Italic;">Kierkegaard Display Medium Italic</p>
@@ -658,32 +1030,44 @@
         <div class="pageHead">Kierkegaard Font Specimen</div>
     </div>
 
-<!--
-
     <div class="leftpage">
-        <div class="contentArea redBorder">
+        <div class="contentArea ">
 
-            <p class="charset48">
-                ABCDEFGHIJKL<br />
-                MNOPQRSTUVW<br />
-                XYZ&ŒÆÇØ<br />
-                (<span class="rubi">[</span>{1234567890}<span class="rubi">]</span>)<br />
-                abcdefghijklmno<br />
-                pqrstuvwxyzœæ<br />
-                ‘fiflß?!;:çøáàâäãå’<br />
-                éèêëñóòôöúùûüÿ<br />
-                €¢$£§<span class="rubi">¶</span>†®%#@<br />
-                <span class="osf">1234567890</span>
-            </p>
-            <p class="caption">
-                48/56
-            </p>
+            <div class="block combined-block">
+                <div class="textCaption">16/18</div>
+                <div class="text" lang="en" style="font-family: Kierkegaard-Regular; font-size: 16pt; line-height:18pt; height: 36lh; text-align: left; "> 
+                        
+Kierkegaard is a mod&shy;ern serif type&shy;face in re&shy;nais&shy;sance style that merges his&shy;tor&shy;i&shy;cal grace with con&shy;tem&shy;po&shy;rary pre&shy;ci&shy;sion. Draw&shy;ing in&shy;spi&shy;ra&shy;tion from the philo&shy;soph&shy;i&shy;cal spir&shy;it of <span style="font-family: Kierkegaard-Bold;">Søren Aabye Kierke&shy;gaard (1813–1855),</span> this type fam&shy;i&shy;ly cel&shy;e&shy;brat&shy;es the cre&shy;a&shy;tive po&shy;ten&shy;tial born from con&shy;straint — ech&shy;o&shy;ing Kierke&shy;gaard’s in&shy;sight that <span style="font-family: Kierkegaard-Italic;">“The more one lim&shy;its one&shy;self, the more re&shy;source&shy;ful one be&shy;comes.”</span> At its core, Kierke&shy;gaard em&shy;bod&shy;ies this prin&shy;ci&shy;ple through re&shy;straint and re&shy;fine&shy;ment. The de&shy;sign bal&shy;ances the or&shy;gan&shy;ic flow of broad-nib cal&shy;lig&shy;ra&shy;phy with the <span style="font-family: Kierkegaard-Bold-Italic;">struc&shy;tur&shy;al clar&shy;i&shy;ty of mod&shy;ern ty&shy;pog&shy;ra&shy;phy.</span> Each let&shy;ter&shy;form is care&shy;ful&shy;ly mod&shy;eled with sub&shy;tly curved stems, al&shy;low&shy;ing the font to con&shy;vey warmth and hu&shy;man&shy;i&shy;ty with&shy;in a ra&shy;tion&shy;al, ty&shy;pog&shy;ra&shy;phic frame&shy;work. <span style="font-family: Kierkegaard-Extra-Bold;">The re&shy;sult is a type&shy;face that feels both time&shy;less and a&shy;live — root&shy;ed in the her&shy;i&shy;tage of <span style="font-family: Kierkegaard-Medium;">Re&shy;nais&shy;sance ser&shy;ifs</span> yet adapt&shy;a&shy;ble for con&shy;tem&shy;po&shy;rary de&shy;sign needs. From ed&shy;i&shy;to&shy;ri&shy;al lay&shy;outs to brand&shy;ing, long-form text, and dig&shy;i&shy;tal in&shy;ter&shy;faces, Kierke&shy;gaard lends a <span style="font-family: Kierkegaard-Extra-Bold-Italic;">thought&shy;ful and in&shy;tel&shy;lec&shy;tu&shy;al tone</span> with&shy;out los&shy;ing ap&shy;proach&shy;a&shy;bil&shy;i&shy;ty.</span> Kierke&shy;gaard’s an&shy;a&shy;to&shy;my re&shy;flects a di&shy;a&shy;logue be&shy;tween phi&shy;los&shy;o&shy;phy and form. <span style="font-family: KierkegaardSC-Regular;">The slight&shy;ly curved stems</span> in&shy;ter&shy;pret the mo&shy;tion of nat&shy;u&shy;ral hand&shy;writ&shy;ing, sug&shy;gest&shy;ing the trace of a broad nib. This ap&shy;proach cre&shy;ates a <span style="font-family: KierkegaardSC-Italic;">dy&shy;nam&shy;ic rhyth&shy;m</span> across lines of text, of&shy;fer&shy;ing an el&shy;e&shy;gant read&shy;ing ex&shy;pe&shy;ri&shy;ence. The com&shy;plete fam&shy;i&shy;ly  <span style="font-family: KierkegaardSC-Bold;">con&shy;tains 20 mem&shy;bers</span> in five weights, each paired with a match&shy;ing ital&shy;ic. Ad&shy;di&shy;tion&shy;al fea&shy;tures in&shy;clude old-style fig&shy;ures, small cap&shy;i&shy;tals, and re&shy;fined char&shy;ac&shy;ter de&shy;tail&shy;ing for pro&shy;fes&shy;sion&shy;al ty&shy;pog&shy;ra&shy;phic ver&shy;sa&shy;til&shy;i&shy;ty. <span style="font-family: Kierkegaard-Italic;">Kierkegaard is a mod&shy;ern serif type&shy;face in re&shy;nais&shy;sance style that merges his&shy;tor&shy;i&shy;cal grace with con&shy;tem&shy;po&shy;rary pre&shy;ci&shy;sion. Draw&shy;ing in&shy;spi&shy;ra&shy;tion from the philo&shy;soph&shy;i&shy;cal spir&shy;it of <span style="font-family: KierkegaardSC-Semi-Bold-Italic;">Søren Aabye Kierke&shy;gaard (1813–1855),</span> this type fam&shy;i&shy;ly cel&shy;e&shy;brat&shy;es the cre&shy;a&shy;tive po&shy;ten&shy;tial born from con&shy;straint — ech&shy;o&shy;ing Kierke&shy;gaard’s in&shy;sight that <span style="font-family: Kierkegaard-Semi-Bold-Italic;">“The more one lim&shy;its one&shy;self, the more re&shy;source&shy;ful one be&shy;comes.”</span> At its core, Kierke&shy;gaard em&shy;bod&shy;ies this prin&shy;ci&shy;ple through re&shy;straint and re&shy;fine&shy;ment. The de&shy;sign bal&shy;ances the or&shy;gan&shy;ic flow of broad-nib cal&shy;lig&shy;ra&shy;phy with the <span style="font-family: Kierkegaard-Semi-Bold;">struc&shy;tur&shy;al clar&shy;i&shy;ty of mod&shy;ern ty&shy;pog&shy;ra&shy;phy.</span> Each let&shy;ter&shy;form is care&shy;ful&shy;ly mod&shy;eled with sub&shy;tly curved stems, al&shy;low&shy;ing the font to con&shy;vey warmth and hu&shy;man&shy;i&shy;ty with&shy;in a ra&shy;tion&shy;al, ty&shy;pog&shy;ra&shy;phic frame&shy;work.</span> <span style="font-family: Kierkegaard-Regular;">The re&shy;sult is a type&shy;face that feels both time&shy;less and a&shy;live — root&shy;ed in the her&shy;i&shy;tage of Re&shy;nais&shy;sance ser&shy;ifs yet adapt&shy;a&shy;ble for con&shy;tem&shy;po&shy;rary de&shy;sign needs. From ed&shy;i&shy;to&shy;ri&shy;al lay&shy;outs to brand&shy;ing, <span style="font-family: KierkegaardSC-Semi-Bold">long-form text,</span> and dig&shy;i&shy;tal in&shy;ter&shy;faces, Kierke&shy;gaard lends a thought&shy;ful and in&shy;tel&shy;lec&shy;tu&shy;al tone with&shy;out los&shy;ing ap&shy;proach&shy;a&shy;bil&shy;i&shy;ty.</span>
+</div>
+
+            </div>
+
         </div>
         <div class="pageHead">Kierkegaard Font Specimen</div>
     </div>
 
--->
-        <script>
+     <div class="rightpage">
+        <div class="contentArea ">
+
+            <div class="block combined-block">
+                <div class="textCaption"></div>
+                <div class="text" lang="en" style="font-family: Kierkegaard-Display-Extra-Bold; font-size: 44pt; line-height:1.6em; text-align: cener; height: 1.1lh">Søren Aabye Kierke­gaard</div>
+                <div class="text" lang="en" style="font-family: Kierkegaard-Display-Italic; font-size: 122pt; line-height:.9em; text-align: center; height: 1.2lh; letter-spacing: -.01em;">re­source­ful</div>
+                <div class="text" lang="en" style="font-family: KierkegaardSC-Display-Regular; font-size: 48pt; line-height:0.6em; text-align: center; height: 1.1lh; letter-spacing: .04em;">struc­tur­al clar­i­ty</div>
+                <div class="text" lang="en" style="font-family: Kierkegaard-Display-Bold; font-size: 132pt; line-height:1.1em; text-align: center; height: .9lh; letter-spacing: -.01em;">Editorial</div>
+              <div class="text" lang="en" style="font-family: KierkegaardSC-Display-Regular; font-size: 48pt; line-height:.9em; text-align: center; height: 1.2lh; letter-spacing: .04em;">read­ing ex­pe­ri­ence</div>            
+                <div class="text" lang="en" style="font-family: Kierkegaard-Display-Medium; font-size: 110pt; line-height:.9em; text-align: center; height: 1.2lh; letter-spacing: -.01em;">in­spi­ra­tion</div>
+               <div class="text" lang="en" style="font-family: Kierkegaard-Display-Bold-Italic; font-size: 66pt; line-height:1.2em; text-align: center; height: 1.1lh">time­less and a­live</div>
+             </div>
+
+        </div>
+        <div class="pageHead">Kierkegaard Font Specimen</div>
+    </div>
+
+    
+
+
+    <script>
 
         printSample("Kierkegaard-Regular", "Kierkegaard", "Kierkegaard Text Regular");
         printSample("Kierkegaard-Medium", "Kierkegaard", "Kierkegaard Text Medium");
@@ -739,7 +1123,7 @@
 
 
         // e.g. printSample("OHamburgC-Regular", "Augerellus", "Augerellus Regular");
-        function printSample( $fontname, $family, $style ) {
+        function printSample($fontname, $family, $style) {
 
             document.write(
                 "<div class=\"leftpage\" style=\" font-family: " + $fontname + ";\"> <div class=\"contentArea redBorder\"> <p class=\"charset48\"> ABCDEFGHIJKL<br /> MNOPQRSTUVW<br /> XYZ&ŒÆÇØ<br /> (<span class=\"rubi\">[</span>{1234567890}<span class=\"rubi\">]</span>)<br /> abcdefghijklmno<br /> pqrstuvwxyzœæ<br /> ‘fiflß?!;:çøáàâäãå’<br /> éèêëñóòôöúùûüÿ<br /> €¢$£§<span class=\"rubi\">¶</span>†®%#@<br /> <span class=\"osf\">1234567890</span> </p> <p class=\"caption\"> 48/56 " + $style + "</p> </div> <div class=\"pageHead\">" + $family + " Font Specimen</div> </div> <div class=\"rightpage\" style=\" font-family: " + $fontname + ";\"> <div class=\"contentArea\"> <p class=\"eightSample\" lang=\"nl\"> In het negentiende-eeuwse Europa balanceerde het denken tussen rede en geloof, toen Søren Kierkegaard (1813–1855) de aandacht radicaal op het individu richtte. Voor hem was vrijheid geen bezit, maar een sprong in het onbekende – gedragen door angst, keuze en geloof. Tegenover het zelfgenoegzame verstand van zijn tijd stelde hij de persoonlijke ervaring als de ware vorm van kennis en het geloof als de moedige daad van het zelf. Zo werd de filosofie opnieuw een vraag naar het leven zelf.            </p> <div class=\"eightCaption\">8/10</div> <p class=\"nineSample\" lang=\"en\"> In 19th-century Europe, thought wavered between reason and faith when Søren Kierkegaard (1813–1855) turned attention radically toward the individual. For him, freedom was not a possession but a leap into the unknown—sustained by anxiety, decision, and faith. Against the complacent reason of his age, he set personal experience as the only true knowledge and faith as the daring act of the self. Thus philosophy once again became a question of life itself.            </p> <div class=\"nineCaption\">9/12</div> <p class=\"tenSample\" lang=\"de\"> Im Europa des 19. Jahrhunderts suchte das Denken zwischen Vernunft und Glauben nach neuer Gewissheit, als Søren Kierkegaard (1813–1855) den Blick radikal auf den Einzelnen richtete. Für ihn war Freiheit kein Besitz, sondern ein Sprung in das Ungewisse – getragen von Angst, Entscheidung und Glauben. Gegen die selbstzufriedene Vernunft seiner Zeit stellte er das persönliche Erleben als eigentliche Wahrheit, den Glauben als Wagnis des Ichs. So wurde aus der Philosophie wieder eine Frage des Lebens selbst. </p> <div class=\"tenCaption\">10/12</div> <p class=\"twelfeSample\" lang=\"fr\"> Durant le siècle XIX en Europe, la pensée oscillait entre raison et foi lorsque Søren Kierkegaard (1813–1855) porta son attention de manière radicale sur l’individu. Pour lui, la liberté n’était pas une possession, mais un saut dans l’inconnu – soutenu par l’angoisse, le choix et la foi. Face à la raison complaisante de son époque, il érigea l’expérience personnelle en véritable connaissance et la foi en acte audacieux du moi. Ainsi, la philosophie redevenait une question de vie elle-même. </p> <div class=\"twelfeCaption\">12/14</div> <p class=\"fourteenSample\" lang=\"es\"> En la Europa del siglo XIX, el pensamiento oscilaba entre la razón y la fe cuando Søren Kierkegaard (1813–1855) centró su atención de manera radical en el individuo. Para él, la libertad no era una posesión, sino un salto hacia lo desconocido, sostenido por la angustia, la decisión y la fe. Frente a la complaciente razón de su época, situó la experiencia personal como el verdadero conocimiento y la fe como el acto valiente del yo. Así, la filosofía volvía a ser una cuestión de la vida misma. </p> <div class=\"fourteenCaption\">16/18</div> <p class=\"eightteenSample\" lang=\"da\"> I det 19. århundredes Europa svajede tanken mellem fornuft og tro, da Søren Kierkegaard (1813–1855) rettede sit fokus radikalt mod individet. For ham var frihed ikke en ejendom, men et spring ud i det ukendte – båret af angst, beslutning og tro. Over for sin tids selvtilfredse fornuft satte han den personlige oplevelse som den sande viden og troen som selvet modige handling. Således blev filosofien igen et spørgsmål om selve livet. </p> <div class=\"eightteenCaption\">20/20</div> <div class=\"charsetBox\"> <p class=\"charset24\"> ABCDEFGHIJKLM<br /> NOPQRSTUVWXYZ<br /> “&ŒÆÇØ”<br /> (<span class=\"rubi\">[</span>{1234567890}<span class=\"rubi\">]</span>)<br /> abcdefghijklmnopqr<br /> stuvwxyzœæfiflßçø<br /> áàâäãåéèêëñóòôöúùûü<br /> !?.,€¢$£§<span class=\"bleu\">¶</span>†©%#@<br /> <span class=\"osf\">1234567890</span> </p> <p class=\"caption2\"> 24/29 </p> </div> <div class=\"leftBackground\">&nbsp;</div> <div class=\"rightBackground\">&nbsp;</div> <div class=\"leftBox\">A</div> <div class=\"rightBox\">a</div> <div class=\"hamburgBox\">OHamburgefontsiv</div> <div class=\"topRedRule\">&nbsp;</div> <div class=\"bottomRedRule\">&nbsp;</div> <div class=\"styleName\">" + $style + "</div> </div> <div class=\"pageHead\">" + $family + " Font Specimen</div> </div>  <div class=\"leftpage\"  style=\" font-family: " + $fontname + ";\">    <div class=\"pageHead\">" + $family + " Font Specimen</div>     <div class=\"textArea\">    <div class=\"textCaption\">288 " + $style + "</div> <p class=\"text288Sample\" lang=\"en\"> Ing </p> <div class=\"textCaption\">72/64 (-1/100em) " + $style + "</div> <p class=\"text72Sample\" lang=\"en\"> Life is lived forwards, but understood backwards.  </p></div> <div class=\"rightpage\"  style=\" font-family: " + $fontname + ";\"> <div class=\"pageHead\">" + $family + " Font Specimen</div> <div class=\"textArea\"> <div class=\"textCaption\">48/48 " + $style + "</div> <p class=\"text48Sample\" lang=\"en\"> Arrowroot Barley Chervil Dumpling Endive Flaxseed Garbanzo Hijiki Ishtu Jicama <span class=\"rubi\">Kierkegaard</span> Lychee Marjoram Nectarine Oxtail Pizza Quinoa Roquefort Squash Tofu Uppuma Vanilla Wheat Xergis Yogurt Zwieback</p> </div> </div>   <div class=\"leftpage\"  style=\" font-family: " + $fontname + ";\"> <div class=\"textArea\"> <div class=\"textCaption\">40/42 " + $style + "</div> <p class=\"text40Sample\" lang=\"da\"> Europa svajede tanken mellem fornuft og tro, da Søren Kierkegaard (1813–1855) rettede sit fokus radikalt mod individet. For ham var frihed ikke en ejendom, men et spring ud i det ukendte – båret af angst, beslutning og tro. Over for sin tids selvtilfredse fornuft satte han den personlige oplevelse som den sande viden og troen som selvet modige handling. Således blev filosofien igen et spørgsmål om selve livet.</p> <div class=\"textCaption\">32/34 " + $style + "</div> <p class=\"text32Sample\" lang=\"es\"> Europa del siglo XIX, el pensamiento oscilaba entre la razón y la fe cuando Søren Kierkegaard (1813–1855) centró su atención de manera radical en el individuo. Para él, la libertad no era una posesión, sino un salto hacia lo desconocido, sostenido por la angustia, la decisión y la fe. Frente a la complaciente razón de su época, situó la experiencia personal como el verdadero conocimiento y la fe como el acto valiente del yo. Así, la filosofía volvía a ser una cuestión de la vida misma.</p> <div class=\"textCaption\">24/26 " + $style + "</div> <p class=\"text24Sample\" lang=\"nl\"> Europa balanceerde het denken tussen rede en geloof, toen Søren Kierkegaard (1813–1855) de aandacht radicaal op het individu richtte. Voor hem was vrijheid geen bezit, maar een sprong in het onbekende – gedragen door angst, keuze en geloof. Tegenover het zelfgenoegzame verstand van zijn tijd stelde hij de persoonlijke ervaring als de ware vorm van kennis en het geloof als de moedige daad van het zelf. Zo werd de filosofie opnieuw een vraag naar het leven zelf.</p> <div class=\"textCaption\">20/22 " + $style + "</div> <p class=\"text20Sample\" lang=\"en\"> Europe, thought wavered between reason and faith when Søren Kierkegaard (1813–1855) turned attention radically toward the individual. For him, freedom was not a possession but a leap into the unknown—sustained by anxiety, decision, and faith. Against the complacent reason of his age, he set personal experience as the only true knowledge and faith as the daring act of the self. Thus philosophy once again became a question of life itself.</p> </div> <div class=\"pageHead\">" + $family + " Font Specimen</div></div> <div class=\"rightpage\" style=\" font-family: " + $fontname + ";\"> <div class=\"textArea\"> <div class=\"textCaption\">16/18 " + $style + "</div> <p class=\"text16Sample\" lang=\"de\"> Europa des 19. Jahrhunderts suchte das Denken zwischen Vernunft und Glauben nach neuer Gewissheit, als Søren Kierkegaard (1813–1855) den Blick radikal auf den Einzelnen richtete. Für ihn war Freiheit kein Besitz, sondern ein Sprung in das Ungewisse – getragen von Angst, Entscheidung und Glauben. Gegen die selbstzufriedene Vernunft seiner Zeit stellte er das persönliche Erleben als eigentliche Wahrheit, den Glauben als Wagnis des Ichs. So wurde aus der Philosophie wieder eine Frage des Lebens selbst. Im Europa des 19. Jahrhunderts suchte das Denken zwischen Vernunft und Glauben nach neuer Gewissheit, als Søren Kierkegaard (1813–1855) den Blick radikal auf den Einzelnen richtete. Für ihn war Freiheit kein Besitz, sondern ein Sprung in das Ungewisse – getragen von Angst, Entscheidung und Glauben. Gegen die selbstzufriedene Vernunft seiner Zeit stellte er das persönliche Erleben als eigentliche Wahrheit, den Glauben als Wagnis des Ichs. So wurde aus der Philosophie wieder eine Frage des Lebens selbst.</p> <div class=\"textCaption\">12/14 " + $style + "</div> <p class=\"text12Sample\" lang=\"fr\"> Europe, la pensée oscillait entre raison et foi lorsque Søren Kierkegaard (1813–1855) porta son attention de manière radicale sur l’individu. Pour lui, la liberté n’était pas une possession, mais un saut dans l’inconnu – soutenu par l’angoisse, le choix et la foi. Face à la raison complaisante de son époque, il érigea l’expérience personnelle en véritable connaissance et la foi en acte audacieux du moi. Ainsi, la philosophie redevenait une question de vie elle-même. Durant le siècle XIX en Europe, la pensée oscillait entre raison et foi lorsque Søren Kierkegaard (1813–1855) porta son attention de manière radicale sur l’individu. Pour lui, la liberté n’était pas une possession, mais un saut dans l’inconnu – soutenu par l’angoisse, le choix et la foi. Face à la raison complaisante de son époque, il érigea l’expérience personnelle en véritable connaissance et la foi en acte audacieux du moi. Ainsi, la philosophie redevenait une question de vie elle-même. Europe, la pensée oscillait entre raison et foi lorsque Søren Kierkegaard (1813–1855) porta son attention de manière radicale sur l’individu. Pour lui, la liberté n’était pas une possession, mais un saut dans l’inconnu – soutenu par l’angoisse, le choix et la foi. Face à la raison complaisante de son époque, il érigea l’expérience personnelle en véritable connaissance et la foi en acte audacieux du moi. Ainsi, la philosophie redevenait une question de vie elle-même. Durant le siècle XIX en Europe, la pensée oscillait entre raison et foi lorsque Søren Kierkegaard (1813–1855) porta son attention de manière radicale sur l’individu. Pour lui, la liberté n’était pas une possession, mais un saut dans l’inconnu – soutenu par l’angoisse, le choix et la foi. Face à la raison complaisante de son époque, il érigea l’expérience personnelle en véritable connaissance et la foi en acte audacieux du moi. Ainsi, la philosophie redevenait une question de vie elle-même.</p> <div class=\"textCaption\">10/12 " + $style + "</div> <p class=\"text10Sample\" lang=\"nl\"> Europa balanceerde het denken tussen rede en geloof, toen Søren Kierkegaard (1813–1855) de aandacht radicaal op het individu richtte. Voor hem was vrijheid geen bezit, maar een sprong in het onbekende – gedragen door angst, keuze en geloof. Tegenover het zelfgenoegzame verstand van zijn tijd stelde hij de persoonlijke ervaring als de ware vorm van kennis en het geloof als de moedige daad van het zelf. Zo werd de filosofie opnieuw een vraag naar het leven zelf. In het negentiende-eeuwse Europa balanceerde het denken tussen rede en geloof, toen Søren Kierkegaard (1813–1855) de aandacht radicaal op het individu richtte. Voor hem was vrijheid geen bezit, maar een sprong in het onbekende – gedragen door angst, keuze en geloof. Tegenover het zelfgenoegzame verstand van zijn tijd stelde hij de persoonlijke ervaring als de ware vorm van kennis en het geloof als de moedige daad van het zelf. Zo werd de filosofie opnieuw een vraag naar het leven zelf. Zo werd de filosofie opnieuw een vraag naar het leven zelf. In het negentiende-eeuwse Europa balanceerde het denken tussen rede en geloof, toen Søren Kierkegaard (1813–1855) de aandacht radicaal op het individu richtte. Voor hem was vrijheid geen bezit, maar een sprong in het onbekende – gedragen door angst, keuze en geloof. Tegenover het zelfgenoegzame verstand van zijn tijd stelde hij de persoonlijke ervaring als de ware vorm van kennis en het geloof als de moedige daad van het zelf. Zo werd de filosofie opnieuw een vraag naar het leven zelf.</p> <div class=\"textCaption\">8/10 (+1/100em) " + $style + "</div> <p class=\"text8Sample\" lang=\"de\"> Europa des 19. Jahrhunderts suchte das Denken zwischen Vernunft und Glauben nach neuer Gewissheit, als Søren Kierkegaard (1813–1855) den Blick auf den Einzelnen richtete. Für ihn war Freiheit kein Besitz, sondern ein Sprung in das Ungewisse – getragen von Angst, Entscheidung und Glauben. Gegen die  Vernunft seiner Zeit stellte er das persönliche Erleben als eigentliche Wahrheit, den Glauben als Wagnis des Ichs. So wurde aus der Philosophie wieder eine Frage des Lebens selbst. Im Europa des 19. Jahrhunderts suchte das Denken zwischen Vernunft und Glauben nach neuer Gewissheit, als Kierkegaard (1813–1855) den Blick radikal auf den Einzelnen richtete. Für ihn war Freiheit kein Besitz, sondern ein Sprung in das Ungewisse – getragen von Angst, Entscheidung und Glauben. Gegen die selbstzufriedene Vernunft stellte er das persönliche Erleben als eigentliche Wahrheit, den Glauben als Wagnis des Ichs. So wurde aus der Philosophie wieder eine Frage des Lebens selbst. In Europa suchte das Denken zwischen Vernunft und Glauben nach neuer Gewissheit, als Søren Kierkegaard (1813–1855) den Blick radikal auf den Einzelnen richtete. Für ihn war Freiheit kein Besitz, sondern ein Sprung ins Ungewisse – getragen von Angst, Entscheidung und Glauben. Gegen die selbstzufriedene Vernunft seiner Zeit stellte er das persönliche Erleben als die eigentliche Wahrheit, den Glauben als Wagnis des Ichs. So wurde aus der Philosophie wieder eine Frage des Lebens selbst. Im Europa des 19. Jahrhunderts suchte das Denken zwischen Vernunft und Glauben nach Gewissheit, als Søren Kierkegaard (1813–1855) den Blick radikal auf den Einzelnen richtete. Für ihn war Freiheit kein Besitz, sondern ein Sprung in das Ungewisse – getragen von Angst, Entscheidung, Glauben. Gegen die selbstzufriedene Vernunft seiner Zeit stellte er das persönliche Erleben als eigentliche Wahrheit, den Glauben als Wagnis des Ichs. So wurde aus der Philosophie eine Frage des Lebens selbst. Europa des 19. Jahrhunderts suchte das Denken zwischen Vernunft und Glauben nach neuer Gewissheit, als Søren Kierkegaard (1813–1855) den Blick auf den Einzelnen richtete. Für ihn war Freiheit kein Besitz, sondern ein Sprung in das Ungewisse – getragen von Angst, Entscheidung und Glauben. Gegen die  Vernunft seiner Zeit stellte er das persönliche Erleben als eigentliche Wahrheit, den Glauben als Wagnis des Ichs. So wurde aus der Philosophie wieder eine Frage des Lebens selbst. Im Europa des 19. Jahrhunderts suchte das Denken zwischen Vernunft und Glauben nach neuer Gewissheit, als Kierkegaard (1813–1855) den Blick radikal auf den Einzelnen richtete. Für ihn war Freiheit kein Besitz, sondern ein Sprung in das Ungewisse – getragen von Angst, Entscheidung und Glauben. Gegen die selbstzufriedene Vernunft stellte er das persönliche Erleben als eigentliche Wahrheit, den Glauben als Wagnis des Ichs. So wurde aus der Philosophie wieder eine Frage des Lebens selbst. In Europa suchte das Denken zwischen Vernunft und Glauben nach neuer Gewissheit, als Søren Kierkegaard (1813–1855) den Blick radikal auf den Einzelnen richtete. Für ihn war Freiheit kein Besitz, sondern ein Sprung ins Ungewisse – getragen von Angst, Entscheidung und Glauben. Gegen die selbstzufriedene Vernunft seiner Zeit stellte er das persönliche Erleben als die eigentliche Wahrheit, den Glauben als Wagnis des Ichs. </p> </div> <div class=\"pageHead\">" + $family + " Font Specimen</div></div>      <div class=\"leftpage\" style=\" font-family: " + $fontname + ";\"> <div class=\"contentAreaDuo\"> <div class=\"block\"> <div class=\"textCaption\">9/9 " + $style + "</div> <div class=\"text text9-9\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <div class=\"block\"> <div class=\"textCaption\">9/10 " + $style + "</div> <div class=\"text text9-10\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <!-- 2. Reihe --> <div class=\"block\"> <div class=\"textCaption\">9/11 " + $style + "</div> <div class=\"text text9-11\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <div class=\"block\"> <div class=\"textCaption\">9/12 " + $style + "</div> <div class=\"text text9-12\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <!-- 3. Reihe (kombi) --> <div class=\"block combined-block\"> <div class=\"textCaption\">14/16 " + $style + "</div> <div class=\"text text14-14\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <!-- 4. Reihe --> <div class=\"block\"> <div class=\"textCaption\">11/11 " + $style + "</div> <div class=\"text text11-11\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <div class=\"block\"> <div class=\"textCaption\">11/12 " + $style + "</div> <div class=\"text text11-12\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <!-- 5. Reihe --> <div class=\"block\"> <div class=\"textCaption\">11/13 " + $style + "</div> <div class=\"text text11-13\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <div class=\"block\"> <div class=\"textCaption\">11/14 " + $style + "</div> <div class=\"text text11-14\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> </div> <div class=\"pageHead\">" + $family + " Font Specimen</div> </div>      <div class=\"rightpage\" style=\" font-family: " + $fontname + ";\"> <div class=\"contentAreaDuo\"> <div class=\"block\"> <div class=\"textCaption\">13/13 " + $style + "</div> <div class=\"text text13-13\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <div class=\"block\"> <div class=\"textCaption\">13/14 " + $style + "</div> <div class=\"text text13-14\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <!-- 2. Reihe --> <div class=\"block\"> <div class=\"textCaption\">13/15 " + $style + "</div> <div class=\"text text13-15\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <div class=\"block\"> <div class=\"textCaption\">13/16 " + $style + "</div> <div class=\"text text13-16\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <!-- 3. Reihe (kombi) --> <div class=\"block combined-block\"> <div class=\"textCaption\">18/20 " + $style + "</div> <div class=\"text text18-20\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <!-- 4. Reihe --> <div class=\"block\"> <div class=\"textCaption\">15/15 " + $style + "</div> <div class=\"text text15-15\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <div class=\"block\"> <div class=\"textCaption\">15/16 " + $style + "</div> <div class=\"text text15-16\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <!-- 5. Reihe --> <div class=\"block\"> <div class=\"textCaption\">15/17 " + $style + "</div> <div class=\"text text15-17\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> <div class=\"block\"> <div class=\"textCaption\">15/18 " + $style + "</div> <div class=\"text text15-18\" lang=\"en\"> The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. The Netherlands has always played an important role in the development of printed letters. The setting and printing of loose lead letters was also invented in the Netherlands at the same time. It is possible that Laurens Janszoon Coster (1405–1468) was the inventor, or perhaps another printer who remains unknown. In the 16th century, Antwerp was a major center of the typographic world. The most talented type cutter of the Golden Age was Hendrik van den Keere (1540–1580), who lived in Ghent in modern Belgium. His designs are among the best of that era and continue to inspire a large number of type designers today. </div> </div> </div> <div class=\"pageHead\">" + $family + " Font Specimen</div> </div>"
@@ -749,7 +1133,8 @@
     </script>
 
     <div class="frontpage">
-        <iframe src="assets/vita.html" width="630" height="880" style="border:0;position:relative;top:20mm;left:30mm"></iframe>
+        <iframe src="assets/vita.html" width="630" height="880"
+            style="border:0;position:relative;top:20mm;left:30mm"></iframe>
     </div>
 
 

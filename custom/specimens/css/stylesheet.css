@@ -44,14 +44,14 @@
     }
 
     @page {
-      size: 125mm 198mm;
-      margin: 14mm;
+      size: 131mm 196mm;
+      margin: 17mm;
       margin-bottom: 28mm;
       background-color: linen;
     }
 
     @page:first {
-      size: 125mm 198mm;
+      size: 131mm 196mm;
       margin: 7mm 7mm 0mm 7mm;
       background-color: orange;
     }
@@ -67,7 +67,7 @@
     }
 
     @page :right {
-      margin: 14mm 16mm 21mm 12mm;
+      margin: 17mm 19mm 24mm 15mm;
 
       @bottom-left {
         content: counter(page);
@@ -80,7 +80,7 @@
     }
 
     @page :left {
-      margin: 14mm 12mm 21mm 16mm;
+      margin: 17mm 15mm 24mm 19mm;
 
       @bottom-right {
         content: counter(page);

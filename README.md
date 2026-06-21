@@ -1,4 +1,18 @@
 # Kierkegaard Font Project
+
+[![][Fontspector]](https://jrgdrs.github.io/Kierkegaard/fontspector/fontspector-report.html)
+[![][OpenType]](https://jrgdrs.github.io/Kierkegaard/fontspector/fontspector-report.html)
+[![][Universal]](https://jrgdrs.github.io/Kierkegaard/fontspector/fontspector-report.html)
+[![][Google Fonts]](https://jrgdrs.github.io/Kierkegaard/fontspector/fontspector-report.html)
+[![][Glyphset]](https://jrgdrs.github.io/Kierkegaard/fontspector/fontspector-report.html)
+
+[Fontspector]: https://img.shields.io/endpoint?url=https%3A%2F%2Fjrgdrs.github.io%2FKierkegaard%2Fbadges%2FFontspectorQA.json
+[OpenType]: https://img.shields.io/endpoint?url=https%3A%2F%2Fjrgdrs.github.io%2FKierkegaard%2Fbadges%2FOpentypeSpecificationChecks.json
+[Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fjrgdrs.github.io%2FKierkegaard%2Fbadges%2FUniversalProfileChecks.json
+[Google Fonts]: https://img.shields.io/endpoint?url=https%3A%2F%2Fjrgdrs.github.io%2FKierkegaard%2Fbadges%2FFontFileChecks.json
+[Outline Correctness]: https://img.shields.io/endpoint?url=https%3A%2F%2Fjrgdrs.github.io%2FKierkegaard%2Fbadges%2FOutlineCorrectnessChecks.json
+[Glyphset]: https://img.shields.io/endpoint?url=https%3A%2F%2Fjrgdrs.github.io%2FKierkegaard%2Fbadges%2FGlyphsetChecks.json
+
     
 Kierkegaard is a modern serif typeface in renaissance style that merges historical grace with contemporary precision. Drawing inspiration from the philosophical spirit of Søren Aabye Kierkegaard (1813–1855), this type family celebrates the creative potential born from constraint — echoing Kierkegaard’s insight that “The more one limits oneself, the more resourceful one becomes”
 

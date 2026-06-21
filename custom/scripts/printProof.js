@@ -20,6 +20,13 @@ console.log( "  node printProof.js " + INFILE + " " + FONTFILE + " " + PDFFILE +
     await page.addStyleTag({content: '@font-face{font-family: TESTFONT; src: url( ' + FONTFILE + '); }'})
 
     await delay(500);
+    // If the page declared window.__proofReady = false at startup but hasn't
+    // set it to true yet, keep waiting (up to 8 s extra).
+    // Pages that never declare __proofReady resolve immediately here.
+    await page.waitForFunction(
+        () => !('__proofReady' in window) || window.__proofReady === true,
+        { timeout: 8000 }
+    ).catch(() => {});
 
     await page.emulateMediaType('print'); 
     await page.pdf({ 
