@@ -30,7 +30,7 @@ buildVariable: true
 buildStatic: true
 buildTTF: true
 buildOTF: false
-buildSmallCap: false
+buildSmallCap: false #produces error in test if true caused by font name extension SC
 
 # The next flags control autohinting.
 # autohintTTF: true
