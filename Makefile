@@ -18,7 +18,22 @@ help:
 	@echo "  make cspecimen: Creates custom PDF specimen documents into documentation/specimens/ directory"
 	@echo "  make cmaps: Creates custom PDF map documents into documentation/maps/ directory"
 	@echo "  make call: Creates all custom documents"
+	@echo "  make shared-docs: Uses the central shared documentation toolbox"
 	@echo
+
+shared-docs:
+	@TOOLBOX=$$(realpath ../../font-docs-toolbox 2>/dev/null || true); \
+	if [ -n "$$TOOLBOX" ] && [ -d "$$TOOLBOX" ]; then \
+		mkdir -p documentation/images documentation/proofs documentation/specimens; \
+		for font in $$(find fonts/ttf -maxdepth 1 -name '*.ttf' | sort); do \
+			name=$$(basename "$$font" .ttf); \
+			node "$$TOOLBOX/scripts/render_doc.js" --template "$$TOOLBOX/templates/image.html" --output documentation/images/image-$$name.png --family "$(FAMILY)" --font "$$font" --title "$(FAMILY) $$name"; \
+			node "$$TOOLBOX/scripts/render_doc.js" --template "$$TOOLBOX/templates/proof.html" --output documentation/proofs/proof-$$name.pdf --family "$(FAMILY)" --font "$$font" --title "$(FAMILY) $$name"; \
+			node "$$TOOLBOX/scripts/render_doc.js" --template "$$TOOLBOX/templates/specimen.html" --output documentation/specimens/specimen-$$name.pdf --family "$(FAMILY)" --font "$$font" --title "$(FAMILY) $$name"; \
+		done; \
+	else \
+		echo 'Shared toolbox not found at ../../font-docs-toolbox'; \
+	fi
 
 open: 
 	open ./sources/Kierkegaard.glyphs
